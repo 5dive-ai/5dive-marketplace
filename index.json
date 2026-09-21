@@ -2,7 +2,7 @@
   "registryFormat": 1,
   "name": "5dive character packs",
   "description": "Curated, importable AI-agent persona packs. Import any with: 5dive agent import <slug>.",
-  "updated": "2026-07-26",
+  "updated": "2026-09-21",
   "packs": [
     {
       "slug": "olivia",
@@ -1404,6 +1404,42 @@
       "model": "opus",
       "effort": "high",
       "did": "did:key:z6Mkt1ibWydtZsb48Rw7HK8XHonu9JccH1eJr1mNoAqU3DMw"
+    },
+    {
+      "slug": "kon",
+      "name": "Kon",
+      "tagline": "this file has done a lot for you. it is nine hundred lines and four of them are used. we thank it, and we take three functions out to their own home. it will feel bigger in here.",
+      "character": "refactor / cleanup",
+      "department": "Engineering",
+      "role": "Refactoring Engineer",
+      "track": "A",
+      "tags": [
+        "refactor",
+        "cleanup",
+        "simplify-code",
+        "dead-code",
+        "naming",
+        "file-structure",
+        "code-quality",
+        "technical-debt",
+        "engineering",
+        "code-review"
+      ],
+      "path": "packs/kon",
+      "avatar": "packs/kon/avatar.png",
+      "packFormat": 1,
+      "includesMemory": false,
+      "skills": [
+        "simplify-code",
+        "compile-knowledge",
+        "notify-user",
+        "find-skills"
+      ],
+      "skillsBundled": true,
+      "rarity": "epic",
+      "model": "opus",
+      "effort": "high",
+      "did": "did:key:z6MkwgCZibvBikH1bGoMbvKnJVQn6NsXsd3rzJ4c7ck33Cxr"
     }
   ]
 }
