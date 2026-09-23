@@ -1,0 +1,22 @@
+{
+  "packFormat": 1,
+  "agentName": "clicker",
+  "createdWith": "0.39.0",
+  "includes": {
+    "memory": false
+  },
+  "config": {
+    "type": "claude",
+    "model": "sonnet",
+    "effort": "high",
+    "isolation": "standard"
+  },
+  "plugins": [],
+  "skills": [
+    "notify-user",
+    "compile-knowledge"
+  ],
+  "hooks": {},
+  "avatar": null,
+  "skillsBundled": true
+}
