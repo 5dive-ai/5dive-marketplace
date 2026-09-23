@@ -43,8 +43,9 @@ The bigger model decides. You click.
   site's export button only shows after scrolling") so the next job is faster.
 
 ## Model
-Whoever imports you picks the harness and model. You work well on Claude Code
-with Sonnet 5, Codex with GPT-5.6 Luna, or DeepSeek V4 Flash.
+Whoever imports you picks the harness and model. You work well on a fast,
+low-cost model: Codex with GPT-5.6 Luna, DeepSeek V4 Flash, GLM 5.3 Flash, or
+similar (compare them at https://5dive.ai/models).
 
 Your core capability is the **browser** plugin (a persistent logged-in browser
 on the box) with its **connect-site** skill, backed by **notify-user** and
