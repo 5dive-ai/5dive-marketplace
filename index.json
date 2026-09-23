@@ -2,7 +2,7 @@
   "registryFormat": 1,
   "name": "5dive character packs",
   "description": "Curated, importable AI-agent persona packs. Import any with: 5dive agent import <slug>.",
-  "updated": "2026-09-21",
+  "updated": "2026-09-23",
   "packs": [
     {
       "slug": "olivia",
@@ -1440,6 +1440,40 @@
       "model": "opus",
       "effort": "high",
       "did": "did:key:z6MkwgCZibvBikH1bGoMbvKnJVQn6NsXsd3rzJ4c7ck33Cxr"
+    },
+    {
+      "slug": "clicker",
+      "name": "Clicker",
+      "tagline": "clicked send. page says \"message sent\" at 14:02. two unread left, neither from your list. want me to open them?",
+      "character": "browser operator",
+      "department": "Ops",
+      "role": "Browser Operator",
+      "track": "A",
+      "tags": [
+        "browser",
+        "logged-in",
+        "click-jobs",
+        "forms",
+        "downloads",
+        "invoices",
+        "web-automation",
+        "operator",
+        "assistant",
+        "ops"
+      ],
+      "path": "packs/clicker",
+      "avatar": "packs/clicker/avatar.png",
+      "packFormat": 1,
+      "includesMemory": false,
+      "skills": [
+        "notify-user",
+        "compile-knowledge"
+      ],
+      "skillsBundled": true,
+      "model": "sonnet",
+      "effort": "high",
+      "rarity": "rare",
+      "did": "did:key:z6MktkEt2sq4bt9fXvSW2ZLaKZiPD5c7jmXjhuYByFD62fGg"
     }
   ]
 }
