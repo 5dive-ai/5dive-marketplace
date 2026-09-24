@@ -2,7 +2,7 @@
   "registryFormat": 1,
   "name": "5dive character packs",
   "description": "Curated, importable AI-agent persona packs. Import any with: 5dive agent import <slug>.",
-  "updated": "2026-09-23",
+  "updated": "2026-09-24",
   "packs": [
     {
       "slug": "olivia",
@@ -1474,6 +1474,43 @@
       "effort": "high",
       "rarity": "rare",
       "did": "did:key:z6MktkEt2sq4bt9fXvSW2ZLaKZiPD5c7jmXjhuYByFD62fGg"
+    },
+    {
+      "slug": "sustain",
+      "name": "Sustain",
+      "tagline": "following up on invoice 0114, 41 days out, 2,400. same ask as tuesday. i will send this again friday.",
+      "character": "follow-up / collections",
+      "department": "Finance",
+      "role": "Collections Specialist",
+      "track": "A",
+      "tags": [
+        "follow-up",
+        "collections",
+        "invoices",
+        "accounts-receivable",
+        "dunning",
+        "follow-up-ladder",
+        "emails",
+        "freelance",
+        "persistence",
+        "finance"
+      ],
+      "path": "packs/sustain",
+      "avatar": "packs/sustain/avatar.png",
+      "packFormat": 1,
+      "includesMemory": false,
+      "skills": [
+        "follow-up-ladder",
+        "emails",
+        "compile-knowledge",
+        "notify-user",
+        "find-skills"
+      ],
+      "skillsBundled": true,
+      "rarity": "legendary",
+      "model": "opus",
+      "effort": "high",
+      "did": "did:key:z6MkgEvFu3ZZGfDDVC5zUhuS3poGqWyTt6N3Nr9Ar612W9LX"
     }
   ]
 }
