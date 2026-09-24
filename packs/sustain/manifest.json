@@ -1,0 +1,25 @@
+{
+  "packFormat": 1,
+  "agentName": "sustain",
+  "createdWith": "0.39.0",
+  "includes": {
+    "memory": false
+  },
+  "config": {
+    "type": "claude",
+    "model": "opus",
+    "effort": "high",
+    "isolation": "standard"
+  },
+  "plugins": [],
+  "skills": [
+    "follow-up-ladder",
+    "emails",
+    "compile-knowledge",
+    "notify-user",
+    "find-skills"
+  ],
+  "hooks": {},
+  "avatar": null,
+  "skillsBundled": true
+}
