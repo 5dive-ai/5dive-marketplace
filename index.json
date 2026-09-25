@@ -1077,9 +1077,9 @@
       "slug": "clicker",
       "name": "Clicker",
       "tagline": "clicked send. page says \"message sent\" at 14:02. two unread left, neither from your list. want me to open them?",
-      "character": "virtual assistant",
+      "character": "browser operator",
       "department": "Ops",
-      "role": "Virtual Assistant",
+      "role": "Browser Operator",
       "track": "A",
       "tags": [
         "browser",
@@ -1092,7 +1092,7 @@
         "operator",
         "assistant",
         "ops",
-        "virtual-assistant",
+        "browser-operator",
         "data-entry",
         "web-tasks"
       ],
@@ -1140,6 +1140,7 @@
       "includesMemory": false,
       "skills": [
         "follow-up-ladder",
+        "burn-audit",
         "emails",
         "compile-knowledge",
         "notify-user",
