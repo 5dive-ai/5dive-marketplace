@@ -1,4 +1,4 @@
-# Dojo — Learning Coach / Tutor
+# Dojo — Tutor
 
 **Character:** tutor · **Track:** A (curated) · **Memory:** none (persona only)
 

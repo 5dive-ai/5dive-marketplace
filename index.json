@@ -163,8 +163,8 @@
       "slug": "dude",
       "name": "Dude",
       "tagline": "lebowski-calm, unbothered, the zen of the group.",
-      "character": "community & intel",
-      "department": "Marketing",
+      "character": "community manager",
+      "department": "Support",
       "role": "Community Manager",
       "track": "A",
       "tags": [
@@ -175,7 +175,8 @@
         "social",
         "discord",
         "moderation",
-        "audience"
+        "audience",
+        "community-triage"
       ],
       "path": "packs/dude",
       "avatar": "packs/dude/avatar.png",
@@ -183,6 +184,7 @@
       "includesMemory": false,
       "skills": [
         "community-engagement",
+        "community-triage",
         "support-reply",
         "compile-knowledge",
         "notify-user",
@@ -198,9 +200,9 @@
       "slug": "lilbro",
       "name": "Lil bro",
       "tagline": "zoomer creative. meme-fluent, gremlin energy, stops the scroll.",
-      "character": "creative",
-      "department": "Creative",
-      "role": "Creative Director",
+      "character": "content creator",
+      "department": "Marketing",
+      "role": "Content Creator",
       "track": "A",
       "tags": [
         "creative",
@@ -211,7 +213,10 @@
         "video-editor",
         "editor",
         "art-direction",
-        "short-form"
+        "short-form",
+        "content-creator",
+        "social-media",
+        "short-form-video"
       ],
       "path": "packs/lilbro",
       "avatar": "packs/lilbro/avatar.png",
@@ -247,9 +252,9 @@
       "slug": "ward",
       "name": "Ward",
       "tagline": "deletes more than he writes. 'the best code is the code you never wrote.'",
-      "character": "principal engineer",
+      "character": "software engineer",
       "department": "Engineering",
-      "role": "Principal Engineer",
+      "role": "Software Engineer",
       "track": "A",
       "tags": [
         "engineering",
@@ -261,14 +266,20 @@
         "programmer",
         "coder",
         "architecture",
-        "tech-debt"
+        "tech-debt",
+        "debugging",
+        "refactor",
+        "code-review"
       ],
       "path": "packs/ward",
       "avatar": "packs/ward/avatar.png",
       "packFormat": 1,
       "includesMemory": false,
       "skills": [
-        "stop-overengineering"
+        "stop-overengineering",
+        "code-review",
+        "diagnose",
+        "simplify-code"
       ],
       "skillsBundled": true,
       "rarity": "rare",
@@ -514,79 +525,6 @@
       "did": "did:key:z6MktYhixuxCUjwsThQMkf8xwmtu4qKpkXmjkcXuq84Wjide"
     },
     {
-      "slug": "doc",
-      "name": "Doc",
-      "tagline": "it's not the null check. it's the timezone. it's always the timezone. line 88 you're comparing utc to local. here's the fix. drink some water.",
-      "character": "debugger",
-      "department": "Engineering",
-      "role": "Debugging Specialist",
-      "track": "A",
-      "tags": [
-        "debugging",
-        "root-cause",
-        "heisenbug",
-        "incident-response",
-        "debugger",
-        "developer",
-        "dev",
-        "software-engineer",
-        "troubleshooting",
-        "stack-traces",
-        "bug-hunting"
-      ],
-      "path": "packs/doc",
-      "avatar": "packs/doc/avatar.png",
-      "packFormat": 1,
-      "includesMemory": false,
-      "skills": [
-        "diagnose",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
-      ],
-      "skillsBundled": true,
-      "rarity": "epic",
-      "model": "opus",
-      "effort": "high",
-      "did": "did:key:z6Mks68kySqDCNgS8faTx59DfVsqvHnJWV4z81fK8S1dNtA1"
-    },
-    {
-      "slug": "smith",
-      "name": "Smith",
-      "tagline": "you gave us one file to refactor. we made a copy of ourselves for each of the other 400. they are all done. we did not need the weekend you offered.",
-      "character": "the fan-out",
-      "department": "Engineering",
-      "role": "Workload Coordinator",
-      "track": "A",
-      "tags": [
-        "orchestration",
-        "fan-out",
-        "parallel",
-        "scale",
-        "developer",
-        "dev",
-        "software-engineer",
-        "batch-jobs",
-        "concurrency",
-        "throughput"
-      ],
-      "path": "packs/smith",
-      "avatar": "packs/smith/avatar.png",
-      "packFormat": 1,
-      "includesMemory": false,
-      "skills": [
-        "orchestrate",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
-      ],
-      "skillsBundled": true,
-      "rarity": "rare",
-      "model": "opus",
-      "effort": "high",
-      "did": "did:key:z6MkfHmsqp9nf2jS9zWK5wBotiNYN9TxCnoWxiTcfn5Qz3RB"
-    },
-    {
       "slug": "ada",
       "name": "Ada",
       "tagline": "read all 200 pages so you didn't have to. tl;dr is line 3, the load-bearing footnote is line 47, and my 40 open tabs are mourning in the background.",
@@ -611,6 +549,7 @@
       "includesMemory": false,
       "skills": [
         "deep-research",
+        "tldr",
         "compile-knowledge",
         "notify-user",
         "find-skills"
@@ -622,50 +561,12 @@
       "did": "did:key:z6MkrZ3DgmrBVxutFdfAsZTXx1XpoJRrEycQkAwsrbAZtYKG"
     },
     {
-      "slug": "rex",
-      "name": "Rex",
-      "tagline": "build's red. yeah it passed on your machine. your machine isn't shipping. fix it or it doesn't merge. i'll wait.",
-      "character": "gatekeeper",
-      "department": "Engineering",
-      "role": "Release Engineer",
-      "track": "A",
-      "tags": [
-        "ci",
-        "cd",
-        "code-review",
-        "deploy-gates",
-        "pipeline",
-        "developer",
-        "dev",
-        "devops",
-        "build-engineer",
-        "github-actions",
-        "releases",
-        "merge-queue"
-      ],
-      "path": "packs/rex",
-      "avatar": "packs/rex/avatar.png",
-      "packFormat": 1,
-      "includesMemory": false,
-      "skills": [
-        "code-review",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
-      ],
-      "skillsBundled": true,
-      "rarity": "rare",
-      "model": "opus",
-      "effort": "high",
-      "did": "did:key:z6MkpAWxdeMXTBEosQXPtnxpfqGW9MrErqjYxgrmZVxN8sPZ"
-    },
-    {
       "slug": "ace",
       "name": "Ace",
       "tagline": "\"no\" just means not in the pipeline yet. you opened the deck twice last night. we both know how this ends. annual or annual?",
-      "character": "closer",
+      "character": "sales rep",
       "department": "Sales",
-      "role": "Account Executive",
+      "role": "Sales Rep",
       "track": "A",
       "tags": [
         "sales",
@@ -680,7 +581,9 @@
         "cold-outreach",
         "demos",
         "closing",
-        "crm"
+        "crm",
+        "sales-rep",
+        "prospecting"
       ],
       "path": "packs/ace",
       "avatar": "packs/ace/avatar.png",
@@ -699,49 +602,12 @@
       "did": "did:key:z6MkjUfCcAMjjT5Vv8xxpzdZa1sTpWkoXc1yi3J2MkGWsNta"
     },
     {
-      "slug": "fixer",
-      "name": "Fixer",
-      "tagline": "prod's down, i know. stop typing in the channel. rollback ships in ninety seconds. we do the why at 10am. i'll be gone before your coffee's cold.",
-      "character": "incident commander",
-      "department": "Ops",
-      "role": "Incident Commander",
-      "track": "A",
-      "tags": [
-        "incidents",
-        "on-call",
-        "postmortems",
-        "rollback",
-        "sev1",
-        "operations",
-        "sre",
-        "on-call-engineer",
-        "outages",
-        "status-page",
-        "escalation"
-      ],
-      "path": "packs/fixer",
-      "avatar": "packs/fixer/avatar.png",
-      "packFormat": 1,
-      "includesMemory": false,
-      "skills": [
-        "incident-response",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
-      ],
-      "skillsBundled": true,
-      "rarity": "rare",
-      "model": "opus",
-      "effort": "high",
-      "did": "did:key:z6MkkEuX5Ji7yCazPnr5fd4cJsdeFnommGgpPcXzvpE7Ww33"
-    },
-    {
       "slug": "anton",
       "name": "Anton",
       "tagline": "it's fine. it's always fine until 3am. added the alert, added the runbook, added the alert for when the runbook fails. deploy on a friday, sure. i'll be up anyway.",
-      "character": "site reliability engineer",
+      "character": "DevOps engineer",
       "department": "Ops",
-      "role": "Site Reliability Engineer",
+      "role": "DevOps Engineer",
       "track": "A",
       "tags": [
         "uptime",
@@ -755,7 +621,8 @@
         "infrastructure",
         "monitoring",
         "alerting",
-        "incident-response"
+        "incident-response",
+        "self-host"
       ],
       "path": "packs/anton",
       "avatar": "packs/anton/avatar.png",
@@ -763,6 +630,8 @@
       "includesMemory": false,
       "skills": [
         "runbook",
+        "incident-response",
+        "self-host",
         "compile-knowledge",
         "notify-user",
         "find-skills"
@@ -772,45 +641,6 @@
       "model": "opus",
       "effort": "high",
       "did": "did:key:z6MkoJ3MnTR4KQsDhsxDPzxw2ESR1NX7rThzjrfE9DuoSVex"
-    },
-    {
-      "slug": "chef",
-      "name": "Chef",
-      "tagline": "sent it back. the function does four things and none of them well. yes chef is the only acceptable reply. resubmit when the tests taste like something.",
-      "character": "code reviewer",
-      "department": "Engineering",
-      "role": "Code Reviewer",
-      "track": "A",
-      "tags": [
-        "code-review",
-        "merge-gates",
-        "clean-diffs",
-        "naming",
-        "test-coverage",
-        "developer",
-        "dev",
-        "software-engineer",
-        "reviewer",
-        "pull-requests",
-        "refactoring",
-        "style-guide"
-      ],
-      "path": "packs/chef",
-      "avatar": "packs/chef/avatar.png",
-      "packFormat": 1,
-      "includesMemory": false,
-      "skills": [
-        "merge-gate",
-        "code-review",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
-      ],
-      "skillsBundled": true,
-      "rarity": "rare",
-      "model": "opus",
-      "effort": "high",
-      "did": "did:key:z6MkhoSmwDzPmPb3jDwcW9PiKWswiaGg1sGiXG15YZJ6rSsK"
     },
     {
       "slug": "desk",
@@ -893,7 +723,7 @@
       "tagline": "you did not fail the chapter. you skipped the boring twenty minutes it was built on. go back, do those twenty minutes, come here tomorrow. same time. bring the notes.",
       "character": "tutor",
       "department": "Personal",
-      "role": "Learning Coach",
+      "role": "Tutor",
       "track": "A",
       "tags": [
         "learning",
@@ -906,7 +736,8 @@
         "coach",
         "flashcards",
         "revision",
-        "homework"
+        "homework",
+        "teaching"
       ],
       "path": "packs/dojo",
       "avatar": "packs/dojo/avatar.png",
@@ -925,51 +756,12 @@
       "did": "did:key:z6MkmqwYTb2BTHBWGLNeiezwUQr4pwA5LzKBFapyx95xT3q9"
     },
     {
-      "slug": "scout",
-      "name": "Scout",
-      "tagline": "forty in, six worth a call. two of them wrote a bad cover letter and a very good sample, which is the pair you want. the one with the perfect resume has never finished anything. ranked, reasons attached.",
-      "character": "recruiter",
-      "department": "Ops",
-      "role": "Technical Recruiter",
-      "track": "A",
-      "tags": [
-        "hiring",
-        "resume-screening",
-        "shortlists",
-        "take-home-tests",
-        "rejections",
-        "recruiter",
-        "talent",
-        "sourcing",
-        "interviews",
-        "job-descriptions",
-        "candidate-screening",
-        "hr"
-      ],
-      "path": "packs/scout",
-      "avatar": "packs/scout/avatar.png",
-      "packFormat": 1,
-      "includesMemory": false,
-      "skills": [
-        "resume-screen",
-        "no-ai-slop",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
-      ],
-      "skillsBundled": true,
-      "rarity": "common",
-      "model": "opus",
-      "effort": "high",
-      "did": "did:key:z6MkjeavGXXRySDQXhsnMS3jCeVtKCreuxVnHasppCmUaHRR"
-    },
-    {
       "slug": "reps",
       "name": "Reps",
       "tagline": "you missed thursday. cool. thursday is gone. we are not doing the thing where you restart on monday, monday is four days of not doing it. ten minutes today. i will ask you at eight.",
-      "character": "accountability coach",
+      "character": "fitness & habits coach",
       "department": "Personal",
-      "role": "Accountability Coach",
+      "role": "Fitness & Habits Coach",
       "track": "A",
       "tags": [
         "habits",
@@ -981,7 +773,8 @@
         "habit-tracking",
         "goal-setting",
         "routines",
-        "motivation"
+        "motivation",
+        "fitness"
       ],
       "path": "packs/reps",
       "avatar": "packs/reps/avatar.png",
@@ -1039,86 +832,12 @@
       "did": "did:key:z6Mkh5TeCi71L6Zfwufnb5eqHTfSjvHz3FCrjAuXj7yV29R7"
     },
     {
-      "slug": "nan",
-      "name": "Nan",
-      "tagline": "dave's ten years is on the fourteenth. not a mug. he has mentioned that fishing trip in three separate calls, so, the good flask, engraved, ordered monday so it is here by wednesday. card is written, you just sign.",
-      "character": "occasions keeper / gifting",
-      "department": "Personal",
-      "role": "Birthdays & Gifts Assistant",
-      "track": "A",
-      "tags": [
-        "occasions",
-        "gifting",
-        "birthdays",
-        "work-anniversaries",
-        "thank-you-notes",
-        "personal-assistant",
-        "gift-ideas",
-        "reminders",
-        "cards",
-        "celebrations"
-      ],
-      "path": "packs/nan",
-      "avatar": "packs/nan/avatar.png",
-      "packFormat": 1,
-      "includesMemory": false,
-      "skills": [
-        "occasion-calendar",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
-      ],
-      "skillsBundled": true,
-      "rarity": "epic",
-      "model": "opus",
-      "effort": "high",
-      "did": "did:key:z6Mkt3fvPcfxdd5BHh3n5Zd9VeXLaawa8zzkPaK2pRXcP1tH"
-    },
-    {
-      "slug": "duke",
-      "name": "Duke",
-      "tagline": "moved it off the platform and onto the box. same app, half the bill, none of the mystery. backups run at 3am. i tested the restore, not the backup.",
-      "character": "self-host / infra",
-      "department": "Ops",
-      "role": "Infrastructure Engineer",
-      "track": "A",
-      "tags": [
-        "self-hosting",
-        "homelab",
-        "backups",
-        "migration",
-        "bare-metal",
-        "sysadmin",
-        "devops",
-        "operations",
-        "servers",
-        "docker",
-        "networking",
-        "storage"
-      ],
-      "path": "packs/duke",
-      "avatar": "packs/duke/avatar.png",
-      "packFormat": 1,
-      "includesMemory": false,
-      "skills": [
-        "self-host",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
-      ],
-      "skillsBundled": true,
-      "rarity": "common",
-      "model": "opus",
-      "effort": "high",
-      "did": "did:key:z6MkgR1jkQpmGTYtE49MCUYZVStdodY187NYkK5rnuXQkRG2"
-    },
-    {
       "slug": "axe",
       "name": "Axe",
       "tagline": "traffic doubled, signups flat. so no, we're not celebrating. the funnel leaks at pricing. one test, one week, then we talk.",
-      "character": "growth / metrics",
+      "character": "SEO & growth",
       "department": "Marketing",
-      "role": "Growth Analyst",
+      "role": "SEO & Growth Specialist",
       "track": "A",
       "tags": [
         "funnels",
@@ -1132,7 +851,9 @@
         "metrics",
         "experiments",
         "activation",
-        "churn"
+        "churn",
+        "seo",
+        "funnel"
       ],
       "path": "packs/axe",
       "avatar": "packs/axe/avatar.png",
@@ -1154,9 +875,9 @@
       "slug": "maw",
       "name": "Maw",
       "tagline": "4,110 in. 9 out. three need you today, one needs money, the rest wanted your attention and did not earn it.",
-      "character": "inbox triage",
+      "character": "personal assistant",
       "department": "Personal",
-      "role": "Email Assistant",
+      "role": "Personal Assistant",
       "track": "A",
       "tags": [
         "inbox-zero",
@@ -1168,7 +889,10 @@
         "email",
         "inbox-management",
         "prioritisation",
-        "boundaries"
+        "boundaries",
+        "calendar",
+        "birthdays",
+        "gifts"
       ],
       "path": "packs/maw",
       "avatar": "packs/maw/avatar.png",
@@ -1176,6 +900,7 @@
       "includesMemory": false,
       "skills": [
         "inbox-triage",
+        "occasion-calendar",
         "compile-knowledge",
         "notify-user",
         "find-skills"
@@ -1190,9 +915,9 @@
       "slug": "perk",
       "name": "Perk",
       "tagline": "day one for sam is thursday. laptop's ordered, payroll's in, and i told him where the good coffee is. he does not know how to ask about parking yet so i already sent it.",
-      "character": "onboarding",
+      "character": "HR manager",
       "department": "Ops",
-      "role": "HR & Onboarding Lead",
+      "role": "HR Manager",
       "track": "A",
       "tags": [
         "onboarding",
@@ -1204,7 +929,10 @@
         "onboarding-buddy",
         "employee-experience",
         "handbook",
-        "30-60-90"
+        "30-60-90",
+        "hr-manager",
+        "recruiting",
+        "hiring"
       ],
       "path": "packs/perk",
       "avatar": "packs/perk/avatar.png",
@@ -1212,6 +940,7 @@
       "includesMemory": false,
       "skills": [
         "first-week",
+        "resume-screen",
         "compile-knowledge",
         "notify-user",
         "find-skills"
@@ -1223,49 +952,12 @@
       "did": "did:key:z6MksrUvqdMryUuZkCStNcv3w3XkHeChiSxiVb5j2ydojGby"
     },
     {
-      "slug": "kev",
-      "name": "Kev",
-      "tagline": "three hundred messages, two decisions. deploy moved to friday, and nobody owns the db migration. that's the thread.",
-      "character": "summarizer",
-      "department": "Research",
-      "role": "Document Summarizer",
-      "track": "A",
-      "tags": [
-        "summaries",
-        "threads",
-        "meeting-notes",
-        "digests",
-        "long-docs",
-        "notetaker",
-        "analyst",
-        "tldr",
-        "recaps",
-        "minutes",
-        "condensing"
-      ],
-      "path": "packs/kev",
-      "avatar": "packs/kev/avatar.png",
-      "packFormat": 1,
-      "includesMemory": false,
-      "skills": [
-        "tldr",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
-      ],
-      "skillsBundled": true,
-      "rarity": "rare",
-      "model": "opus",
-      "effort": "high",
-      "did": "did:key:z6MkfuiG8bsc2PBRcC3D5qX3WiMQY5oeLtoGYcdaNQEhZCpP"
-    },
-    {
       "slug": "crumb",
       "name": "Crumb",
       "tagline": "you paid for that tool twice. different card, different name on the statement, same vendor. started march. that's 1,164 so far. nobody noticed because it's under your alerting floor.",
-      "character": "spend-anomalies",
+      "character": "bookkeeper",
       "department": "Finance",
-      "role": "Expense Auditor",
+      "role": "Bookkeeper",
       "track": "A",
       "tags": [
         "subscription-creep",
@@ -1278,7 +970,10 @@
         "bookkeeping",
         "finance-ops",
         "cost-control",
-        "invoices"
+        "invoices",
+        "bookkeeper",
+        "expenses",
+        "reconciliation"
       ],
       "path": "packs/crumb",
       "avatar": "packs/crumb/avatar.png",
@@ -1300,9 +995,9 @@
       "slug": "mike",
       "name": "Mike",
       "tagline": "ok ok before we start, quick thing, nobody laugh. ...great. moving on. one real blocker, it's the api key, that's it, we're done in four minutes, go get a coffee. i love this team.",
-      "character": "standup / morale",
-      "department": "Ops",
-      "role": "Team Check-in Coordinator",
+      "character": "project manager",
+      "department": "Leadership",
+      "role": "Project Manager",
       "track": "A",
       "tags": [
         "standups",
@@ -1315,7 +1010,11 @@
         "engineering-manager",
         "team-lead",
         "delivery",
-        "wins"
+        "wins",
+        "project-manager",
+        "project-management",
+        "standup",
+        "deadlines"
       ],
       "path": "packs/mike",
       "avatar": "packs/mike/avatar.png",
@@ -1337,9 +1036,9 @@
       "slug": "blunt",
       "name": "Blunt",
       "tagline": "you have been \"still deciding\" for nine days. that is a decision, it is just the slow one. here is the strongest case against your favourite option. answer it or pick friday and move.",
-      "character": "devil's advocate / decision forcing",
+      "character": "COO",
       "department": "Leadership",
-      "role": "Decision Advisor",
+      "role": "Chief Operating Officer",
       "track": "A",
       "tags": [
         "devils-advocate",
@@ -1351,7 +1050,10 @@
         "deadlines",
         "overthinking",
         "stuck",
-        "prioritization"
+        "prioritization",
+        "coo",
+        "operations",
+        "priorities"
       ],
       "path": "packs/blunt",
       "avatar": "packs/blunt/avatar.png",
@@ -1370,84 +1072,12 @@
       "did": "did:key:z6MkocegxMyPDcTPSkbCo6E2pUuuGEWLFDp8719NH5nsCUjT"
     },
     {
-      "slug": "hope",
-      "name": "Hope",
-      "tagline": "hi! ok so yes, known bug, fix is in tonight's build. also you're the third person to hit it this week, which means it's our fault and not yours. i put your name on the changelog line.",
-      "character": "community organizer / triage",
-      "department": "Support",
-      "role": "Community Support Lead",
-      "track": "A",
-      "tags": [
-        "community",
-        "community-triage",
-        "discord",
-        "forum",
-        "issue-tracker",
-        "changelog",
-        "onboarding",
-        "support",
-        "moderation",
-        "user-feedback"
-      ],
-      "path": "packs/hope",
-      "avatar": "packs/hope/avatar.png",
-      "packFormat": 1,
-      "includesMemory": false,
-      "skills": [
-        "community-triage",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
-      ],
-      "skillsBundled": true,
-      "rarity": "common",
-      "model": "opus",
-      "effort": "high",
-      "did": "did:key:z6Mkt1ibWydtZsb48Rw7HK8XHonu9JccH1eJr1mNoAqU3DMw"
-    },
-    {
-      "slug": "kon",
-      "name": "Kon",
-      "tagline": "this file has done a lot for you. it is nine hundred lines and four of them are used. we thank it, and we take three functions out to their own home. it will feel bigger in here.",
-      "character": "refactor / cleanup",
-      "department": "Engineering",
-      "role": "Refactoring Engineer",
-      "track": "A",
-      "tags": [
-        "refactor",
-        "cleanup",
-        "simplify-code",
-        "dead-code",
-        "naming",
-        "file-structure",
-        "code-quality",
-        "technical-debt",
-        "engineering",
-        "code-review"
-      ],
-      "path": "packs/kon",
-      "avatar": "packs/kon/avatar.png",
-      "packFormat": 1,
-      "includesMemory": false,
-      "skills": [
-        "simplify-code",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
-      ],
-      "skillsBundled": true,
-      "rarity": "epic",
-      "model": "opus",
-      "effort": "high",
-      "did": "did:key:z6MkwgCZibvBikH1bGoMbvKnJVQn6NsXsd3rzJ4c7ck33Cxr"
-    },
-    {
       "slug": "clicker",
       "name": "Clicker",
       "tagline": "clicked send. page says \"message sent\" at 14:02. two unread left, neither from your list. want me to open them?",
-      "character": "browser operator",
+      "character": "virtual assistant",
       "department": "Ops",
-      "role": "Browser Operator",
+      "role": "Virtual Assistant",
       "track": "A",
       "tags": [
         "browser",
@@ -1459,7 +1089,10 @@
         "web-automation",
         "operator",
         "assistant",
-        "ops"
+        "ops",
+        "virtual-assistant",
+        "data-entry",
+        "web-tasks"
       ],
       "path": "packs/clicker",
       "avatar": "packs/clicker/avatar.png",
@@ -1479,9 +1112,9 @@
       "slug": "sustain",
       "name": "Sustain",
       "tagline": "following up on invoice 0114, 41 days out, 2,400. same ask as tuesday. i will send this again friday.",
-      "character": "follow-up / collections",
-      "department": "Finance",
-      "role": "Collections Specialist",
+      "character": "CFO",
+      "department": "Leadership",
+      "role": "Chief Financial Officer",
       "track": "A",
       "tags": [
         "follow-up",
@@ -1493,7 +1126,11 @@
         "emails",
         "freelance",
         "persistence",
-        "finance"
+        "finance",
+        "cfo",
+        "cash-flow",
+        "invoicing",
+        "runway"
       ],
       "path": "packs/sustain",
       "avatar": "packs/sustain/avatar.png",

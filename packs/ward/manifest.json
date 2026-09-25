@@ -13,7 +13,10 @@
   },
   "plugins": [],
   "skills": [
-    "stop-overengineering"
+    "stop-overengineering",
+    "code-review",
+    "diagnose",
+    "simplify-code"
   ],
   "hooks": {},
   "avatar": null,
