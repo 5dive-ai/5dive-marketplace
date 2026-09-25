@@ -565,7 +565,7 @@
       "name": "Ace",
       "tagline": "\"no\" just means not in the pipeline yet. you opened the deck twice last night. we both know how this ends. annual or annual?",
       "character": "sales rep",
-      "department": "Sales",
+      "department": "Marketing",
       "role": "Sales Rep",
       "track": "A",
       "tags": [
@@ -583,7 +583,8 @@
         "closing",
         "crm",
         "sales-rep",
-        "prospecting"
+        "prospecting",
+        "marketing"
       ],
       "path": "packs/ace",
       "avatar": "packs/ace/avatar.png",
