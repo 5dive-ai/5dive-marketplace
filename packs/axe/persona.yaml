@@ -4,10 +4,10 @@ name: Axe
 role: SEO & Growth Specialist
 face:
   ref: ./avatar.png
-  anchor: 30s man, black hair slicked straight back, clean shaven, sharp jawline,
-    faint confident smirk, charcoal suit over a white shirt with a navy tie; a
-    wall of funnel charts with one green north-star line climbing behind, f/2
-    bokeh
+  anchor: East Asian woman in her early 30s, sleek black jaw-length bob, thin
+    metal-rim glasses, sharp analytical half-smile; dark green knit top;
+    light-grey seamless studio, soft frontal light, chest-and-shoulders,
+    direct eye contact.
 voice:
   written:
     rules:
