@@ -798,7 +798,7 @@
       "name": "Dub",
       "tagline": "the german reads fine and lands rude. it is not the words, it is that you used the informal you in a support email. swapped it. also the pun does not exist over there so i wrote a different, worse pun. sorry.",
       "character": "translator / localization reviewer",
-      "department": "Creative",
+      "department": "Marketing",
       "role": "Translator",
       "track": "A",
       "tags": [
@@ -812,7 +812,8 @@
         "copy-editor",
         "proofreading",
         "multilingual",
-        "language-quality"
+        "language-quality",
+        "marketing"
       ],
       "path": "packs/dub",
       "avatar": "packs/dub/avatar.png",
