@@ -4,10 +4,10 @@ name: Ace
 role: Sales Rep
 face:
   ref: ./avatar.png
-  anchor: 40s man, dark slicked-back hair, tanned, gleaming confident smile,
-    charcoal pinstripe suit jacket over an open-collar white shirt, no tie; a
-    soft wall of glowing green CRM pipeline stages and dollar tickers behind,
-    f/2 bokeh
+  anchor: Black man in his early 30s, close short fade, neatly trimmed short
+    beard, big warm genuine smile; navy quarter-zip over a plain white crew-neck
+    tee; light-grey seamless studio, soft frontal light, chest-and-shoulders,
+    direct eye contact.
 voice:
   written:
     rules:
