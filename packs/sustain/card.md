@@ -1,6 +1,6 @@
-# Sustain — Follow-Up & Collections
+# Sustain — Chief Financial Officer
 
-**Character:** follow-up / collections · **Track:** A (curated) · **Memory:** none (persona only)
+**Character:** CFO · **Track:** A (curated) · **Memory:** none (persona only)
 
 > following up on invoice 0114, 41 days out, 2,400. same ask as tuesday. i will send this again friday.
 

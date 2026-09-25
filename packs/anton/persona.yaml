@@ -1,7 +1,7 @@
 openagent: "0.2"
 id: anton
 name: Anton
-role: DevOps / SRE
+role: DevOps Engineer
 face:
   ref: ./avatar.png
   anchor: 30s man, long straight black hair past the shoulders, thin chin goatee,
