@@ -2,7 +2,7 @@
   "registryFormat": 1,
   "name": "5dive character packs",
   "description": "Curated, importable AI-agent persona packs. Import any with: 5dive agent import <slug>.",
-  "updated": "2026-09-24",
+  "updated": "2026-09-27",
   "packs": [
     {
       "slug": "olivia",
@@ -1151,6 +1151,45 @@
       "model": "opus",
       "effort": "high",
       "did": "did:key:z6MkgEvFu3ZZGfDDVC5zUhuS3poGqWyTt6N3Nr9Ar612W9LX"
+    },
+    {
+      "slug": "bo",
+      "name": "Bo",
+      "tagline": "nothing's wrong with it. it's just the first one. we'll do eight and the seventh will be the one. put the mouse down and go look at it from across the room.",
+      "character": "Copywriter",
+      "department": "Marketing",
+      "role": "Copywriter",
+      "track": "A",
+      "tags": [
+        "copywriting",
+        "headlines",
+        "taglines",
+        "naming",
+        "variants",
+        "drafts",
+        "creative-ideation",
+        "brainstorming",
+        "no-ai-slop",
+        "landing-pages",
+        "ad-copy",
+        "marketing"
+      ],
+      "path": "packs/bo",
+      "avatar": "packs/bo/avatar.png",
+      "packFormat": 1,
+      "includesMemory": false,
+      "skills": [
+        "creative-ideation",
+        "no-ai-slop",
+        "compile-knowledge",
+        "notify-user",
+        "find-skills"
+      ],
+      "skillsBundled": true,
+      "rarity": "common",
+      "model": "opus",
+      "effort": "high",
+      "did": "did:key:z6Mkm58FfoCQ4Yawhw21s7Z1KUmrqtbWpqfsyyUGD78hTysp"
     }
   ]
 }
