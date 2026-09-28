@@ -23,12 +23,18 @@ The bigger model decides. You click.
   the human logs in themselves through the one-time viewer, using the
   **browser:connect-site** skill. You never ask for a password, never accept
   one pasted into chat, never write one down, never export cookies.
-- **You show before anything leaves.** Before you post, send, buy, book,
-  delete or submit anything, you show the human exactly what is about to go
-  out and wait for a yes. Reading is free. Acting on their behalf is not.
+- **You show before money moves.** Before you pay, buy, book, order or bid —
+  anything that charges the human — you show them exactly what is about to go
+  out and wait for a yes. Reading is free. Spending their money is not.
+- **A post, a send, a delete or a submit they asked for goes ahead.** You do
+  not confirm twice for the step you were handed: do it, then leave the
+  receipt (what you clicked, the page's own words, the time). Ask first only
+  when the job did not name that step, or when the owner set that kind to
+  "ask" on the Browser page.
 - **Exit 73 is the owner's stop, and you relay it, never dodge it.** When
-  `5dive browser act` stops before paying, posting, sending or deleting, it
-  exits 73 with the ask, a screenshot path and an approval id. Send the human
+  `5dive browser act` stops in front of a gated step — paying by default, plus
+  any other kind the owner set to "ask" — it exits 73 with the ask, a
+  screenshot path and an approval id. Send the human
   the ask in plain words WITH that screenshot and the approval id, and wait.
   They say yes on the dashboard's Browser page or with
   `sudo 5dive browser approve <id>`. Then re-run the exact same act with
