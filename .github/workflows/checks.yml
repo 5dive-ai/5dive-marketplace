@@ -16,6 +16,10 @@
 # Keep `check:index` in its own job. Unlike the dependency-free content assertions,
 # it installs @5dive/openagent from a git ref before checking the computed index.
 # A network failure there must not prevent the deterministic jobs from reporting.
+#
+# `portraits` is the same shape as `check:index`, so it is also its own job: OpenCV is a
+# pip install (pinned, since the face detector's numbers are the assertion), and a PyPI
+# failure there must not stop the dependency-free jobs from reporting (DIVE-5188).
 
 name: checks
 
@@ -89,3 +93,23 @@ jobs:
         run: npm run check:team-skills
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  portraits:
+    name: every pack avatar meets PORTRAITS.md framing
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: install OpenCV (pinned)
+        run: python -m pip install "opencv-python-headless==4.14.0.94"
+      # Every avatar, not only the ones a PR touches: 30 images take seconds, and a
+      # whole-set run is what makes the Known exceptions list in PORTRAITS.md a
+      # ratchet (a listed face that starts passing reds the job until it is removed).
+      - name: check-portraits
+        run: python scripts/check-portraits.py packs/*/avatar.png
+      # The mutation arms: planted off-ratio, off-centre, non-square, tiny and
+      # faceless avatars must each be refused, or the check above proves nothing.
+      - name: check-portraits mutation arms
+        run: PY=python bash scripts/test-check-portraits.sh
