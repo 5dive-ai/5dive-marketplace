@@ -10,12 +10,12 @@ The list is a ratchet: a listed pack that now passes FAILS as `stale`, so it get
 the list instead of staying excused. Exit 1 on any FAIL.
 
 Adapted from OINOA's scripts/check-portraits.py (oinoa/oinoa-marketplace @ c79bbe7); the method
-is theirs, the numbers are 5dive's own (measured on our 30 packs, DIVE-5188)."""
+is theirs, the numbers are 5dive's own (DIVE-5188, re-set to the dark house look in DIVE-5222)."""
 import os, re, sys
 import cv2
 
 # metric: (low, target, high). The target is what frame-portrait.py aims at; low..high passes.
-SPEC = {"face_h": (0.49, 0.60, 0.65), "eyes_y": (0.37, 0.42, 0.47), "centre_x": (0.43, 0.50, 0.57)}
+SPEC = {"face_h": (0.45, 0.50, 0.56), "eyes_y": (0.35, 0.40, 0.45), "centre_x": (0.43, 0.50, 0.57)}
 MIN_SIDE = 512
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 cc = cv2.CascadeClassifier(os.path.join(cv2.data.haarcascades, "haarcascade_frontalface_default.xml"))
