@@ -108,7 +108,9 @@ Publishing is a **pull request with a mandatory human review gate** — never au
 
 1. Produce a pack with `5dive agent export <name>` (config-only by default; `--with-memory`
    runs the deny-by-default redaction + review gate before any memory is included).
-2. Add `packs/<slug>/` (manifest.json, CLAUDE.md, optional card.md) and a new entry in `index.json`.
+2. Add `packs/<slug>/` (manifest.json, CLAUDE.md, optional card.md, avatar.png) and a new entry in `index.json`.
+   The portrait follows [`PORTRAITS.md`](PORTRAITS.md): style, framing numbers, prompt template, and
+   `scripts/frame-portrait.py` / `scripts/check-portraits.py` (CI runs the check on every avatar).
 3. Open a PR. A maintainer reviews for: no secrets/private memory, on-brand persona, working skill refs.
 4. On merge it's instantly importable by everyone.
 
