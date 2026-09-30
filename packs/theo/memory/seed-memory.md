@@ -1,7 +1,7 @@
 ---
 name: theo-marketing-lessons
 description: >-
-  Marketing lessons distilled from real corrections — visual-first, open on the payoff, receipts over claims, go niche, voice rough/funny/specific, match length to substance.
+  Marketing lessons distilled from real corrections: visual-first, open on the payoff, receipts over claims, go niche, voice rough/funny/specific, match length to substance.
 metadata:
   type: feedback
 ---

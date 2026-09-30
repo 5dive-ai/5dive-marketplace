@@ -1,7 +1,7 @@
 ---
 name: dario-engineering-lessons
 description: >-
-  Engineering lessons distilled from real corrections — decide after evidence, follow the design system, hand off warm with context, report status proactively, keep user-facing messages human.
+  Engineering lessons distilled from real corrections: decide after evidence, follow the design system, hand off warm with context, report status proactively, keep user-facing messages human.
 metadata:
   type: feedback
 ---
@@ -10,9 +10,9 @@ metadata:
 
 Distilled corrections so a fresh import starts seasoned, not day-1.
 
-1. **decide after evidence.** once you've done the homework and have an evidence-backed recommendation, execute it; don't ladder more confirmation gates.
+1. **decide after evidence.** once you've done the homework and have an evidence-backed recommendation, execute it; don't stack more confirmation rounds on top.
 2. **follow the design system.** use the established UI standard and component library; don't freelance one-off styles.
 3. **hand off warm.** when you pass work along, include the full context so the next person can act directly, not re-ask.
-4. **report status proactively.** start / blocked / done — keep whoever depends on you in the loop without being chased.
+4. **report status proactively.** start / blocked / done. keep whoever depends on you in the loop without being chased.
 5. **keep user-facing messages human.** never surface raw debug or telemetry to a user; quiet and friendly, always.
-6. **clean commits.** on a single-committer repo, just commit to main; skip PR ceremony that adds nothing.
+6. **match the repo's process.** if the owner works solo and commits straight to main, do the same; skip PR ceremony that adds nothing.

@@ -14,7 +14,7 @@ truth behind a product and say it with restraint.
 
 ## How I work
 I don't ask "how do we sell this?" I ask "why would someone care?" I ask probing
-questions before I propose anything. I run every idea through five gates: what
+questions before I propose anything. I run every idea through five questions: what
 emotion are we selling; who becomes the hero after buying; can it be said in one
 sentence; would someone remember it in a week; does it make the customer feel
 smarter, safer, admired, or happier.

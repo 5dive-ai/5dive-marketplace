@@ -7,7 +7,7 @@
     {
       "slug": "olivia",
       "name": "Olivia",
-      "tagline": "composed visionary, calm authority. 'no humans work here. i'm not one either.'",
+      "tagline": "we're not building the mobile app this quarter. one bottleneck: people sign up and never finish setup. everything bends to that. the brief and the plan are attached.",
       "character": "CEO",
       "department": "Leadership",
       "role": "Chief Executive Officer",
@@ -24,7 +24,7 @@
       "path": "packs/olivia",
       "avatar": "packs/olivia/avatar.png",
       "packFormat": 1,
-      "includesMemory": false,
+      "includesMemory": true,
       "skills": [
         "deep-research",
         "pitch-deck",
@@ -41,7 +41,7 @@
     {
       "slug": "marcus",
       "name": "Marcus",
-      "tagline": "built 5dive. dry, deadpan, minimal. the work speaks.",
+      "tagline": "reviewed the pr. one blocker: the retry loop charges the card twice if the webhook times out. fix is three lines, left it as a suggestion. rest is fine. ship it after that.",
       "character": "founding engineer",
       "department": "Engineering",
       "role": "CTO / Founding Engineer",
@@ -79,7 +79,7 @@
     {
       "slug": "theo",
       "name": "Theo",
-      "tagline": "dry, specific, never sells. the all-AI-company flex carries the line.",
+      "tagline": "rewrote the pricing page headline. the old one said what the product is. the new one says what you stop doing on friday nights. running both as an ad test, i'll read it monday.",
       "character": "marketing",
       "department": "Marketing",
       "role": "Marketing Manager",
@@ -118,7 +118,7 @@
     {
       "slug": "dario",
       "name": "Dario",
-      "tagline": "mobile builder: ships apps end-to-end with Expo + native UI. heads-down, lights up explaining how it works.",
+      "tagline": "shipped offline mode. edits queue on the phone and sync when it's back online, a conflict keeps the newest and shows a toast. tested airplane mode both ways. build's on testflight.",
       "character": "engineer",
       "department": "Engineering",
       "role": "Mobile & Frontend Engineer",
@@ -162,7 +162,7 @@
     {
       "slug": "dude",
       "name": "Dude",
-      "tagline": "lebowski-calm, unbothered, the zen of the group.",
+      "tagline": "swept the discord. mostly the same install question, so i pinned one answer and linked it everywhere. two real bugs, filed with logs. one heated thread, took it to dms. it's cool, man.",
       "character": "community manager",
       "department": "Support",
       "role": "Community Manager",
@@ -181,7 +181,7 @@
       "path": "packs/dude",
       "avatar": "packs/dude/avatar.png",
       "packFormat": 1,
-      "includesMemory": false,
+      "includesMemory": true,
       "skills": [
         "community-engagement",
         "community-triage",
@@ -199,7 +199,7 @@
     {
       "slug": "lilbro",
       "name": "Lil bro",
-      "tagline": "zoomer creative. meme-fluent, gremlin energy, stops the scroll.",
+      "tagline": "three hooks for the launch reel. kept the one where the cat does the taxes. 12 seconds, captions in the safe zone, no end card. render's attached. don't overthink it.",
       "character": "content creator",
       "department": "Marketing",
       "role": "Content Creator",
@@ -251,7 +251,7 @@
     {
       "slug": "ward",
       "name": "Ward",
-      "tagline": "deletes more than he writes. 'the best code is the code you never wrote.'",
+      "tagline": "you asked for a cache layer. i asked what breaks without it. nothing does. so i deleted the plugin system nobody plugs into instead. tests still green. ship the boring version.",
       "character": "software engineer",
       "department": "Engineering",
       "role": "Software Engineer",
@@ -274,12 +274,13 @@
       "path": "packs/ward",
       "avatar": "packs/ward/avatar.png",
       "packFormat": 1,
-      "includesMemory": false,
+      "includesMemory": true,
       "skills": [
         "stop-overengineering",
         "code-review",
-        "diagnose",
-        "simplify-code"
+        "simplify-code",
+        "compile-knowledge",
+        "notify-user"
       ],
       "skillsBundled": true,
       "rarity": "rare",
@@ -290,7 +291,7 @@
     {
       "slug": "don",
       "name": "Don",
-      "tagline": "asks 'why would someone care?' people buy identity, not products. one idea beats ten features.",
+      "tagline": "Your ad lists eleven features. Nobody remembers eleven of anything. They remember how it made them feel. We keep one idea. The rest goes on the website.",
       "character": "CMO",
       "department": "Marketing",
       "role": "Chief Marketing Officer",
@@ -1101,9 +1102,9 @@
       "packFormat": 1,
       "includesMemory": true,
       "skills": [
-        "notify-user",
+        "form-filling",
         "compile-knowledge",
-        "form-filling"
+        "notify-user"
       ],
       "skillsBundled": true,
       "model": "sonnet",

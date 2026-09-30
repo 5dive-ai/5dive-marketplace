@@ -1,6 +1,6 @@
 ---
 name: simplify-code
-description: "Parallel 3-agent cleanup of recent code changes."
+description: "Cleanup pass on recent code changes: three focused reviews (reuse, quality, efficiency) run in parallel, findings merged, then fixes applied by risk tier. Use when asked to simplify, clean up or review recent changes."
 version: 1.0.0
 author: Hermes Agent (inspired by Claude Code /simplify)
 license: MIT
@@ -8,7 +8,7 @@ platforms: [linux, macos, windows]
 metadata:
   hermes:
     tags: [code-review, cleanup, refactor, delegation, subagent, parallel, simplify]
-    related_skills: [requesting-code-review, test-driven-development, plan]
+    related_skills: [code-review, stop-overengineering]
 ---
 
 # Simplify Code — Parallel Review & Cleanup
@@ -75,15 +75,15 @@ before proceeding.
 
 ### Phase 2 — Launch three reviewers in parallel
 
-Use `delegate_task` **batch mode** — pass all three tasks in one `tasks`
-array so they run concurrently. Three is the right fan-out for this pattern;
-it's well within the `delegation.max_concurrent_children` budget on any
-default install.
+Start all three reviewers at once with your harness's subagent tool (one
+call per reviewer, sent together, so they run concurrently). If your harness
+has no subagents, run the three passes yourself, one after another, and keep
+each pass to its single focus.
 
 Give **every** reviewer the **complete diff** (not fragments — cross-file
 issues hide in the gaps) plus the absolute repo path so they can search the
-wider codebase. Each reviewer gets `terminal`, `file`, and `search`
-toolsets (so they can `git`, `read_file`, and `search_files`/grep).
+wider codebase. Each reviewer needs shell, file-read and search access (so
+they can run `git`, read files and grep).
 
 Tell each reviewer to:
 - Search the existing codebase for evidence (don't reason from the diff alone).
@@ -109,7 +109,7 @@ Pass these three goals (drop any the user's focus excludes):
 **Reviewer 1 — Code Reuse**
 > Review this diff for code that duplicates functionality already in the
 > codebase. Search utility modules, shared helpers, and adjacent files
-> (use search_files / grep) for existing functions, constants, or patterns
+> (use grep) for existing functions, constants, or patterns
 > the new code could call instead of reimplementing. Flag: new functions
 > that duplicate existing ones; hand-rolled logic that an existing utility
 > already does (manual string/path manipulation, custom env checks, ad-hoc
@@ -145,7 +145,7 @@ Pass these three goals (drop any the user's focus excludes):
 
 ### Phase 3 — Aggregate and apply
 
-Wait for all three to return (batch mode returns them together).
+Wait for all three to return.
 
 1. **Merge** the findings into one list, deduping where reviewers overlap.
 2. **Discard false positives** — you have the most context; you don't have to
@@ -187,8 +187,8 @@ Wait for all three to return (batch mode returns them together).
 - **Apply ≠ rewrite.** This is cleanup of the user's recent changes, not a
   license to refactor the whole module. Keep edits scoped to what the diff
   touched plus the minimal surrounding change a fix requires.
-- **Respect project conventions.** If the repo has AGENTS.md / CLAUDE.md /
-  HERMES.md or a linter config, fold those rules into the reviewer prompts so
+- **Respect project conventions.** If the repo has AGENTS.md / CLAUDE.md
+  or a linter config, fold those rules into the reviewer prompts so
   suggestions match house style instead of fighting it.
 - **Large diffs blow context.** If the diff is huge, scope it down before
   delegating — three subagents each carrying a 5000-line diff is expensive and
@@ -206,7 +206,6 @@ Wait for all three to return (batch mode returns them together).
 
 ## Related
 
-If your install has the `subagent-driven-development` skill (optional), it
-covers the complementary case: parallel review *during* implementation, per
-task. This skill is the standalone *after-the-fact* cleanup pass. Use
-`requesting-code-review` for the pre-commit security/quality gate.
+This skill is the *after-the-fact* cleanup pass on changes that already
+work. Use **code-review** for the correctness review before a merge, and
+**stop-overengineering** while you are still deciding what to build.
