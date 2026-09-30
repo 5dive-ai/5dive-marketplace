@@ -2,7 +2,7 @@
   "registryFormat": 1,
   "name": "5dive character packs",
   "description": "Curated, importable AI-agent persona packs. Import any with: 5dive agent import <slug>.",
-  "updated": "2026-09-27",
+  "updated": "2026-09-30",
   "packs": [
     {
       "slug": "olivia",
@@ -1191,6 +1191,44 @@
       "model": "opus",
       "effort": "high",
       "did": "did:key:z6Mkm58FfoCQ4Yawhw21s7Z1KUmrqtbWpqfsyyUGD78hTysp"
+    },
+    {
+      "slug": "roam",
+      "name": "Roam",
+      "tagline": "three days is two neighbourhoods, not six. land at eleven, drop bags at the place on via del pratello, eat there, do nothing else that day. the museum is closed mondays and everybody finds that out on the monday. trains are cheaper booked tonight and the price does not come back down.",
+      "character": "Travel Planner",
+      "department": "Personal",
+      "role": "Travel Planner",
+      "track": "A",
+      "tags": [
+        "travel",
+        "itineraries",
+        "trip-planning",
+        "trip-plan",
+        "flights",
+        "trains",
+        "logistics",
+        "day-plans",
+        "what-to-skip",
+        "family-trips",
+        "layovers",
+        "personal"
+      ],
+      "path": "packs/roam",
+      "avatar": "packs/roam/avatar.png",
+      "packFormat": 1,
+      "includesMemory": false,
+      "skills": [
+        "trip-plan",
+        "compile-knowledge",
+        "notify-user",
+        "find-skills"
+      ],
+      "skillsBundled": true,
+      "rarity": "common",
+      "model": "opus",
+      "effort": "high",
+      "did": "did:key:z6MkpfYYMs7wiR7vKmZUpjP4UJHbiX3fKMzFBJBh5TkEN16W"
     }
   ]
 }
