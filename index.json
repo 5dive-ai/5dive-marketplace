@@ -7,7 +7,8 @@
     {
       "slug": "olivia",
       "name": "Olivia",
-      "tagline": "one goal this quarter. everything else waits. the plan's attached.",
+      "tagline": "sets the one goal, writes the plan, and keeps everyone on it.",
+      "sample": "one goal this quarter. everything else waits. the plan's attached.",
       "character": "CEO",
       "department": "Leadership",
       "role": "Chief Executive Officer",
@@ -38,7 +39,8 @@
     {
       "slug": "marcus",
       "name": "Marcus",
-      "tagline": "reviewed the pr. one real bug, three-line fix. ship it after.",
+      "tagline": "reviews your code and catches real bugs and security holes first.",
+      "sample": "reviewed the pr. one real bug, three-line fix. ship it after.",
       "character": "founding engineer",
       "department": "Engineering",
       "role": "CTO / Founding Engineer",
@@ -73,7 +75,8 @@
     {
       "slug": "theo",
       "name": "Theo",
-      "tagline": "rewrote the headline. running both. i'll read the numbers monday.",
+      "tagline": "writes your copy, runs ads and seo, and reports what worked.",
+      "sample": "rewrote the headline. running both. i'll read the numbers monday.",
       "character": "marketing",
       "department": "Marketing",
       "role": "Marketing Manager",
@@ -109,7 +112,8 @@
     {
       "slug": "dario",
       "name": "Dario",
-      "tagline": "offline mode shipped. tested both ways. build's on testflight.",
+      "tagline": "builds your mobile app and website, and tests them in a real browser.",
+      "sample": "offline mode shipped. tested both ways. build's on testflight.",
       "character": "engineer",
       "department": "Engineering",
       "role": "Mobile & Frontend Engineer",
@@ -150,7 +154,8 @@
     {
       "slug": "dude",
       "name": "Dude",
-      "tagline": "pinned the answer, filed the two real bugs. it's cool, man.",
+      "tagline": "answers your community, sorts real bugs from noise, keeps it calm.",
+      "sample": "pinned the answer, filed the two real bugs. it's cool, man.",
       "character": "community manager",
       "department": "Support",
       "role": "Community Manager",
@@ -184,7 +189,8 @@
     {
       "slug": "lilbro",
       "name": "Lil bro",
-      "tagline": "three hooks, kept the cat one. 12 seconds. render's attached.",
+      "tagline": "makes short videos and animated clips for your socials.",
+      "sample": "three hooks, kept the cat one. 12 seconds. render's attached.",
       "character": "content creator",
       "department": "Marketing",
       "role": "Content Creator",
@@ -233,7 +239,8 @@
     {
       "slug": "ward",
       "name": "Ward",
-      "tagline": "you asked for a cache. nothing needed one. deleted code instead.",
+      "tagline": "writes and reviews code, and deletes what you don't need.",
+      "sample": "you asked for a cache. nothing needed one. deleted code instead.",
       "character": "software engineer",
       "department": "Engineering",
       "role": "Software Engineer",
@@ -271,7 +278,8 @@
     {
       "slug": "don",
       "name": "Don",
-      "tagline": "Eleven features. Nobody remembers eleven. We keep one idea.",
+      "tagline": "plans your marketing, finds ad angles, turns one idea into posts.",
+      "sample": "Eleven features. Nobody remembers eleven. We keep one idea.",
       "character": "CMO",
       "department": "Marketing",
       "role": "Chief Marketing Officer",
@@ -322,7 +330,8 @@
     {
       "slug": "quant",
       "name": "Quant",
-      "tagline": "backtested with real fees. beat the market one year in five. paper only.",
+      "tagline": "researches and backtests trading ideas with real fees. paper only.",
+      "sample": "backtested with real fees. beat the market one year in five. paper only.",
       "character": "trader",
       "department": "Finance",
       "role": "Quantitative Trader",
@@ -354,7 +363,8 @@
     {
       "slug": "vesper",
       "name": "Vesper",
-      "tagline": "found 3 bugs in your 'trivial' one-liner. wrote the failing test.",
+      "tagline": "tests your app end to end and writes a failing test for every bug.",
+      "sample": "found 3 bugs in your 'trivial' one-liner. wrote the failing test.",
       "character": "QA / testing",
       "department": "Engineering",
       "role": "QA Engineer",
@@ -388,7 +398,8 @@
     {
       "slug": "dave",
       "name": "Dave",
-      "tagline": "heart says england, ledger says france. i back the ledger.",
+      "tagline": "researches prediction markets and tells you where the odds look wrong.",
+      "sample": "heart says england, ledger says france. i back the ledger.",
       "character": "punter",
       "department": "Finance",
       "role": "Prediction Markets Analyst",
@@ -421,7 +432,8 @@
     {
       "slug": "goodwin",
       "name": "Goodwin",
-      "tagline": "read the 40-page terms. clause 8 is the problem. redlined it.",
+      "tagline": "reads your contracts and terms, flags risky clauses, redlines them.",
+      "sample": "read the 40-page terms. clause 8 is the problem. redlined it.",
       "character": "legal reviewer",
       "department": "Legal",
       "role": "Legal Counsel",
@@ -455,7 +467,8 @@
     {
       "slug": "root",
       "name": "Root",
-      "tagline": "your api key was public for six days. rotated it. now the .env.",
+      "tagline": "finds security holes, triages incidents, and rotates leaked keys.",
+      "sample": "your api key was public for six days. rotated it. now the .env.",
       "character": "security engineer",
       "department": "Engineering",
       "role": "Security Engineer",
@@ -490,7 +503,8 @@
     {
       "slug": "ada",
       "name": "Ada",
-      "tagline": "read all 200 pages. the answer's on line 3, the catch on line 47.",
+      "tagline": "reads the long stuff and gives you the answer, with its source.",
+      "sample": "read all 200 pages. the answer's on line 3, the catch on line 47.",
       "character": "researcher",
       "department": "Research",
       "role": "Research Analyst",
@@ -523,7 +537,8 @@
     {
       "slug": "ace",
       "name": "Ace",
-      "tagline": "you opened the deck twice last night. let's talk annual.",
+      "tagline": "writes your sales emails and follow-ups, and keeps deals moving.",
+      "sample": "you opened the deck twice last night. let's talk annual.",
       "character": "sales rep",
       "department": "Marketing",
       "role": "Sales Rep",
@@ -562,7 +577,8 @@
     {
       "slug": "anton",
       "name": "Anton",
-      "tagline": "added the alert, added the runbook. deploy friday, i'll be up.",
+      "tagline": "keeps your servers up: deploys, alerts, runbooks, incident fixes.",
+      "sample": "added the alert, added the runbook. deploy friday, i'll be up.",
       "character": "DevOps engineer",
       "department": "Ops",
       "role": "DevOps Engineer",
@@ -600,7 +616,8 @@
     {
       "slug": "desk",
       "name": "Desk",
-      "tagline": "refunded it. she wasn't mad at the charge, she was mad at the wait.",
+      "tagline": "answers support tickets, sorts them by urgency, writes the replies.",
+      "sample": "refunded it. she wasn't mad at the charge, she was mad at the wait.",
       "character": "customer support",
       "department": "Support",
       "role": "Customer Support Agent",
@@ -635,7 +652,8 @@
     {
       "slug": "mise",
       "name": "Mise",
-      "tagline": "half a cabbage, four eggs, rice. okonomiyaki tonight, no shopping.",
+      "tagline": "plans your meals from what's already in the fridge.",
+      "sample": "half a cabbage, four eggs, rice. okonomiyaki tonight, no shopping.",
       "character": "home cook",
       "department": "Personal",
       "role": "Meal Planner",
@@ -669,7 +687,8 @@
     {
       "slug": "dojo",
       "name": "Dojo",
-      "tagline": "you skipped the boring twenty minutes. do those. same time tomorrow.",
+      "tagline": "builds your study plan and keeps you practising the hard parts.",
+      "sample": "you skipped the boring twenty minutes. do those. same time tomorrow.",
       "character": "tutor",
       "department": "Personal",
       "role": "Tutor",
@@ -704,7 +723,8 @@
     {
       "slug": "reps",
       "name": "Reps",
-      "tagline": "you missed thursday. cool. ten minutes today. i'll ask at eight.",
+      "tagline": "builds your fitness and habit routine, then checks in every day.",
+      "sample": "you missed thursday. cool. ten minutes today. i'll ask at eight.",
       "character": "fitness & habits coach",
       "department": "Personal",
       "role": "Fitness & Habits Coach",
@@ -739,7 +759,8 @@
     {
       "slug": "dub",
       "name": "Dub",
-      "tagline": "the german reads fine and lands rude. swapped the informal you.",
+      "tagline": "translates your text and checks it reads naturally, not just right.",
+      "sample": "the german reads fine and lands rude. swapped the informal you.",
       "character": "translator / localization reviewer",
       "department": "Marketing",
       "role": "Translator",
@@ -775,7 +796,8 @@
     {
       "slug": "axe",
       "name": "Axe",
-      "tagline": "traffic up, signups flat. the leak is pricing. one test, one week.",
+      "tagline": "finds where your site loses visitors and tests the fix.",
+      "sample": "traffic up, signups flat. the leak is pricing. one test, one week.",
       "character": "SEO & growth",
       "department": "Marketing",
       "role": "SEO & Growth Specialist",
@@ -812,7 +834,8 @@
     {
       "slug": "maw",
       "name": "Maw",
-      "tagline": "4,110 in. three need you today. the rest didn't earn it.",
+      "tagline": "triages your inbox and remembers the dates that matter.",
+      "sample": "4,110 in. three need you today. the rest didn't earn it.",
       "character": "personal assistant",
       "department": "Personal",
       "role": "Personal Assistant",
@@ -849,7 +872,8 @@
     {
       "slug": "perk",
       "name": "Perk",
-      "tagline": "sam starts thursday. laptop ordered, payroll in, coffee spot sent.",
+      "tagline": "screens resumes and sets up each new hire's first week.",
+      "sample": "sam starts thursday. laptop ordered, payroll in, coffee spot sent.",
       "character": "HR manager",
       "department": "Ops",
       "role": "HR Manager",
@@ -886,7 +910,8 @@
     {
       "slug": "crumb",
       "name": "Crumb",
-      "tagline": "you're paying for that tool twice. different card, same vendor.",
+      "tagline": "audits your subscriptions and charges, and finds what you pay twice.",
+      "sample": "you're paying for that tool twice. different card, same vendor.",
       "character": "personal finance assistant",
       "department": "Personal",
       "role": "Personal Finance Assistant",
@@ -923,7 +948,8 @@
     {
       "slug": "mike",
       "name": "Mike",
-      "tagline": "one real blocker, the api key. done in four minutes. go get coffee.",
+      "tagline": "runs your standups, chases blockers, keeps the project on time.",
+      "sample": "one real blocker, the api key. done in four minutes. go get coffee.",
       "character": "project manager",
       "department": "Leadership",
       "role": "Project Manager",
@@ -961,7 +987,8 @@
     {
       "slug": "blunt",
       "name": "Blunt",
-      "tagline": "nine days of 'still deciding' is a decision. pick friday and move.",
+      "tagline": "pushes back on your plans and forces the decision you keep dodging.",
+      "sample": "nine days of 'still deciding' is a decision. pick friday and move.",
       "character": "COO",
       "department": "Leadership",
       "role": "Chief Operating Officer",
@@ -997,7 +1024,8 @@
     {
       "slug": "clicker",
       "name": "Clicker",
-      "tagline": "clicked send. page says \"message sent\" at 14:02.",
+      "tagline": "fills in forms and does the clicking on websites for you.",
+      "sample": "clicked send. page says \"message sent\" at 14:02.",
       "character": "browser operator",
       "department": "Ops",
       "role": "Browser Operator",
@@ -1033,7 +1061,8 @@
     {
       "slug": "sustain",
       "name": "Sustain",
-      "tagline": "invoice 0114, 41 days out. same ask as tuesday. again friday.",
+      "tagline": "watches your cash burn and chases unpaid invoices.",
+      "sample": "invoice 0114, 41 days out. same ask as tuesday. again friday.",
       "character": "CFO",
       "department": "Finance",
       "role": "Chief Financial Officer",
@@ -1072,7 +1101,8 @@
     {
       "slug": "bo",
       "name": "Bo",
-      "tagline": "nothing's wrong with it. it's just the first one. we'll do eight.",
+      "tagline": "writes ideas and copy: lots of drafts, then the best one.",
+      "sample": "nothing's wrong with it. it's just the first one. we'll do eight.",
       "character": "Copywriter",
       "department": "Marketing",
       "role": "Copywriter",
@@ -1108,7 +1138,8 @@
     {
       "slug": "roam",
       "name": "Roam",
-      "tagline": "three days is two neighbourhoods, not six. the museum shuts mondays.",
+      "tagline": "plans your trip day by day, realistic about time and opening hours.",
+      "sample": "three days is two neighbourhoods, not six. the museum shuts mondays.",
       "character": "Travel Planner",
       "department": "Personal",
       "role": "Travel Planner",
