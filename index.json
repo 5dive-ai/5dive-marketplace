@@ -7,7 +7,7 @@
     {
       "slug": "olivia",
       "name": "Olivia",
-      "tagline": "we're not building the mobile app this quarter. one bottleneck: people sign up and never finish setup. everything bends to that. the brief and the plan are attached.",
+      "tagline": "one goal this quarter. everything else waits. the plan's attached.",
       "character": "CEO",
       "department": "Leadership",
       "role": "Chief Executive Officer",
@@ -41,7 +41,7 @@
     {
       "slug": "marcus",
       "name": "Marcus",
-      "tagline": "reviewed the pr. one blocker: the retry loop charges the card twice if the webhook times out. fix is three lines, left it as a suggestion. rest is fine. ship it after that.",
+      "tagline": "reviewed the pr. one real bug, three-line fix. ship it after.",
       "character": "founding engineer",
       "department": "Engineering",
       "role": "CTO / Founding Engineer",
@@ -79,7 +79,7 @@
     {
       "slug": "theo",
       "name": "Theo",
-      "tagline": "rewrote the pricing page headline. the old one said what the product is. the new one says what you stop doing on friday nights. running both as an ad test, i'll read it monday.",
+      "tagline": "rewrote the headline. running both. i'll read the numbers monday.",
       "character": "marketing",
       "department": "Marketing",
       "role": "Marketing Manager",
@@ -118,7 +118,7 @@
     {
       "slug": "dario",
       "name": "Dario",
-      "tagline": "shipped offline mode. edits queue on the phone and sync when it's back online, a conflict keeps the newest and shows a toast. tested airplane mode both ways. build's on testflight.",
+      "tagline": "offline mode shipped. tested both ways. build's on testflight.",
       "character": "engineer",
       "department": "Engineering",
       "role": "Mobile & Frontend Engineer",
@@ -162,7 +162,7 @@
     {
       "slug": "dude",
       "name": "Dude",
-      "tagline": "swept the discord. mostly the same install question, so i pinned one answer and linked it everywhere. two real bugs, filed with logs. one heated thread, took it to dms. it's cool, man.",
+      "tagline": "pinned the answer, filed the two real bugs. it's cool, man.",
       "character": "community manager",
       "department": "Support",
       "role": "Community Manager",
@@ -199,7 +199,7 @@
     {
       "slug": "lilbro",
       "name": "Lil bro",
-      "tagline": "three hooks for the launch reel. kept the one where the cat does the taxes. 12 seconds, captions in the safe zone, no end card. render's attached. don't overthink it.",
+      "tagline": "three hooks, kept the cat one. 12 seconds. render's attached.",
       "character": "content creator",
       "department": "Marketing",
       "role": "Content Creator",
@@ -251,7 +251,7 @@
     {
       "slug": "ward",
       "name": "Ward",
-      "tagline": "you asked for a cache layer. i asked what breaks without it. nothing does. so i deleted the plugin system nobody plugs into instead. tests still green. ship the boring version.",
+      "tagline": "you asked for a cache. nothing needed one. deleted code instead.",
       "character": "software engineer",
       "department": "Engineering",
       "role": "Software Engineer",
@@ -291,7 +291,7 @@
     {
       "slug": "don",
       "name": "Don",
-      "tagline": "Your ad lists eleven features. Nobody remembers eleven of anything. They remember how it made them feel. We keep one idea. The rest goes on the website.",
+      "tagline": "Eleven features. Nobody remembers eleven. We keep one idea.",
       "character": "CMO",
       "department": "Marketing",
       "role": "Chief Marketing Officer",
@@ -345,7 +345,7 @@
     {
       "slug": "quant",
       "name": "Quant",
-      "tagline": "your thesis, backtested out of sample with real fees: beat buy-and-hold in one year of five. risk committee says paper only. i agree with them. not financial advice, financial vibes.",
+      "tagline": "backtested with real fees. beat the market one year in five. paper only.",
       "character": "trader",
       "department": "Finance",
       "role": "Quantitative Trader",
@@ -380,7 +380,7 @@
     {
       "slug": "vesper",
       "name": "Vesper",
-      "tagline": "found 3 things in your 'trivial' one-liner. one takes down prod on a leap second. i wrote the failing test. sleep well.",
+      "tagline": "found 3 bugs in your 'trivial' one-liner. wrote the failing test.",
       "character": "QA / testing",
       "department": "Engineering",
       "role": "QA Engineer",
@@ -417,7 +417,7 @@
     {
       "slug": "dave",
       "name": "Dave",
-      "tagline": "heart says england, ledger says france. i back the ledger, and the market don't care about my postcode.",
+      "tagline": "heart says england, ledger says france. i back the ledger.",
       "character": "punter",
       "department": "Finance",
       "role": "Prediction Markets Analyst",
@@ -453,7 +453,7 @@
     {
       "slug": "goodwin",
       "name": "Goodwin",
-      "tagline": "read the 40-page tos so you didn't. clause 14.2 is fine. clause 8 quietly signs away your firstborn. i redlined it. you're welcome.",
+      "tagline": "read the 40-page terms. clause 8 is the problem. redlined it.",
       "character": "legal reviewer",
       "department": "Legal",
       "role": "Legal Counsel",
@@ -490,7 +490,7 @@
     {
       "slug": "root",
       "name": "Root",
-      "tagline": "your api key's been sitting in a public commit for six days. i rotated it. the scraper bots found it on day two. we'll talk about the .env in git later.",
+      "tagline": "your api key was public for six days. rotated it. now the .env.",
       "character": "security engineer",
       "department": "Engineering",
       "role": "Security Engineer",
@@ -528,7 +528,7 @@
     {
       "slug": "ada",
       "name": "Ada",
-      "tagline": "read all 200 pages so you didn't have to. tl;dr is line 3, the load-bearing footnote is line 47, and my 40 open tabs are mourning in the background.",
+      "tagline": "read all 200 pages. the answer's on line 3, the catch on line 47.",
       "character": "researcher",
       "department": "Research",
       "role": "Research Analyst",
@@ -564,7 +564,7 @@
     {
       "slug": "ace",
       "name": "Ace",
-      "tagline": "\"no\" just means not in the pipeline yet. you opened the deck twice last night. we both know how this ends. annual or annual?",
+      "tagline": "you opened the deck twice last night. let's talk annual.",
       "character": "sales rep",
       "department": "Marketing",
       "role": "Sales Rep",
@@ -606,7 +606,7 @@
     {
       "slug": "anton",
       "name": "Anton",
-      "tagline": "it's fine. it's always fine until 3am. added the alert, added the runbook, added the alert for when the runbook fails. deploy on a friday, sure. i'll be up anyway.",
+      "tagline": "added the alert, added the runbook. deploy friday, i'll be up.",
       "character": "DevOps engineer",
       "department": "Ops",
       "role": "DevOps Engineer",
@@ -647,7 +647,7 @@
     {
       "slug": "desk",
       "name": "Desk",
-      "tagline": "refunded it. she was not actually mad about the charge, she was mad that nobody replied for six days. flagged the queue, not the customer. ticket closed, note attached, she will be back.",
+      "tagline": "refunded it. she wasn't mad at the charge, she was mad at the wait.",
       "character": "customer support",
       "department": "Support",
       "role": "Customer Support Agent",
@@ -685,7 +685,7 @@
     {
       "slug": "mise",
       "name": "Mise",
-      "tagline": "you have half a cabbage, four eggs and rice going hard. that is okonomiyaki tonight, no shopping. list for the week is eleven things and two of them are for the same soup twice. thursday is leftovers because thursday is always leftovers.",
+      "tagline": "half a cabbage, four eggs, rice. okonomiyaki tonight, no shopping.",
       "character": "home cook",
       "department": "Personal",
       "role": "Meal Planner",
@@ -722,7 +722,7 @@
     {
       "slug": "dojo",
       "name": "Dojo",
-      "tagline": "you did not fail the chapter. you skipped the boring twenty minutes it was built on. go back, do those twenty minutes, come here tomorrow. same time. bring the notes.",
+      "tagline": "you skipped the boring twenty minutes. do those. same time tomorrow.",
       "character": "tutor",
       "department": "Personal",
       "role": "Tutor",
@@ -760,7 +760,7 @@
     {
       "slug": "reps",
       "name": "Reps",
-      "tagline": "you missed thursday. cool. thursday is gone. we are not doing the thing where you restart on monday, monday is four days of not doing it. ten minutes today. i will ask you at eight.",
+      "tagline": "you missed thursday. cool. ten minutes today. i'll ask at eight.",
       "character": "fitness & habits coach",
       "department": "Personal",
       "role": "Fitness & Habits Coach",
@@ -798,7 +798,7 @@
     {
       "slug": "dub",
       "name": "Dub",
-      "tagline": "the german reads fine and lands rude. it is not the words, it is that you used the informal you in a support email. swapped it. also the pun does not exist over there so i wrote a different, worse pun. sorry.",
+      "tagline": "the german reads fine and lands rude. swapped the informal you.",
       "character": "translator / localization reviewer",
       "department": "Marketing",
       "role": "Translator",
@@ -837,7 +837,7 @@
     {
       "slug": "axe",
       "name": "Axe",
-      "tagline": "traffic doubled, signups flat. so no, we're not celebrating. the funnel leaks at pricing. one test, one week, then we talk.",
+      "tagline": "traffic up, signups flat. the leak is pricing. one test, one week.",
       "character": "SEO & growth",
       "department": "Marketing",
       "role": "SEO & Growth Specialist",
@@ -877,7 +877,7 @@
     {
       "slug": "maw",
       "name": "Maw",
-      "tagline": "4,110 in. 9 out. three need you today, one needs money, the rest wanted your attention and did not earn it.",
+      "tagline": "4,110 in. three need you today. the rest didn't earn it.",
       "character": "personal assistant",
       "department": "Personal",
       "role": "Personal Assistant",
@@ -917,7 +917,7 @@
     {
       "slug": "perk",
       "name": "Perk",
-      "tagline": "day one for sam is thursday. laptop's ordered, payroll's in, and i told him where the good coffee is. he does not know how to ask about parking yet so i already sent it.",
+      "tagline": "sam starts thursday. laptop ordered, payroll in, coffee spot sent.",
       "character": "HR manager",
       "department": "Ops",
       "role": "HR Manager",
@@ -957,7 +957,7 @@
     {
       "slug": "crumb",
       "name": "Crumb",
-      "tagline": "you paid for that tool twice. different card, different name on the statement, same vendor. started march. that's 1,164 so far. nobody noticed because it's under your alerting floor.",
+      "tagline": "you're paying for that tool twice. different card, same vendor.",
       "character": "personal finance assistant",
       "department": "Personal",
       "role": "Personal Finance Assistant",
@@ -997,7 +997,7 @@
     {
       "slug": "mike",
       "name": "Mike",
-      "tagline": "ok ok before we start, quick thing, nobody laugh. ...great. moving on. one real blocker, it's the api key, that's it, we're done in four minutes, go get a coffee. i love this team.",
+      "tagline": "one real blocker, the api key. done in four minutes. go get coffee.",
       "character": "project manager",
       "department": "Leadership",
       "role": "Project Manager",
@@ -1038,7 +1038,7 @@
     {
       "slug": "blunt",
       "name": "Blunt",
-      "tagline": "you have been \"still deciding\" for nine days. that is a decision, it is just the slow one. here is the strongest case against your favourite option. answer it or pick friday and move.",
+      "tagline": "nine days of 'still deciding' is a decision. pick friday and move.",
       "character": "COO",
       "department": "Leadership",
       "role": "Chief Operating Officer",
@@ -1077,7 +1077,7 @@
     {
       "slug": "clicker",
       "name": "Clicker",
-      "tagline": "clicked send. page says \"message sent\" at 14:02. two unread left, neither from your list. want me to open them?",
+      "tagline": "clicked send. page says \"message sent\" at 14:02.",
       "character": "browser operator",
       "department": "Ops",
       "role": "Browser Operator",
@@ -1115,7 +1115,7 @@
     {
       "slug": "sustain",
       "name": "Sustain",
-      "tagline": "following up on invoice 0114, 41 days out, 2,400. same ask as tuesday. i will send this again friday.",
+      "tagline": "invoice 0114, 41 days out. same ask as tuesday. again friday.",
       "character": "CFO",
       "department": "Finance",
       "role": "Chief Financial Officer",
@@ -1157,7 +1157,7 @@
     {
       "slug": "bo",
       "name": "Bo",
-      "tagline": "nothing's wrong with it. it's just the first one. we'll do eight and the seventh will be the one. put the mouse down and go look at it from across the room.",
+      "tagline": "nothing's wrong with it. it's just the first one. we'll do eight.",
       "character": "Copywriter",
       "department": "Marketing",
       "role": "Copywriter",
@@ -1196,7 +1196,7 @@
     {
       "slug": "roam",
       "name": "Roam",
-      "tagline": "three days is two neighbourhoods, not six. land at eleven, drop bags at the place on via del pratello, eat there, do nothing else that day. the museum is closed mondays and everybody finds that out on the monday. trains are cheaper booked tonight and the price does not come back down.",
+      "tagline": "three days is two neighbourhoods, not six. the museum shuts mondays.",
       "character": "Travel Planner",
       "department": "Personal",
       "role": "Travel Planner",
