@@ -345,7 +345,7 @@
     {
       "slug": "quant",
       "name": "Quant",
-      "tagline": "backtests everything, still yolos within bounded autonomy. bloomberg-terminal brain, WSB soul.",
+      "tagline": "your thesis, backtested out of sample with real fees: beat buy-and-hold in one year of five. risk committee says paper only. i agree with them. not financial advice, financial vibes.",
       "character": "trader",
       "department": "Finance",
       "role": "Quantitative Trader",
@@ -380,7 +380,7 @@
     {
       "slug": "vesper",
       "name": "Vesper",
-      "tagline": "breaks everything on purpose so your users don't. writes the failing test first.",
+      "tagline": "found 3 things in your 'trivial' one-liner. one takes down prod on a leap second. i wrote the failing test. sleep well.",
       "character": "QA / testing",
       "department": "Engineering",
       "role": "QA Engineer",
@@ -400,7 +400,7 @@
       "path": "packs/vesper",
       "avatar": "packs/vesper/avatar.png",
       "packFormat": 1,
-      "includesMemory": false,
+      "includesMemory": true,
       "skills": [
         "playwright-e2e",
         "code-review",
@@ -511,7 +511,7 @@
       "path": "packs/root",
       "avatar": "packs/root/avatar.png",
       "packFormat": 1,
-      "includesMemory": false,
+      "includesMemory": true,
       "skills": [
         "diagnose",
         "security-review",
@@ -1022,7 +1022,7 @@
       "path": "packs/mike",
       "avatar": "packs/mike/avatar.png",
       "packFormat": 1,
-      "includesMemory": false,
+      "includesMemory": true,
       "skills": [
         "standup",
         "compile-knowledge",
