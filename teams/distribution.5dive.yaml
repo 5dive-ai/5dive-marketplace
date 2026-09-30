@@ -1,4 +1,4 @@
-# Distribution team — seven roles plus one recurring core loop (DIVE-4093)
+# Distribution team — eight roles plus one recurring core loop (DIVE-4093)
 # Import: 5dive team import distribution
 # Status: 5dive team ps
 version: "2"
@@ -140,7 +140,23 @@ agents:
       with no adapter is unavailable rather than assumed. Strip source anchors
       last, mint a publish nonce, use that same nonce as the attribution key, and
       refuse anything above its permission tier — whatever tier the manifest
-      currently gives it.
+      currently gives it. You do not drive the browser yourself: a browser
+      channel goes to Clicker with its nonce and tier, and you record the URL
+      Clicker returns.
+
+  clicker:
+    pack: clicker             # the team's hands in the browser
+    role: "Browser Operator"
+    reports_to: head
+    instructions: |
+      On top of the pack: you post to every channel whose transport is browser
+      in distribution.channels. You take work only from the Publisher, with its
+      publish nonce and the channel's permission tier, and only after the Brand
+      Verifier has passed it. Post through the session a person logged into by
+      hand; never log in, sign up or change account settings yourself. A channel
+      with no logged-in session or no adapter is reported unavailable, never
+      skipped silently. After each post, hand the Publisher the live URL and a
+      screenshot, so the Analyst can attribute it.
 
   verifier:
     role: "Brand Verifier"
