@@ -15,10 +15,7 @@
   "skills": [
     "runbook",
     "incident-response",
-    "self-host",
-    "compile-knowledge",
-    "notify-user",
-    "find-skills"
+    "self-host"
   ],
   "hooks": {},
   "avatar": null,

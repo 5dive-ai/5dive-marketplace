@@ -13,9 +13,7 @@
   },
   "plugins": [],
   "skills": [
-    "form-filling",
-    "compile-knowledge",
-    "notify-user"
+    "form-filling"
   ],
   "hooks": {},
   "avatar": null,

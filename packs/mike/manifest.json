@@ -13,10 +13,7 @@
   },
   "plugins": [],
   "skills": [
-    "standup",
-    "compile-knowledge",
-    "notify-user",
-    "find-skills"
+    "standup"
   ],
   "hooks": {},
   "avatar": null,

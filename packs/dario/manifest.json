@@ -19,10 +19,7 @@
     "heroui-native",
     "nextjs-app",
     "heroui-react",
-    "playwright-e2e",
-    "compile-knowledge",
-    "notify-user",
-    "find-skills"
+    "playwright-e2e"
   ],
   "hooks": {},
   "avatar": null,

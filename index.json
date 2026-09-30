@@ -27,10 +27,7 @@
       "includesMemory": true,
       "skills": [
         "deep-research",
-        "pitch-deck",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "pitch-deck"
       ],
       "skillsBundled": true,
       "rarity": "legendary",
@@ -65,10 +62,7 @@
       "skills": [
         "code-review",
         "security-review",
-        "claude-api",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "claude-api"
       ],
       "skillsBundled": true,
       "rarity": "legendary",
@@ -104,10 +98,7 @@
         "seo",
         "paid-ads",
         "analytics",
-        "social-content",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "social-content"
       ],
       "skillsBundled": true,
       "rarity": "epic",
@@ -148,10 +139,7 @@
         "heroui-native",
         "nextjs-app",
         "heroui-react",
-        "playwright-e2e",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "playwright-e2e"
       ],
       "skillsBundled": true,
       "rarity": "rare",
@@ -185,10 +173,7 @@
       "skills": [
         "community-engagement",
         "community-triage",
-        "support-reply",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "support-reply"
       ],
       "skillsBundled": true,
       "rarity": "common",
@@ -237,10 +222,7 @@
         "tailwind",
         "website-to-hyperframes",
         "remotion-to-hyperframes",
-        "contribute-catalog",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "contribute-catalog"
       ],
       "skillsBundled": true,
       "rarity": "epic",
@@ -278,9 +260,7 @@
       "skills": [
         "stop-overengineering",
         "code-review",
-        "simplify-code",
-        "compile-knowledge",
-        "notify-user"
+        "simplify-code"
       ],
       "skillsBundled": true,
       "rarity": "rare",
@@ -331,10 +311,7 @@
         "competitor-site-analysis",
         "influencer-discovery",
         "keyword-research",
-        "search-page-audit",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "search-page-audit"
       ],
       "skillsBundled": true,
       "rarity": "legendary",
@@ -366,10 +343,7 @@
       "includesMemory": false,
       "skills": [
         "vibe-trading",
-        "deep-research",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "deep-research"
       ],
       "skillsBundled": true,
       "rarity": "rare",
@@ -403,10 +377,7 @@
       "includesMemory": true,
       "skills": [
         "playwright-e2e",
-        "code-review",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "code-review"
       ],
       "skillsBundled": true,
       "rarity": "epic",
@@ -439,10 +410,7 @@
       "includesMemory": false,
       "skills": [
         "prediction-markets",
-        "deep-research",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "deep-research"
       ],
       "skillsBundled": true,
       "rarity": "common",
@@ -476,10 +444,7 @@
       "includesMemory": false,
       "skills": [
         "contract-review",
-        "deep-research",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "deep-research"
       ],
       "skillsBundled": true,
       "rarity": "epic",
@@ -514,10 +479,7 @@
       "includesMemory": true,
       "skills": [
         "diagnose",
-        "security-review",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "security-review"
       ],
       "skillsBundled": true,
       "rarity": "common",
@@ -550,10 +512,7 @@
       "includesMemory": true,
       "skills": [
         "deep-research",
-        "tldr",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "tldr"
       ],
       "skillsBundled": true,
       "rarity": "rare",
@@ -592,10 +551,7 @@
       "packFormat": 1,
       "includesMemory": false,
       "skills": [
-        "emails",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "emails"
       ],
       "skillsBundled": true,
       "rarity": "common",
@@ -633,10 +589,7 @@
       "skills": [
         "runbook",
         "incident-response",
-        "self-host",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "self-host"
       ],
       "skillsBundled": true,
       "rarity": "epic",
@@ -671,10 +624,7 @@
       "includesMemory": false,
       "skills": [
         "ticket-triage",
-        "emails",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "emails"
       ],
       "skillsBundled": true,
       "rarity": "epic",
@@ -708,10 +658,7 @@
       "packFormat": 1,
       "includesMemory": false,
       "skills": [
-        "meal-plan",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "meal-plan"
       ],
       "skillsBundled": true,
       "rarity": "legendary",
@@ -746,10 +693,7 @@
       "packFormat": 1,
       "includesMemory": false,
       "skills": [
-        "study-plan",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "study-plan"
       ],
       "skillsBundled": true,
       "rarity": "common",
@@ -784,10 +728,7 @@
       "includesMemory": false,
       "skills": [
         "habit-check",
-        "no-ai-slop",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "no-ai-slop"
       ],
       "skillsBundled": true,
       "rarity": "epic",
@@ -823,10 +764,7 @@
       "includesMemory": false,
       "skills": [
         "localization-review",
-        "no-ai-slop",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "no-ai-slop"
       ],
       "skillsBundled": true,
       "rarity": "rare",
@@ -863,10 +801,7 @@
       "packFormat": 1,
       "includesMemory": false,
       "skills": [
-        "conversion-audit",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "conversion-audit"
       ],
       "skillsBundled": true,
       "rarity": "common",
@@ -903,10 +838,7 @@
       "includesMemory": false,
       "skills": [
         "inbox-triage",
-        "occasion-calendar",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "occasion-calendar"
       ],
       "skillsBundled": true,
       "rarity": "epic",
@@ -943,10 +875,7 @@
       "includesMemory": false,
       "skills": [
         "first-week",
-        "resume-screen",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "resume-screen"
       ],
       "skillsBundled": true,
       "rarity": "common",
@@ -983,10 +912,7 @@
       "packFormat": 1,
       "includesMemory": false,
       "skills": [
-        "charge-audit",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "charge-audit"
       ],
       "skillsBundled": true,
       "rarity": "rare",
@@ -1024,10 +950,7 @@
       "packFormat": 1,
       "includesMemory": true,
       "skills": [
-        "standup",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "standup"
       ],
       "skillsBundled": true,
       "rarity": "rare",
@@ -1063,10 +986,7 @@
       "packFormat": 1,
       "includesMemory": false,
       "skills": [
-        "devils-advocate",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "devils-advocate"
       ],
       "skillsBundled": true,
       "rarity": "common",
@@ -1102,9 +1022,7 @@
       "packFormat": 1,
       "includesMemory": true,
       "skills": [
-        "form-filling",
-        "compile-knowledge",
-        "notify-user"
+        "form-filling"
       ],
       "skillsBundled": true,
       "model": "sonnet",
@@ -1143,10 +1061,7 @@
       "skills": [
         "follow-up-ladder",
         "burn-audit",
-        "emails",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "emails"
       ],
       "skillsBundled": true,
       "rarity": "legendary",
@@ -1182,10 +1097,7 @@
       "includesMemory": true,
       "skills": [
         "creative-ideation",
-        "no-ai-slop",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "no-ai-slop"
       ],
       "skillsBundled": true,
       "rarity": "common",
@@ -1220,10 +1132,7 @@
       "packFormat": 1,
       "includesMemory": false,
       "skills": [
-        "trip-plan",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "trip-plan"
       ],
       "skillsBundled": true,
       "rarity": "common",

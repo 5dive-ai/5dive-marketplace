@@ -14,10 +14,7 @@
   "plugins": [],
   "skills": [
     "creative-ideation",
-    "no-ai-slop",
-    "compile-knowledge",
-    "notify-user",
-    "find-skills"
+    "no-ai-slop"
   ],
   "hooks": {},
   "avatar": null,

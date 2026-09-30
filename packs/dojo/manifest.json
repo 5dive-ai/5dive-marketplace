@@ -13,10 +13,7 @@
   },
   "plugins": [],
   "skills": [
-    "study-plan",
-    "compile-knowledge",
-    "notify-user",
-    "find-skills"
+    "study-plan"
   ],
   "hooks": {},
   "avatar": null,

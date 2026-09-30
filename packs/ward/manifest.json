@@ -15,9 +15,7 @@
   "skills": [
     "stop-overengineering",
     "code-review",
-    "simplify-code",
-    "compile-knowledge",
-    "notify-user"
+    "simplify-code"
   ],
   "hooks": {},
   "avatar": null,

@@ -13,10 +13,7 @@
   },
   "plugins": [],
   "skills": [
-    "meal-plan",
-    "compile-knowledge",
-    "notify-user",
-    "find-skills"
+    "meal-plan"
   ],
   "hooks": {},
   "avatar": null,

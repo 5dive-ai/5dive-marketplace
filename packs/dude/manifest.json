@@ -15,10 +15,7 @@
   "skills": [
     "community-engagement",
     "community-triage",
-    "support-reply",
-    "compile-knowledge",
-    "notify-user",
-    "find-skills"
+    "support-reply"
   ],
   "hooks": {},
   "avatar": null,
