@@ -1,6 +1,6 @@
 ---
 name: emails
-description: When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email program. Also use when the user mentions "email sequence," "drip campaign," "nurture sequence," "onboarding emails," "welcome sequence," "re-engagement emails," "email automation," "lifecycle emails," "trigger-based emails," "email funnel," "email workflow," "what emails should I send," "welcome series," or "email cadence." Use this for any multi-email automated flow. For cold outreach emails, see cold-email. For in-app onboarding, see onboarding.
+description: When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email program. Also use when the user mentions "email sequence," "drip campaign," "nurture sequence," "onboarding emails," "welcome sequence," "re-engagement emails," "email automation," "lifecycle emails," "trigger-based emails," "email funnel," "email workflow," "what emails should I send," "welcome series," or "email cadence." Use this for any multi-email automated flow, including short outbound follow-up sequences.
 metadata:
   version: 2.0.0
 ---
@@ -287,25 +287,19 @@ What to measure and benchmarks
 
 ## Tool Integrations
 
-For implementation, see the [tools registry](../../tools/REGISTRY.md). Key email tools:
+Common email tools, if the team already uses one:
 
-| Tool | Best For | MCP | Guide |
-|------|----------|:---:|-------|
-| **Customer.io** | Behavior-based automation | - | [customer-io.md](../../tools/integrations/customer-io.md) |
-| **Mailchimp** | SMB email marketing | ✓ | [mailchimp.md](../../tools/integrations/mailchimp.md) |
-| **Nitrosend** | AI-native email (sequences via prompts) | ✓ | [nitrosend.md](../../tools/integrations/nitrosend.md) |
-| **Resend** | Developer-friendly transactional | ✓ | [resend.md](../../tools/integrations/resend.md) |
-| **SendGrid** | Transactional email at scale | - | [sendgrid.md](../../tools/integrations/sendgrid.md) |
-| **Kit** | Creator/newsletter focused | - | [kit.md](../../tools/integrations/kit.md) |
+| Tool | Best For | MCP |
+|------|----------|:---:|
+| **Customer.io** | Behavior-based automation | - |
+| **Mailchimp** | SMB email marketing | ✓ |
+| **Nitrosend** | AI-native email (sequences via prompts) | ✓ |
+| **Resend** | Developer-friendly transactional | ✓ |
+| **SendGrid** | Transactional email at scale | - |
+| **Kit** | Creator/newsletter focused | - |
 
 ---
 
-## Related Skills
+## Related Work
 
-- **lead-magnets**: For planning lead magnets that feed into nurture sequences
-- **churn-prevention**: For cancel flows, save offers, and dunning strategy (email supports this)
-- **onboarding**: For in-app onboarding (email supports this)
-- **copywriting**: For landing pages emails link to
-- **ab-testing**: For testing email elements
-- **popups**: For email capture popups
-- **revops**: For lifecycle stages that trigger email sequences
+Email sits next to lead magnets that feed nurture sequences, cancel flows and dunning, in-app onboarding, the landing pages emails link to, A/B tests on email elements, capture popups, and the lifecycle stages that trigger each sequence. If the pack has a skill for one of these, use it; if not, **find-skills** can look for one.

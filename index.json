@@ -547,7 +547,7 @@
       "path": "packs/ada",
       "avatar": "packs/ada/avatar.png",
       "packFormat": 1,
-      "includesMemory": false,
+      "includesMemory": true,
       "skills": [
         "deep-research",
         "tldr",
@@ -629,7 +629,7 @@
       "path": "packs/anton",
       "avatar": "packs/anton/avatar.png",
       "packFormat": 1,
-      "includesMemory": false,
+      "includesMemory": true,
       "skills": [
         "runbook",
         "incident-response",
@@ -1179,7 +1179,7 @@
       "path": "packs/bo",
       "avatar": "packs/bo/avatar.png",
       "packFormat": 1,
-      "includesMemory": false,
+      "includesMemory": true,
       "skills": [
         "creative-ideation",
         "no-ai-slop",
