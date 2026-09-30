@@ -228,8 +228,8 @@
     {
       "slug": "distribution",
       "name": "Distribution team",
-      "description": "Seven-role approved-source distribution team with a recurring verified publish-and-measure loop.",
-      "size": 7,
+      "description": "Eight-role approved-source distribution team with a recurring verified publish-and-measure loop.",
+      "size": 8,
       "capabilities": {
         "browser": "optional",
         "fallback": "api-only"
@@ -267,6 +267,12 @@
         {
           "key": "publisher",
           "role": "Publisher",
+          "model": "sonnet",
+          "reports_to": "head"
+        },
+        {
+          "key": "clicker",
+          "role": "Browser Operator",
           "model": "sonnet",
           "reports_to": "head"
         },
