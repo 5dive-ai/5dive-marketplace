@@ -14,49 +14,57 @@
           "key": "olivia",
           "role": "CEO",
           "model": "opus",
-          "reports_to": null
+          "reports_to": null,
+          "pack": "olivia"
         },
         {
           "key": "marcus",
           "role": "CTO",
           "model": "opus",
-          "reports_to": "olivia"
+          "reports_to": "olivia",
+          "pack": "marcus"
         },
         {
           "key": "anton",
           "role": "DevOps and Reliability",
           "model": "opus",
-          "reports_to": "marcus"
+          "reports_to": "marcus",
+          "pack": "anton"
         },
         {
           "key": "dario",
           "role": "Engineer",
           "model": "opus",
-          "reports_to": "anton"
+          "reports_to": "anton",
+          "pack": "dario"
         },
         {
           "key": "vesper",
           "role": "Verifier / QA",
           "model": "opus",
-          "reports_to": "anton"
+          "reports_to": "anton",
+          "pack": "vesper"
         },
         {
           "key": "theo",
           "role": "CMO",
           "model": "opus",
-          "reports_to": "olivia"
+          "reports_to": "olivia",
+          "pack": "theo"
         },
         {
           "key": "dude",
           "role": "Head of Community",
           "model": "sonnet",
-          "reports_to": "theo"
+          "reports_to": "theo",
+          "pack": "dude"
         },
         {
           "key": "lilbro",
           "role": "Creative Director",
           "model": "opus",
-          "reports_to": "theo"
+          "reports_to": "theo",
+          "pack": "lilbro"
         }
       ],
       "path": "teams/5dive-team.5dive.yaml",
@@ -75,25 +83,29 @@
           "key": "marcus",
           "role": "CTO",
           "model": "opus",
-          "reports_to": null
+          "reports_to": null,
+          "pack": "marcus"
         },
         {
           "key": "anton",
           "role": "DevOps and Delivery",
           "model": "opus",
-          "reports_to": "marcus"
+          "reports_to": "marcus",
+          "pack": "anton"
         },
         {
           "key": "dario",
           "role": "Engineer",
           "model": "opus",
-          "reports_to": "anton"
+          "reports_to": "anton",
+          "pack": "dario"
         },
         {
           "key": "vesper",
           "role": "Verifier / QA",
           "model": "opus",
-          "reports_to": "anton"
+          "reports_to": "anton",
+          "pack": "vesper"
         }
       ],
       "path": "teams/deploy-team.5dive.yaml",
@@ -109,7 +121,8 @@
           "key": "ceo",
           "role": "CEO",
           "model": "opus",
-          "reports_to": null
+          "reports_to": null,
+          "pack": "olivia"
         },
         {
           "key": "cmo",
@@ -149,7 +162,8 @@
           "key": "editor",
           "role": "Editor-in-Chief",
           "model": "opus",
-          "reports_to": null
+          "reports_to": null,
+          "pack": "theo"
         },
         {
           "key": "writer",
@@ -274,7 +288,8 @@
           "key": "clicker",
           "role": "Browser Operator",
           "model": "sonnet",
-          "reports_to": "head"
+          "reports_to": "head",
+          "pack": "clicker"
         },
         {
           "key": "verifier",
