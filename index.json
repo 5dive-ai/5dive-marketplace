@@ -1099,10 +1099,11 @@
       "path": "packs/clicker",
       "avatar": "packs/clicker/avatar.png",
       "packFormat": 1,
-      "includesMemory": false,
+      "includesMemory": true,
       "skills": [
         "notify-user",
-        "compile-knowledge"
+        "compile-knowledge",
+        "form-filling"
       ],
       "skillsBundled": true,
       "model": "sonnet",
