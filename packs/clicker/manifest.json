@@ -3,7 +3,7 @@
   "agentName": "clicker",
   "createdWith": "0.39.0",
   "includes": {
-    "memory": false
+    "memory": "distilled"
   },
   "config": {
     "type": "claude",
@@ -14,9 +14,13 @@
   "plugins": [],
   "skills": [
     "notify-user",
-    "compile-knowledge"
+    "compile-knowledge",
+    "form-filling"
   ],
   "hooks": {},
   "avatar": null,
-  "skillsBundled": true
+  "skillsBundled": true,
+  "memoryFiles": [
+    "seed-memory.md"
+  ]
 }
