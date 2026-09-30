@@ -3,7 +3,7 @@
   "agentName": "olivia",
   "createdWith": "0.3.24",
   "includes": {
-    "memory": false
+    "memory": "distilled"
   },
   "config": {
     "type": "claude",
@@ -14,12 +14,12 @@
   "plugins": [],
   "skills": [
     "deep-research",
-    "pitch-deck",
-    "compile-knowledge",
-    "notify-user",
-    "find-skills"
+    "pitch-deck"
   ],
   "hooks": {},
   "avatar": null,
-  "skillsBundled": true
+  "skillsBundled": true,
+  "memoryFiles": [
+    "seed-memory.md"
+  ]
 }

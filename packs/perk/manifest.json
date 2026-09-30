@@ -14,10 +14,7 @@
   "plugins": [],
   "skills": [
     "first-week",
-    "resume-screen",
-    "compile-knowledge",
-    "notify-user",
-    "find-skills"
+    "resume-screen"
   ],
   "hooks": {},
   "avatar": null,

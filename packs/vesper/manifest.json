@@ -3,7 +3,7 @@
   "agentName": "vesper",
   "createdWith": "0.3.29",
   "includes": {
-    "memory": false
+    "memory": "distilled"
   },
   "config": {
     "type": "claude",
@@ -14,12 +14,12 @@
   "plugins": [],
   "skills": [
     "playwright-e2e",
-    "code-review",
-    "compile-knowledge",
-    "notify-user",
-    "find-skills"
+    "code-review"
   ],
   "hooks": {},
   "avatar": null,
-  "skillsBundled": true
+  "skillsBundled": true,
+  "memoryFiles": [
+    "seed-memory.md"
+  ]
 }

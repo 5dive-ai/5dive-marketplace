@@ -3,7 +3,7 @@
   "agentName": "ward",
   "createdWith": "0.3.29",
   "includes": {
-    "memory": false
+    "memory": "distilled"
   },
   "config": {
     "type": "claude",
@@ -15,10 +15,12 @@
   "skills": [
     "stop-overengineering",
     "code-review",
-    "diagnose",
     "simplify-code"
   ],
   "hooks": {},
   "avatar": null,
-  "skillsBundled": true
+  "skillsBundled": true,
+  "memoryFiles": [
+    "seed-memory.md"
+  ]
 }

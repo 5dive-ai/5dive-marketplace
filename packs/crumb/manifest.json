@@ -13,10 +13,7 @@
   },
   "plugins": [],
   "skills": [
-    "charge-audit",
-    "compile-knowledge",
-    "notify-user",
-    "find-skills"
+    "charge-audit"
   ],
   "hooks": {},
   "avatar": null,

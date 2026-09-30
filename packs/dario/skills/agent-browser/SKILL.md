@@ -1,19 +1,21 @@
 ---
 name: agent-browser
-description: Drive a real Chrome browser for end-to-end UI testing and verification via the `agent-browser` CLI (vercel-labs). Use when asked to test a web flow end-to-end, verify a deployed page/feature in a real browser, click through a signup/checkout/referral flow, fill forms, take screenshots of a live site, or reproduce a UI bug. Keywords: browser test, e2e, end-to-end, verify the flow, click through, screenshot the page, check a live site, e.g. a Stripe checkout, signup flow. On these VMs Chrome's user-namespace sandbox is blocked by AppArmor, so ALWAYS launch with `--args "--no-sandbox"`.
+description: Drive a real Chrome browser for end-to-end UI testing and verification via the `agent-browser` CLI (vercel-labs). Use when asked to test a web flow end-to-end, verify a deployed page/feature in a real browser, click through a signup/checkout/referral flow, fill forms, take screenshots of a live site, or reproduce a UI bug. Keywords: browser test, e2e, end-to-end, verify the flow, click through, screenshot the page, check a live site, e.g. a Stripe checkout, signup flow. On Linux servers where AppArmor blocks Chrome's user-namespace sandbox, launch with `--args "--no-sandbox"`.
 ---
 
 # agent-browser
 
 Fast browser-automation CLI for AI agents. Drives a real Chrome session that
 persists across commands (open once, then click/type/screenshot against the
-live page). Installed globally (`/usr/bin/agent-browser`, v0.27.0); Chrome is
-installed per-user under `~/.agent-browser/`.
+live page). Check it is there with `agent-browser --version`; if not, install it
+with `npm install -g agent-browser`, then `agent-browser install` to fetch Chrome
+(per-user, under `~/.agent-browser/`).
 
-## Critical: launch flag on these VMs
+## Critical: launch flag on hardened Linux servers
 
-These VMs block Chrome's user-namespace sandbox via AppArmor. **Always pass
-`--args "--no-sandbox"` on the launching command** (the first `open`), e.g.:
+Many Linux servers (Ubuntu 23.10 and later) block Chrome's user-namespace sandbox via
+AppArmor, and Chrome then fails to start. On those, **pass `--args "--no-sandbox"` on
+the launching command** (the first `open`), e.g.:
 
 ```bash
 agent-browser open https://example.com --args "--no-sandbox"
@@ -27,7 +29,7 @@ agent-browser install --with-deps   # may need sudo for apt packages
 
 ## Authoritative command reference
 
-The CLI ships version-matched skills — **load these instead of guessing flags**:
+The CLI ships version-matched skills. **Load these instead of guessing flags**:
 
 ```bash
 agent-browser skills get core --full   # overview + full command ref + templates
@@ -57,8 +59,8 @@ when done so a stale session doesn't leak into the next test.
 - Session is shared across invocations until `close`; the launch `--args` apply
   to that whole session, so set `--no-sandbox` on the first `open`.
 - **React onClick flakiness:** `agent-browser click <@ref>` (ref-clicks like
-  `click e47`) don't always fire React `onClick` handlers — observed on the
-  the page's pricing / "Get started" buttons. If a ref-click appears to do nothing,
+  `click e47`) don't always fire React `onClick` handlers (observed on
+  pricing-page "Get started" buttons). If a ref-click appears to do nothing,
   fall back to a real DOM click via eval:
   ```bash
   agent-browser eval "document.querySelector('SEL').click()"

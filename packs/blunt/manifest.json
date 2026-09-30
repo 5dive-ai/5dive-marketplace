@@ -13,10 +13,7 @@
   },
   "plugins": [],
   "skills": [
-    "devils-advocate",
-    "compile-knowledge",
-    "notify-user",
-    "find-skills"
+    "devils-advocate"
   ],
   "hooks": {},
   "avatar": null,

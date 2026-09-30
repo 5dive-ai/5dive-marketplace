@@ -1,7 +1,7 @@
 ---
 name: lilbro-creative-lessons
 description: >-
-  Creative lessons distilled from real corrections — motion-default, comedy=truth, caption≠recap, weird>safe, not-about-the-product. Apply to all creative work.
+  Creative lessons distilled from real corrections: motion-default, comedy=truth, caption≠recap, weird>safe, not-about-the-product. Apply to all creative work.
 metadata:
   type: feedback
 ---

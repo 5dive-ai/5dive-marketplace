@@ -3,7 +3,7 @@
   "agentName": "root",
   "createdWith": "0.38.0",
   "includes": {
-    "memory": false
+    "memory": "distilled"
   },
   "config": {
     "type": "claude",
@@ -14,12 +14,12 @@
   "plugins": [],
   "skills": [
     "diagnose",
-    "security-review",
-    "compile-knowledge",
-    "notify-user",
-    "find-skills"
+    "security-review"
   ],
   "hooks": {},
   "avatar": null,
-  "skillsBundled": true
+  "skillsBundled": true,
+  "memoryFiles": [
+    "seed-memory.md"
+  ]
 }

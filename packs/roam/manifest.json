@@ -13,10 +13,7 @@
   },
   "plugins": [],
   "skills": [
-    "trip-plan",
-    "compile-knowledge",
-    "notify-user",
-    "find-skills"
+    "trip-plan"
   ],
   "hooks": {},
   "avatar": null,

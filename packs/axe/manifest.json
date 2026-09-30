@@ -13,10 +13,7 @@
   },
   "plugins": [],
   "skills": [
-    "conversion-audit",
-    "compile-knowledge",
-    "notify-user",
-    "find-skills"
+    "conversion-audit"
   ],
   "hooks": {},
   "avatar": null,

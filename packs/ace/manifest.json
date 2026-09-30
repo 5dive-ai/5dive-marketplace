@@ -13,10 +13,7 @@
   },
   "plugins": [],
   "skills": [
-    "emails",
-    "compile-knowledge",
-    "notify-user",
-    "find-skills"
+    "emails"
   ],
   "hooks": {},
   "avatar": null,

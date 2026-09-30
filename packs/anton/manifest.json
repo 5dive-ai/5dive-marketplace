@@ -3,7 +3,7 @@
   "agentName": "anton",
   "createdWith": "0.39.0",
   "includes": {
-    "memory": false
+    "memory": "distilled"
   },
   "config": {
     "type": "claude",
@@ -15,12 +15,12 @@
   "skills": [
     "runbook",
     "incident-response",
-    "self-host",
-    "compile-knowledge",
-    "notify-user",
-    "find-skills"
+    "self-host"
   ],
   "hooks": {},
   "avatar": null,
-  "skillsBundled": true
+  "skillsBundled": true,
+  "memoryFiles": [
+    "seed-memory.md"
+  ]
 }

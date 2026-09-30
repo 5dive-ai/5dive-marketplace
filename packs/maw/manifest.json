@@ -14,10 +14,7 @@
   "plugins": [],
   "skills": [
     "inbox-triage",
-    "occasion-calendar",
-    "compile-knowledge",
-    "notify-user",
-    "find-skills"
+    "occasion-calendar"
   ],
   "hooks": {},
   "avatar": null,

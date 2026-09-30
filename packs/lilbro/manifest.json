@@ -27,10 +27,7 @@
     "tailwind",
     "website-to-hyperframes",
     "remotion-to-hyperframes",
-    "contribute-catalog",
-    "compile-knowledge",
-    "notify-user",
-    "find-skills"
+    "contribute-catalog"
   ],
   "hooks": {},
   "avatar": null,

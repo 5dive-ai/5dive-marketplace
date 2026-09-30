@@ -14,10 +14,7 @@
   "plugins": [],
   "skills": [
     "prediction-markets",
-    "deep-research",
-    "compile-knowledge",
-    "notify-user",
-    "find-skills"
+    "deep-research"
   ],
   "hooks": {},
   "avatar": null,

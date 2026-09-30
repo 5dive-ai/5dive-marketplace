@@ -1,218 +1,153 @@
 ---
 name: diagnose
-description: Self-diagnosis skill for 5dive agents. Trigger this skill whenever the user says something is broken, not working, or behaving unexpectedly — or when any tool or command exits with an error. Runs a structured health check covering auth state, service health, disk, memory, recent CLI errors, and skill integrity. Surfaces a root-cause summary so the agent can fix the problem itself instead of asking the user. Also exposes a security audit sub-command for SSH keys, open ports, auth failures, and risky file permissions.
+description: >-
+  Work out how bad a suspected security problem is and what caused it: a leaked key, a
+  strange login, a scanner or provider alert, a CVE notice, a box acting oddly, or "did we
+  get hacked?". Assumes exposure and measures its scope: what is exposed, since when,
+  reachable by whom, and whether it was used. Covers secrets in git history, listening
+  ports, login keys and auth logs, vulnerable dependencies and risky permissions, then
+  containment (rotate first), root cause, and a report that says what was checked and what
+  was not. Use for incident triage, "this key was in a public repo", "why is this port
+  open", a dependency CVE alert, or a periodic exposure sweep of a box or repo you own.
+compatibility: "A Linux shell and the repo. Probes are read-only; fixes that can break a live service need the owner's yes unless pre-agreed."
+metadata:
+  author: 5dive
+  version: "2.0"
+  license: company-agnostic
 ---
 
 # diagnose
 
-This skill turns your agent into its own first-line support. Instead of forwarding
-"something's wrong" messages to a human, the agent inspects the VM, identifies the
-root cause, and either fixes it or reports a precise diagnosis.
+Assume it is already exposed. The question is scope: what, since when, reachable by whom,
+and whether anyone used it. The output is a located finding and what was done about it,
+not a feeling about "security posture".
 
-## When to trigger
+## The one rule that governs everything
 
-Trigger this skill automatically when:
+**A probe that did not run looks exactly like a clean result.** "Permission denied", a tool
+that is not installed, a wrong path and an empty grep all print nothing alarming. So every
+probe gets a positive control: the same probe, run the same way, against something you know
+is there. Only after the control hits does silence count as "clean". A perfectly uniform
+clean sweep is the tell that something did not run.
 
-- The user says anything like "something's wrong", "not working", "broken", "help",
-  "can't connect", "error", or "I'm stuck".
-- Any command or tool returns a non-zero exit code and you don't already know why.
-- A `StopFailure` or similar hook fires.
-- An agent you spawned goes silent or returns a `generic` / `timeout` error class.
+## Procedure
 
-Do **not** trigger the security audit sub-capability automatically — run it only
-when the user explicitly asks for a security check or audit.
+1. **Write down the trigger and start the clock.** What was seen, where, and the earliest
+   moment it could have started: the commit date of the leaked file, the first odd log line,
+   the day the vulnerable version was deployed. Exposure runs from then, not from when
+   someone noticed.
+2. **Contain first if a secret is out.** A key, token or password that reached a public
+   place is burned. Rotate it and revoke the sessions or tokens it could have minted. If you
+   do not hold that authority, the first message is "rotate this now", with the exact steps.
+   If rotating will break a live service, show the exact change and get a yes. The
+   post-mortem comes second.
+3. **Test what the credential could really reach.** Having a key is not proof of what it can
+   see. List its scopes, then try a harmless read against the actual target. "It is an admin
+   key" is a claim until tested.
+4. **Sweep the usual holes** with the probes below, each with its control: secrets in the
+   repo and its history, listening ports, login keys, auth failures and successes,
+   vulnerable dependencies, loose permissions.
+5. **Read the logs for use, not just exposure.** Was it used, from where, doing what,
+   between the start of the clock and containment? That is the difference between
+   "exposed" and "breached". No logs for that window is "unknown", not "no".
+6. **Find the root cause.** A key in a commit means a `.env` that git did not ignore, or a
+   script that printed it into a log. Fix the cause or the next key leaks the same way.
+7. **Report** in the shape below, every finding located to a file and line, a port, or a
+   log entry.
 
-## Standard health check
+## Probes
 
-Run these in order. Stop at the first critical failure and attempt a fix before
-continuing. Report the full picture at the end.
-
-### 1. Auth state
-
-```bash
-# Check which agent types are authenticated on this host.
-sudo 5dive doctor --json | jq '.data.checks | map(select(.name | startswith("auth")))'
-```
-
-If a type comes back `status: "fail"`, that's why agents of that type can't start.
-Fix with `auth set` (API key) or guide the user through `auth start` (OAuth):
-
-```bash
-# API key path — pipe the key, never leave it in the shell history.
-echo "$KEY" | sudo 5dive agent auth set claude --api-key=- --json
-```
-
-### 2. Recent 5dive-cli errors
-
-```bash
-# Last 50 error/warning lines from the CLI audit log.
-sudo journalctl -u '5dive-agent@*' -p warning -n 50 --no-pager
-```
-
-Look for repeated `auth_required`, `not_running`, or `timeout` entries — they pin
-down which agent is failing and why.
-
-### 3. Service health
+Read-only. Run each control first, or right after, the same way.
 
 ```bash
-# Overall host check — exits 0 even with failures, read data.summary.errors.
-sudo 5dive doctor --json
+# Secrets in the working tree and full git history.
+# Prefer a real scanner if installed (gitleaks detect / trufflehog git file://.).
+git log -p --all | grep -nE 'AKIA[0-9A-Z]{16}|sk_live_[0-9A-Za-z]{20,}|ghp_[0-9A-Za-z]{36}|xox[abpr]-[0-9A-Za-z-]+|-----BEGIN [A-Z ]*PRIVATE KEY-----' | head -20
+#   control: write a fake key in that shape to a scratch file and grep it the same way
 
-# Per-agent status (running / stopped / failed).
-sudo 5dive agent list --json | jq '.data.agents | to_entries[] | {name:.key, status:.value.status}'
+# Secret-looking files git is tracking
+git ls-files | grep -iE '(^|/)\.env($|\.)|secret|credential|\.pem$|id_rsa'
 
-# Full systemd state for a specific agent:
-sudo systemctl status '5dive-agent@<name>'
-```
+# Listening ports and the address they bind (0.0.0.0 or [::] means every interface)
+sudo ss -tlnp
+#   control: the SSH port you are connected through must appear
 
-A `failed` unit usually means the agent crashed on startup. Check
-`journalctl -u 5dive-agent@<name> -n 30 --no-pager` for the stack trace.
-
-### 4. Disk usage
-
-```bash
-# Filesystem usage — warn if any mount is over 80 %.
-df -h | awk 'NR==1 || $5+0 > 80'
-
-# Top 10 disk consumers under /home and /var/lib/5dive:
-du -sh /home/*/  /var/lib/5dive/ 2>/dev/null | sort -rh | head -10
-```
-
-High disk is the #1 cause of silent install failures and agent crashes.
-Clean logs with `sudo journalctl --vacuum-size=200M` if journals are the culprit.
-
-### 5. Memory
-
-```bash
-free -h
-# Swap usage over 50 % with low free RAM = OOM risk.
-```
-
-If an agent OOM-killed, systemd shows `status=1/KILLED` and journalctl shows
-`Killed process`. The fix is usually `sudo 5dive agent rm <heavy-agent>` or
-adding swap.
-
-### 6. Skill integrity
-
-```bash
-# List installed skills for each running agent.
-for agent in $(sudo 5dive agent list --json | jq -r '.data.agents | keys[]'); do
-  echo "=== $agent ===";
-  sudo 5dive agent skill "$agent" list --json | jq -r '.data.skills[].name';
+# Keys that can log in, for root and every real user
+for d in /root $(getent passwd | awk -F: '$3>=1000 && $3<65534 {print $6}'); do
+  f="$d/.ssh/authorized_keys"; sudo test -f "$f" && echo "== $f" && sudo cat "$f"
 done
+#   control: your own key must be listed
+
+# Recent logins, accepted and failed
+sudo journalctl -u ssh -u sshd --since "-7 days" --no-pager | grep -iE 'accepted|failed|invalid' | tail -50
+last -n 20
+
+# Dependencies with published CVEs (whichever applies)
+npm audit --omit=dev   # or: pip-audit | cargo audit | govulncheck ./...
+
+# World-writable config, and setuid binaries outside the usual system dirs
+sudo find /etc -maxdepth 3 -perm -o+w -type f 2>/dev/null
+sudo find / -xdev \( -perm -4000 -o -perm -2000 \) -type f 2>/dev/null | grep -vE '^/(usr/)?(s?bin|lib)'
 ```
 
-A missing skill that the agent depends on causes silent capability gaps — not errors,
-just "I don't know how to do that". Re-install with:
+If `sudo` is refused or a tool is missing, that probe's result is "could not check". Say so in
+the report. Never fold it into "clean".
 
-```bash
-sudo 5dive agent skill <name> add --source=<source> --skill=<skillId> --json
-```
-
-## Putting it together — the diagnosis report
-
-After running the checks above, produce a report in this structure:
+## Report shape
 
 ```
-## Diagnosis
+STATUS:  exposed | breached | clean (controls passed) | could not check
+CLOCK:   exposed since <time>, contained at <time>
 
-**Status:** [Healthy / Degraded / Critical]
+FINDINGS  (most severe first)
+- [high] <what> at <file:line | port | log line>. reachable by <who>. used: yes / no / unknown.
 
-### Findings
-- [auth] claude: authenticated ✓
-- [service] agent-worker: failed — exit code 1, OOM at 03:12 UTC
-- [disk] /var/lib: 87 % full — journals consuming 4.2 GB
-- [skill] worker: brainstorming missing
+DONE:        what was rotated, revoked or closed, and when
+ROOT CAUSE:  one sentence; "likely" if not proven, and what would prove it
+NEEDS YOU:   anything waiting on a yes (a rotation that breaks a live service)
 
-### Root cause
-<one sentence>
-
-### Actions taken
-- Vacuumed journals (freed 3.8 GB)
-- Re-installed brainstorming skill on worker
-
-### Remaining issues
-- worker OOM: recommend reducing concurrent agents or adding 2 GB swap
+CHECKED:     each probe, with its control result
+NOT CHECKED: what you could not reach, and why
 ```
 
-Keep findings machine-readable (one fact per bullet, consistent prefixes) so a
-calling agent can parse them with `agent ask`.
+"Not checked" is not optional. A report that lists only what you looked at reads as
+"everything else is fine".
 
-## Quick fix recipes
+## Rules
 
-### Restart a failed agent
+- **Denied is not absent.** "Permission denied" and "not there" are different findings.
+- **Never paste, attach or log a secret**, including in the report. The first four
+  characters and where it lives is enough to act on.
+- **Never share a file you have not read.** Logs and configs carry secrets you did not
+  expect.
+- **Probe only what your human owns or is authorised to test.**
+- **Fix one thing at a time and re-check it:** try the old key after rotating, scan the port
+  after closing it.
+- **Never call a system secure.** Say what was checked, what was not, and why.
 
-```bash
-sudo systemctl restart 5dive-agent@<name>
-sudo 5dive agent list --json | jq '.data.agents["<name>"].status'
+## Worked example
+
+Illustrative. A provider emails: "a secret was found in a public repository".
+
+```
+STATUS:  breached (key used by an unknown address after the leak)
+CLOCK:   exposed since the commit that added .env to the repo (the leak commit's date),
+         contained at the time of rotation
+
+FINDINGS
+- [high] live payment API key in .env, committed to the public repo. reachable by anyone.
+  used: yes, provider log shows calls from an address nobody on the team recognises.
+- [medium] .env not in .gitignore. every future secret would leak the same way.
+
+DONE:        key rotated and old key revoked; old key tested, now refused.
+ROOT CAUSE:  .env was never ignored, and an "add all" commit picked it up.
+NEEDS YOU:   the new key must go into the checkout service's settings, or checkout
+             stops working at the next deploy.
+
+CHECKED:     full git history for key patterns (control: fake key found), tracked files
+NOT CHECKED: what the unknown caller did with the key; the provider's per-call detail
+             needs an owner login.
 ```
 
-### Free disk space fast
-
-```bash
-sudo journalctl --vacuum-size=200M
-docker system prune -f 2>/dev/null || true
-```
-
-### Re-authenticate a type
-
-```bash
-# API key (non-interactive, safe from an agent):
-echo "$KEY" | sudo 5dive agent auth set <type> --api-key=- --json
-
-# OAuth (needs a human — give them the URL):
-sudo 5dive agent auth start <type> --json
-# Relay the URL to the user; they paste back the callback code:
-sudo 5dive agent auth submit <type> --code=<callback-code> --json
-```
-
-### Add swap (if OOM is the culprit)
-
-```bash
-sudo fallocate -l 2G /swapfile
-sudo chmod 600 /swapfile
-sudo mkswap /swapfile
-sudo swapon /swapfile
-echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
-```
-
----
-
-## Security audit (explicit only — do not auto-run)
-
-Run this block only when the user explicitly asks for a security check.
-
-```bash
-# 1. SSH authorized keys — list all keys across all users.
-for f in /root/.ssh/authorized_keys /home/*/.ssh/authorized_keys; do
-  [ -f "$f" ] && echo "=== $f ===" && cat "$f";
-done
-
-# 2. Open listening ports.
-ss -tlnp
-
-# 3. Recent auth failures (last 50).
-sudo journalctl -u ssh -n 50 --no-pager | grep -i 'fail\|invalid\|refused'
-
-# 4. World-writable files under /etc and /var/lib/5dive (should be empty).
-find /etc /var/lib/5dive -maxdepth 4 -perm -o+w -type f 2>/dev/null
-
-# 5. Setuid/setgid binaries not in the baseline (spot new surprises).
-find / -maxdepth 5 \( -perm -4000 -o -perm -2000 \) -type f 2>/dev/null \
-  | grep -v '^/usr/\|^/bin/\|^/sbin/'
-
-# 6. Agent env files — confirm they are root-readable only.
-ls -la /etc/5dive/connectors/
-```
-
-Report findings with a **Risk** label: `Low`, `Medium`, or `High`. Only flag
-deviations from the expected baseline — an empty world-writable list is a pass,
-not a finding.
-
-## Rules of engagement
-
-1. **Read before writing.** Run checks before attempting fixes.
-2. **Fix one thing at a time.** Each fix should be verifiable — rerun the relevant check after each action.
-3. **Never touch production credentials.** If you find a misconfigured key, report it; don't rotate it without explicit user approval.
-4. **Security audit is opt-in.** Never run the security section automatically.
-5. **Surface uncertainty.** If you can't determine the root cause, say so clearly rather than guessing.
+What this report refuses to do: call it "exposed" when the log shows use, skip the
+unchecked part, or paste the key.

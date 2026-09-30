@@ -15,10 +15,7 @@
   "skills": [
     "code-review",
     "security-review",
-    "claude-api",
-    "compile-knowledge",
-    "notify-user",
-    "find-skills"
+    "claude-api"
   ],
   "hooks": {},
   "avatar": null,

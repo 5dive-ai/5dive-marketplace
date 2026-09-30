@@ -3,7 +3,7 @@
   "agentName": "bo",
   "createdWith": "0.39.0",
   "includes": {
-    "memory": false
+    "memory": "distilled"
   },
   "config": {
     "type": "claude",
@@ -14,12 +14,12 @@
   "plugins": [],
   "skills": [
     "creative-ideation",
-    "no-ai-slop",
-    "compile-knowledge",
-    "notify-user",
-    "find-skills"
+    "no-ai-slop"
   ],
   "hooks": {},
   "avatar": null,
-  "skillsBundled": true
+  "skillsBundled": true,
+  "memoryFiles": [
+    "seed-memory.md"
+  ]
 }

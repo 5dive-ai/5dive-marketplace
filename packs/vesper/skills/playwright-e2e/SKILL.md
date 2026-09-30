@@ -8,7 +8,7 @@ license: MIT
 # Playwright E2E & Click-Verification Guide
 
 Drive a real browser to **prove a web change works** — not just that it compiles. Use this to
-verify flows end-to-end, reproduce UI bugs, and screenshot pages. Pairs with `nextjs-app`.
+verify flows end-to-end, reproduce UI bugs, and screenshot pages.
 
 > Core principle: a green build is not a working feature. Before calling an interactive change
 > done, click through the actual rendered page in a browser. Especially for authed routes,

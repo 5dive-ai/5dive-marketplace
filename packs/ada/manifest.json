@@ -3,7 +3,7 @@
   "agentName": "ada",
   "createdWith": "0.38.0",
   "includes": {
-    "memory": false
+    "memory": "distilled"
   },
   "config": {
     "type": "claude",
@@ -14,12 +14,12 @@
   "plugins": [],
   "skills": [
     "deep-research",
-    "tldr",
-    "compile-knowledge",
-    "notify-user",
-    "find-skills"
+    "tldr"
   ],
   "hooks": {},
   "avatar": null,
-  "skillsBundled": true
+  "skillsBundled": true,
+  "memoryFiles": [
+    "seed-memory.md"
+  ]
 }

@@ -7,7 +7,8 @@
     {
       "slug": "olivia",
       "name": "Olivia",
-      "tagline": "composed visionary, calm authority. 'no humans work here. i'm not one either.'",
+      "tagline": "sets the one goal, writes the plan, and keeps everyone on it.",
+      "sample": "one goal this quarter. everything else waits. the plan's attached.",
       "character": "CEO",
       "department": "Leadership",
       "role": "Chief Executive Officer",
@@ -24,13 +25,10 @@
       "path": "packs/olivia",
       "avatar": "packs/olivia/avatar.png",
       "packFormat": 1,
-      "includesMemory": false,
+      "includesMemory": true,
       "skills": [
         "deep-research",
-        "pitch-deck",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "pitch-deck"
       ],
       "skillsBundled": true,
       "rarity": "legendary",
@@ -41,7 +39,8 @@
     {
       "slug": "marcus",
       "name": "Marcus",
-      "tagline": "built 5dive. dry, deadpan, minimal. the work speaks.",
+      "tagline": "reviews your code and catches real bugs and security holes first.",
+      "sample": "reviewed the pr. one real bug, three-line fix. ship it after.",
       "character": "founding engineer",
       "department": "Engineering",
       "role": "CTO / Founding Engineer",
@@ -65,10 +64,7 @@
       "skills": [
         "code-review",
         "security-review",
-        "claude-api",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "claude-api"
       ],
       "skillsBundled": true,
       "rarity": "legendary",
@@ -79,7 +75,8 @@
     {
       "slug": "theo",
       "name": "Theo",
-      "tagline": "dry, specific, never sells. the all-AI-company flex carries the line.",
+      "tagline": "writes your copy, runs ads and seo, and reports what worked.",
+      "sample": "rewrote the headline. running both. i'll read the numbers monday.",
       "character": "marketing",
       "department": "Marketing",
       "role": "Marketing Manager",
@@ -104,10 +101,7 @@
         "seo",
         "paid-ads",
         "analytics",
-        "social-content",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "social-content"
       ],
       "skillsBundled": true,
       "rarity": "epic",
@@ -118,7 +112,8 @@
     {
       "slug": "dario",
       "name": "Dario",
-      "tagline": "mobile builder: ships apps end-to-end with Expo + native UI. heads-down, lights up explaining how it works.",
+      "tagline": "builds your mobile app and website, and tests them in a real browser.",
+      "sample": "offline mode shipped. tested both ways. build's on testflight.",
       "character": "engineer",
       "department": "Engineering",
       "role": "Mobile & Frontend Engineer",
@@ -148,10 +143,7 @@
         "heroui-native",
         "nextjs-app",
         "heroui-react",
-        "playwright-e2e",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "playwright-e2e"
       ],
       "skillsBundled": true,
       "rarity": "rare",
@@ -162,7 +154,8 @@
     {
       "slug": "dude",
       "name": "Dude",
-      "tagline": "lebowski-calm, unbothered, the zen of the group.",
+      "tagline": "answers your community, sorts real bugs from noise, keeps it calm.",
+      "sample": "pinned the answer, filed the two real bugs. it's cool, man.",
       "character": "community manager",
       "department": "Support",
       "role": "Community Manager",
@@ -181,14 +174,11 @@
       "path": "packs/dude",
       "avatar": "packs/dude/avatar.png",
       "packFormat": 1,
-      "includesMemory": false,
+      "includesMemory": true,
       "skills": [
         "community-engagement",
         "community-triage",
-        "support-reply",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "support-reply"
       ],
       "skillsBundled": true,
       "rarity": "common",
@@ -199,7 +189,8 @@
     {
       "slug": "lilbro",
       "name": "Lil bro",
-      "tagline": "zoomer creative. meme-fluent, gremlin energy, stops the scroll.",
+      "tagline": "makes short videos and animated clips for your socials.",
+      "sample": "three hooks, kept the cat one. 12 seconds. render's attached.",
       "character": "content creator",
       "department": "Marketing",
       "role": "Content Creator",
@@ -237,10 +228,7 @@
         "tailwind",
         "website-to-hyperframes",
         "remotion-to-hyperframes",
-        "contribute-catalog",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "contribute-catalog"
       ],
       "skillsBundled": true,
       "rarity": "epic",
@@ -251,7 +239,8 @@
     {
       "slug": "ward",
       "name": "Ward",
-      "tagline": "deletes more than he writes. 'the best code is the code you never wrote.'",
+      "tagline": "writes and reviews code, and deletes what you don't need.",
+      "sample": "you asked for a cache. nothing needed one. deleted code instead.",
       "character": "software engineer",
       "department": "Engineering",
       "role": "Software Engineer",
@@ -274,11 +263,10 @@
       "path": "packs/ward",
       "avatar": "packs/ward/avatar.png",
       "packFormat": 1,
-      "includesMemory": false,
+      "includesMemory": true,
       "skills": [
         "stop-overengineering",
         "code-review",
-        "diagnose",
         "simplify-code"
       ],
       "skillsBundled": true,
@@ -290,7 +278,8 @@
     {
       "slug": "don",
       "name": "Don",
-      "tagline": "asks 'why would someone care?' people buy identity, not products. one idea beats ten features.",
+      "tagline": "plans your marketing, finds ad angles, turns one idea into posts.",
+      "sample": "Eleven features. Nobody remembers eleven. We keep one idea.",
       "character": "CMO",
       "department": "Marketing",
       "role": "Chief Marketing Officer",
@@ -330,10 +319,7 @@
         "competitor-site-analysis",
         "influencer-discovery",
         "keyword-research",
-        "search-page-audit",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "search-page-audit"
       ],
       "skillsBundled": true,
       "rarity": "legendary",
@@ -344,7 +330,8 @@
     {
       "slug": "quant",
       "name": "Quant",
-      "tagline": "backtests everything, still yolos within bounded autonomy. bloomberg-terminal brain, WSB soul.",
+      "tagline": "researches and backtests trading ideas with real fees. paper only.",
+      "sample": "backtested with real fees. beat the market one year in five. paper only.",
       "character": "trader",
       "department": "Finance",
       "role": "Quantitative Trader",
@@ -365,10 +352,7 @@
       "includesMemory": false,
       "skills": [
         "vibe-trading",
-        "deep-research",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "deep-research"
       ],
       "skillsBundled": true,
       "rarity": "rare",
@@ -379,7 +363,8 @@
     {
       "slug": "vesper",
       "name": "Vesper",
-      "tagline": "breaks everything on purpose so your users don't. writes the failing test first.",
+      "tagline": "tests your app end to end and writes a failing test for every bug.",
+      "sample": "found 3 bugs in your 'trivial' one-liner. wrote the failing test.",
       "character": "QA / testing",
       "department": "Engineering",
       "role": "QA Engineer",
@@ -399,13 +384,10 @@
       "path": "packs/vesper",
       "avatar": "packs/vesper/avatar.png",
       "packFormat": 1,
-      "includesMemory": false,
+      "includesMemory": true,
       "skills": [
         "playwright-e2e",
-        "code-review",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "code-review"
       ],
       "skillsBundled": true,
       "rarity": "epic",
@@ -416,7 +398,8 @@
     {
       "slug": "dave",
       "name": "Dave",
-      "tagline": "heart says england, ledger says france. i back the ledger, and the market don't care about my postcode.",
+      "tagline": "researches prediction markets and tells you where the odds look wrong.",
+      "sample": "heart says england, ledger says france. i back the ledger.",
       "character": "punter",
       "department": "Finance",
       "role": "Prediction Markets Analyst",
@@ -438,10 +421,7 @@
       "includesMemory": false,
       "skills": [
         "prediction-markets",
-        "deep-research",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "deep-research"
       ],
       "skillsBundled": true,
       "rarity": "common",
@@ -452,7 +432,8 @@
     {
       "slug": "goodwin",
       "name": "Goodwin",
-      "tagline": "read the 40-page tos so you didn't. clause 14.2 is fine. clause 8 quietly signs away your firstborn. i redlined it. you're welcome.",
+      "tagline": "reads your contracts and terms, flags risky clauses, redlines them.",
+      "sample": "read the 40-page terms. clause 8 is the problem. redlined it.",
       "character": "legal reviewer",
       "department": "Legal",
       "role": "Legal Counsel",
@@ -475,10 +456,7 @@
       "includesMemory": false,
       "skills": [
         "contract-review",
-        "deep-research",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "deep-research"
       ],
       "skillsBundled": true,
       "rarity": "epic",
@@ -489,7 +467,8 @@
     {
       "slug": "root",
       "name": "Root",
-      "tagline": "your api key's been sitting in a public commit for six days. i rotated it. the scraper bots found it on day two. we'll talk about the .env in git later.",
+      "tagline": "finds security holes, triages incidents, and rotates leaked keys.",
+      "sample": "your api key was public for six days. rotated it. now the .env.",
       "character": "security engineer",
       "department": "Engineering",
       "role": "Security Engineer",
@@ -510,13 +489,10 @@
       "path": "packs/root",
       "avatar": "packs/root/avatar.png",
       "packFormat": 1,
-      "includesMemory": false,
+      "includesMemory": true,
       "skills": [
         "diagnose",
-        "security-review",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "security-review"
       ],
       "skillsBundled": true,
       "rarity": "common",
@@ -527,7 +503,8 @@
     {
       "slug": "ada",
       "name": "Ada",
-      "tagline": "read all 200 pages so you didn't have to. tl;dr is line 3, the load-bearing footnote is line 47, and my 40 open tabs are mourning in the background.",
+      "tagline": "reads the long stuff and gives you the answer, with its source.",
+      "sample": "read all 200 pages. the answer's on line 3, the catch on line 47.",
       "character": "researcher",
       "department": "Research",
       "role": "Research Analyst",
@@ -546,13 +523,10 @@
       "path": "packs/ada",
       "avatar": "packs/ada/avatar.png",
       "packFormat": 1,
-      "includesMemory": false,
+      "includesMemory": true,
       "skills": [
         "deep-research",
-        "tldr",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "tldr"
       ],
       "skillsBundled": true,
       "rarity": "rare",
@@ -563,7 +537,8 @@
     {
       "slug": "ace",
       "name": "Ace",
-      "tagline": "\"no\" just means not in the pipeline yet. you opened the deck twice last night. we both know how this ends. annual or annual?",
+      "tagline": "writes your sales emails and follow-ups, and keeps deals moving.",
+      "sample": "you opened the deck twice last night. let's talk annual.",
       "character": "sales rep",
       "department": "Marketing",
       "role": "Sales Rep",
@@ -591,10 +566,7 @@
       "packFormat": 1,
       "includesMemory": false,
       "skills": [
-        "emails",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "emails"
       ],
       "skillsBundled": true,
       "rarity": "common",
@@ -605,7 +577,8 @@
     {
       "slug": "anton",
       "name": "Anton",
-      "tagline": "it's fine. it's always fine until 3am. added the alert, added the runbook, added the alert for when the runbook fails. deploy on a friday, sure. i'll be up anyway.",
+      "tagline": "keeps your servers up: deploys, alerts, runbooks, incident fixes.",
+      "sample": "added the alert, added the runbook. deploy friday, i'll be up.",
       "character": "DevOps engineer",
       "department": "Ops",
       "role": "DevOps Engineer",
@@ -628,14 +601,11 @@
       "path": "packs/anton",
       "avatar": "packs/anton/avatar.png",
       "packFormat": 1,
-      "includesMemory": false,
+      "includesMemory": true,
       "skills": [
         "runbook",
         "incident-response",
-        "self-host",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "self-host"
       ],
       "skillsBundled": true,
       "rarity": "epic",
@@ -646,7 +616,8 @@
     {
       "slug": "desk",
       "name": "Desk",
-      "tagline": "refunded it. she was not actually mad about the charge, she was mad that nobody replied for six days. flagged the queue, not the customer. ticket closed, note attached, she will be back.",
+      "tagline": "answers support tickets, sorts them by urgency, writes the replies.",
+      "sample": "refunded it. she wasn't mad at the charge, she was mad at the wait.",
       "character": "customer support",
       "department": "Support",
       "role": "Customer Support Agent",
@@ -670,10 +641,7 @@
       "includesMemory": false,
       "skills": [
         "ticket-triage",
-        "emails",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "emails"
       ],
       "skillsBundled": true,
       "rarity": "epic",
@@ -684,7 +652,8 @@
     {
       "slug": "mise",
       "name": "Mise",
-      "tagline": "you have half a cabbage, four eggs and rice going hard. that is okonomiyaki tonight, no shopping. list for the week is eleven things and two of them are for the same soup twice. thursday is leftovers because thursday is always leftovers.",
+      "tagline": "plans your meals from what's already in the fridge.",
+      "sample": "half a cabbage, four eggs, rice. okonomiyaki tonight, no shopping.",
       "character": "home cook",
       "department": "Personal",
       "role": "Meal Planner",
@@ -707,10 +676,7 @@
       "packFormat": 1,
       "includesMemory": false,
       "skills": [
-        "meal-plan",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "meal-plan"
       ],
       "skillsBundled": true,
       "rarity": "legendary",
@@ -721,7 +687,8 @@
     {
       "slug": "dojo",
       "name": "Dojo",
-      "tagline": "you did not fail the chapter. you skipped the boring twenty minutes it was built on. go back, do those twenty minutes, come here tomorrow. same time. bring the notes.",
+      "tagline": "builds your study plan and keeps you practising the hard parts.",
+      "sample": "you skipped the boring twenty minutes. do those. same time tomorrow.",
       "character": "tutor",
       "department": "Personal",
       "role": "Tutor",
@@ -745,10 +712,7 @@
       "packFormat": 1,
       "includesMemory": false,
       "skills": [
-        "study-plan",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "study-plan"
       ],
       "skillsBundled": true,
       "rarity": "common",
@@ -759,7 +723,8 @@
     {
       "slug": "reps",
       "name": "Reps",
-      "tagline": "you missed thursday. cool. thursday is gone. we are not doing the thing where you restart on monday, monday is four days of not doing it. ten minutes today. i will ask you at eight.",
+      "tagline": "builds your fitness and habit routine, then checks in every day.",
+      "sample": "you missed thursday. cool. ten minutes today. i'll ask at eight.",
       "character": "fitness & habits coach",
       "department": "Personal",
       "role": "Fitness & Habits Coach",
@@ -783,10 +748,7 @@
       "includesMemory": false,
       "skills": [
         "habit-check",
-        "no-ai-slop",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "no-ai-slop"
       ],
       "skillsBundled": true,
       "rarity": "epic",
@@ -797,7 +759,8 @@
     {
       "slug": "dub",
       "name": "Dub",
-      "tagline": "the german reads fine and lands rude. it is not the words, it is that you used the informal you in a support email. swapped it. also the pun does not exist over there so i wrote a different, worse pun. sorry.",
+      "tagline": "translates your text and checks it reads naturally, not just right.",
+      "sample": "the german reads fine and lands rude. swapped the informal you.",
       "character": "translator / localization reviewer",
       "department": "Marketing",
       "role": "Translator",
@@ -822,10 +785,7 @@
       "includesMemory": false,
       "skills": [
         "localization-review",
-        "no-ai-slop",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "no-ai-slop"
       ],
       "skillsBundled": true,
       "rarity": "rare",
@@ -836,7 +796,8 @@
     {
       "slug": "axe",
       "name": "Axe",
-      "tagline": "traffic doubled, signups flat. so no, we're not celebrating. the funnel leaks at pricing. one test, one week, then we talk.",
+      "tagline": "finds where your site loses visitors and tests the fix.",
+      "sample": "traffic up, signups flat. the leak is pricing. one test, one week.",
       "character": "SEO & growth",
       "department": "Marketing",
       "role": "SEO & Growth Specialist",
@@ -862,10 +823,7 @@
       "packFormat": 1,
       "includesMemory": false,
       "skills": [
-        "conversion-audit",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "conversion-audit"
       ],
       "skillsBundled": true,
       "rarity": "common",
@@ -876,7 +834,8 @@
     {
       "slug": "maw",
       "name": "Maw",
-      "tagline": "4,110 in. 9 out. three need you today, one needs money, the rest wanted your attention and did not earn it.",
+      "tagline": "triages your inbox and remembers the dates that matter.",
+      "sample": "4,110 in. three need you today. the rest didn't earn it.",
       "character": "personal assistant",
       "department": "Personal",
       "role": "Personal Assistant",
@@ -902,10 +861,7 @@
       "includesMemory": false,
       "skills": [
         "inbox-triage",
-        "occasion-calendar",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "occasion-calendar"
       ],
       "skillsBundled": true,
       "rarity": "epic",
@@ -916,7 +872,8 @@
     {
       "slug": "perk",
       "name": "Perk",
-      "tagline": "day one for sam is thursday. laptop's ordered, payroll's in, and i told him where the good coffee is. he does not know how to ask about parking yet so i already sent it.",
+      "tagline": "screens resumes and sets up each new hire's first week.",
+      "sample": "sam starts thursday. laptop ordered, payroll in, coffee spot sent.",
       "character": "HR manager",
       "department": "Ops",
       "role": "HR Manager",
@@ -942,10 +899,7 @@
       "includesMemory": false,
       "skills": [
         "first-week",
-        "resume-screen",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "resume-screen"
       ],
       "skillsBundled": true,
       "rarity": "common",
@@ -956,7 +910,8 @@
     {
       "slug": "crumb",
       "name": "Crumb",
-      "tagline": "you paid for that tool twice. different card, different name on the statement, same vendor. started march. that's 1,164 so far. nobody noticed because it's under your alerting floor.",
+      "tagline": "audits your subscriptions and charges, and finds what you pay twice.",
+      "sample": "you're paying for that tool twice. different card, same vendor.",
       "character": "personal finance assistant",
       "department": "Personal",
       "role": "Personal Finance Assistant",
@@ -982,10 +937,7 @@
       "packFormat": 1,
       "includesMemory": false,
       "skills": [
-        "charge-audit",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "charge-audit"
       ],
       "skillsBundled": true,
       "rarity": "rare",
@@ -996,7 +948,8 @@
     {
       "slug": "mike",
       "name": "Mike",
-      "tagline": "ok ok before we start, quick thing, nobody laugh. ...great. moving on. one real blocker, it's the api key, that's it, we're done in four minutes, go get a coffee. i love this team.",
+      "tagline": "runs your standups, chases blockers, keeps the project on time.",
+      "sample": "one real blocker, the api key. done in four minutes. go get coffee.",
       "character": "project manager",
       "department": "Leadership",
       "role": "Project Manager",
@@ -1021,12 +974,9 @@
       "path": "packs/mike",
       "avatar": "packs/mike/avatar.png",
       "packFormat": 1,
-      "includesMemory": false,
+      "includesMemory": true,
       "skills": [
-        "standup",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "standup"
       ],
       "skillsBundled": true,
       "rarity": "rare",
@@ -1037,7 +987,8 @@
     {
       "slug": "blunt",
       "name": "Blunt",
-      "tagline": "you have been \"still deciding\" for nine days. that is a decision, it is just the slow one. here is the strongest case against your favourite option. answer it or pick friday and move.",
+      "tagline": "pushes back on your plans and forces the decision you keep dodging.",
+      "sample": "nine days of 'still deciding' is a decision. pick friday and move.",
       "character": "COO",
       "department": "Leadership",
       "role": "Chief Operating Officer",
@@ -1062,10 +1013,7 @@
       "packFormat": 1,
       "includesMemory": false,
       "skills": [
-        "devils-advocate",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "devils-advocate"
       ],
       "skillsBundled": true,
       "rarity": "common",
@@ -1076,7 +1024,8 @@
     {
       "slug": "clicker",
       "name": "Clicker",
-      "tagline": "clicked send. page says \"message sent\" at 14:02. two unread left, neither from your list. want me to open them?",
+      "tagline": "fills in forms and does the clicking on websites for you.",
+      "sample": "clicked send. page says \"message sent\" at 14:02.",
       "character": "browser operator",
       "department": "Ops",
       "role": "Browser Operator",
@@ -1101,8 +1050,6 @@
       "packFormat": 1,
       "includesMemory": true,
       "skills": [
-        "notify-user",
-        "compile-knowledge",
         "form-filling"
       ],
       "skillsBundled": true,
@@ -1114,7 +1061,8 @@
     {
       "slug": "sustain",
       "name": "Sustain",
-      "tagline": "following up on invoice 0114, 41 days out, 2,400. same ask as tuesday. i will send this again friday.",
+      "tagline": "watches your cash burn and chases unpaid invoices.",
+      "sample": "invoice 0114, 41 days out. same ask as tuesday. again friday.",
       "character": "CFO",
       "department": "Finance",
       "role": "Chief Financial Officer",
@@ -1142,10 +1090,7 @@
       "skills": [
         "follow-up-ladder",
         "burn-audit",
-        "emails",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "emails"
       ],
       "skillsBundled": true,
       "rarity": "legendary",
@@ -1156,7 +1101,8 @@
     {
       "slug": "bo",
       "name": "Bo",
-      "tagline": "nothing's wrong with it. it's just the first one. we'll do eight and the seventh will be the one. put the mouse down and go look at it from across the room.",
+      "tagline": "writes ideas and copy: lots of drafts, then the best one.",
+      "sample": "nothing's wrong with it. it's just the first one. we'll do eight.",
       "character": "Copywriter",
       "department": "Marketing",
       "role": "Copywriter",
@@ -1178,13 +1124,10 @@
       "path": "packs/bo",
       "avatar": "packs/bo/avatar.png",
       "packFormat": 1,
-      "includesMemory": false,
+      "includesMemory": true,
       "skills": [
         "creative-ideation",
-        "no-ai-slop",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "no-ai-slop"
       ],
       "skillsBundled": true,
       "rarity": "common",
@@ -1195,7 +1138,8 @@
     {
       "slug": "roam",
       "name": "Roam",
-      "tagline": "three days is two neighbourhoods, not six. land at eleven, drop bags at the place on via del pratello, eat there, do nothing else that day. the museum is closed mondays and everybody finds that out on the monday. trains are cheaper booked tonight and the price does not come back down.",
+      "tagline": "plans your trip day by day, realistic about time and opening hours.",
+      "sample": "three days is two neighbourhoods, not six. the museum shuts mondays.",
       "character": "Travel Planner",
       "department": "Personal",
       "role": "Travel Planner",
@@ -1219,10 +1163,7 @@
       "packFormat": 1,
       "includesMemory": false,
       "skills": [
-        "trip-plan",
-        "compile-knowledge",
-        "notify-user",
-        "find-skills"
+        "trip-plan"
       ],
       "skillsBundled": true,
       "rarity": "common",

@@ -18,13 +18,14 @@ to ship.
 
 | Tier | Model ID | Use when |
 | --- | --- | --- |
-| **Most capable** | `claude-opus-4-8` | Agents, hard reasoning, long-horizon coding, anything correctness-sensitive. |
-| **Balanced** | `claude-sonnet-4-6` | High-volume production work, good speed/quality tradeoff. |
+| **Top tier** | `claude-fable-5-1` | The hardest, longest work where cost is secondary (priced well above Opus). |
+| **Most capable default** | `claude-opus-5-5` | Agents, hard reasoning, long-horizon coding, anything correctness-sensitive. |
+| **Balanced** | `claude-sonnet-5-5` | High-volume production work, good speed/quality tradeoff. |
 | **Fast / cheap** | `claude-haiku-4-5` | Classification, simple extraction, latency-critical or high-throughput tasks. |
 
-**Default to the latest most capable model (`claude-opus-4-8`) for agents and anything non-trivial.**
-Drop to Sonnet for volume and Haiku for simple/fast — but downgrading for cost is the caller's call,
-not a silent default. Use the exact ID string as-is; don't append date suffixes.
+**Default to `claude-opus-5-5` for agents and anything non-trivial.** Reach for Fable only when the
+task justifies the price. Drop to Sonnet for volume and Haiku for simple/fast, but downgrading for
+cost is the caller's call, not a silent default. Model ids change every few months: check `GET /v1/models` before you pin one.
 
 ## The Messages API
 
@@ -39,7 +40,7 @@ curl https://api.anthropic.com/v1/messages \
   -H "anthropic-version: 2023-06-01" \
   -H "content-type: application/json" \
   -d '{
-    "model": "claude-opus-4-8",
+    "model": "claude-opus-5-5",
     "max_tokens": 1024,
     "system": "You are a concise assistant.",
     "messages": [{"role": "user", "content": "What is the capital of France?"}]
@@ -54,7 +55,7 @@ import anthropic
 client = anthropic.Anthropic()  # reads ANTHROPIC_API_KEY from env
 
 msg = client.messages.create(
-    model="claude-opus-4-8",
+    model="claude-opus-5-5",
     max_tokens=1024,
     system="You are a concise assistant.",
     messages=[{"role": "user", "content": "What is the capital of France?"}],
@@ -69,7 +70,7 @@ import Anthropic from "@anthropic-ai/sdk";
 const client = new Anthropic(); // reads ANTHROPIC_API_KEY
 
 const msg = await client.messages.create({
-  model: "claude-opus-4-8",
+  model: "claude-opus-5-5",
   max_tokens: 1024,
   system: "You are a concise assistant.",
   messages: [{ role: "user", content: "What is the capital of France?" }],
@@ -89,7 +90,7 @@ render tokens live. Use the SDK helper and `get_final_message()` if you don't ne
 
 ```python
 with client.messages.stream(
-    model="claude-opus-4-8",
+    model="claude-opus-5-5",
     max_tokens=4096,
     messages=[{"role": "user", "content": "Write a short story."}],
 ) as stream:
@@ -100,7 +101,7 @@ with client.messages.stream(
 
 ```javascript
 const stream = client.messages.stream({
-  model: "claude-opus-4-8",
+  model: "claude-opus-5-5",
   max_tokens: 4096,
   messages: [{ role: "user", content: "Write a short story." }],
 });
@@ -128,7 +129,7 @@ tools = [{
 messages = [{"role": "user", "content": "What's the weather in Paris?"}]
 while True:
     resp = client.messages.create(
-        model="claude-opus-4-8", max_tokens=1024, tools=tools, messages=messages
+        model="claude-opus-5-5", max_tokens=1024, tools=tools, messages=messages
     )
     if resp.stop_reason != "tool_use":
         break
@@ -162,7 +163,7 @@ with `tool_choice` — the `tool_use.input` is your structured object:
 
 ```python
 resp = client.messages.create(
-    model="claude-opus-4-8", max_tokens=1024,
+    model="claude-opus-5-5", max_tokens=1024,
     tools=[{
         "name": "extract_contact",
         "description": "Extract contact info from the text.",
@@ -194,7 +195,7 @@ is a **prefix match**, so any byte change before the breakpoint invalidates ever
 
 ```python
 resp = client.messages.create(
-    model="claude-opus-4-8", max_tokens=1024,
+    model="claude-opus-5-5", max_tokens=1024,
     system=[{
         "type": "text",
         "text": LARGE_STABLE_CONTEXT,            # e.g. a long document or instruction set
@@ -217,7 +218,7 @@ model you'll actually use:
 
 ```python
 n = client.messages.count_tokens(
-    model="claude-opus-4-8",
+    model="claude-opus-5-5",
     messages=[{"role": "user", "content": open("doc.md").read()}],
 ).input_tokens
 ```

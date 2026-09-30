@@ -3,7 +3,7 @@
   "agentName": "dude",
   "createdWith": "0.3.24",
   "includes": {
-    "memory": false
+    "memory": "distilled"
   },
   "config": {
     "type": "claude",
@@ -15,12 +15,12 @@
   "skills": [
     "community-engagement",
     "community-triage",
-    "support-reply",
-    "compile-knowledge",
-    "notify-user",
-    "find-skills"
+    "support-reply"
   ],
   "hooks": {},
   "avatar": null,
-  "skillsBundled": true
+  "skillsBundled": true,
+  "memoryFiles": [
+    "seed-memory.md"
+  ]
 }
