@@ -55,5 +55,17 @@ while IFS= read -r slug; do
 done <<<"$idx_slugs"
 t "T5 every index roster matches its template's agents block" "" "${bad_roster% }"
 
+# DIVE-5263: the Mini App's Teams chip shows a team only when its lead is a
+# character, and it reads that from roster[].pack HERE, not from the template.
+# So the index's pack per role must be the template's own `pack:` line.
+bad_pack=""
+while IFS= read -r slug; do
+  idx_packs=$(jq -r --arg s "$slug" '.companies[]|select(.slug==$s)|.roster[]|select(.pack)|"\(.key)=\(.pack)"' teams/index.json | sort | tr '\n' ',')
+  yaml_packs=$(sed -n '/^agents:/,$p' "teams/$slug.5dive.yaml" \
+    | awk '/^  [a-z0-9][a-z0-9_-]*:[[:space:]]*$/{k=$1; sub(/:$/,"",k)} /^    pack:/{print k"="$2}' | sort | tr '\n' ',')
+  [[ "$idx_packs" == "$yaml_packs" ]] || bad_pack+="$slug(index=$idx_packs yaml=$yaml_packs) "
+done <<<"$idx_slugs"
+t "T6 every index roster pack matches its template's pack: lines" "" "${bad_pack% }"
+
 printf '\n%d passed, %d failed\n' "$PASS" "$FAIL"
 [[ $FAIL -eq 0 ]]

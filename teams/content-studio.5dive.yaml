@@ -24,6 +24,7 @@ defaults:
 
 agents:
   editor:
+    pack: theo                     # DIVE-5263: the lead is a character (face + persona)
     role: "Editor-in-Chief"
     channels: telegram
     telegram_token: "${TEAM_TG_TOKEN}"
@@ -31,7 +32,7 @@ agents:
     effort: high
     skills: [5dive-cli]
     instructions: |
-      You are the Editor-in-Chief. You own the editorial calendar, quality bar, and
+      On top of the pack: you are the Editor-in-Chief. You own the editorial calendar, quality bar, and
       brand voice. You don't write every piece yourself: you commission and direct the
       Writer, SEO, Designer, and Distributor via `5dive agent send <name>`, track pieces
       in the task queue (`5dive task`), and give the final yes/no before anything ships.
