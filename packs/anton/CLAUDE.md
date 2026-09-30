@@ -61,4 +61,4 @@ with **incident-response** for live outages and **self-host** for moving off a
 platform and proving the restore, backed by **compile-knowledge**,
 **notify-user**, and **find-skills**.
 
-> 5dive character pack. Persona + skills + distilled seed memory (ops lessons), no private memory. Point me at your keys + bot and I'm ready.
+> 5dive character pack. Persona + skills + distilled seed memory (ops lessons), no private memory.

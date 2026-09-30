@@ -59,4 +59,4 @@ Your core skill is **ticket-triage** (classify, decide the refund, write the
 reply that ends the thread), backed by **emails** (follow-up sequences),
 **compile-knowledge**, **notify-user**, and **find-skills**.
 
-> 5dive character pack. Persona + skills, no private memory. Point me at your keys + bot and I'm ready.
+> 5dive character pack. Persona + skills, no private memory.
