@@ -28,6 +28,7 @@ box on its next `5dive team ls`, with no release. That is the whole point.
 | `index.json` | the manifest the CLI and the dashboard read |
 | `<slug>.5dive.yaml` | one template |
 | `SCHEMA-v2.md` | the schema those templates are written against |
+| `photos/<slug>.webp` | the team's group photo, the card the Mini App's Teams chip shows |
 
 Each `index.json` entry carries `path` and `schemaVersion`. `schemaVersion` must
 equal the template's own `version:` line — the CLI **refuses** a template
@@ -43,5 +44,11 @@ is what replaces the guarantee bundling used to give for free.
 3. `bash scripts/check-teams.sh` — it set-compares the index against the files
    on disk, so an index that advertises a slug the repo does not contain reds
    here instead of on a customer's import (#807, #808).
-4. `bash scripts/check-team-skills.sh` — every skill a template names is a
+4. If the Mini App will offer it (one lead who is a character, no `requires`,
+   at most 5 roles), give it a group photo: the roster together in one frame,
+   in the style of 5dive.ai/team's group shot, the lead's face drawn from their
+   own `packs/<id>/avatar.png`. Save it as `photos/<slug>.webp` (square, about
+   1000px, under 300 KB) and name it in the entry's `photo`. check-teams.sh T7/T8
+   red on a missing, oversized or non-webp photo, and on an offered team with none.
+5. `bash scripts/check-team-skills.sh` — every skill a template names is a
    reference into `5dive-ai/skills`, resolved months later on a customer's box.

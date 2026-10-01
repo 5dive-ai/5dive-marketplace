@@ -67,5 +67,32 @@ while IFS= read -r slug; do
 done <<<"$idx_slugs"
 t "T6 every index roster pack matches its template's pack: lines" "" "${bad_pack% }"
 
+# DIVE-5297: a team's card on the Mini App is its GROUP photo (lodar 09-30:
+# "group photo like ours from 5dive.ai/team"), named by the index's `photo`.
+# The card is ~200px wide on a phone, so it ships as a card-size webp, never
+# a 2 MB png like the site's own group.png.
+PHOTO_MAX_BYTES=300000
+bad_photo=""
+while IFS=$'\t' read -r slug photo; do
+  [[ -z "$photo" ]] && continue
+  if [[ "$photo" != teams/photos/*.webp || "$photo" == *..* ]]; then bad_photo+="$slug(path=$photo) "; continue; fi
+  [[ -f "$photo" ]] || { bad_photo+="$slug(missing=$photo) "; continue; }
+  sz=$(stat -c%s "$photo")
+  (( sz <= PHOTO_MAX_BYTES )) || bad_photo+="$slug(${sz}B>${PHOTO_MAX_BYTES}B) "
+  [[ "$(head -c 12 "$photo" | tail -c 4)" == "WEBP" ]] || bad_photo+="$slug(not-webp) "
+done < <(jq -r '.companies[] | [.slug, (.photo // "")] | @tsv' teams/index.json)
+t "T7 every index photo is a card-size webp under teams/photos/ that exists" "" "${bad_photo% }"
+
+# ...and every team the Mini App's Teams chip offers HAS one. Same four rules as
+# the app's hireableTeams(): not our own crew, no requires, at most 5 roles, one
+# root that is a character. A team that starts qualifying (a lead gets cast)
+# reds here until its group photo lands, instead of shipping a lead-only card.
+no_photo=$(jq -r '.companies[]
+  | select(.slug != "5dive-team" and ((.requires // []) | length) == 0)
+  | select((.roster | length) >= 1 and (.roster | length) <= 5)
+  | select([.roster[] | select(.reports_to == null)] as $r | ($r | length) == 1 and ($r[0].pack // "") != "")
+  | select((.photo // "") == "") | .slug' teams/index.json | sort | tr '\n' ' ')
+t "T8 every team the Mini App offers has a group photo" "" "${no_photo% }"
+
 printf '\n%d passed, %d failed\n' "$PASS" "$FAIL"
 [[ $FAIL -eq 0 ]]
