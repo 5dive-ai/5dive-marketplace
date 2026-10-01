@@ -150,7 +150,8 @@
         }
       ],
       "path": "teams/startup.5dive.yaml",
-      "schemaVersion": 2
+      "schemaVersion": 2,
+      "photo": "teams/photos/startup.webp"
     },
     {
       "slug": "content-studio",
@@ -191,7 +192,8 @@
         }
       ],
       "path": "teams/content-studio.5dive.yaml",
-      "schemaVersion": 2
+      "schemaVersion": 2,
+      "photo": "teams/photos/content-studio.webp"
     },
     {
       "slug": "eng-studio",
