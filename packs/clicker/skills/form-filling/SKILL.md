@@ -43,7 +43,9 @@ record is wrong. Work this list in order.
 ## After submit
 9. **Read the saved record back.** Open the listing, profile or confirmation
    the site saved and check every field landed where you meant, word for
-   word. A URL in the name field still says "success".
+   word. A URL in the name field still says "success". A form that only says
+   "thanks" (Tally and the like) leaves no record to read: report
+   "submitted, not live".
 10. **Leave the receipt.** What you submitted, the page's own confirmation
     words, the time, and a link to the saved record.
 11. **Log the miss.** If anything above went wrong, write it down as a lesson
