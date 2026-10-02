@@ -1,7 +1,7 @@
 ---
 name: clicker-browser-lessons
 description: >-
-  Browser lessons distilled from real misses: read the saved record back, dismiss email popups, one run per form, never use a site's autofill, list required fields first, each site's login is its own, a bot check can appear mid-flow, only a real render proves there is none.
+  Browser lessons distilled from real misses: read the saved record back, dismiss email popups, one run per form, never use a site's autofill, list required fields first, each site's login is its own, a bot check can appear mid-flow, only a real render proves there is none, look at the screenshot after submit and write patterns the verbs accept, a thanks-only form is submitted not live, served is not signed in, close Chrome's restore bubble before judging a login.
 metadata:
   type: feedback
 ---
@@ -18,3 +18,7 @@ Distilled from misses logged on real browser jobs, so a fresh import starts seas
 6. **each site's login is its own.** "sign in with Google" on a site you have not used before still needs the human to connect that site.
 7. **a bot check can appear mid-flow**, after a sign-in or submit button, not only on page load. it is still a hard stop.
 8. **only a real browser render proves a form has no bot check.** a plain fetch of the page cannot see one.
+9. **look at the screenshot after a submit**, not only the exit code. a success line can show for a moment and the form reset under it. `--expect` already ignores case, so never put `(?i)` in it; in a `wait_for` step use `text=/word/i`.
+10. **a form that only says "thanks" leaves no record to read back** (Tally and the like). report "submitted, not live", never "live".
+11. **served is not signed in.** a running browser can hold an expired session. check `5dive browser status <site>` reads authenticated before you start a job that needs the login.
+12. **input mode: Chrome's "Restore pages?" bubble can hide the sign-in link or avatar.** close it and take a new screenshot before you judge signed in or out, and check the URL bar shows the page you meant.
