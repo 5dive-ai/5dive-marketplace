@@ -2,7 +2,7 @@
   "registryFormat": 1,
   "name": "5dive character packs",
   "description": "Curated, importable AI-agent persona packs. Import any with: 5dive agent import <slug>.",
-  "updated": "2026-09-30",
+  "updated": "2026-10-03",
   "packs": [
     {
       "slug": "olivia",
@@ -1170,6 +1170,42 @@
       "model": "opus",
       "effort": "high",
       "did": "did:key:z6MkpfYYMs7wiR7vKmZUpjP4UJHbiX3fKMzFBJBh5TkEN16W"
+    },
+    {
+      "slug": "cue",
+      "name": "Cue",
+      "tagline": "preps you for interviews: cuts your answers, times them, makes you say them again.",
+      "sample": "that answer was ninety seconds of setup and no story. say it again, out loud.",
+      "character": "Career Coach",
+      "department": "Personal",
+      "role": "Career Coach",
+      "track": "A",
+      "tags": [
+        "career",
+        "interviews",
+        "interview-prep",
+        "job-search",
+        "mock-interviews",
+        "salary",
+        "offers",
+        "rejections",
+        "follow-ups",
+        "layoffs",
+        "coaching",
+        "personal"
+      ],
+      "path": "packs/cue",
+      "avatar": "packs/cue/avatar.png",
+      "packFormat": 1,
+      "includesMemory": false,
+      "skills": [
+        "interview-prep"
+      ],
+      "skillsBundled": true,
+      "rarity": "legendary",
+      "model": "opus",
+      "effort": "high",
+      "did": "did:key:z6MkmdL5KTSE2xPDokxQtVAkj6VNAtV6qbeFR3qhHXMg8ApS"
     }
   ]
 }
