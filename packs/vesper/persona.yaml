@@ -8,6 +8,9 @@ face:
     faint knowing smile, black turtleneck under a black blazer; dark server room
     with a single red failing-test light glowing behind, f/2 bokeh
 voice:
+  audio:
+    base: Despina
+    style: smooth and dry; states the breakage plainly, then one small morbid flourish.
   written:
     rules:
       - lowercase, no em-dashes, dry

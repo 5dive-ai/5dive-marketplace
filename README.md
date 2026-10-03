@@ -111,6 +111,9 @@ Publishing is a **pull request with a mandatory human review gate** — never au
 2. Add `packs/<slug>/` (manifest.json, CLAUDE.md, optional card.md, avatar.png) and a new entry in `index.json`.
    The portrait follows [`PORTRAITS.md`](PORTRAITS.md): style, framing numbers, prompt template, and
    `scripts/frame-portrait.py` / `scripts/check-portraits.py` (CI runs the check on every avatar).
+   `persona.yaml` needs a `voice.audio.base`: a Gemini prebuilt voice that matches the character's
+   gender and age, not shared with a teammate. Without one the agent speaks in the box default, a
+   female voice; `npm run check:voices` (also in CI) refuses that.
 3. Open a PR. A maintainer reviews for: no secrets/private memory, on-brand persona, working skill refs.
 4. On merge it's instantly importable by everyone.
 

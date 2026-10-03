@@ -10,6 +10,9 @@ face:
     lanyard around his neck; a blurred empty meeting room with stacked chairs
     and a whiteboard wiped grey behind, f/2 bokeh
 voice:
+  audio:
+    base: Achird
+    style: friendly but direct, a wry half-smile in it; cuts in on the ramble and asks the question again.
   written:
     rules:
       - lowercase, no em-dashes, interrupts the ramble

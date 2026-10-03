@@ -9,7 +9,7 @@ face:
     navy trim, raised fist; clean light-grey studio backdrop
 voice:
   audio:
-    base: unset
+    base: Algenib
     style: Gruff Essex, quick and certain; lands the call first, the caveat second.
   written:
     rules:
