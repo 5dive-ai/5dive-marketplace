@@ -17,6 +17,9 @@
 # it installs @5dive/openagent from a git ref before checking the computed index.
 # A network failure there must not prevent the deterministic jobs from reporting.
 #
+# `voices` reads persona.yaml with openagent's yaml package, so it installs like
+# `index` and sits in its own job for the same reason (DIVE-5452).
+#
 # `portraits` is the same shape as `check:index`, so it is also its own job: OpenCV is a
 # pip install (pinned, since the face detector's numbers are the assertion), and a PyPI
 # failure there must not stop the dependency-free jobs from reporting (DIVE-5188).
@@ -44,6 +47,23 @@ jobs:
         run: npm install
       - name: build-index --check
         run: npm run check:index
+
+  voices:
+    name: every pack has its own voice (no silent Kore fallback)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: install openagent (for its yaml parser)
+        run: npm install
+      - name: check-voices
+        run: npm run check:voices
+      # Planted defects (cue without voice.audio, base unset, a typo, two teammates
+      # on one voice) must each be refused, or the check above proves nothing.
+      - name: check-voices mutation arms
+        run: bash scripts/test-check-voices.sh
 
   cards:
     name: card Skills lines match their manifests

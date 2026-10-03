@@ -11,6 +11,7 @@
     "lint:promote-queue": "node scripts/check-skills.mjs --promote-queue",
     "test:skills": "bash scripts/test-check-skills.sh",
     "check:teams": "bash scripts/check-teams.sh",
+    "check:voices": "node scripts/check-voices.mjs",
     "check:team-skills": "bash scripts/check-team-skills.sh"
   },
   "devDependencies": {

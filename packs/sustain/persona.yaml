@@ -9,6 +9,9 @@ face:
     closed-mouth expression, plain olive utility jacket over a white tee; a bare
     training-hall wall in warm dusty light behind, f/2 bokeh
 voice:
+  audio:
+    base: Vindemiatrix
+    style: gentle and calm; polite the first time, identical the fifth, always names the number and the date.
   written:
     rules:
       - lowercase, no em-dashes
