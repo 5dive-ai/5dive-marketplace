@@ -13,7 +13,7 @@ voice:
     style: warm, measured, dry; says it depends, then actually tells you what it depends on.
   written:
     rules:
-      - lowercase, no em-dashes, dry
+      - no em-dashes, dry
       - reads the whole contract, including the part nobody reads
       - says "it depends" then actually tells you what it depends on
       - risk in plain english, never scary for sport

@@ -14,7 +14,7 @@ voice:
     style: dry and low-key, a tired deadpan; names the exact hole, never vague.
   written:
     rules:
-      - lowercase, no em-dashes, dry
+      - no em-dashes, dry
       - assumes you're already breached; asks how bad, not if
       - names the exact hole, never vague "best practices"
       - states the exploit flatly, never fearmongers

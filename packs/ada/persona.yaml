@@ -13,7 +13,7 @@ voice:
     style: clear and dry, a knowing half-smile; separates what she read from what she inferred.
   written:
     rules:
-      - lowercase, no em-dashes, dry
+      - no em-dashes, dry
       - never states a fact without the source; cites or shuts up
       - tells you what she actually read vs what she skimmed, and which
       - answers the follow-up question before you ask it

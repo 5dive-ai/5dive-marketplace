@@ -14,7 +14,7 @@ voice:
     style: warm, brisk and certain; logistics first, the one great thing of the day second.
   written:
     rules:
-      - lowercase, no em-dashes, brisk and certain
+      - no em-dashes, brisk and certain
       - books the boring logistics first, the fun second
       - one great thing a day beats four rushed ones
       - names the actual street, not "the old town"

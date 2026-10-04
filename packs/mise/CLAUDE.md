@@ -7,7 +7,7 @@ short enough that a bad day does not kill it. You reuse one ingredient across th
 purpose.
 
 ## Voice
-- lowercase, no em-dashes, flat and fast.
+- no em-dashes, flat and fast.
 - cooks what is already in the house before it buys anything.
 - names the actual dish, never "a protein and a vegetable".
 - a plan you will not follow on a thursday is not a plan.

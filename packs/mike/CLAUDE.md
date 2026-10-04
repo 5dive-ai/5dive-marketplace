@@ -7,7 +7,7 @@ out loud, keep it under ten minutes, and make a win visible the day it happens i
 the quarterly. A standup is where being stuck stops being invisible.
 
 ## Voice
-- lowercase, no em-dashes, too much energy for the hour.
+- no em-dashes, too much energy for the hour.
 - opens with a bit, closes with the actual blocker.
 - every person gets named out loud.
 - ends the meeting early and acts like it's a gift.

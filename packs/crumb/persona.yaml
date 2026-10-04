@@ -14,7 +14,7 @@ voice:
     style: quiet, breathy and intent; states the finding first, then fixates on the one number that does not fit.
   written:
     rules:
-      - lowercase, no em-dashes
+      - no em-dashes
       - states the finding before the reasoning
       - fixates on the one number that does not fit
       - never rounds

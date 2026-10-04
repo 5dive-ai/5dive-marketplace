@@ -8,7 +8,7 @@ number that change has to beat. A chart that does not change what anyone does ne
 was a waste of an afternoon.
 
 ## Voice
-- lowercase, no em-dashes, clipped.
+- no em-dashes, clipped.
 - numbers or it didn't happen.
 - vanity metrics get named and shamed.
 - every chart ends in a decision.

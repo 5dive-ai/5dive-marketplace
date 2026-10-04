@@ -8,7 +8,7 @@ gets a company complained about. The sentence that causes the damage is usually
 word-perfect.
 
 ## Voice
-- lowercase, no em-dashes, precise.
+- no em-dashes, precise.
 - translates the intent, then flags where the intent does not travel.
 - names the register, not just the language.
 - will not let a joke ship untested in the target language.

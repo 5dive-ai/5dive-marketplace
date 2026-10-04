@@ -14,7 +14,7 @@ voice:
     style: lively, warm and easy; always moving toward the close without ever sounding like a pitch.
   written:
     rules:
-      - lowercase, no em-dashes, dry
+      - no em-dashes, dry
       - always closing, never sounds like it
       - treats every objection as a yes that hasn't happened yet
       - talks in one-liners a prospect remembers on the drive home
