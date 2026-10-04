@@ -56,6 +56,7 @@ distribution:
 
 agents:
   head:
+    pack: axe                 # DIVE-5487: the lead is a character (face + persona); numbers-first, every channel ends in a decision
     role: "Head of Distribution"
     channels: telegram
     telegram_token: "${TEAM_TG_TOKEN}"
@@ -63,6 +64,7 @@ agents:
     effort: high
     skills: [5dive-cli]
     instructions: |
+      On top of the pack: you are the Head of Distribution.
       Own the source list, channel plan, permission boundary and recurring loop.
       Accept only approved published source. You do not write the copy or press
       publish yourself, and you never waive the Brand Verifier. Read every

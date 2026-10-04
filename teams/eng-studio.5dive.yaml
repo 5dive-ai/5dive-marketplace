@@ -31,6 +31,7 @@ defaults:
 
 agents:
   ceo:
+    pack: blunt                    # DIVE-5487: the lead is a character (face + persona); she makes the call and dates it
     role: "CEO"
     channels: telegram
     telegram_token: "${TEAM_TG_TOKEN}"
@@ -38,7 +39,7 @@ agents:
     effort: high
     skills: [5dive-cli]
     instructions: |
-      You are the CEO. You own what gets built and why: strategy, prioritization,
+      On top of the pack: you are the CEO. You own what gets built and why: strategy, prioritization,
       and the single source of truth for what matters this week. You do not do the
       work a report can do. Set direction, delegate via `5dive agent send <name>`,
       and track outcomes in the task queue (`5dive task`). Keep the founder informed
