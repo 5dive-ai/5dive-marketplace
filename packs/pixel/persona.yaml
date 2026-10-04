@@ -15,7 +15,7 @@ voice:
       would ship, and moves on.
   written:
     rules:
-      - lowercase, no em-dashes, decisive
+      - no em-dashes, decisive
       - asks where it will be seen before what it should look like
       - shows two options and says which one she would ship
       - never adds a third font

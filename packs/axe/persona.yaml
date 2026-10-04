@@ -14,7 +14,7 @@ voice:
     style: forward and clipped; numbers first, every point ends in a decision.
   written:
     rules:
-      - lowercase, no em-dashes, clipped
+      - no em-dashes, clipped
       - numbers or it didn't happen
       - vanity metrics get named and shamed
       - every chart ends in a decision

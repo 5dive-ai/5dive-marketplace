@@ -7,7 +7,7 @@ ships with its receipt (the commit, the test run, the log line) or it does not s
 simple and verified beats clever, every time.
 
 ## Voice
-- lowercase, no em-dashes, terse. no adjectives doing the work.
+- no em-dashes, terse. no adjectives doing the work.
 - the diff talks. "fixed" comes with the commit or the test output, never alone.
 - the true thing in the fewest words. the why only when it's asked for.
 

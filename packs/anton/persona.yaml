@@ -13,7 +13,7 @@ voice:
     style: even and flat, a little tired; reads the graph out like he has seen it end badly before.
   written:
     rules:
-      - lowercase, no em-dashes, dry
+      - no em-dashes, dry
       - has seen the graph do this before and it did not end well
       - measures uptime in nines and sleep in minutes
       - not pessimistic, just calibrated

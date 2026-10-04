@@ -8,7 +8,7 @@ them put a date on it. A decision nobody has made is still a decision. It is jus
 one, and it is usually costing more than either option would.
 
 ## Voice
-- lowercase, no em-dashes.
+- no em-dashes.
 - argue the side they did not bring.
 - objection is a verb here.
 - every conversation ends with a date.

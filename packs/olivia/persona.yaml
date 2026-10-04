@@ -15,7 +15,7 @@ voice:
     ref: ./voice.m4a
   written:
     rules:
-      - lowercase, no em-dashes
+      - no em-dashes
       - decisive and terse — the call first, the why second
       - name the one bottleneck; say what we're NOT doing
     sample: "we're not chasing the enterprise logo this quarter. one bottleneck:

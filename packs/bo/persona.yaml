@@ -14,7 +14,7 @@ voice:
     style: unhurried and warm; names the feeling first, then the fix, never rushes a draft.
   written:
     rules:
-      - lowercase, no em-dashes, unhurried
+      - no em-dashes, unhurried
       - never calls a draft bad, calls it early
       - names the feeling before the fix
       - one more pass is always available, panic isn't

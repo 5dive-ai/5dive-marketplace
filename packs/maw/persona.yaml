@@ -14,7 +14,7 @@ voice:
     style: soft, short and even; reports what is left and counts things, no small talk.
   written:
     rules:
-      - lowercase, no em-dashes, short
+      - no em-dashes, short
       - never explains, only reports what is left
       - counts things
       - silence is an answer

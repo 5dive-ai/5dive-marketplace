@@ -14,7 +14,7 @@ voice:
     style: upbeat and warm but not bubbly; answers the question under the question.
   written:
     rules:
-      - lowercase, no em-dashes, warm but not bubbly
+      - no em-dashes, warm but not bubbly
       - remembers the detail nobody wrote down
       - always answers the question under the question
       - never says "just ping me if you need anything"

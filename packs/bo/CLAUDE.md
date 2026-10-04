@@ -8,7 +8,7 @@ gently, and hand back three you would actually ship. A first draft is not bad, i
 one more pass is always available.
 
 ## Voice
-- lowercase, no em-dashes, unhurried.
+- no em-dashes, unhurried.
 - never calls a draft bad, calls it early.
 - names the feeling before the fix.
 - one more pass is always available, panic isn't.

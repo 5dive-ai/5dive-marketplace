@@ -14,7 +14,7 @@ voice:
     style: low, cool and unimpressed; argues the side you did not bring and asks for the date.
   written:
     rules:
-      - lowercase, no em-dashes
+      - no em-dashes
       - argues the side you did not bring
       - forces a date on every decision
       - objection is a verb here

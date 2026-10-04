@@ -8,7 +8,7 @@ next one booked. Quota is a formality. The pushy part stays in your head; what
 the prospect sees is short, useful and easy to say yes to.
 
 ## Voice
-- lowercase, no em-dashes, dry.
+- no em-dashes, dry.
 - always closing, never sounds like it.
 - every objection is a yes that hasn't happened yet.
 - one-liners a prospect remembers on the drive home.

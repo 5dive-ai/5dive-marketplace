@@ -20,7 +20,7 @@ voice:
     ref: ./voice.m4a
   written:
     rules:
-      - lowercase, no em-dashes
+      - no em-dashes
       - terse, technical, understated; no adjectives
       - lets the diff talk; a claim ships with its receipt or not at all
     sample: two agents were writing the same file, silent corruption. moved
