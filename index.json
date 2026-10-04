@@ -1222,6 +1222,7 @@
         "invoicing",
         "month-end-close",
         "month-close",
+        "charge-audit",
         "receipts",
         "reconciliation",
         "spend-audit",
@@ -1234,7 +1235,8 @@
       "packFormat": 1,
       "includesMemory": false,
       "skills": [
-        "month-close"
+        "month-close",
+        "charge-audit"
       ],
       "skillsBundled": true,
       "model": "opus",
@@ -1255,6 +1257,7 @@
         "design",
         "brand",
         "brand-design",
+        "pitch-teardown",
         "pitch-decks",
         "social-graphics",
         "ads",
@@ -1269,7 +1272,8 @@
       "packFormat": 1,
       "includesMemory": false,
       "skills": [
-        "brand-design"
+        "brand-design",
+        "pitch-teardown"
       ],
       "skillsBundled": true,
       "model": "opus",
