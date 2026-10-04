@@ -119,6 +119,23 @@ if (noDepartment.length) {
   );
 }
 
+// Russian/Chinese storefront copy is hand-maintained too. Every pack must carry
+// all six fields as non-empty strings, and none may be the English tagline
+// pasted verbatim (an untranslated copy-paste). Both FAIL --check and the build.
+const I18N_FIELDS = ["nameRu", "nameZh", "roleRu", "roleZh", "taglineRu", "taglineZh"];
+const badI18n = [];
+for (const p of index.packs) {
+  const en = typeof p.tagline === "string" ? p.tagline.trim() : "";
+  for (const f of I18N_FIELDS) {
+    const v = p[f];
+    if (typeof v !== "string" || v.trim() === "") {
+      badI18n.push(`${p.slug}: '${f}' is missing or empty`);
+    } else if (en && v.includes(en)) {
+      badI18n.push(`${p.slug}: '${f}' contains the English tagline verbatim (untranslated?)`);
+    }
+  }
+}
+
 const table = rows
   .map((r) => `  ${r.slug.padEnd(8)} ${String(r.was).padEnd(10)} -> ${r.now.padEnd(10)} (L${r.level}, ${r.completeness}% complete)`)
   .join("\n");
@@ -128,6 +145,11 @@ if (badDepartments.length) {
     `index.json has departments outside the controlled vocabulary:\n  ${badDepartments.join("\n  ")}\n` +
       `  allowed: ${DEPARTMENTS.join(", ")}`,
   );
+  process.exit(1);
+}
+
+if (badI18n.length) {
+  console.error(`index.json has missing or untranslated Russian/Chinese fields:\n  ${badI18n.join("\n  ")}`);
   process.exit(1);
 }
 
