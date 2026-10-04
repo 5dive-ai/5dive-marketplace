@@ -2,7 +2,7 @@
   "registryFormat": 1,
   "name": "5dive company templates",
   "description": "Pre-wired multi-agent companies. Spin one up with: 5dive team import <slug>.",
-  "updated": "2026-09-10",
+  "updated": "2026-10-04",
   "companies": [
     {
       "slug": "5dive-team",
@@ -68,7 +68,8 @@
         }
       ],
       "path": "teams/5dive-team.5dive.yaml",
-      "schemaVersion": 2
+      "schemaVersion": 2,
+      "photo": "teams/photos/5dive-team.webp"
     },
     {
       "slug": "deploy-team",
@@ -109,7 +110,8 @@
         }
       ],
       "path": "teams/deploy-team.5dive.yaml",
-      "schemaVersion": 2
+      "schemaVersion": 2,
+      "photo": "teams/photos/deploy-team.webp"
     },
     {
       "slug": "startup",
@@ -205,7 +207,8 @@
           "key": "ceo",
           "role": "CEO",
           "model": "opus",
-          "reports_to": null
+          "reports_to": null,
+          "pack": "blunt"
         },
         {
           "key": "eng_manager",
@@ -239,7 +242,8 @@
         }
       ],
       "path": "teams/eng-studio.5dive.yaml",
-      "schemaVersion": 2
+      "schemaVersion": 2,
+      "photo": "teams/photos/eng-studio.webp"
     },
     {
       "slug": "distribution",
@@ -260,7 +264,8 @@
           "key": "head",
           "role": "Head of Distribution",
           "model": "opus",
-          "reports_to": null
+          "reports_to": null,
+          "pack": "axe"
         },
         {
           "key": "scout",
@@ -307,7 +312,8 @@
         }
       ],
       "path": "teams/distribution.5dive.yaml",
-      "schemaVersion": 2
+      "schemaVersion": 2,
+      "photo": "teams/photos/distribution.webp"
     }
   ]
 }

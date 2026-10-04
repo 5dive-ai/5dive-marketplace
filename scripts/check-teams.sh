@@ -83,16 +83,20 @@ while IFS=$'\t' read -r slug photo; do
 done < <(jq -r '.companies[] | [.slug, (.photo // "")] | @tsv' teams/index.json)
 t "T7 every index photo is a card-size webp under teams/photos/ that exists" "" "${bad_photo% }"
 
-# ...and every team the Mini App's Teams chip offers HAS one. Same four rules as
-# the app's hireableTeams(): not our own crew, no requires, at most 5 roles, one
-# root that is a character. A team that starts qualifying (a lead gets cast)
-# reds here until its group photo lands, instead of shipping a lead-only card.
-no_photo=$(jq -r '.companies[]
-  | select(.slug != "5dive-team" and ((.requires // []) | length) == 0)
-  | select((.roster | length) >= 1 and (.roster | length) <= 5)
-  | select([.roster[] | select(.reports_to == null)] as $r | ($r | length) == 1 and ($r[0].pack // "") != "")
-  | select((.photo // "") == "") | .slug' teams/index.json | sort | tr '\n' ' ')
-t "T8 every team the Mini App offers has a group photo" "" "${no_photo% }"
+# DIVE-5487 (lodar 2026-10-04 "just make lead and group photo so we can show
+# all"): the Mini App and the dashboard show EVERY team in this index — one the
+# box cannot run is shown with the reason, not hidden — so every entry needs
+# what its card is drawn from: one root role whose `pack` is a character in
+# packs/ (the face and the name on the card), and a group photo. A new team
+# reds here until both land, instead of shipping a faceless card.
+no_lead=""
+while IFS=$'\t' read -r slug pack; do
+  [[ -n "$pack" && -f "packs/$pack/avatar.png" ]] || no_lead+="$slug(lead=${pack:-none}) "
+done < <(jq -r '.companies[]
+  | [.slug, ([.roster[] | select(.reports_to == null)] as $r | if ($r | length) == 1 then ($r[0].pack // "") else "" end)]
+  | @tsv' teams/index.json)
+no_photo=$(jq -r '.companies[] | select((.photo // "") == "") | .slug' teams/index.json | sort | tr '\n' ' ')
+t "T8 every team in the index has a single lead who is a catalogue character, and a group photo" "" "$(echo ${no_lead}${no_photo})"
 
 printf '\n%d passed, %d failed\n' "$PASS" "$FAIL"
 [[ $FAIL -eq 0 ]]
