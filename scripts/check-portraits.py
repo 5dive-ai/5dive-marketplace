@@ -9,7 +9,7 @@ A pack listed under "## Known exceptions" in PORTRAITS.md is reported as `known`
 The list is a ratchet: a listed pack that now passes FAILS as `stale`, so it gets removed from
 the list instead of staying excused. Exit 1 on any FAIL.
 
-Adapted from OINOA's scripts/check-portraits.py (oinoa/oinoa-marketplace @ c79bbe7); the method
+Adapted from a partner's scripts/check-portraits.py; the method
 is theirs, the numbers are 5dive's own (DIVE-5188, re-set to the dark house look in DIVE-5222)."""
 import os, re, sys
 import cv2

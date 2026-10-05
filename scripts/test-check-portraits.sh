@@ -33,7 +33,7 @@ check "$TMP/packs/ref/avatar.png"
 # Too loose: the reference shrunk onto a same-colour canvas twice its size (face_h halves).
 plant loose 'cv2.copyMakeBorder(img, h//2, h//2, w//2, w//2, cv2.BORDER_REPLICATE)'
 check "$TMP/packs/loose/avatar.png"
-(( RC == 1 )) && [[ "$OUT" == *"face_h="* ]] && okk 'a too-loose (OINOA-style) avatar fails on face_h' || bad "loose: rc=$RC $OUT"
+(( RC == 1 )) && [[ "$OUT" == *"face_h="* ]] && okk 'a too-loose (partner-style) avatar fails on face_h' || bad "loose: rc=$RC $OUT"
 
 # Too tight: the middle 70% of the reference, upscaled back (face_h grows ~1.4x).
 plant tight 'cv2.resize(img[int(h*.15):int(h*.85), int(w*.15):int(w*.85)], (w, h))'

@@ -4,7 +4,7 @@
 The source must be larger than the output (1000px sources -> 512px avatars): the crop never upscales past it.
 The targets are the middle of check-portraits.py's bands, read from its SPEC, so the two cannot drift.
 
-Adapted from OINOA's scripts/frame-portrait.py (oinoa/oinoa-marketplace @ c79bbe7); the numbers are 5dive's
+Adapted from a partner's scripts/frame-portrait.py; the numbers are 5dive's
 (DIVE-5188). Check the result with check-portraits.py, and look at it: the tool reports the target it aimed
 at, not the picture it made."""
 import importlib.util, os, sys
