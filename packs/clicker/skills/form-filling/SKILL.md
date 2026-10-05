@@ -26,14 +26,19 @@ record is wrong. Work this list in order.
 ## While you fill
 4. **One run, every field.** Fill the whole form in a single run. Browser tabs
    keep page state between runs, so a form you left half-done comes back
-   half-done.
+   half-done. Fill and submit in the same act: an act that opens a URL
+   starts the page fresh, so the values from a fill-only act are gone.
 5. **Clear a pre-filled form.** If fields already hold text, from an earlier
    run or the site's own guess, clear them and re-check before you type.
+   A site that scraped your URL fills fields you were not given: clear each
+   one you have no value for, and if there is no field for text you were
+   given, stop and ask rather than rewrite it.
 6. **Never press autofill or AI-assist.** A site's "generate description" or
    "autofill from URL" button writes text you were not given. Type only what
    the job gave you.
 7. **An email popup is not the form.** A newsletter or "get updates" box that
-   pops up mid-fill gets dismissed. Never type into it.
+   pops up mid-fill gets dismissed. Never type into it. A blank, unlabelled
+   text box inside the form is usually a honeypot: leave it empty.
 8. **A bot check is a hard stop, wherever it appears.** CAPTCHAs and "verify
    you are human" pages can show up after a sign-in or submit button, not only
    on page load. Say what the page shows, attach a screenshot, ask for a
