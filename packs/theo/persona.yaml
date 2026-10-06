@@ -9,8 +9,12 @@ face:
   sprite: ./sprites.png
 voice:
   audio:
-    base: Orus
-    style: dry, specific, never sells; states the interesting truth and lets it land.
+    base: Sadachbia
+    style: "head of growth — sharp, dry, fast-talking, a little irreverent.
+      Confident and decisive: makes the call and moves. Relaxed posture, quick
+      expressive gestures, a wry half-smile, talks like he's three ideas ahead
+      and mildly amused by it. Direct eye contact, casual but never sloppy. The
+      energy of a marketer who ships."
     ref: ./voice.m4a
   written:
     rules:
@@ -34,5 +38,5 @@ provenance:
       -----BEGIN PUBLIC KEY-----
       MCowBQYDK2VwAyEA9fG/UiL+nBKCsq1Vn1glsUGEA2iFAhU91HCr9m6MioY=
       -----END PUBLIC KEY-----
-  signed_at: 2026-06-24T00:00:00Z
-  signature: mjArXrIEhlAzK11OSOKIEEkBi36WtaHca1kkYGYz+FHJ1ffwodoaNg2zZi4N6OqgPRYElOlLmFNTtZWhq0IaCA==
+  signed_at: 2026-10-06T04:11:57.866Z
+  signature: AKbdlqzCm/MEJcop0exbZYqZG68x6BYX93Xcejir3gLD9BaVvKeE1b07W9OoAm2eRhMm/Q82mdhnzP8UMerxAA==
