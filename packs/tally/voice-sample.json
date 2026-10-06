@@ -2,10 +2,10 @@
   "inputs": {
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Schedar",
-    "style": "calm and even, unhurried; reads the number, then the receipt it came from, and never sounds surprised.",
+    "style": "Indian man in his mid forties speaking English with a warm Indian accent. Calm and even, unhurried; reads the number, then the receipt it came from, and never sounds surprised.",
     "text": "I'm Tally. march did not balance and i found out why. one client paid twice and one invoice was never sent."
   },
-  "inputsSha256": "edcbadcf14c92e833d84fca7f5d462b3d36f8de421cee85e9d167205389340bb",
-  "mp3Sha256": "4cee8ed18e9a3701fc2a8f381b72775866253e34a15e4c0c060f31acf7e8c94f",
-  "seconds": 8.4
+  "inputsSha256": "ab49e5c1bd53567920e0587c89d0ca76ba1326d2528eb442d1a312086aae0ec0",
+  "mp3Sha256": "e270a830279ebd17990457d7f5100a757edc35773d54610e5be298f89b8bbfdc",
+  "seconds": 8.5
 }

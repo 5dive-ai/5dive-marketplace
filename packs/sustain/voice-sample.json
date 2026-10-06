@@ -1,11 +1,11 @@
 {
   "inputs": {
     "model": "google/gemini-3.8-flash-lite-tts",
-    "base": "Vindemiatrix",
-    "style": "gentle and calm; polite the first time, identical the fifth, always names the number and the date.",
+    "base": "Leda",
+    "style": "Female, late twenties, a young adult voice. Gentle and calm; polite the first time, identical the fifth, always names the number and the date.",
     "text": "I'm Sustain. invoice 0114, 41 days out. same ask as tuesday. again friday."
   },
-  "inputsSha256": "c75afe77afd7b8c6b3d071ae259f4c253b43644724a8ab21d916233a2f01e45b",
-  "mp3Sha256": "246981b54392a2f46360f7b14cf2a7fefd75b049e9c7573f736b9d90018a2659",
-  "seconds": 10.3
+  "inputsSha256": "e7464d8dc85eaad39f7088b9ddd257993811152fea792f478fc27d60c39e87ae",
+  "mp3Sha256": "dbe008852a48cddd2a9fd804a5f5259090229e08e4daef0630ef25ab262dccc6",
+  "seconds": 8.8
 }

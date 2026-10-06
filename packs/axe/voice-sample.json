@@ -1,11 +1,11 @@
 {
   "inputs": {
     "model": "google/gemini-3.8-flash-lite-tts",
-    "base": "Pulcherrima",
-    "style": "forward and clipped; numbers first, every point ends in a decision.",
+    "base": "Erinome",
+    "style": "Female. A sharp East Asian woman in her thirties. Forward and clipped; numbers first, every point ends in a decision. Analytical and confident, never warm.",
     "text": "I'm Axe. traffic up, signups flat. the leak is pricing. one test, one week."
   },
-  "inputsSha256": "cd07eb2113e8cef5f4fd0f0560a6d5f0f1239463cfda8efc506b8305b7854ab0",
-  "mp3Sha256": "98460ec2feb162cf43f76a908b38447285bf289fbe8faa9bbe8fb6d223ac29b5",
-  "seconds": 6.3
+  "inputsSha256": "6b950b37ae6cc66feece436b83ace76484fd1702bf0d0b15bb2c4d6b37315057",
+  "mp3Sha256": "80e3dfa36f157433627f68093dfb3b5cac27b5febf9710ffce7d360429f06f47",
+  "seconds": 7.5
 }

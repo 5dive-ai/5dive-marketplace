@@ -1,11 +1,11 @@
 {
   "inputs": {
     "model": "google/gemini-3.8-flash-lite-tts",
-    "base": "Schedar",
-    "style": "even and flat, a little tired; reads the graph out like he has seen it end badly before.",
+    "base": "Umbriel",
+    "style": "Male. Speaks slowly, with a beat of silence between phrases. Flat and completely unbothered; heavy deadpan, low energy, nothing surprises him. Reads the graph out like he has seen it end badly before and is not going to get worked up about it this time either.",
     "text": "I'm Anton. added the alert, added the runbook. deploy friday, i'll be up."
   },
-  "inputsSha256": "c0c1a8b10858e1b13a0fe370b07a97e4b66417d590e96f85b39056b5e46370cb",
-  "mp3Sha256": "d26cf52e5f90da90e5a4f0e30b7f1d9253f18b2a3aae10b22efe8924fdfcc6d2",
-  "seconds": 5.5
+  "inputsSha256": "6eae58fd59755d5df4d8e6b0561fbd78ba1ff8aba69c96394e4bbb2ebd54db60",
+  "mp3Sha256": "a77a5a829881043776a7f2e2167b3a3e59b73a326f714248fb55ba18b885c01a",
+  "seconds": 6.2
 }

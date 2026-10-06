@@ -1,11 +1,11 @@
 {
   "inputs": {
     "model": "google/gemini-3.8-flash-lite-tts",
-    "base": "Algieba",
-    "style": "smooth deadpan, locked in; reads P&L like the weather and never explains the joke.",
+    "base": "Zubenelgenubi",
+    "style": "Young East Asian day trader in his early twenties, Hong Kong English accent. Quick, clipped and locked in; reads numbers fast and flat, deadpan, a faint smirk in the voice. Reads P&L like the weather and never explains the joke.",
     "text": "I'm Quant. backtested with real fees. beat the market one year in five. paper only."
   },
-  "inputsSha256": "1d4e41ff27151b2b6b446dfe93a656fbc5600c9168878b3f567cfb3ce0e8a978",
-  "mp3Sha256": "9dc1b471331a560f7f561ef58077ee9882cdc775129b6eeff51bd9dbb2409e26",
-  "seconds": 6.4
+  "inputsSha256": "6d0107917e6769c9fd46e81c58534ba9b39b4a3354ed863568b646ee8a58a3fc",
+  "mp3Sha256": "29648dc89daa1e8c1cba2bb2271a4cc2dcb95a8568bbb957a6caeaa2dd3292dc",
+  "seconds": 6.6
 }

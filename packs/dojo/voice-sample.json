@@ -1,11 +1,11 @@
 {
   "inputs": {
     "model": "google/gemini-3.8-flash-lite-tts",
-    "base": "Alnilam",
-    "style": "low, firm and patient; short sentences, long pauses, praise in one word.",
+    "base": "Orus",
+    "style": "Japanese man in his fifties speaking English with a Japanese accent. Sharp, strict and exact, a sensei who expects discipline. Short clipped sentences, long pauses, low and firm; praise in one word, and rarely.",
     "text": "I'm Dojo. you skipped the boring twenty minutes. do those. same time tomorrow."
   },
-  "inputsSha256": "1156f8531b56a842fdba69fd997ba3edda90cc0c8be6729cf108001754fad2ed",
-  "mp3Sha256": "490de775e87bbbd59df93628f74667add1d09c9cfc95bb5287a10eb1693c27c2",
-  "seconds": 5.7
+  "inputsSha256": "e5f7220fbb242a810a4d79bcd78ab59eb31ace13e483d643bc50fd49254665a4",
+  "mp3Sha256": "ca9f65472f784533fc93a5cb15ca1039a78069244fb6843af1d9697446ea432b",
+  "seconds": 5.9
 }

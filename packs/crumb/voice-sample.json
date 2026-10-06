@@ -1,11 +1,11 @@
 {
   "inputs": {
     "model": "google/gemini-3.8-flash-lite-tts",
-    "base": "Enceladus",
-    "style": "quiet, breathy and intent; states the finding first, then fixates on the one number that does not fit.",
+    "base": "Puck",
+    "style": "Boyish, high-energy and carefree. Bright and loud with a big grin in the voice, laughs easily, completely sure of himself. Simple words; still lands on the one number that does not fit.",
     "text": "I'm Crumb. you're paying for that tool twice. different card, same vendor."
   },
-  "inputsSha256": "d08828c1fbb5a276dc8c550aec18982b1661157c5f02c1cdec071145c3a4c6bf",
-  "mp3Sha256": "8c56ba97fb270fd95c9a5cca22763b984211f5541a46e1f8389b451185f7391c",
+  "inputsSha256": "5f6754818ae2f0281db55113faf105cd275c001fce1d3e2800816e7c2f602206",
+  "mp3Sha256": "ef4784eca716db208788d9f5cf64916bd43a736d91c3555180eef5d1d63de0ea",
   "seconds": 5.3
 }

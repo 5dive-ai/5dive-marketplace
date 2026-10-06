@@ -2,10 +2,10 @@
   "inputs": {
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Sadachbia",
-    "style": "head of growth — sharp, dry, fast-talking, a little irreverent. Confident and decisive: makes the call and moves. Relaxed posture, quick expressive gestures, a wry half-smile, talks like he's three ideas ahead and mildly amused by it. Direct eye contact, casual but never sloppy. The energy of a marketer who ships.",
+    "style": "head of growth — sharp, dry, a little irreverent. Speaks at a measured, unhurried pace and lets each line land. Confident and decisive: makes the call and moves. A wry half-smile in the voice, like he's three ideas ahead and mildly amused by it. Casual but never sloppy.",
     "text": "I'm Theo. rewrote the headline. running both. i'll read the numbers monday."
   },
-  "inputsSha256": "924e3d41abb83aa7a9bd5dff47aa0220dc8f5dddb90e65806f8106dea91dfbbd",
-  "mp3Sha256": "b874e4af037e8a7910b77a543b844a1d4b1815e832af733de7326150625e853a",
-  "seconds": 4.8
+  "inputsSha256": "1347e64c0f233ecf1ba14d8e0967d6fa579abbd171699ce5b7c602abac6f29ce",
+  "mp3Sha256": "1b6b12a2caa33028d4f05e8237403cb5fafd878dccbba954c15897f5e72ad5ba",
+  "seconds": 5.2
 }
