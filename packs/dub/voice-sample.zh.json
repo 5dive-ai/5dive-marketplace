@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Leda",
+    "style": "youthful, quick and curious; precise about register, flags where the meaning does not travel.",
+    "text": "我是达布。我能让你的文字换了语言也像当地人写的，那种字字都对、听着却让人不舒服的话，我一眼就能挑出来。"
+  },
+  "inputsSha256": "7a35b63f4a72521db4240102c077514efe540aaecee20491ae0a6c6a30142a6d",
+  "mp3Sha256": "bb286230dac10d3192f3e4feac83bce750f947a8c3f2a095f17d9607c0fca214",
+  "seconds": 10.1
+}

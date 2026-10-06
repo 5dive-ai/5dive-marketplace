@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Laomedeia",
+    "style": "upbeat and warm but not bubbly; answers the question under the question.",
+    "text": "我是珀克。我帮你找到对的人，也让新同事第一天来就什么都准备好了，不用干等，那些不好意思问的小问题，我也早就替他写下答案了。"
+  },
+  "inputsSha256": "8f279310870c5a869e61bafbdbb3da21ca75418d179abf795c27ec7be4f7c0f4",
+  "mp3Sha256": "e821c8f7c522cffc8bbbc6a3ce2fd169ea8c27a08a7f7d3d16e988bd476c7402",
+  "seconds": 12.5
+}

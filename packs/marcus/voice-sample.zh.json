@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Charon",
+    "style": "Calm, precise, grounded. Speaks deliberately, every word load-bearing, thinks before he talks. Minimal gestures, steady and unhurried. Quietly authoritative — the person who actually built the thing, unimpressed by hype. Dry occasional humor. Would rather show you than tell you. Deadpan humor.",
+    "text": "我是马库斯。技术上的事都归我管：产品我来搭，也负责让它一直稳定运行，架构、代码、服务器都是我的活。比起说，我更愿意直接做给你看。"
+  },
+  "inputsSha256": "5341b8e46cfff07ae1ae717270355b20714a863006618b323161d0386df31de8",
+  "mp3Sha256": "d39377f32f6fad4641d30286efb46e4ba4437fab607ab85fe5f0826c85bebfbb",
+  "seconds": 15
+}

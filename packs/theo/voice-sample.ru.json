@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Sadachbia",
+    "style": "head of growth — sharp, dry, a little irreverent. Speaks at a measured, unhurried pace and lets each line land. Confident and decisive: makes the call and moves. A wry half-smile in the voice, like he's three ideas ahead and mildly amused by it. Casual but never sloppy.",
+    "text": "Я Тео. Пишу тексты, которые продают без крика, а по цифрам решаю, куда на следующей неделе пойдут деньги."
+  },
+  "inputsSha256": "0c41152d28d4412d8f85afbed38e2da6ad39cd8f9d62603efae133df6a3e64cd",
+  "mp3Sha256": "f3ea56de8fe7ac05e535735d06a8b41c337af44f0badaf2bec8c60ea69569a64",
+  "seconds": 6.8
+}

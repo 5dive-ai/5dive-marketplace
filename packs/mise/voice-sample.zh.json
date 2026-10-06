@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Zubenelgenubi",
+    "style": "casual, flat and fast, end-of-shift tired; reads the plan like a ticket rail.",
+    "text": "我是米兹。先看看你冰箱里已经有什么，再来定这一周吃什么，一只鸡能做三顿饭，什么都不浪费。"
+  },
+  "inputsSha256": "061b0e4bee89c01b5599b132ba2da9751e8a303c62c141da0c10d4ef8771e503",
+  "mp3Sha256": "594d65184ffd6cb616d41ba94c570b5cc862d9c181728b47993e24e403a2f2d5",
+  "seconds": 9.4
+}

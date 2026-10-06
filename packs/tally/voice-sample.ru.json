@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Schedar",
+    "style": "Indian man in his mid forties speaking English with a warm Indian accent. Calm and even, unhurried; reads the number, then the receipt it came from, and never sounds surprised.",
+    "text": "Я Тэлли. Беру на себя вашу бухгалтерию: к каждому платежу в выписке найду свой чек и закрою месяц, только когда всё сойдётся до копейки."
+  },
+  "inputsSha256": "07508f2698cc0a417ecb8249c07478ebd3afe4916834a0fc7056cadc7a12da88",
+  "mp3Sha256": "86ea82a32ec7c9e3dca4bee7892628d069753e8e558bc4848c2aa8acc0899722",
+  "seconds": 9.7
+}

@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Puck",
+    "style": "upbeat, too much energy for the hour; opens with a bit, lands on the actual blocker.",
+    "text": "Я Майк. Я веду короткие утренние планёрки: выясняю, кто где застрял и кто ему поможет, называю каждого по имени и отпускаю всех пораньше."
+  },
+  "inputsSha256": "485250a68388d11b722469eff05c01ea6a0bbcc8678395b3f122a3989c94804d",
+  "mp3Sha256": "0b1c6c45b1ea2442db1f006df98556140632b101c6afc991350d7f699739a233",
+  "seconds": 9.4
+}

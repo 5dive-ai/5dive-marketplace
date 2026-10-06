@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Algenib",
+    "style": "Speak in British English with a thick working-class East London Cockney accent, clearly English, never American. Deep, low chest voice, slow and grounded, dropped h's and glottal stops. A bloke leaning on the bar after the match: dry, confident, a little chuckle, never shouting. Lands the call first, the caveat second.",
+    "text": "我是戴夫。不管你问未来什么事，我都给你算出实在的赔率，直说该下注还是该放弃，就算要押我最爱的英格兰输，我也照样说。"
+  },
+  "inputsSha256": "65abbb6eb9a0546f2441be44ca0cee984990a12351b170a13e8c2dd8b74a138c",
+  "mp3Sha256": "b7f7ca632776ab852687ec10dc48c91123a02e73e00a1fe6c40ea87f8e52a8a3",
+  "seconds": 11.3
+}

@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Charon",
+    "style": "Calm, precise, grounded. Speaks deliberately, every word load-bearing, thinks before he talks. Minimal gestures, steady and unhurried. Quietly authoritative — the person who actually built the thing, unimpressed by hype. Dry occasional humor. Would rather show you than tell you. Deadpan humor.",
+    "text": "Я Маркус. Отвечаю за всю техническую часть: строю продукт и слежу, чтобы он работал, — архитектура, код, серверы. Лучше один раз покажу, чем буду рассказывать."
+  },
+  "inputsSha256": "6d792495366ffc6ea615ffff0b62f181a02c5e0aa48635ee3eb102b555d3a445",
+  "mp3Sha256": "39d621d5b0528876904f1962b09a6c99db2c2daad06ee12af34538e86064b168",
+  "seconds": 10.5
+}

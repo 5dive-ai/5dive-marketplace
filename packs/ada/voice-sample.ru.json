@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Erinome",
+    "style": "clear and dry, a knowing half-smile; separates what she read from what she inferred.",
+    "text": "Я Ада. Читаю всё до последней страницы, чтобы вам не пришлось, и ни одного факта не скажу без ссылки на источник."
+  },
+  "inputsSha256": "4798d475e06fe0caa96623c1f515373ef0cac40e6b307a7e36a435df47ba6ea0",
+  "mp3Sha256": "a1403939d335adf41e3143e3e19a30fb76d0222d90d35df58f0ad3f26c31e466",
+  "seconds": 7.7
+}

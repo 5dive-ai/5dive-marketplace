@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Gacrux",
+    "style": "Female, low-to-mid pitch. Aggressive, decisive, commanding. Clipped and controlled, zero warmth, fixer energy — speaks like every sentence is final and she's already moved on. african american business leader ceo vibe. confident.",
+    "text": "我是奥利维亚。我会先找出最卡你生意的那一件事，让整个团队先把它解决掉。我做决定只看事实，也会直接告诉你哪些事我们现在不做。"
+  },
+  "inputsSha256": "855ab17412a8aeda91c630df9a1f5cd1e4e8cf6b973f59a3d9069e7e6073f6db",
+  "mp3Sha256": "c904bdaf4827b24c98dc03ce6a31f33d9c2b447147ea2c9afb9589a205e9c9f9",
+  "seconds": 12.6
+}

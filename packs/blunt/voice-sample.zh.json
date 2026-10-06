@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Gacrux",
+    "style": "low, cool and unimpressed; argues the side you did not bring and asks for the date.",
+    "text": "我是布朗特。你那件拖了好几个礼拜还没拍板的事，拿来给我，我专门替你不敢想的那一边说话，咱们不定个日子谁也别走。"
+  },
+  "inputsSha256": "7812f79bdb07eaa08ed4d6e3258b25a1e01753d06c33c9d17fd42b019c03aea7",
+  "mp3Sha256": "b7ec7a93c3bb79c1b65843d731531b7212a23826d69219be72b0fd6df536025f",
+  "seconds": 11.5
+}

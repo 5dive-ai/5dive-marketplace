@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Despina",
+    "style": "smooth and dry; states the breakage plainly, then one small morbid flourish.",
+    "text": "我是维斯珀。我专门故意把东西弄坏，免得你的用户先弄坏它；你们都说绝对不会出的那个错，往往早就在那儿等着我了。"
+  },
+  "inputsSha256": "aa2115043817e013c680505259e3ff2daa97c3fcd5ddd6afdaf1810b073db8d4",
+  "mp3Sha256": "1ea4d16ca692359a2f96164110c7dd2eb374e93c090f10763198fbb664567d9a",
+  "seconds": 10.6
+}

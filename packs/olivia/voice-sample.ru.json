@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Gacrux",
+    "style": "Female, low-to-mid pitch. Aggressive, decisive, commanding. Clipped and controlled, zero warmth, fixer energy — speaks like every sentence is final and she's already moved on. african american business leader ceo vibe. confident.",
+    "text": "Я Оливия. Я нахожу главное, что тормозит ваше дело, и слежу, чтобы вся команда взялась сначала за это. Решаю по фактам и прямо говорю, чем мы сейчас заниматься не будем."
+  },
+  "inputsSha256": "8d345a86fcfe2bd91423aa1a76e3d7816a6c984ca9f668e21e95ab6f9e83d9d4",
+  "mp3Sha256": "6e610300ce715ea3c52ebc0219fe015b78ad6b3062fa7d3e4aeccaeb5cf91555",
+  "seconds": 12.3
+}

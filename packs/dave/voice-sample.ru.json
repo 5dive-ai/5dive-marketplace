@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Algenib",
+    "style": "Speak in British English with a thick working-class East London Cockney accent, clearly English, never American. Deep, low chest voice, slow and grounded, dropped h's and glottal stops. A bloke leaning on the bar after the match: dry, confident, a little chuckle, never shouting. Lands the call first, the caveat second.",
+    "text": "Я Дейв. Я перевожу любой вопрос о будущем в честные шансы и прямо говорю, ставить или пропустить, даже если это против моей любимой сборной Англии."
+  },
+  "inputsSha256": "0b1c2fb8e847636b3df881f0047ea9b50a63e4cfe86e16c39f8c049cd2569ab5",
+  "mp3Sha256": "0a2f9afcb3802e5fab56f1980e78e6f9bcc09a82e700cbed58d8f5a8a63fe004",
+  "seconds": 9.9
+}

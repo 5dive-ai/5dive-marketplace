@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Autonoe",
+    "style": "bright and literal; reads back exactly what the page said, timestamps included.",
+    "text": "我是克利克。我在浏览器里替你动手,填表格、下单、订位子,把每个该点的按钮都点好,再把屏幕上写的话原原本本告诉你。"
+  },
+  "inputsSha256": "09f49eb9328659d580944710d4b8bcda48569978ddbd13788022f7e4f7a10f15",
+  "mp3Sha256": "5b0aee89d63d03f097aeb00fbf038e125e238154d3d9ce8e007a570f06b357c9",
+  "seconds": 12.1
+}

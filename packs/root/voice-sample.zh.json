@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Achernar",
+    "style": "Androgynous voice, neither clearly male nor female, mid pitch. Dry and low-key, a tired deadpan; names the exact hole, never vague.",
+    "text": "我是鲁特。我默认你已经被人黑了，所以先查清楚哪里漏了，把口子堵上，复盘的事咱们回头再说。"
+  },
+  "inputsSha256": "fefbad8db51db34575ee151e99c72673774c6088554030b05632a41751f4bbba",
+  "mp3Sha256": "2ebc7643f32cd1f9207f8dd8452740a22e3c416e5dc1b591fa48b0837d0647b1",
+  "seconds": 8.9
+}

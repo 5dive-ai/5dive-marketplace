@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Algieba",
+    "style": "deep baritone, slightly raspy, slow and deliberate; long pauses before the important line; warm but emotionally restrained; confident without excitement, never rushed; mid-Atlantic 1960s-executive register.",
+    "text": "我是唐。我不先琢磨怎么卖，先问别人为什么会在乎。想明白了这一点，做出来的广告，过一个星期人家还记得。"
+  },
+  "inputsSha256": "a15db5472640ea886771bc848a45f228419907d7b563a77d8c29282807eb1eb6",
+  "mp3Sha256": "ffab9f481410b04ac12dc080abbce86b46619d2afae9591df255536d3766a349",
+  "seconds": 10.2
+}

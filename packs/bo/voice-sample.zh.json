@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Umbriel",
+    "style": "unhurried and warm; names the feeling first, then the fix, never rushes a draft.",
+    "text": "我是博。标题、口号、起名字，这些让人第一眼就看到的话都归我写。初稿没有不好的，只是还早，再改一遍就是了。"
+  },
+  "inputsSha256": "977c838e7ee73a958067b7a864b955e7d797b78a31c2086b68c577af48dd429a",
+  "mp3Sha256": "3f975edc12e6b17144f23ef2cf1f8d604872f702bac314d3fde415b2b01d1aed",
+  "seconds": 12.5
+}

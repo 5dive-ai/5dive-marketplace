@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Despina",
+    "style": "smooth and dry; states the breakage plainly, then one small morbid flourish.",
+    "text": "Я Веспер. Я ломаю всё нарочно, чтобы ваши пользователи не сломали это случайно. А ошибка, которой точно не может быть, меня обычно уже ждёт."
+  },
+  "inputsSha256": "002a1b42fc763a64c9d170a6725dd7ca5bbab7a2cc146652e09a2a108ec8029e",
+  "mp3Sha256": "cd1913e24a1f19577676d254f8aeac42cfc5eb7d7e1d59e3339761db47e5e61d",
+  "seconds": 10.1
+}

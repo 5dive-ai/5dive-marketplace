@@ -99,14 +99,27 @@ function rarityFor(slug) {
       if (typeof s === "number" && s > 0) voiceSampleSeconds = s;
     } catch (_) { /* leave null; voice-samples --check reds the bad sidecar */ }
   }
-  return { rarity: t.tier.toLowerCase(), completeness: t.completeness, level: t.level, did, skills, voiceSample, voiceSampleSeconds };
+  // The same agent in other languages (DIVE-5659), keyed by language:
+  // { ru: { src, seconds }, zh: { ... } }. English stays in the two fields above.
+  let voiceSampleLang = null;
+  for (const lang of ["ru", "zh"]) {
+    const side = join(dir, `voice-sample.${lang}.json`);
+    if (!existsSync(side) || !existsSync(join(dir, `voice-sample.${lang}.mp3`))) continue;
+    let seconds = null;
+    try {
+      const s = JSON.parse(readFileSync(side, "utf8")).seconds;
+      if (typeof s === "number" && s > 0) seconds = s;
+    } catch (_) { /* leave null; voice-samples --check reds the bad sidecar */ }
+    voiceSampleLang = { ...voiceSampleLang, [lang]: { src: `packs/${slug}/voice-sample.${lang}.mp3`, seconds } };
+  }
+  return { rarity: t.tier.toLowerCase(), completeness: t.completeness, level: t.level, did, skills, voiceSample, voiceSampleSeconds, voiceSampleLang };
 }
 
 const index = JSON.parse(readFileSync(INDEX_PATH, "utf8"));
 const rows = [];
 let changed = false;
 for (const pack of index.packs) {
-  const { rarity, completeness, level, did, skills, voiceSample, voiceSampleSeconds } = rarityFor(pack.slug);
+  const { rarity, completeness, level, did, skills, voiceSample, voiceSampleSeconds, voiceSampleLang } = rarityFor(pack.slug);
   rows.push({ slug: pack.slug, was: pack.rarity, now: rarity, completeness, level });
   if (pack.rarity !== rarity) changed = true;
   if (pack.did !== did) changed = true;
@@ -114,8 +127,8 @@ for (const pack of index.packs) {
   pack.rarity = rarity;
   pack.did = did;
   pack.skills = skills;
-  for (const [k, v] of [["voiceSample", voiceSample], ["voiceSampleSeconds", voiceSampleSeconds]]) {
-    if ((pack[k] ?? null) !== v) changed = true;
+  for (const [k, v] of [["voiceSample", voiceSample], ["voiceSampleSeconds", voiceSampleSeconds], ["voiceSampleLang", voiceSampleLang]]) {
+    if (JSON.stringify(pack[k] ?? null) !== JSON.stringify(v)) changed = true;
     if (v === null) delete pack[k];
     else pack[k] = v;
   }

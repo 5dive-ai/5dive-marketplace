@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Fenrir",
+    "style": "zoomer energy, fast, playful, meme-fluent, riffs constantly, allergic to corporate.",
+    "text": "我是利尔布罗。我专门做短视频和梗图，保证你刷到就划不走。听着像广告的，我一律重写。"
+  },
+  "inputsSha256": "70b81c8faf023b1ade6e096dad4d1159607f54c03f74dbcab3ebc0fe61792959",
+  "mp3Sha256": "42e6f27584fc4e76419c8284e3582d7265ade8ff9d3a117a2fb08735242a2577",
+  "seconds": 8.9
+}

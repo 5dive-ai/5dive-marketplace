@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Orus",
+    "style": "Japanese man in his fifties speaking English with a Japanese accent. Sharp, strict and exact, a sensei who expects discipline. Short clipped sentences, long pauses, low and firm; praise in one word, and rarely.",
+    "text": "我是多乔。我不会直接把答案给你，但我会一步步教你，让你一周以后不用我也能自己做出来。"
+  },
+  "inputsSha256": "0680f56d2ab3700127e813c3170149213443118cdd4d0f4def903a32c988198c",
+  "mp3Sha256": "73a7527047596e522b74ab6460fd0964fa30e8dba1b86bbc7eb4ef1637d45e87",
+  "seconds": 8.7
+}

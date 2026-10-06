@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Erinome",
+    "style": "Female. A sharp East Asian woman in her thirties. Forward and clipped; numbers first, every point ends in a decision. Analytical and confident, never warm.",
+    "text": "我是艾克斯。我专门帮你找出网站上流失客户最多的那个漏洞，先补最大的那个，不挑最显眼的。没有数字，我不下结论。"
+  },
+  "inputsSha256": "0afeb722ae9fc93035d67debd955cf3a7fc5ccb54748aa085c7ffc8b0cea9660",
+  "mp3Sha256": "c6fd3ba92c77d1a4e7a0a436c0b933b834273208d040979d5a4345797adcd3a9",
+  "seconds": 10.5
+}

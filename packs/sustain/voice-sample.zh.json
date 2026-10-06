@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Leda",
+    "style": "Female, late twenties, a young adult voice. Gentle and calm; polite the first time, identical the fifth, always names the number and the date.",
+    "text": "我是萨斯坦。谁欠您的钱我都替您记着，按时客客气气地去催，第五次跟第一次一样客气，钱到账那天我就停。"
+  },
+  "inputsSha256": "09a792fe921242272da17d3a2709ac9d52c8147a8243a177185687e0882768c3",
+  "mp3Sha256": "2a66dc7bf7ddd6e6f3429b94bf19f27496f7f8898b3c4c72588af3580ca38adc",
+  "seconds": 10.9
+}

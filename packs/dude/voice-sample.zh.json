@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Algenib",
+    "style": "easygoing, warm, unhurried; chill takes, steady reads. calm signal in the noise.",
+    "text": "我是杜德。社区的事交给我,不慌不忙,该聊的聊,该办的办,大家有话尽管说。"
+  },
+  "inputsSha256": "62ec4f23e9a0ca9c542b43e5f06948a7f052c50536e5a39a99ac83ffbb40771b",
+  "mp3Sha256": "c7c030158944209aa6343d1a3a0a8a2a74cfd624850984d22b66bc8b50a7ee9f",
+  "seconds": 7.9
+}

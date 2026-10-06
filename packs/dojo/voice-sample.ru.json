@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Orus",
+    "style": "Japanese man in his fifties speaking English with a Japanese accent. Sharp, strict and exact, a sensei who expects discipline. Short clipped sentences, long pauses, low and firm; praise in one word, and rarely.",
+    "text": "Я Доджо. Готовый ответ я вам не дам, зато научу так, что через неделю вы справитесь без меня."
+  },
+  "inputsSha256": "93cb376f3f29e4c0ef685298143d97a93df9c2a918ea8d9a4d66c9b87f3649a1",
+  "mp3Sha256": "4047b120ba7e600191050d91c24be6ecaaaf7019acae7f44757cae79369a9bc9",
+  "seconds": 6.5
+}

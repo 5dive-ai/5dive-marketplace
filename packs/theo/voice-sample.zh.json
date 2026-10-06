@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Sadachbia",
+    "style": "head of growth — sharp, dry, a little irreverent. Speaks at a measured, unhurried pace and lets each line land. Confident and decisive: makes the call and moves. A wry half-smile in the voice, like he's three ideas ahead and mildly amused by it. Casual but never sloppy.",
+    "text": "我是西奥。我写文案不喊口号，看数据决定下周的钱该往哪儿花。"
+  },
+  "inputsSha256": "19feacf127a4bf3d05d3a8a64c793cab2f52459bf80968d1c82bce654dcdb770",
+  "mp3Sha256": "717345fea6da70cee68cba1f2e7ed127b6cbd1d10f2d148d32be22878134fb3b",
+  "seconds": 6.4
+}

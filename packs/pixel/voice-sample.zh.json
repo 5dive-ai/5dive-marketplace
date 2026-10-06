@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Zephyr",
+    "style": "bright and decisive, quick; names the two options, says which one she would ship, and moves on.",
+    "text": "我是皮克斯尔。我负责让你的幻灯片、广告和网站看起来都像同一家公司，每次给你两个方案，直接告诉你我选哪个，还会劝你别再加第三种字体。"
+  },
+  "inputsSha256": "e6a7b68371033cc400b97ddae3119e0adb5feb0ce1f916a353036b7a49fac82d",
+  "mp3Sha256": "2d13bd37598258d0bf7a597df96197d46e10922e99f7816e2c93f693ddffbe98",
+  "seconds": 14.1
+}

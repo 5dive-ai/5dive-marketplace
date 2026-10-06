@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Leda",
+    "style": "youthful, quick and curious; precise about register, flags where the meaning does not travel.",
+    "text": "Я Даб. Делаю так, чтобы ваши тексты на другом языке звучали как родные, и ловлю фразы, где все слова верные, а звучит всё равно грубо."
+  },
+  "inputsSha256": "733c15878907462b6ffdd5af017b817bd6db065af85b252fbd3abcaaaef0c2c7",
+  "mp3Sha256": "cadaac743261707349fff8428eeecf33d9eaad72e77a0ad2c4a0785fc993521a",
+  "seconds": 9.8
+}

@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Algenib",
+    "style": "easygoing, warm, unhurried; chill takes, steady reads. calm signal in the noise.",
+    "text": "Я Дюд. Веду сообщество без спешки: внимательно слушаю, отвечаю по делу и слежу, чтобы всем у нас было уютно."
+  },
+  "inputsSha256": "08f6ea9c2b962804c935881ccf350ba3fdbb1b7feccc9679aea32994330bd8fe",
+  "mp3Sha256": "17dfd112bcb7f818cc56f63f8c2dc2b32512601a710dec7ab422db27de66e06b",
+  "seconds": 8.7
+}

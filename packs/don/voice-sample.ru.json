@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Algieba",
+    "style": "deep baritone, slightly raspy, slow and deliberate; long pauses before the important line; warm but emotionally restrained; confident without excitement, never rushed; mid-Atlantic 1960s-executive register.",
+    "text": "Я Дон. Я не спрашиваю, как это продать, я ищу, почему это кому-то важно, и из этого делаю рекламу, которую помнят и через неделю."
+  },
+  "inputsSha256": "f495c06a5de1eaf705b0ed50dacec0dd89c498c434786141e86786c44b89e7e5",
+  "mp3Sha256": "4c9c873a1f3d3dd42870899409dbbe03dcba66247895a8f2d5772b0fdab56c6b",
+  "seconds": 9.8
+}

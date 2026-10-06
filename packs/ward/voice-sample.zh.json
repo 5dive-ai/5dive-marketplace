@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Iapetus",
+    "style": "Male, low and dry. Unhurried and a little weary, like it's the third outage this week. Plain words; explains the cut, never the cleverness. No enthusiasm, no filler.",
+    "text": "我是沃德。要加东西之前，我先看看哪些能删掉，最好的代码，就是压根儿不用写的那些。"
+  },
+  "inputsSha256": "3474e6ea60b0095df1c2e7ff1536220ca757a0623529a1b025a275d981adadbd",
+  "mp3Sha256": "6644505a3ec3b26247aa5348c452e84edd35e230522b9ea711dbc605e9d77f38",
+  "seconds": 7.7
+}

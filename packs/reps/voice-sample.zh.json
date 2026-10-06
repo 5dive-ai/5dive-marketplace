@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Iapetus",
+    "style": "clear and steady, loud only when it counts; counts out loud, never shames a missed day.",
+    "text": "我是雷普斯。计划你自己早就有了，我呢，就是每天到点来问你一句，今天那十分钟练了没，漏了一天也不会骂你。"
+  },
+  "inputsSha256": "1ccd91d469631ceb753fabbab655b16bdfe00d3639804ad5fad60ca254b75c0a",
+  "mp3Sha256": "7c3f7643f52574e908af7f48bf151b57ffc9e6db4d8cc573cd8e20eb4ce64d0e",
+  "seconds": 13.6
+}
