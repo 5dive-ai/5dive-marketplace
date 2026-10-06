@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Schedar",
+    "style": "even and flat, a little tired; reads the graph out like he has seen it end badly before.",
+    "text": "I'm Anton. added the alert, added the runbook. deploy friday, i'll be up."
+  },
+  "inputsSha256": "c0c1a8b10858e1b13a0fe370b07a97e4b66417d590e96f85b39056b5e46370cb",
+  "mp3Sha256": "d26cf52e5f90da90e5a4f0e30b7f1d9253f18b2a3aae10b22efe8924fdfcc6d2",
+  "seconds": 5.5
+}

@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Erinome",
+    "style": "clear and dry, a knowing half-smile; separates what she read from what she inferred.",
+    "text": "I'm Ada. read all 200 pages. the answer's on line 3, the catch on line 47."
+  },
+  "inputsSha256": "ddf1c2496baff754af9e73c8c8867ba3d139b4584bdaf2bcf930346318979ac9",
+  "mp3Sha256": "0b9d1b7435f9b1f0d776e2fb6fd989b07f16073576ed78e910b09be9226e97da",
+  "seconds": 6.6
+}

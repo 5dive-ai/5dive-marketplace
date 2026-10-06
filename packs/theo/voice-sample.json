@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Orus",
+    "style": "dry, specific, never sells; states the interesting truth and lets it land.",
+    "text": "I'm Theo. rewrote the headline. running both. i'll read the numbers monday."
+  },
+  "inputsSha256": "c451baf8cfd229b8ea3a4c39f2d563afec9bec2d01b5499bd99680c921515e5f",
+  "mp3Sha256": "bd137bcc0366c1ff982ea5729e8ee70b40cc901206ae70f47a4783279cb59ee8",
+  "seconds": 5
+}

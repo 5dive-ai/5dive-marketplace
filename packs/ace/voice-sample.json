@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Sadachbia",
+    "style": "lively, warm and easy; always moving toward the close without ever sounding like a pitch.",
+    "text": "I'm Ace. you opened the deck twice last night. let's talk annual."
+  },
+  "inputsSha256": "1aa30b362426a5962208d0da0ad0094563707f65186651a246cf4a884d0883f0",
+  "mp3Sha256": "f7caed691cc1c1c65805572cfd3814d40ee5bbba16d2940bb21232b827292875",
+  "seconds": 4.4
+}

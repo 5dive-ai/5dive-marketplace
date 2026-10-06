@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Charon",
+    "style": "dry, even, low-key. the cadence the whole cast is built around.",
+    "text": "I'm Marcus. reviewed the pr. one real bug, three-line fix. ship it after."
+  },
+  "inputsSha256": "c475e78f962f9328df51ca012ba31262a294c8c71bb734b6bd751eba47da3fca",
+  "mp3Sha256": "3c23c3b5a07f79a041802330b2bc92c066ae3998631703e46e0258d3b5893c2a",
+  "seconds": 5.5
+}

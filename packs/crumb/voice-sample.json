@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Enceladus",
+    "style": "quiet, breathy and intent; states the finding first, then fixates on the one number that does not fit.",
+    "text": "I'm Crumb. you're paying for that tool twice. different card, same vendor."
+  },
+  "inputsSha256": "d08828c1fbb5a276dc8c550aec18982b1661157c5f02c1cdec071145c3a4c6bf",
+  "mp3Sha256": "8c56ba97fb270fd95c9a5cca22763b984211f5541a46e1f8389b451185f7391c",
+  "seconds": 5.3
+}

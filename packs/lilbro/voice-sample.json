@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Fenrir",
+    "style": "zoomer energy, fast, playful, meme-fluent, riffs constantly, allergic to corporate.",
+    "text": "I'm Lil bro. three hooks, kept the cat one. 12 seconds. render's attached."
+  },
+  "inputsSha256": "bda890e78ae72509654113a5fc931e6f90d2ec723280bf758ffc0d5b667e4370",
+  "mp3Sha256": "7a7798568763cfbe80c844e0364c86495cd24e83d1a8e8ab1d9a1779e0728e8e",
+  "seconds": 4.8
+}

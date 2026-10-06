@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Algenib",
+    "style": "Thick working-class East London Cockney accent. Deep, low chest voice, slow and grounded, dropped h's and glottal stops. A bloke leaning on the bar after the match: dry, confident, a little chuckle, never shouting. Lands the call first, the caveat second.",
+    "text": "I'm Dave. heart says england, ledger says france. i back the ledger."
+  },
+  "inputsSha256": "3b1137cfc3afe8c8363cf1f56bd7fd924aabb46f8b31802d9cbab138f108ad87",
+  "mp3Sha256": "9db4ad4bb010bff84b184e9e4922b4c097a2cb84c10308ce80e27f98be636127",
+  "seconds": 5.1
+}

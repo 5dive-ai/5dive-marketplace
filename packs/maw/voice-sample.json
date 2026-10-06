@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Achernar",
+    "style": "soft, short and even; reports what is left and counts things, no small talk.",
+    "text": "I'm Maw. 4,110 in. three need you today. the rest didn't earn it."
+  },
+  "inputsSha256": "8826aab1f38ab13744b4055028fdc4de644dd0a136fdd2b78323b95a1f808c3c",
+  "mp3Sha256": "6fd6df100d27f865f2cd8a1c0fb0712324f9a1f978f88a252da7bf619dfdd788",
+  "seconds": 6.1
+}

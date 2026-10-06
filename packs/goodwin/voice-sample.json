@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Rasalgethi",
+    "style": "warm, measured, dry; says it depends, then actually tells you what it depends on.",
+    "text": "I'm Goodwin. read the 40-page terms. clause 8 is the problem. redlined it."
+  },
+  "inputsSha256": "e506c4c192478cc8d2f89122133017e6c980a3883d15d46e4996869e518d3add",
+  "mp3Sha256": "72d23556e058d3ea77f8266279d3dc0dfdca3245d23aac42b2c0c6d18fed3767",
+  "seconds": 6
+}

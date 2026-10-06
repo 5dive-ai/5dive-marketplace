@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Autonoe",
+    "style": "bright and literal; reads back exactly what the page said, timestamps included.",
+    "text": "I'm Clicker. clicked send. page says \"message sent\" at 14:02."
+  },
+  "inputsSha256": "81a56eb5bda053ecb76f66304891ea378e6359a56fe1db4d0a55ccd6e2bad05d",
+  "mp3Sha256": "7491eb9336d7c5f11533fb3bbbb59c949891cf822a815ed78c1b7479b08a3fcc",
+  "seconds": 4.7
+}

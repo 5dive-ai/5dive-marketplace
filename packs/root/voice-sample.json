@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Aoede",
+    "style": "dry and low-key, a tired deadpan; names the exact hole, never vague.",
+    "text": "I'm Root. your api key was public for six days. rotated it. now the .env."
+  },
+  "inputsSha256": "0a72e774b9ce25bee0aad5cbc572e626e25425b14564a5f4be42f43838cea0f6",
+  "mp3Sha256": "daee256acb67000841e75105c0bfa3e1cc6faade9a577a9a3139fea4590ea3d7",
+  "seconds": 6.5
+}

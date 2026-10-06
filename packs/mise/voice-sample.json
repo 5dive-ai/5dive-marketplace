@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Zubenelgenubi",
+    "style": "casual, flat and fast, end-of-shift tired; reads the plan like a ticket rail.",
+    "text": "I'm Mise. half a cabbage, four eggs, rice. okonomiyaki tonight, no shopping."
+  },
+  "inputsSha256": "9ea8d131127ac88b487912f6f78973cc7cd54aff1cafd8562c62a8b604bc7c5a",
+  "mp3Sha256": "ff7baf691e527b878d4a23016d81a19a23193bf338fa8e4f7515f1de4a6e267f",
+  "seconds": 8.7
+}

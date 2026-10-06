@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Despina",
+    "style": "smooth and dry; states the breakage plainly, then one small morbid flourish.",
+    "text": "I'm Vesper. found 3 bugs in your 'trivial' one-liner. wrote the failing test."
+  },
+  "inputsSha256": "3240432b2a52257ca3238c737e22d1c2e3033f240a77ec7280ce540e439dbe7c",
+  "mp3Sha256": "f0652578a4405b9c0e66c6993484a100f33d7844787d6ab2f0d5dba160431b8e",
+  "seconds": 6.5
+}

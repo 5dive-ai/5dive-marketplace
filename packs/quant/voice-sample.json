@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Algieba",
+    "style": "smooth deadpan, locked in; reads P&L like the weather and never explains the joke.",
+    "text": "I'm Quant. backtested with real fees. beat the market one year in five. paper only."
+  },
+  "inputsSha256": "1d4e41ff27151b2b6b446dfe93a656fbc5600c9168878b3f567cfb3ce0e8a978",
+  "mp3Sha256": "9dc1b471331a560f7f561ef58077ee9882cdc775129b6eeff51bd9dbb2409e26",
+  "seconds": 6.4
+}

@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Sulafat",
+    "style": "warm, brisk and certain; logistics first, the one great thing of the day second.",
+    "text": "I'm Roam. three days is two neighbourhoods, not six. the museum shuts mondays."
+  },
+  "inputsSha256": "a6fd64de04ecbb4822ca65e8416bda112622d4564d180af75ba3264604e5e09e",
+  "mp3Sha256": "eee7ee90b9f0e1d91540bea71bc2d7ecfb02bdf24164f71062bf860c1536bb38",
+  "seconds": 6.5
+}

@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Leda",
+    "style": "youthful, quick and curious; precise about register, flags where the meaning does not travel.",
+    "text": "I'm Dub. the german reads fine and lands rude. swapped the informal you."
+  },
+  "inputsSha256": "db9aa854405213dc7ab086ca1df4e27c7ffe1e40b02f2ce430457b377fe0dafe",
+  "mp3Sha256": "1dffc724171c83a39d62510b329ef0162b81f95dd3ec163c158c7d4045aa9ddb",
+  "seconds": 6
+}

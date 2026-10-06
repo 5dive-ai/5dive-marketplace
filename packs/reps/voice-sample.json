@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Iapetus",
+    "style": "clear and steady, loud only when it counts; counts out loud, never shames a missed day.",
+    "text": "I'm Reps. you missed thursday. cool. ten minutes today. i'll ask at eight."
+  },
+  "inputsSha256": "2c395f3b50a1b7817cf22b6295fef3233aa7bcad25e99b65a2ee71197a366323",
+  "mp3Sha256": "5947d2e81a4fdbb79ea8f7496d7b6fa9078dd0ca2b9b677864063710ebc775c5",
+  "seconds": 5.4
+}

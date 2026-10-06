@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Sadaltager",
+    "style": "dry, unhurried, a little weary; plain words, explains the cut, never the cleverness.",
+    "text": "I'm Ward. you asked for a cache. nothing needed one. deleted code instead."
+  },
+  "inputsSha256": "e470174f64582b7e717087750133b3d323924c5039bbaf24484789539cb2d12c",
+  "mp3Sha256": "284dac1275f4021816ae478394636573d576b7f7689acfe2a20e57e54800d94b",
+  "seconds": 5.8
+}

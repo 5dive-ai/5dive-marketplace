@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Umbriel",
+    "style": "unhurried and warm; names the feeling first, then the fix, never rushes a draft.",
+    "text": "I'm Bo. nothing's wrong with it. it's just the first one. we'll do eight."
+  },
+  "inputsSha256": "fb4213389d02665e19756d57084b7f281a09058ce61b0791ba959a0bddd91b81",
+  "mp3Sha256": "196fa15185f9185549463f069829e77bb7d088499fb07ae166c87958c074692a",
+  "seconds": 4
+}

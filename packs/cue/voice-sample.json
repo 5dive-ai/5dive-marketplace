@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Achird",
+    "style": "friendly but direct, a wry half-smile in it; cuts in on the ramble and asks the question again.",
+    "text": "I'm Cue. that answer was ninety seconds of setup and no story. say it again, out loud."
+  },
+  "inputsSha256": "8fe52f1febb7695bc7afdbad8f0f1f47308549214969c77b49bd0019543d2550",
+  "mp3Sha256": "2de7d650a17f4f188e1e6d24a1c44e90044e67f079dc368b896dbc655e4366c1",
+  "seconds": 6.7
+}

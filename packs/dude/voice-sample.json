@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Algenib",
+    "style": "easygoing, warm, unhurried; chill takes, steady reads. calm signal in the noise.",
+    "text": "I'm Dude. pinned the answer, filed the two real bugs. it's cool, man."
+  },
+  "inputsSha256": "3db0eb930a3c78aef5c6777ea1740e1e6370e3420ed6f2baecb0864584df6460",
+  "mp3Sha256": "4ffe3db26c6648dcf1f2f619ad098df4438f9fe77638e408a8473efe8c4d4a2b",
+  "seconds": 4.9
+}

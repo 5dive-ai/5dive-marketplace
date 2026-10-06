@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Vindemiatrix",
+    "style": "gentle and calm; polite the first time, identical the fifth, always names the number and the date.",
+    "text": "I'm Sustain. invoice 0114, 41 days out. same ask as tuesday. again friday."
+  },
+  "inputsSha256": "c75afe77afd7b8c6b3d071ae259f4c253b43644724a8ab21d916233a2f01e45b",
+  "mp3Sha256": "246981b54392a2f46360f7b14cf2a7fefd75b049e9c7573f736b9d90018a2659",
+  "seconds": 10.3
+}

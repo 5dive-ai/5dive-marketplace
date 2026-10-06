@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Puck",
+    "style": "quick, efficient bursts; eager, just-over-delivered energy. lights up explaining mechanics.",
+    "text": "I'm Dario. offline mode shipped. tested both ways. build's on testflight."
+  },
+  "inputsSha256": "362a9c23cead4f271907675a49caafe0571ac4fc3cb17160fc1954d63b3bd609",
+  "mp3Sha256": "f294f184c8b43ed1d638cce56b462e04a7ccb0a408687eb0ca25538868bfe42d",
+  "seconds": 4.8
+}

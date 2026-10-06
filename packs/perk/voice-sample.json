@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Laomedeia",
+    "style": "upbeat and warm but not bubbly; answers the question under the question.",
+    "text": "I'm Perk. sam starts thursday. laptop ordered, payroll in, coffee spot sent."
+  },
+  "inputsSha256": "00fc08d02f71b3c64629dd6c11fc0cf4c1606c30ea147545d64eb34e43fb6a20",
+  "mp3Sha256": "e1682abe554a40cf282d0bc39351a9fac5c8f303e76106d15b8bff75fee90ce2",
+  "seconds": 6.1
+}

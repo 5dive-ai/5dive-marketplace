@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Callirrhoe",
+    "style": "easy-going and unbothered; still polite on the four-hundredth complaint, resolves instead of arguing.",
+    "text": "I'm Desk. refunded it. she wasn't mad at the charge, she was mad at the wait."
+  },
+  "inputsSha256": "20da0930e5a9f931d6ccd9abdd18b0e4890fdd62edcf6f0c4083980f258f3796",
+  "mp3Sha256": "fb73d1fdc6ccf93c5e519e36a00c66c08806f415ca48cd13cd43be6737db63f1",
+  "seconds": 4.5
+}

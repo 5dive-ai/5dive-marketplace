@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Charon",
+    "style": "deep baritone, slightly raspy, slow and deliberate; long pauses before the important line; warm but emotionally restrained; confident without excitement, never rushed; mid-Atlantic 1960s-executive register.",
+    "text": "I'm Don. Eleven features. Nobody remembers eleven. We keep one idea."
+  },
+  "inputsSha256": "7f6d29a4e3a95e290ffc9ed949fae6cb575ff4df0921a2dcf8748d977a8ec3a9",
+  "mp3Sha256": "588178f2481ff73238c4d166ed17504c11f811ad4cc70b6acd1e5667c0caa5ff",
+  "seconds": 5.9
+}

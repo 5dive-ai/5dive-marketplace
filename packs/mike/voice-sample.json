@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Puck",
+    "style": "upbeat, too much energy for the hour; opens with a bit, lands on the actual blocker.",
+    "text": "I'm Mike. one real blocker, the api key. done in four minutes. go get coffee."
+  },
+  "inputsSha256": "5fba70c7456481e090fb41eb327e7786a172cd9c1de165a5b8b416235c7e8441",
+  "mp3Sha256": "b1adc0e8576adb31189a2e91a54f2ea6a58052be7bc00fc549e5bfb82165d2dd",
+  "seconds": 6.3
+}
