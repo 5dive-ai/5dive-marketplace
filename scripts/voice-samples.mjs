@@ -22,8 +22,8 @@
 // CI never calls TTS. A pack with no sample is allowed (its card shows no play
 // button); a sidecar without its mp3, or an mp3 without its sidecar, is not.
 //
-// Rendering needs ffmpeg/ffprobe and an OpenRouter key: $OPENROUTER_API_KEY, or
-// the box connector file /etc/5dive/connectors/openrouter (run with sudo).
+// Rendering needs ffmpeg/ffprobe and an OpenRouter key: $OPENROUTER_API_KEY, or a
+// box connector file under /etc/5dive/connectors (see KEY_FILES; run with sudo).
 // MARKETPLACE_ROOT points it at a fixture tree (scripts/test-voice-samples.sh);
 // VOICE_SAMPLE_FAKE_TTS=1 writes placeholder bytes instead of calling the API,
 // for those arms only; --check refuses a placeholder unless the same flag is set.
@@ -107,9 +107,14 @@ function check() {
   console.log(`voice-samples: ${have} of ${slugs.length} packs have a current sample${missing.length ? `; none yet: ${missing.join(", ")}` : ""}.`);
 }
 
+// The box's dedicated key for this script comes first. The general connector key is
+// capped and ran out partway through the first full render (2026-10-06).
+const KEY_FILES = ["/etc/5dive/connectors/openrouter-voice-samples", "/etc/5dive/connectors/openrouter"];
+
 function apiKey() {
   if (process.env.OPENROUTER_API_KEY) return process.env.OPENROUTER_API_KEY.trim();
-  return readFileSync("/etc/5dive/connectors/openrouter", "utf8").trim();
+  for (const f of KEY_FILES) if (existsSync(f)) return readFileSync(f, "utf8").trim();
+  throw new Error(`no OpenRouter key: set OPENROUTER_API_KEY or provide ${KEY_FILES.join(" or ")}`);
 }
 
 async function render(slug, inp, key) {

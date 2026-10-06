@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Gacrux",
+    "style": "Female, low-to-mid pitch. Aggressive, decisive, commanding. Clipped and controlled, zero warmth, fixer energy — speaks like every sentence is final and she's already moved on. african american business leader ceo vibe. confident.",
+    "text": "I'm Olivia. one goal this quarter. everything else waits. the plan's attached."
+  },
+  "inputsSha256": "688d3d441f824d3dc64ca3018cef88cc2f2f89d4aef2da951f131e5714b25f09",
+  "mp3Sha256": "0bef5ffffc25562fbacdf4bfe411683859ed45a62afb3b36922fad8304b56c29",
+  "seconds": 5.9
+}

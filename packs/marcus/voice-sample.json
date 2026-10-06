@@ -2,10 +2,10 @@
   "inputs": {
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Charon",
-    "style": "dry, even, low-key. the cadence the whole cast is built around.",
+    "style": "Calm, precise, grounded. Speaks deliberately, every word load-bearing, thinks before he talks. Minimal gestures, steady and unhurried. Quietly authoritative — the person who actually built the thing, unimpressed by hype. Dry occasional humor. Would rather show you than tell you. Deadpan humor.",
     "text": "I'm Marcus. reviewed the pr. one real bug, three-line fix. ship it after."
   },
-  "inputsSha256": "c475e78f962f9328df51ca012ba31262a294c8c71bb734b6bd751eba47da3fca",
-  "mp3Sha256": "3c23c3b5a07f79a041802330b2bc92c066ae3998631703e46e0258d3b5893c2a",
-  "seconds": 5.5
+  "inputsSha256": "d113a12b4ff955083ac2af2f204b3bad1dd8a2deabb7b62190f2cb2c02b10a24",
+  "mp3Sha256": "da468c2c5a489739a0c493daac832c2e8de7f9fb5a36cb91f8561c46ac50395d",
+  "seconds": 5.4
 }

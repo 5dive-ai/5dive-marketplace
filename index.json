@@ -40,7 +40,9 @@
       "rarity": "legendary",
       "model": "opus",
       "effort": "high",
-      "did": "did:key:z6MkmCyZtZkk37mb46ekUGKkW5zLBU94u1ZPS5BTU9FfqQfE"
+      "did": "did:key:z6MkmCyZtZkk37mb46ekUGKkW5zLBU94u1ZPS5BTU9FfqQfE",
+      "voiceSample": "packs/olivia/voice-sample.mp3",
+      "voiceSampleSeconds": 5.9
     },
     {
       "slug": "marcus",
@@ -84,7 +86,7 @@
       "effort": "high",
       "did": "did:key:z6MkfxJdF5PhqHcgpKNy9vY6Y9MAzZJ9EqqVywXqFJUa8VaG",
       "voiceSample": "packs/marcus/voice-sample.mp3",
-      "voiceSampleSeconds": 5.5
+      "voiceSampleSeconds": 5.4
     },
     {
       "slug": "theo",
@@ -129,7 +131,7 @@
       "effort": "high",
       "did": "did:key:z6Mkw1KjXTrwEMRqMYhNJobvboNFMM9AQUt1ZNudxV45vsjK",
       "voiceSample": "packs/theo/voice-sample.mp3",
-      "voiceSampleSeconds": 5
+      "voiceSampleSeconds": 4.8
     },
     {
       "slug": "dario",

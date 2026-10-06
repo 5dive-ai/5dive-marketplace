@@ -1,11 +1,11 @@
 {
   "inputs": {
     "model": "google/gemini-3.8-flash-lite-tts",
-    "base": "Orus",
-    "style": "dry, specific, never sells; states the interesting truth and lets it land.",
+    "base": "Sadachbia",
+    "style": "head of growth — sharp, dry, fast-talking, a little irreverent. Confident and decisive: makes the call and moves. Relaxed posture, quick expressive gestures, a wry half-smile, talks like he's three ideas ahead and mildly amused by it. Direct eye contact, casual but never sloppy. The energy of a marketer who ships.",
     "text": "I'm Theo. rewrote the headline. running both. i'll read the numbers monday."
   },
-  "inputsSha256": "c451baf8cfd229b8ea3a4c39f2d563afec9bec2d01b5499bd99680c921515e5f",
-  "mp3Sha256": "bd137bcc0366c1ff982ea5729e8ee70b40cc901206ae70f47a4783279cb59ee8",
-  "seconds": 5
+  "inputsSha256": "924e3d41abb83aa7a9bd5dff47aa0220dc8f5dddb90e65806f8106dea91dfbbd",
+  "mp3Sha256": "b874e4af037e8a7910b77a543b844a1d4b1815e832af733de7326150625e853a",
+  "seconds": 4.8
 }
