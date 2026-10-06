@@ -37,7 +37,7 @@ fresh; run --check
 if [[ $rc -eq 0 && "$out" == *"have a current sample"* ]]; then ok "the real packs pass"; else bad "the real packs pass (rc=$rc: $out)"; fi
 
 # The row's acceptance: dave's style changes and nobody re-renders -> red ...
-fresh; sed -i 's/Thick working-class East London Cockney accent\./Soft Scottish lilt./' "$FIX/tree/packs/dave/persona.yaml"
+fresh; sed -i 's/East London Cockney/Soft Scottish lilt/' "$FIX/tree/packs/dave/persona.yaml"
 grep -q 'Soft Scottish lilt' "$FIX/tree/packs/dave/persona.yaml" || bad "fixture: dave style mutation did not apply"
 arm "dave's style changed without a new mp3 is refused" "dave: voice sample is STALE (style changed"
 # ... and green once it is regenerated.
