@@ -138,9 +138,12 @@ if (noDepartment.length) {
 }
 
 // Russian/Chinese storefront copy is hand-maintained too. Every pack must carry
-// all six fields as non-empty strings, and none may be the English tagline
+// all seven fields as non-empty strings, and none may be the English tagline
 // pasted verbatim (an untranslated copy-paste). Both FAIL --check and the build.
-const I18N_FIELDS = ["nameRu", "nameZh", "roleRu", "roleZh", "taglineRu", "taglineZh"];
+// nameRuAcc is the Russian name in the accusative, for "Нанять Маркуса" (DIVE-5667):
+// a masculine name takes -а/-я, a feminine -а/-я ending becomes -у/-ю, and a name
+// ending in another vowel or a woman's name ending in a consonant stays as it is.
+const I18N_FIELDS = ["nameRu", "nameRuAcc", "nameZh", "roleRu", "roleZh", "taglineRu", "taglineZh"];
 const badI18n = [];
 for (const p of index.packs) {
   const en = typeof p.tagline === "string" ? p.tagline.trim() : "";
@@ -151,6 +154,16 @@ for (const p of index.packs) {
     } else if (en && v.includes(en)) {
       badI18n.push(`${p.slug}: '${f}' contains the English tagline verbatim (untranslated?)`);
     }
+  }
+}
+
+// The accusative is the same word with at most its ending changed, so it keeps
+// nameRu's first letters (Маркус -> Маркуса, Оливия -> Оливию, Тео -> Тео).
+for (const p of index.packs) {
+  if (typeof p.nameRu !== "string" || typeof p.nameRuAcc !== "string") continue;
+  const stem = p.nameRu.length > 2 ? p.nameRu.slice(0, -1) : p.nameRu.slice(0, 1);
+  if (!p.nameRuAcc.startsWith(stem) || p.nameRuAcc.length > p.nameRu.length + 1) {
+    badI18n.push(`${p.slug}: 'nameRuAcc' '${p.nameRuAcc}' is not a case form of '${p.nameRu}'`);
   }
 }
 
