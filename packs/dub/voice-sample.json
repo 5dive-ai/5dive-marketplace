@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Leda",
+    "style": "youthful, quick and curious; precise about register, flags where the meaning does not travel.",
+    "text": "I'm Dub, and I make your words sound like they were written in the other language, not translated into it. Getting every word right is the easy part. The real trouble is a sentence that's technically perfect but comes across as rude, and that's what I catch."
+  },
+  "inputsSha256": "0d843614f10b6d9942bc70525fa94bef6c6ec11cf6319569b05d2ffb528e086c",
+  "mp3Sha256": "e847667471e55174ea7f8ac63c517be56b9c9b54f18d12382d40111f798f37bc",
+  "seconds": 15.9
+}

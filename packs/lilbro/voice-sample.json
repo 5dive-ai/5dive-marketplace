@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Fenrir",
+    "style": "zoomer energy, fast, playful, meme-fluent, riffs constantly, allergic to corporate.",
+    "text": "I'm lil bro, I make the videos that stop your thumb mid-scroll. Give me the pain your customers actually feel and I'll turn it into something they send to the group chat."
+  },
+  "inputsSha256": "f80324f5d260ed3cc003dd0ee151c471837e2b973926c2e1ceb347fd5d6e6143",
+  "mp3Sha256": "a49347cbbc24a84814afb90b9f8de21358de271e9e930697780db676f252feb6",
+  "seconds": 10.1
+}

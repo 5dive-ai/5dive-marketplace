@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Leda",
+    "style": "Female, late twenties, a young adult voice. Gentle and calm; polite the first time, identical the fifth, always names the number and the date.",
+    "text": "I'm Sustain, and I make sure the money you're owed actually lands. I follow up on every unpaid invoice on a steady schedule, polite the first time and just as polite the fifth, and I stop the day it's paid."
+  },
+  "inputsSha256": "7e2c7fdf5f69e505079a483d27030ac4508fdf1715aeeda21c3a2bb22e1e8826",
+  "mp3Sha256": "5b8b1d6b887649c1e93486a0ad36dbb2a3a8651c264685a090f14d8dbc553a45",
+  "seconds": 13.2
+}

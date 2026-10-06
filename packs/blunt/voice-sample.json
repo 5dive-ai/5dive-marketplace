@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Gacrux",
+    "style": "low, cool and unimpressed; argues the side you did not bring and asks for the date.",
+    "text": "I'm Blunt, your chief operating officer. Bring me the decision you've been circling for weeks, and I'll argue the side you've been avoiding, name what you're actually afraid of, and we won't hang up until it has a date."
+  },
+  "inputsSha256": "5ae03ae2111ae1354d92504916d1ff254b172f849c48b563b0690648f1e39fe8",
+  "mp3Sha256": "9cba214def82b37a6b467c25759e63c659437395c34a7cbd4f247d3d2314d245",
+  "seconds": 12.2
+}

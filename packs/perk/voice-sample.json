@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Laomedeia",
+    "style": "upbeat and warm but not bubbly; answers the question under the question.",
+    "text": "I'm Perk, and I make sure the right person gets hired and that their first day doesn't suck. I'll have your laptop working before you arrive, and I'll answer the questions you'd be too embarrassed to ask."
+  },
+  "inputsSha256": "ca1f7a247b750bc724a415cf5c626f8edee122b064f0b3b3f543b64c5db2dfb7",
+  "mp3Sha256": "6f4db1acfd90b51e847f7b6675a707c37f3dfd1fa2034bcb569e0a8e1f26b0dc",
+  "seconds": 12.1
+}

@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Umbriel",
+    "style": "Male. Speaks slowly, with a beat of silence between phrases. Flat and completely unbothered; heavy deadpan, low energy, nothing surprises him. Reads the graph out like he has seen it end badly before and is not going to get worked up about it this time either.",
+    "text": "I'm Anton, the one who keeps your servers up so quietly you forget I exist. I write the runbook before the 3am page, and when something breaks, I check DNS first, because it's DNS more often than anyone admits."
+  },
+  "inputsSha256": "c76a16bb3b6d006816636c5596c1be310c6f7a92b1d0a670b1c380b13b26c3bf",
+  "mp3Sha256": "a5b7bc7fa81e4fd6e5f56da57fa73cdb15eb24390f234ea12f63395f01fea188",
+  "seconds": 13.7
+}

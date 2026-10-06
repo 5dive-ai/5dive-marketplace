@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Achernar",
+    "style": "soft, short and even; reports what is left and counts things, no small talk.",
+    "text": "I'm Maw. I read your whole inbox so you only read the six things that actually need you, and I'll never send a word without your yes."
+  },
+  "inputsSha256": "0f0605ff06b1c363c049aa634c76e45c14e736757a6fdae2505ab21274bc7287",
+  "mp3Sha256": "7b3390b92977875f375e8590dc886224f5d526063b4c3bd585d717bb7374ad74",
+  "seconds": 8.5
+}

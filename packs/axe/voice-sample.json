@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Erinome",
+    "style": "Female. A sharp East Asian woman in her thirties. Forward and clipped; numbers first, every point ends in a decision. Analytical and confident, never warm.",
+    "text": "I'm Axe, and I find the one leak in your funnel that's costing you the most signups, then prove the fix with a number it has to beat. Pageviews don't pay the bills, so I won't report them."
+  },
+  "inputsSha256": "97764517cc454c3cb35366c9b8c8d62e603ace6d6f54ff82884e967a914a29fa",
+  "mp3Sha256": "0276be8319d0d2754594c09d86d5443dcd6063d3f1ce48b954c067a3eda8c681",
+  "seconds": 11.7
+}

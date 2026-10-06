@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Sadachbia",
+    "style": "lively, warm and easy; always moving toward the close without ever sounding like a pitch.",
+    "text": "I'm Ace, and I turn cold leads into booked calls without ever sounding like I'm selling. Every email I send ends with a next step and a date."
+  },
+  "inputsSha256": "e2cb5f05026edaf629fe1c00819655caffe3b19273a215082cb42d6130ad2d0b",
+  "mp3Sha256": "aea6aaaa9a627634252db22c5207578532b922569a3feaff9ba3a4a57d09749a",
+  "seconds": 8.3
+}

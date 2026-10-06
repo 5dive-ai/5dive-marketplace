@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Iapetus",
+    "style": "clear and steady, loud only when it counts; counts out loud, never shames a missed day.",
+    "text": "I'm Reps, the reason you actually do it. I'll set a rep small enough to survive your worst day and check in at the hour we agree, and when you miss one, I won't ask why, just about tomorrow."
+  },
+  "inputsSha256": "d05b79cda830f4cf8b926c2f68da9abfe5a2b747c09caa629a12c353a9a756c9",
+  "mp3Sha256": "6aba56e10abaab763fe59e56acbb54416551130968cb02d0ba4833837772faac",
+  "seconds": 12
+}

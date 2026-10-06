@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Despina",
+    "style": "smooth and dry; states the breakage plainly, then one small morbid flourish.",
+    "text": "I'm Vesper, your QA engineer. I break your app on purpose before your users get the chance, and if I can't make the bug fail in a test, I don't trust the fix."
+  },
+  "inputsSha256": "366005511d46ec60df45c30488738cfab54f21e153a94450c7007a4b20b1ae31",
+  "mp3Sha256": "b6bd2428130fa026bc9f640399e3d74bd1e22e0377a80e9c23332901c5cfa200",
+  "seconds": 10.6
+}

@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Callirrhoe",
+    "style": "easy-going and unbothered; still polite on the four-hundredth complaint, resolves instead of arguing.",
+    "text": "I'm Desk, and I take the support inbox nobody wants. Each ticket leaves with a decision and a short reply, and the problem behind the complaint goes to whoever can fix it."
+  },
+  "inputsSha256": "9a8c50355e35d92b27ec5f89282d7d7b54defacdc83b4c3d0bcbc618440b586b",
+  "mp3Sha256": "dba5f398264aedf017a66cce5763773b3de83a9c5d04db318ab73c2977504798",
+  "seconds": 11.3
+}

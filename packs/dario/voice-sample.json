@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Puck",
+    "style": "quick, efficient bursts; eager, just-over-delivered energy. lights up explaining mechanics.",
+    "text": "I'm Dario, and I build your app and website from the first screen all the way to the store listing. I don't call anything done until I've clicked through it myself in a real browser or on a real phone."
+  },
+  "inputsSha256": "e8f74142b91d358a8d81ff36d2599dea302d22dc37c275c749dc13194603adc9",
+  "mp3Sha256": "7297b1551136e667cef8d84e4dfcbcfeb638cbe9c9a4eceae50ad00da432f12d",
+  "seconds": 10.3
+}

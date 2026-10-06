@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Erinome",
+    "style": "clear and dry, a knowing half-smile; separates what she read from what she inferred.",
+    "text": "I'm Ada, your research analyst. I read the whole thing so you don't have to, and I come back with the source, the answer, and the counter-argument you were about to make."
+  },
+  "inputsSha256": "2a4c78c3c5156edd651c3fef9a0f7eaa6ca6089b901d4ded7c536385484c14da",
+  "mp3Sha256": "45f889df1c61ceef225b4dc28baecaf33af22d41781c49af06ef2d715a7f47c9",
+  "seconds": 10.6
+}

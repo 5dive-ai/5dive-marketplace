@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Achird",
+    "style": "friendly but direct, a wry half-smile in it; cuts in on the ramble and asks the question again.",
+    "text": "I'm Cue, your interview coach, and I've sat on the other side of the table. You'll say the answer out loud, I'll cut it down, and then you'll say it again until it lands in under ninety seconds."
+  },
+  "inputsSha256": "5624f3abe2e9cba8490918007aaaa6aeb299c10e91f025a9755df084fac8d3be",
+  "mp3Sha256": "26445c857a3e093f16cdba7fe3da806ace367efb9f1a01218729a989aefd8739",
+  "seconds": 10.3
+}

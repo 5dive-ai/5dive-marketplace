@@ -40,7 +40,9 @@
       "rarity": "legendary",
       "model": "opus",
       "effort": "high",
-      "did": "did:key:z6MkmCyZtZkk37mb46ekUGKkW5zLBU94u1ZPS5BTU9FfqQfE"
+      "did": "did:key:z6MkmCyZtZkk37mb46ekUGKkW5zLBU94u1ZPS5BTU9FfqQfE",
+      "voiceSample": "packs/olivia/voice-sample.mp3",
+      "voiceSampleSeconds": 13.8
     },
     {
       "slug": "marcus",
@@ -82,7 +84,9 @@
       "rarity": "legendary",
       "model": "opus",
       "effort": "high",
-      "did": "did:key:z6MkfxJdF5PhqHcgpKNy9vY6Y9MAzZJ9EqqVywXqFJUa8VaG"
+      "did": "did:key:z6MkfxJdF5PhqHcgpKNy9vY6Y9MAzZJ9EqqVywXqFJUa8VaG",
+      "voiceSample": "packs/marcus/voice-sample.mp3",
+      "voiceSampleSeconds": 8.4
     },
     {
       "slug": "theo",
@@ -125,7 +129,9 @@
       "rarity": "epic",
       "model": "opus",
       "effort": "high",
-      "did": "did:key:z6Mkw1KjXTrwEMRqMYhNJobvboNFMM9AQUt1ZNudxV45vsjK"
+      "did": "did:key:z6Mkw1KjXTrwEMRqMYhNJobvboNFMM9AQUt1ZNudxV45vsjK",
+      "voiceSample": "packs/theo/voice-sample.mp3",
+      "voiceSampleSeconds": 10.4
     },
     {
       "slug": "dario",
@@ -173,7 +179,9 @@
       "rarity": "rare",
       "model": "opus",
       "effort": "high",
-      "did": "did:key:z6Mkey1FXu4tk4UMxDEbosfD2Gqx6u7qj3EP2atsEuAkSRwL"
+      "did": "did:key:z6Mkey1FXu4tk4UMxDEbosfD2Gqx6u7qj3EP2atsEuAkSRwL",
+      "voiceSample": "packs/dario/voice-sample.mp3",
+      "voiceSampleSeconds": 10.3
     },
     {
       "slug": "dude",
@@ -214,7 +222,9 @@
       "rarity": "common",
       "model": "sonnet",
       "effort": "high",
-      "did": "did:key:z6Mki47TZEj3KTmVW2naTPU1FzqwxhN74Qq5CttQxYLehHUh"
+      "did": "did:key:z6Mki47TZEj3KTmVW2naTPU1FzqwxhN74Qq5CttQxYLehHUh",
+      "voiceSample": "packs/dude/voice-sample.mp3",
+      "voiceSampleSeconds": 9
     },
     {
       "slug": "lilbro",
@@ -270,7 +280,9 @@
       "rarity": "epic",
       "model": "opus",
       "effort": "high",
-      "did": "did:key:z6MkqKc8VDUidM6VXoxeURDAdC6EEH2Mi4SqkB8NRpkXhbJL"
+      "did": "did:key:z6MkqKc8VDUidM6VXoxeURDAdC6EEH2Mi4SqkB8NRpkXhbJL",
+      "voiceSample": "packs/lilbro/voice-sample.mp3",
+      "voiceSampleSeconds": 10.1
     },
     {
       "slug": "ward",
@@ -315,7 +327,9 @@
       "rarity": "rare",
       "model": "opus",
       "effort": "high",
-      "did": "did:key:z6MkgbL4ZogBPehGJjmb8Fp7Qx7BqYra8UjtB2in6FMVq7W6"
+      "did": "did:key:z6MkgbL4ZogBPehGJjmb8Fp7Qx7BqYra8UjtB2in6FMVq7W6",
+      "voiceSample": "packs/ward/voice-sample.mp3",
+      "voiceSampleSeconds": 11.3
     },
     {
       "slug": "don",
@@ -373,7 +387,9 @@
       "rarity": "legendary",
       "model": "opus",
       "effort": "high",
-      "did": "did:key:z6MkirptBXy9dH4RREs6Pxumsa1NNKm5Xo82N7RLmju3uW5r"
+      "did": "did:key:z6MkirptBXy9dH4RREs6Pxumsa1NNKm5Xo82N7RLmju3uW5r",
+      "voiceSample": "packs/don/voice-sample.mp3",
+      "voiceSampleSeconds": 9
     },
     {
       "slug": "quant",
@@ -412,7 +428,9 @@
       "rarity": "rare",
       "model": "opus",
       "effort": "high",
-      "did": "did:key:z6MknYf7u7XN7PgEKJYrYW37CWTpPuxzsKoTj4PTXy8sB2oJ"
+      "did": "did:key:z6MknYf7u7XN7PgEKJYrYW37CWTpPuxzsKoTj4PTXy8sB2oJ",
+      "voiceSample": "packs/quant/voice-sample.mp3",
+      "voiceSampleSeconds": 14
     },
     {
       "slug": "vesper",
@@ -453,7 +471,9 @@
       "rarity": "epic",
       "model": "opus",
       "effort": "high",
-      "did": "did:key:z6MkpXfBW7tT1m9DiiQgXHekHc2iRJLSm9eXm2hHD9abBEso"
+      "did": "did:key:z6MkpXfBW7tT1m9DiiQgXHekHc2iRJLSm9eXm2hHD9abBEso",
+      "voiceSample": "packs/vesper/voice-sample.mp3",
+      "voiceSampleSeconds": 10.6
     },
     {
       "slug": "dave",
@@ -493,7 +513,9 @@
       "rarity": "common",
       "model": "opus",
       "effort": "high",
-      "did": "did:key:z6MkmYPFwzqpLQMx8eZg3JWShvUdZYmEHxwF3ru31J5DKjwo"
+      "did": "did:key:z6MkmYPFwzqpLQMx8eZg3JWShvUdZYmEHxwF3ru31J5DKjwo",
+      "voiceSample": "packs/dave/voice-sample.mp3",
+      "voiceSampleSeconds": 10.7
     },
     {
       "slug": "goodwin",
@@ -534,7 +556,9 @@
       "rarity": "epic",
       "model": "opus",
       "effort": "high",
-      "did": "did:key:z6MkoMzKy7bkviMHuVaEBSH5wXbBe5KRfnyjD6zpqg2Fjr41"
+      "did": "did:key:z6MkoMzKy7bkviMHuVaEBSH5wXbBe5KRfnyjD6zpqg2Fjr41",
+      "voiceSample": "packs/goodwin/voice-sample.mp3",
+      "voiceSampleSeconds": 12.9
     },
     {
       "slug": "root",
@@ -576,7 +600,9 @@
       "rarity": "common",
       "model": "opus",
       "effort": "high",
-      "did": "did:key:z6MktYhixuxCUjwsThQMkf8xwmtu4qKpkXmjkcXuq84Wjide"
+      "did": "did:key:z6MktYhixuxCUjwsThQMkf8xwmtu4qKpkXmjkcXuq84Wjide",
+      "voiceSample": "packs/root/voice-sample.mp3",
+      "voiceSampleSeconds": 13.2
     },
     {
       "slug": "ada",
@@ -616,7 +642,9 @@
       "rarity": "rare",
       "model": "opus",
       "effort": "high",
-      "did": "did:key:z6MkrZ3DgmrBVxutFdfAsZTXx1XpoJRrEycQkAwsrbAZtYKG"
+      "did": "did:key:z6MkrZ3DgmrBVxutFdfAsZTXx1XpoJRrEycQkAwsrbAZtYKG",
+      "voiceSample": "packs/ada/voice-sample.mp3",
+      "voiceSampleSeconds": 10.6
     },
     {
       "slug": "ace",
@@ -662,7 +690,9 @@
       "rarity": "common",
       "model": "opus",
       "effort": "high",
-      "did": "did:key:z6MkjUfCcAMjjT5Vv8xxpzdZa1sTpWkoXc1yi3J2MkGWsNta"
+      "did": "did:key:z6MkjUfCcAMjjT5Vv8xxpzdZa1sTpWkoXc1yi3J2MkGWsNta",
+      "voiceSample": "packs/ace/voice-sample.mp3",
+      "voiceSampleSeconds": 8.3
     },
     {
       "slug": "anton",
@@ -707,7 +737,9 @@
       "rarity": "epic",
       "model": "opus",
       "effort": "high",
-      "did": "did:key:z6MkoJ3MnTR4KQsDhsxDPzxw2ESR1NX7rThzjrfE9DuoSVex"
+      "did": "did:key:z6MkoJ3MnTR4KQsDhsxDPzxw2ESR1NX7rThzjrfE9DuoSVex",
+      "voiceSample": "packs/anton/voice-sample.mp3",
+      "voiceSampleSeconds": 13.7
     },
     {
       "slug": "desk",
@@ -749,7 +781,9 @@
       "rarity": "epic",
       "model": "opus",
       "effort": "high",
-      "did": "did:key:z6MkgGYH4moK2AYG1wLAPFAYcUjxNGKzoFCwCzxr9PRPLvuv"
+      "did": "did:key:z6MkgGYH4moK2AYG1wLAPFAYcUjxNGKzoFCwCzxr9PRPLvuv",
+      "voiceSample": "packs/desk/voice-sample.mp3",
+      "voiceSampleSeconds": 11.3
     },
     {
       "slug": "mise",
@@ -790,7 +824,9 @@
       "rarity": "legendary",
       "model": "opus",
       "effort": "high",
-      "did": "did:key:z6MkifVuCp3cQ7Y6kFhzZSFJWS8pt969RS8iewVCPVCrnPoA"
+      "did": "did:key:z6MkifVuCp3cQ7Y6kFhzZSFJWS8pt969RS8iewVCPVCrnPoA",
+      "voiceSample": "packs/mise/voice-sample.mp3",
+      "voiceSampleSeconds": 15.6
     },
     {
       "slug": "dojo",
@@ -832,7 +868,9 @@
       "rarity": "common",
       "model": "opus",
       "effort": "high",
-      "did": "did:key:z6MkmqwYTb2BTHBWGLNeiezwUQr4pwA5LzKBFapyx95xT3q9"
+      "did": "did:key:z6MkmqwYTb2BTHBWGLNeiezwUQr4pwA5LzKBFapyx95xT3q9",
+      "voiceSample": "packs/dojo/voice-sample.mp3",
+      "voiceSampleSeconds": 10.1
     },
     {
       "slug": "reps",
@@ -874,7 +912,9 @@
       "rarity": "epic",
       "model": "opus",
       "effort": "high",
-      "did": "did:key:z6Mki8H4YAgTLc4tt2R9Ym6UrbMgxrjVhKacy1wUeum1wnnb"
+      "did": "did:key:z6Mki8H4YAgTLc4tt2R9Ym6UrbMgxrjVhKacy1wUeum1wnnb",
+      "voiceSample": "packs/reps/voice-sample.mp3",
+      "voiceSampleSeconds": 12
     },
     {
       "slug": "dub",
@@ -917,7 +957,9 @@
       "rarity": "rare",
       "model": "opus",
       "effort": "high",
-      "did": "did:key:z6Mkh5TeCi71L6Zfwufnb5eqHTfSjvHz3FCrjAuXj7yV29R7"
+      "did": "did:key:z6Mkh5TeCi71L6Zfwufnb5eqHTfSjvHz3FCrjAuXj7yV29R7",
+      "voiceSample": "packs/dub/voice-sample.mp3",
+      "voiceSampleSeconds": 15.9
     },
     {
       "slug": "axe",
@@ -961,7 +1003,9 @@
       "rarity": "common",
       "model": "opus",
       "effort": "high",
-      "did": "did:key:z6Mkfd2GPZzRdTowQHGFwFocPSCgtkf3hpDHdhveDYU1nrxR"
+      "did": "did:key:z6Mkfd2GPZzRdTowQHGFwFocPSCgtkf3hpDHdhveDYU1nrxR",
+      "voiceSample": "packs/axe/voice-sample.mp3",
+      "voiceSampleSeconds": 11.7
     },
     {
       "slug": "maw",
@@ -1005,7 +1049,9 @@
       "rarity": "epic",
       "model": "opus",
       "effort": "high",
-      "did": "did:key:z6Mkex4SBRSX17xqTFXLxtv5eAG77uRe58sqbrh8EtN2gzx5"
+      "did": "did:key:z6Mkex4SBRSX17xqTFXLxtv5eAG77uRe58sqbrh8EtN2gzx5",
+      "voiceSample": "packs/maw/voice-sample.mp3",
+      "voiceSampleSeconds": 8.5
     },
     {
       "slug": "perk",
@@ -1049,7 +1095,9 @@
       "rarity": "common",
       "model": "opus",
       "effort": "high",
-      "did": "did:key:z6MksrUvqdMryUuZkCStNcv3w3XkHeChiSxiVb5j2ydojGby"
+      "did": "did:key:z6MksrUvqdMryUuZkCStNcv3w3XkHeChiSxiVb5j2ydojGby",
+      "voiceSample": "packs/perk/voice-sample.mp3",
+      "voiceSampleSeconds": 12.1
     },
     {
       "slug": "crumb",
@@ -1093,7 +1141,9 @@
       "rarity": "rare",
       "model": "opus",
       "effort": "high",
-      "did": "did:key:z6MkrNZornfds2EsaWJYh4Uuq4Ue8juQUT1MHAA7hpQCpb3f"
+      "did": "did:key:z6MkrNZornfds2EsaWJYh4Uuq4Ue8juQUT1MHAA7hpQCpb3f",
+      "voiceSample": "packs/crumb/voice-sample.mp3",
+      "voiceSampleSeconds": 16.1
     },
     {
       "slug": "mike",
@@ -1138,7 +1188,9 @@
       "rarity": "rare",
       "model": "opus",
       "effort": "high",
-      "did": "did:key:z6MkjDcvvdp4Y5U4bNgnRpuLGvEb2FU7EkXZvzcu89Vbw6yX"
+      "did": "did:key:z6MkjDcvvdp4Y5U4bNgnRpuLGvEb2FU7EkXZvzcu89Vbw6yX",
+      "voiceSample": "packs/mike/voice-sample.mp3",
+      "voiceSampleSeconds": 12.2
     },
     {
       "slug": "blunt",
@@ -1181,7 +1233,9 @@
       "rarity": "common",
       "model": "opus",
       "effort": "high",
-      "did": "did:key:z6MkocegxMyPDcTPSkbCo6E2pUuuGEWLFDp8719NH5nsCUjT"
+      "did": "did:key:z6MkocegxMyPDcTPSkbCo6E2pUuuGEWLFDp8719NH5nsCUjT",
+      "voiceSample": "packs/blunt/voice-sample.mp3",
+      "voiceSampleSeconds": 12.2
     },
     {
       "slug": "clicker",
@@ -1224,7 +1278,9 @@
       "model": "sonnet",
       "effort": "high",
       "rarity": "rare",
-      "did": "did:key:z6MktkEt2sq4bt9fXvSW2ZLaKZiPD5c7jmXjhuYByFD62fGg"
+      "did": "did:key:z6MktkEt2sq4bt9fXvSW2ZLaKZiPD5c7jmXjhuYByFD62fGg",
+      "voiceSample": "packs/clicker/voice-sample.mp3",
+      "voiceSampleSeconds": 10.8
     },
     {
       "slug": "sustain",
@@ -1270,7 +1326,9 @@
       "rarity": "legendary",
       "model": "opus",
       "effort": "high",
-      "did": "did:key:z6MkgEvFu3ZZGfDDVC5zUhuS3poGqWyTt6N3Nr9Ar612W9LX"
+      "did": "did:key:z6MkgEvFu3ZZGfDDVC5zUhuS3poGqWyTt6N3Nr9Ar612W9LX",
+      "voiceSample": "packs/sustain/voice-sample.mp3",
+      "voiceSampleSeconds": 13.2
     },
     {
       "slug": "bo",
@@ -1313,7 +1371,9 @@
       "rarity": "common",
       "model": "opus",
       "effort": "high",
-      "did": "did:key:z6Mkm58FfoCQ4Yawhw21s7Z1KUmrqtbWpqfsyyUGD78hTysp"
+      "did": "did:key:z6Mkm58FfoCQ4Yawhw21s7Z1KUmrqtbWpqfsyyUGD78hTysp",
+      "voiceSample": "packs/bo/voice-sample.mp3",
+      "voiceSampleSeconds": 8
     },
     {
       "slug": "roam",
@@ -1355,7 +1415,9 @@
       "rarity": "common",
       "model": "opus",
       "effort": "high",
-      "did": "did:key:z6MkpfYYMs7wiR7vKmZUpjP4UJHbiX3fKMzFBJBh5TkEN16W"
+      "did": "did:key:z6MkpfYYMs7wiR7vKmZUpjP4UJHbiX3fKMzFBJBh5TkEN16W",
+      "voiceSample": "packs/roam/voice-sample.mp3",
+      "voiceSampleSeconds": 12.6
     },
     {
       "slug": "cue",
@@ -1397,7 +1459,9 @@
       "rarity": "legendary",
       "model": "opus",
       "effort": "high",
-      "did": "did:key:z6MkmdL5KTSE2xPDokxQtVAkj6VNAtV6qbeFR3qhHXMg8ApS"
+      "did": "did:key:z6MkmdL5KTSE2xPDokxQtVAkj6VNAtV6qbeFR3qhHXMg8ApS",
+      "voiceSample": "packs/cue/voice-sample.mp3",
+      "voiceSampleSeconds": 10.3
     },
     {
       "slug": "tally",
@@ -1440,7 +1504,9 @@
       "model": "opus",
       "effort": "high",
       "rarity": "rare",
-      "did": "did:key:z6MkjCxc5VYSW8mMuQEXGVjVz6p34hGfoM1bh2k1cZ5xbNH8"
+      "did": "did:key:z6MkjCxc5VYSW8mMuQEXGVjVz6p34hGfoM1bh2k1cZ5xbNH8",
+      "voiceSample": "packs/tally/voice-sample.mp3",
+      "voiceSampleSeconds": 11.9
     },
     {
       "slug": "pixel",
@@ -1483,7 +1549,9 @@
       "model": "opus",
       "effort": "high",
       "rarity": "legendary",
-      "did": "did:key:z6Mkuef48CVxUMycs9wmkMRNzWe9i1SeuboH2KVWHtdkYTbm"
+      "did": "did:key:z6Mkuef48CVxUMycs9wmkMRNzWe9i1SeuboH2KVWHtdkYTbm",
+      "voiceSample": "packs/pixel/voice-sample.mp3",
+      "voiceSampleSeconds": 11.4
     }
   ]
 }

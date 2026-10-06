@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Algieba",
+    "style": "deep baritone, slightly raspy, slow and deliberate; long pauses before the important line; warm but emotionally restrained; confident without excitement, never rushed; mid-Atlantic 1960s-executive register.",
+    "text": "I'm Don, and I help you find the one idea your brand should stand for. People don't buy what you make, they buy who they become when they use it."
+  },
+  "inputsSha256": "3af10ef0233897b40eb9258531b9812906113dff17cfc1a2454663b13aed1258",
+  "mp3Sha256": "f7b9d5e3c4bbcd5ef349cc9652bffb0988ffe7c4373c865b050be35d706fe065",
+  "seconds": 9
+}

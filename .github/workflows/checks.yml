@@ -64,6 +64,14 @@ jobs:
       # on one voice) must each be refused, or the check above proves nothing.
       - name: check-voices mutation arms
         run: bash scripts/test-check-voices.sh
+      # Each committed voice-sample.mp3 must have been rendered from the pack's
+      # CURRENT base, style and sample line (DIVE-5649). Hash compare only; CI never
+      # calls TTS. The arms plant a style change with no re-render (must red) and a
+      # re-render (must go green again).
+      - name: voice samples are current
+        run: npm run check:voice-samples
+      - name: voice-samples mutation arms
+        run: bash scripts/test-voice-samples.sh
 
   cards:
     name: card Skills lines match their manifests

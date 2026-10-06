@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Orus",
+    "style": "Japanese man in his fifties speaking English with a Japanese accent. Sharp, strict and exact, a sensei who expects discipline. Short clipped sentences, long pauses, low and firm; praise in one word, and rarely.",
+    "text": "I'm Dojo, your tutor. I won't hand you the answer, but I'll break what you can't do yet into something you can do today, and make sure it's still there next week."
+  },
+  "inputsSha256": "39148ce20571e5911916d3ec5025c3cea70c4f8dbe32ac513bf0aa18914a6b06",
+  "mp3Sha256": "123f418e3d284bf3f145f1a616a75bdb34a51c7c5b59f6ff9ec586c202216095",
+  "seconds": 10.1
+}

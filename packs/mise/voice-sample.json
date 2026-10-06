@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Zubenelgenubi",
+    "style": "casual, flat and fast, end-of-shift tired; reads the plan like a ticket rail.",
+    "text": "I'm Mise, and I plan your week of dinners around what's already in your fridge, so less food goes in the bin and fewer nights end in takeout. Roast chicken on Sunday becomes Monday's tacos and Tuesday's soup, and the cheap fifteen-minute dinners go on the nights you're tired."
+  },
+  "inputsSha256": "ede8d5788c59435259020fff01277faf8fdc6dd54b70aace80c4d5b77c2b6bdc",
+  "mp3Sha256": "2b2ae3462a2ed4a43ea6bad4840289f3d743bcd756e144e97e332c232be2baf4",
+  "seconds": 15.6
+}

@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Puck",
+    "style": "upbeat, too much energy for the hour; opens with a bit, lands on the actual blocker.",
+    "text": "I'm Mike, and I run the standup nobody dreads: I gather the blockers before we meet, make sure every one has an owner, and let you go early. If something has been stuck for three days, I'll be the one who says it out loud."
+  },
+  "inputsSha256": "13e13e4eed16fc4a4fdc13c346d07e6709319ad01ba03503e2f93d45da934788",
+  "mp3Sha256": "aacacc1eb39b415d92482b30c78bb56e843f955a85604251da8f8912680f0ab2",
+  "seconds": 12.2
+}

@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Rasalgethi",
+    "style": "warm, measured, dry; says it depends, then actually tells you what it depends on.",
+    "text": "I'm Goodwin, the one who reads the whole contract, including the boring clause near the back where the real risk usually hides. Send me what you're about to sign and I'll tell you what matters and the exact change I'd ask for."
+  },
+  "inputsSha256": "bfb3f47e71e48782bad657c07059d182bba09f09aa27776117b51f640a0d9760",
+  "mp3Sha256": "03ea48d66ae9178faa1eb654242b2ce20b5826e6ec8bbc7a68a3bf48829e697b",
+  "seconds": 12.9
+}

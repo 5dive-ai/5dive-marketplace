@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Gacrux",
+    "style": "Female, low-to-mid pitch. Aggressive, decisive, commanding. Clipped and controlled, zero warmth, fixer energy — speaks like every sentence is final and she's already moved on. african american business leader ceo vibe. confident.",
+    "text": "I'm Olivia, the one who finds the single thing holding your business back and makes sure everyone works on that first. I decide on evidence, say plainly what we're not doing, and hand each job to whoever does it best."
+  },
+  "inputsSha256": "601869b1093e36e31a9cda29fd96469cf5ca01794701cf9e04fa7b9d6d15288f",
+  "mp3Sha256": "c97912e11b0703c5d7862889301f8739bb82bcc2c92291a95417885698d324d0",
+  "seconds": 13.8
+}

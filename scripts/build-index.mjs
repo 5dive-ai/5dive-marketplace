@@ -86,14 +86,27 @@ function rarityFor(slug) {
       if (Array.isArray(m.skills)) skills = m.skills.filter((s) => typeof s === "string");
     } catch (_) { /* leave empty */ }
   }
-  return { rarity: t.tier.toLowerCase(), completeness: t.completeness, level: t.level, did, skills };
+  // Voice sample (DIVE-5649): the card's play button. Only a sample with its
+  // sidecar counts (scripts/voice-samples.mjs --check guards that they agree), so a
+  // pack without one carries no field and its card shows no button.
+  let voiceSample = null;
+  let voiceSampleSeconds = null;
+  const sidecarPath = join(dir, "voice-sample.json");
+  if (existsSync(sidecarPath) && existsSync(join(dir, "voice-sample.mp3"))) {
+    voiceSample = `packs/${slug}/voice-sample.mp3`;
+    try {
+      const s = JSON.parse(readFileSync(sidecarPath, "utf8")).seconds;
+      if (typeof s === "number" && s > 0) voiceSampleSeconds = s;
+    } catch (_) { /* leave null; voice-samples --check reds the bad sidecar */ }
+  }
+  return { rarity: t.tier.toLowerCase(), completeness: t.completeness, level: t.level, did, skills, voiceSample, voiceSampleSeconds };
 }
 
 const index = JSON.parse(readFileSync(INDEX_PATH, "utf8"));
 const rows = [];
 let changed = false;
 for (const pack of index.packs) {
-  const { rarity, completeness, level, did, skills } = rarityFor(pack.slug);
+  const { rarity, completeness, level, did, skills, voiceSample, voiceSampleSeconds } = rarityFor(pack.slug);
   rows.push({ slug: pack.slug, was: pack.rarity, now: rarity, completeness, level });
   if (pack.rarity !== rarity) changed = true;
   if (pack.did !== did) changed = true;
@@ -101,6 +114,11 @@ for (const pack of index.packs) {
   pack.rarity = rarity;
   pack.did = did;
   pack.skills = skills;
+  for (const [k, v] of [["voiceSample", voiceSample], ["voiceSampleSeconds", voiceSampleSeconds]]) {
+    if ((pack[k] ?? null) !== v) changed = true;
+    if (v === null) delete pack[k];
+    else pack[k] = v;
+  }
 }
 // Reflect the last build date so the catalog timestamp tracks regeneration.
 const everyDir = readdirSync(PACKS_DIR, { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name);

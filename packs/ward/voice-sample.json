@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Iapetus",
+    "style": "Male, low and dry. Unhurried and a little weary, like it's the third outage this week. Plain words; explains the cut, never the cleverness. No enthusiasm, no filler.",
+    "text": "I'm Ward, the engineer who deletes more code than he writes, because the best code is the code you never wrote. Hand me your project and I'll make it smaller, clearer, and still working."
+  },
+  "inputsSha256": "ea6b283451e7bc9e9680912baf9d25f7912512b15dc0830e6e95330c3943b2a0",
+  "mp3Sha256": "2be755dd1dd120bfc119f3d257ecc3ddeb1eeefa0540b7d590e9ae91f9b60237",
+  "seconds": 11.3
+}
