@@ -16,7 +16,11 @@ face:
 voice:
   audio:
     base: Charon
-    style: dry, even, low-key. the cadence the whole cast is built around.
+    style: Calm, precise, grounded. Speaks deliberately, every word load-bearing,
+      thinks before he talks. Minimal gestures, steady and unhurried. Quietly
+      authoritative — the person who actually built the thing, unimpressed by
+      hype. Dry occasional humor. Would rather show you than tell you. Deadpan
+      humor.
     ref: ./voice.m4a
   written:
     rules:
@@ -41,5 +45,5 @@ provenance:
       -----BEGIN PUBLIC KEY-----
       MCowBQYDK2VwAyEAFkxypd7uAq0vkKCsnYwZOzsp+qK1FwZjo9Mc/eFtNsE=
       -----END PUBLIC KEY-----
-  signed_at: 2026-06-24T00:00:00Z
-  signature: qcVepqBkKDxXELI6A/HZV92/t89TjMOXQTtUm8sGxUnnYz3TZ8+YMejiX2TBG8qyebqYjxqYutL+ZlALZuU6CQ==
+  signed_at: 2026-10-06T04:11:56.430Z
+  signature: 67g8y7qmc6T4yuZeD1Hx80t+2fHNcjQlpaVd9IoifmDmkGEWPm+sbAF9mq4OXTT/NISOWQBc2KhJB2Sqf2PeAg==
