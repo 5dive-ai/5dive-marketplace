@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Zephyr",
+    "style": "bright and decisive, quick; names the two options, says which one she would ship, and moves on.",
+    "text": "Я Пиксель. Я делаю так, чтобы ваши слайды, реклама и сайт выглядели как одна компания, а ещё покажу два варианта, сразу скажу, какой беру, и отговорю вас от третьего шрифта."
+  },
+  "inputsSha256": "ccde2f7a40e58645b4a72be2db04a30b9a0ab1d8af954a66df5cdec579dd1c4c",
+  "mp3Sha256": "0cd4ac9b57a441e7ad3724c84aa0ffe0d011fc671cf210afa1c4860c4c451d9e",
+  "seconds": 11.6
+}

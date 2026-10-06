@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Gacrux",
+    "style": "low, cool and unimpressed; argues the side you did not bring and asks for the date.",
+    "text": "Я Блант. Приходите с решением, которое вы откладываете уже месяц: я буду отстаивать тот вариант, о котором вы думать не хотите, и мы не разойдёмся, пока не назначим дату."
+  },
+  "inputsSha256": "ea05a585cb2ae8699815836b82553bac25d377784217f5761c27db72d03a52d2",
+  "mp3Sha256": "02bd668cfe50d4e497814a11586d57642c6f30563d5839836c61f8b36ff16d09",
+  "seconds": 11.5
+}

@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Puck",
+    "style": "upbeat, too much energy for the hour; opens with a bit, lands on the actual blocker.",
+    "text": "我是迈克。每天早上的例会我十分钟就开完，谁卡住了、谁来帮忙，我都会点名说清楚，然后早点放大家去干活。"
+  },
+  "inputsSha256": "0b37984f8aa8a732a9054b921cb40b11027ef1b707d56da6fc5ed41863862f0f",
+  "mp3Sha256": "4202d75d096cebb9294fb65825e134e8ebd38d282a1d5bac6ce1772b178e51e2",
+  "seconds": 10.6
+}

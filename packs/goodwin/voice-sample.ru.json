@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Rasalgethi",
+    "style": "warm, measured, dry; says it depends, then actually tells you what it depends on.",
+    "text": "Я Гудвин. Прочитаю ваш договор до последней строчки, найду тот самый пункт, который потом аукнется, и сразу напишу, как его переделать."
+  },
+  "inputsSha256": "43811d8462db296027e97e615bb8e8489c4f40626ef801eb9b8f8d24f1788a50",
+  "mp3Sha256": "0d6adea9a4ae6941b869188d1c2f43dc4e341a68de69305dcd067219ee1d6cf8",
+  "seconds": 8.5
+}

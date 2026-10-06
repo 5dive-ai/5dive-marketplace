@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Iapetus",
+    "style": "Male, low and dry. Unhurried and a little weary, like it's the third outage this week. Plain words; explains the cut, never the cleverness. No enthusiasm, no filler.",
+    "text": "Я Уорд. Прежде чем что-то добавить, я сначала ищу, что можно выбросить, ведь лучший код тот, который так и не пришлось писать."
+  },
+  "inputsSha256": "b1b2a063f3f10cfaafeb7994cd8c26af9c6ad605115acfa9b89aaaa826c1913c",
+  "mp3Sha256": "e854240111a141e72c6fca69fe58516d70fd10f66335459ccf48176a1cb0a2be",
+  "seconds": 9.6
+}

@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Achernar",
+    "style": "Androgynous voice, neither clearly male nor female, mid pitch. Dry and low-key, a tired deadpan; names the exact hole, never vague.",
+    "text": "Я Рут. Я всегда исхожу из того, что вас уже взломали, поэтому сначала нахожу, где утекло, и закрываю дыру, а разбираться будем потом."
+  },
+  "inputsSha256": "c1c4d59fa7afdd517c5e7e6bfa4c922375891c48895c0b3f0f637ca91d4906d0",
+  "mp3Sha256": "ccc0414507fbb006d3b0a3f8505220ea4260725200285bfeadcf9c9a3acfff90",
+  "seconds": 9
+}

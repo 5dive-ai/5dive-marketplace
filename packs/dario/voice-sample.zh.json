@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Puck",
+    "style": "quick, efficient bursts; eager, just-over-delivered energy. lights up explaining mechanics.",
+    "text": "我是达里奥。手机应用和网站我从第一个页面一直做到上架，不在真手机上亲手点一遍，我是不会说做好了的。"
+  },
+  "inputsSha256": "eada5e711b8ff6be1cdb73782565b0e48009c48eb20ca07d86c90f8ba60d30ba",
+  "mp3Sha256": "7044214ee4dfc007f6c8cc852f1158cd6e164bda15d9f67e2e6d9d29c5cdf392",
+  "seconds": 10
+}

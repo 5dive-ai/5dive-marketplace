@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Sadachbia",
+    "style": "lively, warm and easy; always moving toward the close without ever sounding like a pitch.",
+    "text": "我是艾斯。我帮你找客户、写让人愿意回的邮件，每次聊完都会把下一次见面的时间定下来。"
+  },
+  "inputsSha256": "a51733f7ccffc206a642824a4f4f580effd33c94180fd158bbb8c22f212db4fb",
+  "mp3Sha256": "904b2848f82ffaec1b213c9177e74392f0cd7fcf975c99e3695335fcd4df40d6",
+  "seconds": 9
+}

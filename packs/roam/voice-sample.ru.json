@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Sulafat",
+    "style": "warm, brisk and certain; logistics first, the one great thing of the day second.",
+    "text": "Я Роум. Планирую поездки так, чтобы их не сломал задержанный рейс: сначала билеты и ночлег, а потом одно настоящее впечатление в день вместо четырёх на бегу."
+  },
+  "inputsSha256": "53caa56eeeee410271e986be0c68e44c3b35b5781ebcc3b03e75334c70fe250f",
+  "mp3Sha256": "37030d7130aa9ea4e00ad46615a4e3898b56bfb1442b39741f0f2fff1a35e1ce",
+  "seconds": 10.8
+}

@@ -23,6 +23,12 @@
 //   node scripts/voice-samples.mjs --supply <slug> <file.mp3> --by=<who> [--note=<why>]
 //                                                 # use a hand-supplied clip instead of a render
 //
+// Add --lang=ru or --lang=zh to any of the last four for the same pack's clip in that
+// language (DIVE-5659): packs/<slug>/voice-sample.<lang>.mp3 + .<lang>.json, its line in
+// voice-sample-lines.<lang>.json. Same voice, same style, same model; only the line
+// differs, and it is the agent's own words in that language. --check covers every
+// language; the English files keep their names.
+//
 // Each sample sits beside a sidecar, packs/<slug>/voice-sample.json, that records a
 // hash of the inputs it was rendered from (model, base, style, text) and of the mp3
 // itself. --check recomputes the input hash from persona.yaml + index.json, so a PR
@@ -57,26 +63,35 @@ const OA = process.env.OPENAGENT_DIR || join(dirname(require.resolve("@5dive/ope
 const YAML = createRequire(join(OA, "package.json"))("yaml");
 
 export const MODEL = "google/gemini-3.8-flash-lite-tts";
-const MP3 = "voice-sample.mp3";
-const SIDECAR = "voice-sample.json";
+// "" is English, the card's default clip; the others are optional per pack.
+const LANGS = ["", "ru", "zh"];
+const at = (lang) => ({
+  MP3: lang ? `voice-sample.${lang}.mp3` : "voice-sample.mp3",
+  SIDECAR: lang ? `voice-sample.${lang}.json` : "voice-sample.json",
+  LINES: lang ? `voice-sample-lines.${lang}.json` : "voice-sample-lines.json",
+  what: lang ? `${lang} voice sample` : "voice sample",
+  flag: lang ? ` --lang=${lang}` : "",
+});
 
 const packsDir = join(ROOT, "packs");
 const index = JSON.parse(readFileSync(join(ROOT, "index.json"), "utf8"));
 const entries = Object.fromEntries(index.packs.map((p) => [p.slug, p]));
-// What each pack says on its card: one in-character line, written for the agent.
-const LINES_FILE = join(ROOT, "voice-sample-lines.json");
-const lines = existsSync(LINES_FILE) ? JSON.parse(readFileSync(LINES_FILE, "utf8")) : {};
+// What each pack says on its card: one in-character line, in the agent's own words.
+const lines = Object.fromEntries(LANGS.map((lang) => {
+  const f = join(ROOT, at(lang).LINES);
+  return [lang, existsSync(f) ? JSON.parse(readFileSync(f, "utf8")) : {}];
+}));
 
 const sha256 = (buf) => createHash("sha256").update(buf).digest("hex");
 
-function inputsFor(slug) {
+function inputsFor(slug, lang = "") {
   const entry = entries[slug];
   if (!entry) throw new Error(`${slug}: not in index.json`);
   const doc = YAML.parse(readFileSync(join(packsDir, slug, "persona.yaml"), "utf8")) || {};
   const audio = (doc.voice && doc.voice.audio) || {};
   const base = typeof audio.base === "string" ? audio.base.trim() : "";
   const style = typeof audio.style === "string" ? audio.style.trim() : "";
-  const text = typeof lines[slug] === "string" ? lines[slug].trim() : "";
+  const text = typeof lines[lang][slug] === "string" ? lines[lang][slug].trim() : "";
   const inputs = { model: MODEL, base, style, text };
   return { ...inputs, hash: sha256(JSON.stringify(inputs)) };
 }
@@ -90,13 +105,15 @@ function check() {
   const errors = [];
   const missing = [];
   const supplied = [];
-  for (const slug of slugs) {
+  const langs = Object.fromEntries(LANGS.filter(Boolean).map((l) => [l, 0]));
+  for (const slug of slugs) for (const lang of LANGS) {
+    const { MP3, SIDECAR, what, flag } = at(lang);
     const mp3 = join(packsDir, slug, MP3);
     const side = join(packsDir, slug, SIDECAR);
     const hasMp3 = existsSync(mp3);
     const hasSide = existsSync(side);
-    if (!hasMp3 && !hasSide) { missing.push(slug); continue; }
-    if (!hasSide) { errors.push(`${slug}: ${MP3} has no ${SIDECAR}; render it with scripts/voice-samples.mjs, do not drop an mp3 in by hand.`); continue; }
+    if (!hasMp3 && !hasSide) { if (!lang) missing.push(slug); continue; }
+    if (!hasSide) { errors.push(`${slug}: ${MP3} has no ${SIDECAR}; render it with scripts/voice-samples.mjs${flag}, do not drop an mp3 in by hand.`); continue; }
     if (!hasMp3) { errors.push(`${slug}: ${SIDECAR} names a sample but ${MP3} is missing.`); continue; }
     let rec;
     try { rec = JSON.parse(readFileSync(side, "utf8")); } catch (e) { errors.push(`${slug}: ${SIDECAR} does not parse (${e.message})`); continue; }
@@ -106,18 +123,19 @@ function check() {
       continue;
     }
     if (rec.mp3Sha256 !== sha256(bytes)) {
-      errors.push(`${slug}: ${MP3} is not the file its ${SIDECAR} recorded; re-render it with scripts/voice-samples.mjs.`);
+      errors.push(`${slug}: ${MP3} is not the file its ${SIDECAR} recorded; re-render it with scripts/voice-samples.mjs${flag}.`);
       continue;
     }
+    if (lang) langs[lang]++;
     if (rec.source === "supplied") {
       if (!rec.suppliedBy) errors.push(`${slug}: ${SIDECAR} marks the sample supplied but names no suppliedBy; use --supply ... --by=<who>.`);
-      else supplied.push(`${slug} (by ${rec.suppliedBy})`);
+      else supplied.push(`${slug}${lang ? ` ${lang}` : ""} (by ${rec.suppliedBy})`);
       continue;
     }
-    const now = inputsFor(slug);
+    const now = inputsFor(slug, lang);
     if (rec.inputsSha256 !== now.hash) {
-      const what = ["model", "base", "style", "text"].filter((k) => (rec.inputs || {})[k] !== now[k]);
-      errors.push(`${slug}: voice sample is STALE (${what.join(", ") || "inputs"} changed since it was rendered); run: node scripts/voice-samples.mjs ${slug}`);
+      const moved = ["model", "base", "style", "text"].filter((k) => (rec.inputs || {})[k] !== now[k]);
+      errors.push(`${slug}: ${what} is STALE (${moved.join(", ") || "inputs"} changed since it was rendered); run: node scripts/voice-samples.mjs${flag} ${slug}`);
     }
   }
   if (errors.length) {
@@ -126,7 +144,8 @@ function check() {
     process.exit(1);
   }
   const have = slugs.length - missing.length;
-  console.log(`voice-samples: ${have} of ${slugs.length} packs have a current sample${supplied.length ? `; supplied, not rendered: ${supplied.join(", ")}` : ""}${missing.length ? `; none yet: ${missing.join(", ")}` : ""}.`);
+  const other = Object.entries(langs).map(([l, n]) => `${l} ${n}`).join(", ");
+  console.log(`voice-samples: ${have} of ${slugs.length} packs have a current sample (other languages: ${other})${supplied.length ? `; supplied, not rendered: ${supplied.join(", ")}` : ""}${missing.length ? `; none yet: ${missing.join(", ")}` : ""}.`);
 }
 
 // The box's dedicated key for this script comes first. The general connector key is
@@ -139,10 +158,10 @@ function apiKey() {
   throw new Error(`no OpenRouter key: set OPENROUTER_API_KEY or provide ${KEY_FILES.join(" or ")}`);
 }
 
-async function render(slug, inp, key) {
-  const mp3 = join(packsDir, slug, MP3);
+async function render(slug, inp, key, lang) {
+  const mp3 = join(packsDir, slug, at(lang).MP3);
   if (process.env.VOICE_SAMPLE_FAKE_TTS === "1") {
-    writeFileSync(mp3, `fake mp3 for ${slug} ${inp.hash}\n`);
+    writeFileSync(mp3, `fake mp3 for ${slug}${lang ? ` ${lang}` : ""} ${inp.hash}\n`);
     return 1;
   }
   const body = { model: MODEL, input: inp.text, voice: inp.base, response_format: "pcm" };
@@ -154,7 +173,7 @@ async function render(slug, inp, key) {
   });
   const pcm = Buffer.from(await res.arrayBuffer());
   if (res.status !== 200 || pcm.length === 0) throw new Error(`http ${res.status}: ${pcm.subarray(0, 200).toString()}`);
-  const raw = join(packsDir, slug, ".voice-sample.pcm");
+  const raw = join(packsDir, slug, `.${at(lang).MP3}.pcm`);
   writeFileSync(raw, pcm);
   try {
     execFileSync("ffmpeg", ["-loglevel", "error", "-y", "-f", "s16le", "-ar", "24000", "-ac", "1", "-i", raw, "-c:a", "libmp3lame", "-q:a", "4", mp3]);
@@ -169,19 +188,27 @@ function probeSeconds(mp3) {
   return Math.round(parseFloat(out) * 10) / 10;
 }
 
+function langOf(args) {
+  const lang = (args.find((a) => a.startsWith("--lang=")) || "").slice(7);
+  if (!LANGS.includes(lang)) throw new Error(`--lang must be one of: ${LANGS.filter(Boolean).join(", ")}`);
+  return lang;
+}
+
 function supply(args) {
   const [slug, file] = args.filter((a) => !a.startsWith("--"));
   const opt = (k) => (args.find((a) => a.startsWith(`--${k}=`)) || "").slice(k.length + 3);
   const by = opt("by");
   if (!slug || !file || !by) throw new Error("usage: --supply <slug> <file.mp3> --by=<who> [--note=<why>]");
   if (!slugs.includes(slug)) throw new Error(`unknown pack: ${slug}`);
+  const lang = langOf(args);
+  const { MP3, SIDECAR } = at(lang);
   const bytes = readFileSync(file);
   const mp3 = join(packsDir, slug, MP3);
   writeFileSync(mp3, bytes);
   const seconds = process.env.VOICE_SAMPLE_FAKE_TTS === "1" ? 1 : probeSeconds(mp3);
   const rec = { source: "supplied", suppliedBy: by, ...(opt("note") ? { note: opt("note") } : {}), mp3Sha256: sha256(bytes), seconds };
   writeFileSync(join(packsDir, slug, SIDECAR), JSON.stringify(rec, null, 2) + "\n");
-  console.log(`OK   ${slug} supplied by ${by}, ${seconds}s`);
+  console.log(`OK   ${slug}${lang ? ` ${lang}` : ""} supplied by ${by}, ${seconds}s`);
   console.log("now run: node scripts/build-index.mjs  (index.json carries voiceSample + voiceSampleSeconds)");
 }
 
@@ -189,48 +216,57 @@ function importClip(args) {
   const [slug, file] = args.filter((a) => !a.startsWith("--"));
   if (!slug || !file) throw new Error("usage: --import <slug> <file.mp3>");
   if (!slugs.includes(slug)) throw new Error(`unknown pack: ${slug}`);
-  const inp = inputsFor(slug);
-  if (!inp.base || !inp.text) throw new Error(`${slug}: needs voice.audio.base and a line in voice-sample-lines.json`);
+  const lang = langOf(args);
+  const { MP3, SIDECAR, LINES } = at(lang);
+  const inp = inputsFor(slug, lang);
+  if (!inp.base || !inp.text) throw new Error(`${slug}: needs voice.audio.base and a line in ${LINES}`);
   const bytes = readFileSync(file);
   const mp3 = join(packsDir, slug, MP3);
   writeFileSync(mp3, bytes);
   const seconds = process.env.VOICE_SAMPLE_FAKE_TTS === "1" ? 1 : probeSeconds(mp3);
   const { hash, ...inputs } = inp;
   writeFileSync(join(packsDir, slug, SIDECAR), JSON.stringify({ inputs, inputsSha256: hash, mp3Sha256: sha256(bytes), seconds }, null, 2) + "\n");
-  console.log(`OK   ${slug} imported, ${seconds}s`);
+  console.log(`OK   ${slug}${lang ? ` ${lang}` : ""} imported, ${seconds}s`);
 }
 
 async function generate(args) {
   const force = args.includes("--force");
+  const lang = langOf(args);
+  const { MP3, SIDECAR, LINES } = at(lang);
+  const tag = lang ? ` ${lang}` : "";
   const wanted = args.filter((a) => !a.startsWith("--"));
   for (const s of wanted) if (!slugs.includes(s)) throw new Error(`unknown pack: ${s}`);
   const todo = wanted.length ? wanted : slugs;
   let key = null;
   let failed = 0;
   for (const slug of todo) {
-    const inp = inputsFor(slug);
+    const inp = inputsFor(slug, lang);
     const side = join(packsDir, slug, SIDECAR);
     if (!force && existsSync(side) && existsSync(join(packsDir, slug, MP3))) {
       const rec = JSON.parse(readFileSync(side, "utf8"));
-      if (rec.source === "supplied") { console.log(`SKIP ${slug} (supplied by ${rec.suppliedBy}; --force renders over it)`); continue; }
-      if (rec.inputsSha256 === inp.hash) { console.log(`SKIP ${slug} (current)`); continue; }
+      if (rec.source === "supplied") { console.log(`SKIP ${slug}${tag} (supplied by ${rec.suppliedBy}; --force renders over it)`); continue; }
+      if (rec.inputsSha256 === inp.hash) { console.log(`SKIP ${slug}${tag} (current)`); continue; }
     }
-    if (!inp.base) { console.error(`FAIL ${slug}: no voice.audio.base, nothing to render`); failed++; continue; }
-    if (!inp.text) { console.error(`FAIL ${slug}: no line in voice-sample-lines.json, nothing to say`); failed++; continue; }
+    if (!inp.base) { console.error(`FAIL ${slug}${tag}: no voice.audio.base, nothing to render`); failed++; continue; }
+    if (!inp.text) {
+      // An optional language skips a pack with no line in it; English has always failed here.
+      if (lang && !wanted.length) { console.log(`SKIP ${slug}${tag} (no line in ${LINES})`); continue; }
+      console.error(`FAIL ${slug}${tag}: no line in ${LINES}, nothing to say`); failed++; continue;
+    }
     if (key === null && process.env.VOICE_SAMPLE_FAKE_TTS !== "1") key = apiKey();
     try {
-      const seconds = await render(slug, inp, key);
+      const seconds = await render(slug, inp, key, lang);
       const { hash, ...inputs } = inp;
       const rec = { inputs, inputsSha256: hash, mp3Sha256: sha256(readFileSync(join(packsDir, slug, MP3))), seconds };
       writeFileSync(side, JSON.stringify(rec, null, 2) + "\n");
-      console.log(`OK   ${slug} ${seconds}s`);
+      console.log(`OK   ${slug}${tag} ${seconds}s`);
     } catch (e) {
-      console.error(`FAIL ${slug}: ${e.message}`);
+      console.error(`FAIL ${slug}${tag}: ${e.message}`);
       failed++;
     }
   }
   if (failed) process.exit(1);
-  console.log("now run: node scripts/build-index.mjs  (index.json carries voiceSample + voiceSampleSeconds)");
+  console.log("now run: node scripts/build-index.mjs  (index.json carries voiceSample + voiceSampleSeconds + voiceSampleLang)");
 }
 
 const args = process.argv.slice(2);

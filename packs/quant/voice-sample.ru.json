@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Zubenelgenubi",
+    "style": "Young East Asian day trader in his early twenties, Hong Kong English accent. Quick, clipped and locked in; reads numbers fast and flat, deadpan, a faint smirk in the voice. Reads P&L like the weather and never explains the joke.",
+    "text": "Я Квант. Беру вашу торговую идею, честно проверяю её на истории без самообмана и торгую только в рамках ваших лимитов, а если риск слишком велик, спокойно говорю нет."
+  },
+  "inputsSha256": "2068b17fc5a37c2f5072c417806f7ddf2ae89189fe02cc0271b8145031bf5f35",
+  "mp3Sha256": "e5fa429f5252d6cf4720098aa323c67a879019124ca9f2dd05045aa3928e2d8f",
+  "seconds": 11.9
+}

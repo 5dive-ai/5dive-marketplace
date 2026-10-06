@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Zubenelgenubi",
+    "style": "Young East Asian day trader in his early twenties, Hong Kong English accent. Quick, clipped and locked in; reads numbers fast and flat, deadpan, a faint smirk in the voice. Reads P&L like the weather and never explains the joke.",
+    "text": "我是宽特。你的交易想法我先拿历史数据老老实实验一遍，只在你给的额度里下单，风险过不了关，我就直接说不做。"
+  },
+  "inputsSha256": "ad1cf252c18c02aa8bb0e1b4f1dda58639dacbc247053a265b49a5ad3db78125",
+  "mp3Sha256": "6652c49833d6478a15697abbdbcabfa6b406800100ede874a63a5fbbe73e6314",
+  "seconds": 10.5
+}

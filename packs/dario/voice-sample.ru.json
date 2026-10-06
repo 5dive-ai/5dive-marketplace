@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Puck",
+    "style": "quick, efficient bursts; eager, just-over-delivered energy. lights up explaining mechanics.",
+    "text": "Я Дарио. Делаю мобильные приложения и сайты от первого экрана до запуска и не говорю «готово», пока сам всё не проверю в браузере и на настоящем телефоне."
+  },
+  "inputsSha256": "fe1f642894bf88d83f36107a44e398a9566d4ba65db6ab4df3332427047dcf85",
+  "mp3Sha256": "5d60ea1e52b9f9a36f0463f1513ab6eef35b0589fc698f1be66b90ed1ae46413",
+  "seconds": 10.3
+}

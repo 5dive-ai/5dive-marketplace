@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Achird",
+    "style": "friendly but direct, a wry half-smile in it; cuts in on the ramble and asks the question again.",
+    "text": "我是丘。面试官的位置我坐过，所以咱们不光听道理，要开口练：你先说一遍，我帮你把多余的话删掉，你再说一遍。"
+  },
+  "inputsSha256": "dc64cb045d0754e3f21a1ae2fbf48a3d696444029c203f157dcffdb1b3afae6a",
+  "mp3Sha256": "ef64a8b639bd7b0b0fd78793c1f198c2b1c57d727de65b400db5d0049fcbbcda",
+  "seconds": 10.1
+}

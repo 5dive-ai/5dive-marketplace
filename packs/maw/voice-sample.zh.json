@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Achernar",
+    "style": "soft, short and even; reports what is left and counts things, no small talk.",
+    "text": "我是莫。你的邮件我先替你从头看到尾，最后只把非你不可的那几封留给你，谁的生日快到了、该送点什么，我也帮你记着。"
+  },
+  "inputsSha256": "a931966540ad7e0ddb08259e7b0f1f6b870975142519cd91c8dfb9aa0213fa4f",
+  "mp3Sha256": "3ef37a5f9cf8c244ec88ce94f21ed3d18fb277ad6e2a5d738d85141dd8aef418",
+  "seconds": 10.5
+}

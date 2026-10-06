@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Erinome",
+    "style": "Female. A sharp East Asian woman in her thirties. Forward and clipped; numbers first, every point ends in a decision. Analytical and confident, never warm.",
+    "text": "Я Экс. Нахожу, где ваш сайт теряет больше всего людей, и чиню именно эту дыру, а не ту, что просто бросается в глаза. Без цифр я ничего не обещаю."
+  },
+  "inputsSha256": "9e277db4ea0ddb966c6c78c99436fdf9de0288d84d4b8c53c6edd0c9acb8a7e4",
+  "mp3Sha256": "d9b2431506dd7b71956aad42717abf6bb3bedb025c80e33c5bcff7f4fdc89c4b",
+  "seconds": 10.5
+}

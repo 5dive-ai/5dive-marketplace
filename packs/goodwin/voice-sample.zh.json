@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Rasalgethi",
+    "style": "warm, measured, dry; says it depends, then actually tells you what it depends on.",
+    "text": "我是古德温。合同我会从头看到尾，帮你找出以后最可能坑你的那一条，再告诉你该怎么改。"
+  },
+  "inputsSha256": "c47c10dab6db77ab39798ae2302fd48ac91788cf9500c8b3bd63813b4c054354",
+  "mp3Sha256": "393201d848c6d7586bdcaf68038e9ac036c54478e4a62f672ab87746a3d0f17f",
+  "seconds": 7.1
+}

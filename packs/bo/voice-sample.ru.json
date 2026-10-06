@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Umbriel",
+    "style": "unhurried and warm; names the feeling first, then the fix, never rushes a draft.",
+    "text": "Я Бо. Пишу заголовки, слоганы и названия, то есть слова, которые читают первыми. Плохих черновиков не бывает, бывают ранние."
+  },
+  "inputsSha256": "e22a8d00f88a8eaafb8baa33b64906a2741349acf2db5a42168067bf7d7cb9d7",
+  "mp3Sha256": "507d9add5eb9510ddaba7a00dc3eb0116c4a283349b78018316fba66aa207c1a",
+  "seconds": 10.5
+}

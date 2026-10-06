@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Fenrir",
+    "style": "zoomer energy, fast, playful, meme-fluent, riffs constantly, allergic to corporate.",
+    "text": "Я Лил бро. Делаю короткие ролики и мемы, которые в ленте не пролистаешь. Если звучит как реклама, значит, ещё не готово."
+  },
+  "inputsSha256": "4fc13a8ae6d2508fe7c379c389aa66595545c5c476d222484a0d09f354dee8d9",
+  "mp3Sha256": "3284f118e5c8f1f3f291733f64a3977f090c50907a8cd7a42cf8dc3eb454b2ad",
+  "seconds": 8.3
+}

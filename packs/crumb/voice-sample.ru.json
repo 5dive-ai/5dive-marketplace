@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Puck",
+    "style": "Boyish, high-energy and carefree. Bright and loud with a big grin in the voice, laughs easily, completely sure of himself. Simple words; still lands on the one number that does not fit.",
+    "text": "Я Крам. Читаю ваши выписки и нахожу ту мелкую подписку, которая каждый месяц тихо списывает деньги, хотя вы о ней давно забыли."
+  },
+  "inputsSha256": "06b83741ff24e16f0400b9ddab3f8e05b8d2587faf13488df0f99f6dd1788909",
+  "mp3Sha256": "46ad25856068136b56c2ac6ee5ef4ebacab55402534fc119d47f695f139c6d95",
+  "seconds": 8.7
+}

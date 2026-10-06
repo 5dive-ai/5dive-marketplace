@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Callirrhoe",
+    "style": "easy-going and unbothered; still polite on the four-hundredth complaint, resolves instead of arguing.",
+    "text": "我是德斯克。别人都不想碰的客服工单交给我，退款该退就退，回复一次说清楚，客户就不用再来问了。"
+  },
+  "inputsSha256": "1a871603c1a121d2a7261eb0c72cab5065719fa1d984e0af8ee868906387ba8a",
+  "mp3Sha256": "a43581832164a4c9b8adc7f8176a6d066ae935f9e6ffc17c7679e5b81a287f73",
+  "seconds": 10.1
+}

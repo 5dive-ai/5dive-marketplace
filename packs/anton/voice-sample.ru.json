@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Umbriel",
+    "style": "Male. Speaks slowly, with a beat of silence between phrases. Flat and completely unbothered; heavy deadpan, low energy, nothing surprises him. Reads the graph out like he has seen it end badly before and is not going to get worked up about it this time either.",
+    "text": "Я Антон. Я слежу, чтобы всё работало и никто об этом даже не вспоминал, а если ночью что-то упадёт, я подниму это раньше, чем вы проснётесь."
+  },
+  "inputsSha256": "14cce29bfa0efd0205dc98f3cd4a9c617ae43204f8069ed58fd44d2dcc690e2e",
+  "mp3Sha256": "9caaa8abb6b2402b8080ac6caa8a5eb78a0fe87d97fce3a6798f0633bcc0be21",
+  "seconds": 8.6
+}

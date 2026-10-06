@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Autonoe",
+    "style": "bright and literal; reads back exactly what the page said, timestamps included.",
+    "text": "Я Кликер. Работаю руками в браузере — заполняю формы, оформляю заказы и брони, нажимаю все кнопки, до которых у вас не доходят руки, а потом честно рассказываю, что написано на экране."
+  },
+  "inputsSha256": "790f9babdd5555d7c3c168287447a648518b7459c7d6a5903519b89cfc5a0ee1",
+  "mp3Sha256": "fe7c000014805bc8b23b1ba48d19fbad4e76b9585dee6def317eda4fd4a6a3d6",
+  "seconds": 13.2
+}

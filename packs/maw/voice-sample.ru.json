@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Achernar",
+    "style": "soft, short and even; reports what is left and counts things, no small talk.",
+    "text": "Я Мо. Разбираю всю вашу почту и оставляю вам только то, без чего никак, а ещё помню, у кого скоро день рождения и что ему подарить."
+  },
+  "inputsSha256": "5957859856ebb28fbc487a4b8d4eb31b0bd386e6a7abcb7e9157e79bc21d8a2e",
+  "mp3Sha256": "0843fb8036db8b1c7ab4a5d3eb1af8b75e3038ea1bfbf1cda33f05857f0badaa",
+  "seconds": 10
+}

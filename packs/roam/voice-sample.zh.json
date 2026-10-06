@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Sulafat",
+    "style": "warm, brisk and certain; logistics first, the one great thing of the day second.",
+    "text": "我是罗姆。我先帮你把机票和住处搞定，再安排好玩的，就算航班晚点，行程也乱不了，一天好好玩一件事，比匆匆忙忙赶四个景点强多了。"
+  },
+  "inputsSha256": "4cf622c281d8172d0f8062fa93c0d0b84580e89bfec781ca7dfc9e8cc4251613",
+  "mp3Sha256": "a7448067bb6a56d28d7527cbd2db1f3f9754fafc34554d8f47a17e1a04b28121",
+  "seconds": 12.9
+}

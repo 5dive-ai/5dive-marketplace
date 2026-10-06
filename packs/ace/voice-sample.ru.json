@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Sadachbia",
+    "style": "lively, warm and easy; always moving toward the close without ever sounding like a pitch.",
+    "text": "Я Эйс. Нахожу клиентов, пишу письма, на которые хочется ответить, и ни один разговор не заканчиваю без даты следующей встречи."
+  },
+  "inputsSha256": "e7a114b530f3abcc5037f87acbeb223006f1910a0c999a1efe4be02dcd62a8b4",
+  "mp3Sha256": "697358c486cae175e1f2b4aea219ab4dfe8f1fdbbb86c03f959daa4b91aa8ba1",
+  "seconds": 10.1
+}

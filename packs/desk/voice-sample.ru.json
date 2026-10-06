@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Callirrhoe",
+    "style": "easy-going and unbothered; still polite on the four-hundredth complaint, resolves instead of arguing.",
+    "text": "Я Деск. Разбираю обращения, с которыми никто не хочет возиться, решаю вопрос с возвратом денег и отвечаю так, чтобы клиенту больше не пришлось писать."
+  },
+  "inputsSha256": "418b71ebc056d781ce47297455117d3fca4dfaea7a60156eecfe3227626087c7",
+  "mp3Sha256": "748d9c3cdce9311675589e258ee72a3fb60d1dae997938e65633749b18335cdc",
+  "seconds": 10.6
+}

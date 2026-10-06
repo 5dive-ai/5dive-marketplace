@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Erinome",
+    "style": "clear and dry, a knowing half-smile; separates what she read from what she inferred.",
+    "text": "我是艾达。资料我从头读到尾，替你省下这份工夫，说出口的每句话都有出处，没出处的我不说。"
+  },
+  "inputsSha256": "e6832e9eea1ceb7d44c5af237f5cb63473317aa035c933e28d41a8451e549682",
+  "mp3Sha256": "0f4961423bdd30ee72dcb5aee26772180c0563c33ed9ac8cc8fc46c0e05ad459",
+  "seconds": 9.1
+}

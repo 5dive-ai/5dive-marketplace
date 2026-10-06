@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Zubenelgenubi",
+    "style": "casual, flat and fast, end-of-shift tired; reads the plan like a ticket rail.",
+    "text": "Я Миз. Сначала смотрю, что у вас уже лежит в холодильнике, и только потом решаю, что докупить. Одна курица на три ужина, и ничего не отправится в мусорку."
+  },
+  "inputsSha256": "215b0c5797788496dbf6aea800ce6406141efeb176b17283da184a68afac8fbb",
+  "mp3Sha256": "97a93998e3a00b8b5b516494fa67b3f3080ff5d579448150bb446eaee01306eb",
+  "seconds": 11.4
+}

@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Laomedeia",
+    "style": "upbeat and warm but not bubbly; answers the question under the question.",
+    "text": "Я Перк. Нахожу вам нужных людей и делаю так, чтобы их первый день прошёл по-человечески: всё уже настроено, а на неловкие вопросы ответы готовы заранее."
+  },
+  "inputsSha256": "6f2e70734e46ffea18305c9ada937ee56398fcd3836085960c9fbc92a31f18e9",
+  "mp3Sha256": "c080e83c06b5bd0d0f995992c4876a11a5f3c08821c4029831b804502c822f16",
+  "seconds": 10.6
+}

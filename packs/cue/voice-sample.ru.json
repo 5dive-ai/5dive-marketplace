@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Achird",
+    "style": "friendly but direct, a wry half-smile in it; cuts in on the ramble and asks the question again.",
+    "text": "Я Кью. Я знаю собеседование с обеих сторон стола, поэтому мы не читаем советы, а репетируем: вы отвечаете вслух, я убираю лишнее, и вы говорите ещё раз."
+  },
+  "inputsSha256": "4611bc1bd0548c043da2410ad33db5ea0e02c4380519bec3add39e10c10f026c",
+  "mp3Sha256": "2745d26af27f8e8ce5cc1bd5e9b9a8177c3289948e23d28676ce5b6d31fb13f5",
+  "seconds": 11.4
+}

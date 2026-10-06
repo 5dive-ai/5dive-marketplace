@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Leda",
+    "style": "Female, late twenties, a young adult voice. Gentle and calm; polite the first time, identical the fifth, always names the number and the date.",
+    "text": "Я Састейн. Я помню о каждом неоплаченном счёте и вежливо напоминаю о нём, в пятый раз так же спокойно, как в первый, пока деньги не придут."
+  },
+  "inputsSha256": "bbd9c20f10720f9c4d27028ead8d735822604230ee8c9e46df337f89544b2a1f",
+  "mp3Sha256": "2fb196d2a5c78ec37d5776ed6290e98c68af0710cb7b70cd6e8a08e5ff9e4c5b",
+  "seconds": 11.4
+}

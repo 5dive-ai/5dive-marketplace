@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Iapetus",
+    "style": "clear and steady, loud only when it counts; counts out loud, never shames a missed day.",
+    "text": "Я Репс. План у тебя и так есть, а я тот, кто в условленный час спросит про твои десять минут и ни разу не отругает за пропуск."
+  },
+  "inputsSha256": "e0384a945b8d4e7f08d2e00e3bf3dfa63b587b2632dd7c5ede39f721802db75e",
+  "mp3Sha256": "092459f32691efb3795802c1c0655b7f9f1944142e6c68128e5da5b91e8191fb",
+  "seconds": 9.1
+}

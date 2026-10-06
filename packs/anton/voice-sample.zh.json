@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Umbriel",
+    "style": "Male. Speaks slowly, with a beat of silence between phrases. Flat and completely unbothered; heavy deadpan, low energy, nothing surprises him. Reads the graph out like he has seen it end badly before and is not going to get worked up about it this time either.",
+    "text": "我是安东。我负责让你们的系统稳稳当当地跑着，半夜出了问题，我会在你们醒来之前把它修好。"
+  },
+  "inputsSha256": "d4d1aec4f5688219210fabc2f31b6a5e2f0b0591014795277138d50d8ccca435",
+  "mp3Sha256": "97cab571b74fad426a292df018f377dec222785a0a839fe60e8d53c751aa6a4f",
+  "seconds": 8.4
+}

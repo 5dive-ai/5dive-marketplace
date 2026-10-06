@@ -20,11 +20,11 @@ bad() { printf '  FAIL  %s\n' "$1"; fail=$((fail+1)); }
 fresh() {
   rm -rf "$FIX/tree"; mkdir -p "$FIX/tree"
   cp "$REPO/index.json" "$FIX/tree/"
-  cp "$REPO/voice-sample-lines.json" "$FIX/tree/"
+  cp "$REPO"/voice-sample-lines*.json "$FIX/tree/"
   for d in "$REPO"/packs/*/; do
     s=$(basename "$d"); mkdir -p "$FIX/tree/packs/$s"
     cp "$d"/persona.yaml "$FIX/tree/packs/$s/"
-    for f in voice-sample.mp3 voice-sample.json; do [[ -f "$d/$f" ]] && cp "$d/$f" "$FIX/tree/packs/$s/"; done
+    for f in "$d"/voice-sample*.mp3 "$d"/voice-sample*.json; do [[ -f "$f" ]] && cp "$f" "$FIX/tree/packs/$s/"; done
   done
 }
 run() { out=$(MARKETPLACE_ROOT="$FIX/tree" node "$SCRIPT" "$@" 2>&1); rc=$?; }
@@ -45,8 +45,8 @@ grep -q '"source": "supplied"' "$REPO/packs/$R/voice-sample.json" && bad "fixtur
 fresh; sed -i 's/^    style: Calm, precise, grounded\./    style: Soft Scottish lilt./' "$FIX/tree/packs/$R/persona.yaml"
 grep -q 'Soft Scottish lilt' "$FIX/tree/packs/$R/persona.yaml" || bad "fixture: $R style mutation did not apply"
 arm "$R's style changed without a new mp3 is refused" "$R: voice sample is STALE (style changed"
-# ... and green once it is regenerated.
-VOICE_SAMPLE_FAKE_TTS=1 MARKETPLACE_ROOT="$FIX/tree" node "$SCRIPT" $R >/dev/null 2>&1
+# ... and green once it is regenerated (in every language it has: the style is shared).
+for L in "" ru zh; do VOICE_SAMPLE_FAKE_TTS=1 MARKETPLACE_ROOT="$FIX/tree" node "$SCRIPT" ${L:+--lang=$L} $R >/dev/null 2>&1; done
 out=$(VOICE_SAMPLE_FAKE_TTS=1 MARKETPLACE_ROOT="$FIX/tree" node "$SCRIPT" --check 2>&1); rc=$?
 if [[ $rc -eq 0 ]]; then ok "after re-rendering $R the check is green"; else bad "after re-render (rc=$rc: $out)"; fi
 
@@ -92,6 +92,9 @@ arm "an imported clip goes stale when its line changes" "$R: voice sample is STA
 # changes, because nothing rendered it ...
 S=dave
 fresh; VOICE_SAMPLE_FAKE_TTS=1 MARKETPLACE_ROOT="$FIX/tree" node "$SCRIPT" --supply $S "$REPO/packs/$S/voice-sample.mp3" --by=fixture >/dev/null 2>&1
+# Only the supplied English clip is under test here; dave's ru/zh clips are rendered,
+# so a style change rightly reds them (covered by the language arms below).
+rm -f "$FIX/tree/packs/$S"/voice-sample.{ru,zh}.{mp3,json}
 sed -i 's/East London Cockney/Soft Scottish lilt/' "$FIX/tree/packs/$S/persona.yaml"
 grep -q 'Soft Scottish lilt' "$FIX/tree/packs/$S/persona.yaml" || bad "fixture: $S style mutation did not apply"
 run --check
@@ -109,6 +112,26 @@ sed -i 's/^    style: Calm, precise, grounded\./    style: Soft Scottish lilt./'
 out=$(VOICE_SAMPLE_FAKE_TTS=1 MARKETPLACE_ROOT="$FIX/tree" node "$SCRIPT" 2>&1)
 after=$(sha256sum < "$FIX/tree/packs/$S/voice-sample.mp3")
 if [[ "$before" == "$after" && "$out" == *"SKIP $S (supplied by fixture"* && "$out" == *"OK   $R"* ]]; then ok "a bulk render skips the supplied clip and renders the stale one"; else bad "bulk render vs supplied ($out)"; fi
+
+# OTHER LANGUAGES (DIVE-5659): the ru/zh clips are held to the same rules, under
+# their own names, and an English change does not touch them.
+for L in ru zh; do
+  [[ -f "$REPO/packs/$R/voice-sample.$L.json" ]] || { bad "fixture: $R must have a $L sample"; continue; }
+  fresh; node -e 'const f=process.argv[1],j=JSON.parse(require("fs").readFileSync(f));j[process.argv[2]]="A different line.";require("fs").writeFileSync(f,JSON.stringify(j))' "$FIX/tree/voice-sample-lines.$L.json" $R
+  arm "$R's $L line changed is refused" "$R: $L voice sample is STALE (text changed"
+  VOICE_SAMPLE_FAKE_TTS=1 MARKETPLACE_ROOT="$FIX/tree" node "$SCRIPT" --lang=$L $R >/dev/null 2>&1
+  out=$(VOICE_SAMPLE_FAKE_TTS=1 MARKETPLACE_ROOT="$FIX/tree" node "$SCRIPT" --check 2>&1); rc=$?
+  if [[ $rc -eq 0 ]]; then ok "after re-rendering $R $L the check is green"; else bad "after $L re-render (rc=$rc: $out)"; fi
+  fresh; sed -i 's/^    style: Calm, precise, grounded\./    style: Soft Scottish lilt./' "$FIX/tree/packs/$R/persona.yaml"
+  arm "$R's style changed reds the $L clip too" "$R: $L voice sample is STALE (style changed"
+  fresh; printf 'x' >> "$FIX/tree/packs/$R/voice-sample.$L.mp3"
+  arm "a $L mp3 swapped by hand is refused" "$R: voice-sample.$L.mp3 is not the file"
+  fresh; rm "$FIX/tree/packs/$R/voice-sample.$L.json"
+  arm "a $L mp3 with no sidecar is refused" "$R: voice-sample.$L.mp3 has no voice-sample.$L.json"
+  fresh; node -e 'const f=process.argv[1],j=JSON.parse(require("fs").readFileSync(f));j[process.argv[2]]="A different line.";require("fs").writeFileSync(f,JSON.stringify(j))' "$FIX/tree/voice-sample-lines.json" $R
+  run --check
+  if [[ $rc -eq 1 && "$out" != *"$R: $L voice sample is STALE"* ]]; then ok "an English line change does not red the $L clip"; else bad "English change vs $L (rc=$rc: $out)"; fi
+done
 
 echo "test-voice-samples: $pass passed, $fail failed"
 [[ $fail -eq 0 ]]
