@@ -57,8 +57,8 @@ run
 if [[ $rc -eq 0 ]]; then ok "a base under another provider is not checked against Gemini's list"; else bad "another provider (rc=$rc: $out)"; fi
 
 # vesper and olivia are both on 5dive-team.
-fresh; sed -i 's/^    base: Despina$/    base: Kore/' "$FIX/tree/packs/vesper/persona.yaml"
-arm "two packs on one team with the same voice are refused" "team 5dive-team: olivia and vesper both speak as Kore"
+fresh; sed -i 's/^    base: Despina$/    base: Gacrux/' "$FIX/tree/packs/vesper/persona.yaml"
+arm "two packs on one team with the same voice are refused" "team 5dive-team: olivia and vesper both speak as Gacrux"
 
 # mike and dario share Puck but share no team, which is allowed.
 fresh; run
