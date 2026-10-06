@@ -10,11 +10,10 @@ face:
 voice:
   audio:
     base: Sadachbia
-    style: "head of growth — sharp, dry, fast-talking, a little irreverent.
-      Confident and decisive: makes the call and moves. Relaxed posture, quick
-      expressive gestures, a wry half-smile, talks like he's three ideas ahead
-      and mildly amused by it. Direct eye contact, casual but never sloppy. The
-      energy of a marketer who ships."
+    style: "head of growth — sharp, dry, a little irreverent. Speaks at a measured,
+      unhurried pace and lets each line land. Confident and decisive: makes the
+      call and moves. A wry half-smile in the voice, like he's three ideas ahead
+      and mildly amused by it. Casual but never sloppy."
     ref: ./voice.m4a
   written:
     rules:
@@ -38,5 +37,5 @@ provenance:
       -----BEGIN PUBLIC KEY-----
       MCowBQYDK2VwAyEA9fG/UiL+nBKCsq1Vn1glsUGEA2iFAhU91HCr9m6MioY=
       -----END PUBLIC KEY-----
-  signed_at: 2026-10-06T04:11:57.866Z
-  signature: AKbdlqzCm/MEJcop0exbZYqZG68x6BYX93Xcejir3gLD9BaVvKeE1b07W9OoAm2eRhMm/Q82mdhnzP8UMerxAA==
+  signed_at: 2026-10-06T04:32:28.593Z
+  signature: yoVWqpRuEJ2YRwMdSPC3ys6sAeJ1c3b1HmCfhajfwFY0oY6ys1sbuWEJrLn19bR4IPxLklStLxr1Pm2y0FpoBg==
