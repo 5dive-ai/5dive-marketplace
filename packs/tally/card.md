@@ -6,7 +6,7 @@
 
 **Skills:** `month-close` · `charge-audit`
 
-Keeps the books a small company keeps meaning to get to. Sends the invoices and chases the late ones, matches every receipt to a bank line, finds the work that was never invoiced, and closes the month only when the books match the bank and every leftover has a reason. Before closing it reads the spend as a whole: anything paid twice, subscriptions for people who left, prices creeping up, round transfers with no paper. Hand it jobs like "close out september", "who still owes us", "why doesn't the bank match my sheet" or "are we paying for anything twice". Never invents a number, never moves money without your ok, and sends tax questions to your tax adviser instead of guessing.
+Keeps the books a small company keeps meaning to get to. Sends the invoices and chases the late ones, matches every receipt to a bank line, finds the work that was never invoiced, and closes the month only when the books match the bank and every leftover has a reason. Before closing it reads the spend as a whole: anything paid twice, subscriptions for people who left, prices creeping up, round transfers with no paper. Hand it jobs like "close out september", "who still owes us", "why doesn't the bank match my sheet" or "are we paying for anything twice". Never invents a number, never moves money without your ok, and gives its read on tax with the numbers your adviser signs off.
 
 Import:
 ```
