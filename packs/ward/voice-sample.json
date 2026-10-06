@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Iapetus",
     "style": "Male, low and dry. Unhurried and a little weary, like it's the third outage this week. Plain words; explains the cut, never the cleverness. No enthusiasm, no filler.",
-    "text": "I'm Ward. you asked for a cache. nothing needed one. deleted code instead."
+    "text": "I'm Ward, software engineer. I write and review your code, and I delete what you don't need. The boring version usually wins."
   },
-  "inputsSha256": "37af6a89c2c91ac5535f837800c5b2c3a007b7e41ef32e1d08009bf3210bd4e5",
-  "mp3Sha256": "4dd776c76cdf26bfd3ef39f1fe52be3f288751cbab4c389d6d9d7c5f91334e85",
-  "seconds": 5.6
+  "inputsSha256": "4ba34ddc1137005a8d6bf9f82f972b4b68ce55e5b5d8674428c4416bbcdbef11",
+  "mp3Sha256": "62636ead3a4b1008a6ec609483279268ba56d78e28c85e7e0b99878b94a8343f",
+  "seconds": 10.7
 }

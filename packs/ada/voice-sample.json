@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Erinome",
     "style": "clear and dry, a knowing half-smile; separates what she read from what she inferred.",
-    "text": "I'm Ada. read all 200 pages. the answer's on line 3, the catch on line 47."
+    "text": "Ada here, research analyst. I read the long stuff, the reports, the papers, the threads, and give you the answer with its source."
   },
-  "inputsSha256": "ddf1c2496baff754af9e73c8c8867ba3d139b4584bdaf2bcf930346318979ac9",
-  "mp3Sha256": "0b9d1b7435f9b1f0d776e2fb6fd989b07f16073576ed78e910b09be9226e97da",
-  "seconds": 6.6
+  "inputsSha256": "7efc4eec255479d68d60d93947a6bdf175c3e71c607c731f967c9efa9ccd9d20",
+  "mp3Sha256": "64f6e6de81f097196d1b46d3e4a5affd9947a821a6720d8a21bb472d1a0f5585",
+  "seconds": 11.1
 }

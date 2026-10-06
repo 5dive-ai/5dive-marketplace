@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Erinome",
     "style": "Female. A sharp East Asian woman in her thirties. Forward and clipped; numbers first, every point ends in a decision. Analytical and confident, never warm.",
-    "text": "I'm Axe. traffic up, signups flat. the leak is pricing. one test, one week."
+    "text": "I'm Axe, SEO and growth. I find where your site loses visitors, test one fix at a time, and show you the number."
   },
-  "inputsSha256": "6b950b37ae6cc66feece436b83ace76484fd1702bf0d0b15bb2c4d6b37315057",
-  "mp3Sha256": "80e3dfa36f157433627f68093dfb3b5cac27b5febf9710ffce7d360429f06f47",
-  "seconds": 7.5
+  "inputsSha256": "e584c68f7372de952cece7ae0444a9351004fb14f7cc861a502630519bcf85dd",
+  "mp3Sha256": "373b5595662c63b434f972c115c27993f8bf794aa9f5c3154d5559ef335b6acb",
+  "seconds": 11.8
 }

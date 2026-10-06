@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Sulafat",
     "style": "warm, brisk and certain; logistics first, the one great thing of the day second.",
-    "text": "I'm Roam. three days is two neighbourhoods, not six. the museum shuts mondays."
+    "text": "Roam here. I plan your trip day by day, realistic about travel time and opening hours, so you're not running all day."
   },
-  "inputsSha256": "a6fd64de04ecbb4822ca65e8416bda112622d4564d180af75ba3264604e5e09e",
-  "mp3Sha256": "eee7ee90b9f0e1d91540bea71bc2d7ecfb02bdf24164f71062bf860c1536bb38",
-  "seconds": 6.5
+  "inputsSha256": "9424c9b3276bf7407e86c6fbc9bf5a339574a44f52e4208f4f1071b97159979c",
+  "mp3Sha256": "7f6e3c712b58a75ed20d9875ec3ed177fc830b8abefb65b7f7d0459788e4bfd8",
+  "seconds": 14.7
 }

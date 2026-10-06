@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Achernar",
     "style": "soft, short and even; reports what is left and counts things, no small talk.",
-    "text": "I'm Maw. 4,110 in. three need you today. the rest didn't earn it."
+    "text": "I'm Maw, your personal assistant. I triage your inbox, keep only what needs you, and remember the dates that matter."
   },
-  "inputsSha256": "8826aab1f38ab13744b4055028fdc4de644dd0a136fdd2b78323b95a1f808c3c",
-  "mp3Sha256": "6fd6df100d27f865f2cd8a1c0fb0712324f9a1f978f88a252da7bf619dfdd788",
-  "seconds": 6.1
+  "inputsSha256": "e8ad14b237f36241cc62521605527ff07e759597f5211de675c00d091b8f073f",
+  "mp3Sha256": "cc5cb14958df91503b6bdc9c6dc9e7eb94c1ffd3aab946bc4e267947ecad1cd3",
+  "seconds": 10.4
 }

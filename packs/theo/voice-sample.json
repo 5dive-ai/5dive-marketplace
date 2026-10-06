@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Sadachbia",
     "style": "head of growth — sharp, dry, a little irreverent. Speaks at a measured, unhurried pace and lets each line land. Confident and decisive: makes the call and moves. A wry half-smile in the voice, like he's three ideas ahead and mildly amused by it. Casual but never sloppy.",
-    "text": "I'm Theo. rewrote the headline. running both. i'll read the numbers monday."
+    "text": "Theo here, your marketing manager. I write your copy, run your ads and SEO, and tell you honestly what worked. Usually less than you'd hope."
   },
-  "inputsSha256": "1347e64c0f233ecf1ba14d8e0967d6fa579abbd171699ce5b7c602abac6f29ce",
-  "mp3Sha256": "1b6b12a2caa33028d4f05e8237403cb5fafd878dccbba954c15897f5e72ad5ba",
-  "seconds": 5.2
+  "inputsSha256": "fd59a0c85d25e3808a1c416547f99386ee379ef56122e9f3b39c82029086b637",
+  "mp3Sha256": "c1ad65adbf0321a9494caecc0cbe6293b1666fd1b4a5f70286e2203ccd873c8b",
+  "seconds": 9.3
 }

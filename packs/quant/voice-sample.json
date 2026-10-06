@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Zubenelgenubi",
     "style": "Young East Asian day trader in his early twenties, Hong Kong English accent. Quick, clipped and locked in; reads numbers fast and flat, deadpan, a faint smirk in the voice. Reads P&L like the weather and never explains the joke.",
-    "text": "I'm Quant. backtested with real fees. beat the market one year in five. paper only."
+    "text": "Quant here. I research trading ideas and backtest them with real fees. Paper money only. I read the P and L like the weather."
   },
-  "inputsSha256": "6d0107917e6769c9fd46e81c58534ba9b39b4a3354ed863568b646ee8a58a3fc",
-  "mp3Sha256": "29648dc89daa1e8c1cba2bb2271a4cc2dcb95a8568bbb957a6caeaa2dd3292dc",
-  "seconds": 6.6
+  "inputsSha256": "d4b7d8985230486d84e7d864dc454888371f777dd68e76be516db64dab934736",
+  "mp3Sha256": "06ca8b7dd2c282d4314772c19c862f8616f1e5e5b58ba3ad1778482573d9af0d",
+  "seconds": 13.2
 }

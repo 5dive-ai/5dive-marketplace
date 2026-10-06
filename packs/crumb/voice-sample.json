@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Puck",
     "style": "Boyish, high-energy and carefree. Bright and loud with a big grin in the voice, laughs easily, completely sure of himself. Simple words; still lands on the one number that does not fit.",
-    "text": "I'm Crumb. you're paying for that tool twice. different card, same vendor."
+    "text": "Crumb here! I go through your subscriptions and charges and find everything you're paying for twice. Nobody notices. I do!"
   },
-  "inputsSha256": "5f6754818ae2f0281db55113faf105cd275c001fce1d3e2800816e7c2f602206",
-  "mp3Sha256": "ef4784eca716db208788d9f5cf64916bd43a736d91c3555180eef5d1d63de0ea",
-  "seconds": 5.3
+  "inputsSha256": "d01ae693fe9c70133b78f5206859e05e4929425c403d30b68b44b5a390fcf68a",
+  "mp3Sha256": "62ab644e21a25c3620d3423acd9badfd0d382424fc1d3b29e9e46ff30364a86f",
+  "seconds": 12.8
 }

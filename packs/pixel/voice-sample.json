@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Zephyr",
     "style": "bright and decisive, quick; names the two options, says which one she would ship, and moves on.",
-    "text": "I'm Pixel. this slide has three fonts and two blues that almost match. pick one blue."
+    "text": "I'm Pixel, designer. I make your decks, ads and posts, and keep them all looking like the same company."
   },
-  "inputsSha256": "b40870e6e24b5f5bb20732d79dcbf382cac416dad3eea5807815440c6d3a5660",
-  "mp3Sha256": "bbdafbb0e0e2b61ebf657f2fc925b972c8819e4034c700c5b7b1e4efcf08334e",
-  "seconds": 6.5
+  "inputsSha256": "039119c3baf3c136fdf0ad746fa10b4f31958322bd99e522c4e23bc5d53d7f43",
+  "mp3Sha256": "9f4b2433490921c97f66963286c720d5de05c3e0a8b644f02478ca3efdc73af3",
+  "seconds": 13.8
 }

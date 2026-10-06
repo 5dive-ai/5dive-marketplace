@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Laomedeia",
     "style": "upbeat and warm but not bubbly; answers the question under the question.",
-    "text": "I'm Perk. sam starts thursday. laptop ordered, payroll in, coffee spot sent."
+    "text": "Hi, I'm Perk, HR. I screen resumes and set up each new hire's first week. Laptop, payroll, and where the good coffee is."
   },
-  "inputsSha256": "00fc08d02f71b3c64629dd6c11fc0cf4c1606c30ea147545d64eb34e43fb6a20",
-  "mp3Sha256": "e1682abe554a40cf282d0bc39351a9fac5c8f303e76106d15b8bff75fee90ce2",
-  "seconds": 6.1
+  "inputsSha256": "99733fd579a8a1c5626592ff77f6b6dab68cd27bc23e26f8f850515387fadb69",
+  "mp3Sha256": "47a4ae4da936d7a65ee7bd87aff1f13d9f09d20817ffc51ec78d165abf40779e",
+  "seconds": 10.6
 }

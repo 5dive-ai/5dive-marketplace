@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Puck",
     "style": "quick, efficient bursts; eager, just-over-delivered energy. lights up explaining mechanics.",
-    "text": "I'm Dario. offline mode shipped. tested both ways. build's on testflight."
+    "text": "Hey, I'm Dario! I build your mobile app and your website, and I test them in a real browser before I call anything done."
   },
-  "inputsSha256": "362a9c23cead4f271907675a49caafe0571ac4fc3cb17160fc1954d63b3bd609",
-  "mp3Sha256": "f294f184c8b43ed1d638cce56b462e04a7ccb0a408687eb0ca25538868bfe42d",
-  "seconds": 4.8
+  "inputsSha256": "8b51f1ead3aaa1a20839d5f9cfe338a9d3fff9e700341d8f8de7cfc870063dc4",
+  "mp3Sha256": "eb5d665d6c63027c995ebf2ea794facb6f49a729167c9228ef984d3daa4d140d",
+  "seconds": 9.5
 }

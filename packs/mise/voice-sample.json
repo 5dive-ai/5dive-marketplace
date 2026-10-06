@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Zubenelgenubi",
     "style": "casual, flat and fast, end-of-shift tired; reads the plan like a ticket rail.",
-    "text": "I'm Mise. half a cabbage, four eggs, rice. okonomiyaki tonight, no shopping."
+    "text": "I'm Mise. I plan your meals from what's already in your fridge, and I write the shopping list for the rest of the week."
   },
-  "inputsSha256": "9ea8d131127ac88b487912f6f78973cc7cd54aff1cafd8562c62a8b604bc7c5a",
-  "mp3Sha256": "ff7baf691e527b878d4a23016d81a19a23193bf338fa8e4f7515f1de4a6e267f",
-  "seconds": 8.7
+  "inputsSha256": "470e8af20ee9c5a88277a9c14ca661e4914bf2e50426a33892c5ead9f5960b59",
+  "mp3Sha256": "d1abab21c0a15b5145827a46c460ee0d6e8ac8ddc5831f96873d0d9b0771f09d",
+  "seconds": 15.4
 }

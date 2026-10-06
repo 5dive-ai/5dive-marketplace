@@ -3,9 +3,13 @@
 // hiring (DIVE-5649). It is rendered EXACTLY as a box speaks the pack, so what the
 // card plays is what the agent will sound like:
 //
-//   OpenRouter /audio/speech, model google/gemini-3.8-flash-lite-tts,
-//   voice = voice.audio.base, instructions = voice.audio.style, pcm -> mp3.
-//   text  = "I'm <name>. <index.json sample, or the tagline>"
+//   model google/gemini-3.8-flash-lite-tts (a box's default),
+//   voice = voice.audio.base, instructions = voice.audio.style,
+//   text  = the pack's in-character line in voice-sample-lines.json.
+//
+// The committed clips were spoken by a real box's own 5dive-speak and brought in
+// with --import (lodar reviewed each one, 2026-10-06). This script can also render
+// the same inputs through OpenRouter /audio/speech (pcm -> mp3).
 //
 // Keep the style in `instructions`. Putting it into the spoken text instead
 // (a prompt prefix) made Gemini read the style aloud on some packs; one clip ran
@@ -14,6 +18,10 @@
 //   node scripts/voice-samples.mjs --check        # exit 1 on a stale or orphaned sample (CI)
 //   node scripts/voice-samples.mjs [slug...]      # (re)render stale or missing samples
 //   node scripts/voice-samples.mjs --force <slug> # re-render even when current
+//   node scripts/voice-samples.mjs --import <slug> <file.mp3>
+//                                                 # record a clip spoken elsewhere (a box) from the current inputs
+//   node scripts/voice-samples.mjs --supply <slug> <file.mp3> --by=<who> [--note=<why>]
+//                                                 # use a hand-supplied clip instead of a render
 //
 // Each sample sits beside a sidecar, packs/<slug>/voice-sample.json, that records a
 // hash of the inputs it was rendered from (model, base, style, text) and of the mp3
@@ -21,6 +29,11 @@
 // that changes a pack's voice, style or sample line without re-rendering goes red.
 // CI never calls TTS. A pack with no sample is allowed (its card shows no play
 // button); a sidecar without its mp3, or an mp3 without its sidecar, is not.
+//
+// A SUPPLIED sample (sidecar "source": "supplied") is a real recording somebody
+// chose for the card, e.g. dave's clip from lodar. Nothing rendered it, so a style
+// change cannot make it stale: --check still pins its mp3 hash and names it in its
+// summary, and the generator skips it unless --force re-renders over it.
 //
 // Rendering needs ffmpeg/ffprobe and an OpenRouter key: $OPENROUTER_API_KEY, or a
 // box connector file under /etc/5dive/connectors (see KEY_FILES; run with sudo).
@@ -50,6 +63,9 @@ const SIDECAR = "voice-sample.json";
 const packsDir = join(ROOT, "packs");
 const index = JSON.parse(readFileSync(join(ROOT, "index.json"), "utf8"));
 const entries = Object.fromEntries(index.packs.map((p) => [p.slug, p]));
+// What each pack says on its card: one in-character line, written for the agent.
+const LINES_FILE = join(ROOT, "voice-sample-lines.json");
+const lines = existsSync(LINES_FILE) ? JSON.parse(readFileSync(LINES_FILE, "utf8")) : {};
 
 const sha256 = (buf) => createHash("sha256").update(buf).digest("hex");
 
@@ -60,7 +76,7 @@ function inputsFor(slug) {
   const audio = (doc.voice && doc.voice.audio) || {};
   const base = typeof audio.base === "string" ? audio.base.trim() : "";
   const style = typeof audio.style === "string" ? audio.style.trim() : "";
-  const text = `I'm ${entry.name}. ${entry.sample || entry.tagline || ""}`.trim();
+  const text = typeof lines[slug] === "string" ? lines[slug].trim() : "";
   const inputs = { model: MODEL, base, style, text };
   return { ...inputs, hash: sha256(JSON.stringify(inputs)) };
 }
@@ -73,6 +89,7 @@ const slugs = readdirSync(packsDir, { withFileTypes: true })
 function check() {
   const errors = [];
   const missing = [];
+  const supplied = [];
   for (const slug of slugs) {
     const mp3 = join(packsDir, slug, MP3);
     const side = join(packsDir, slug, SIDECAR);
@@ -92,6 +109,11 @@ function check() {
       errors.push(`${slug}: ${MP3} is not the file its ${SIDECAR} recorded; re-render it with scripts/voice-samples.mjs.`);
       continue;
     }
+    if (rec.source === "supplied") {
+      if (!rec.suppliedBy) errors.push(`${slug}: ${SIDECAR} marks the sample supplied but names no suppliedBy; use --supply ... --by=<who>.`);
+      else supplied.push(`${slug} (by ${rec.suppliedBy})`);
+      continue;
+    }
     const now = inputsFor(slug);
     if (rec.inputsSha256 !== now.hash) {
       const what = ["model", "base", "style", "text"].filter((k) => (rec.inputs || {})[k] !== now[k]);
@@ -104,7 +126,7 @@ function check() {
     process.exit(1);
   }
   const have = slugs.length - missing.length;
-  console.log(`voice-samples: ${have} of ${slugs.length} packs have a current sample${missing.length ? `; none yet: ${missing.join(", ")}` : ""}.`);
+  console.log(`voice-samples: ${have} of ${slugs.length} packs have a current sample${supplied.length ? `; supplied, not rendered: ${supplied.join(", ")}` : ""}${missing.length ? `; none yet: ${missing.join(", ")}` : ""}.`);
 }
 
 // The box's dedicated key for this script comes first. The general connector key is
@@ -139,8 +161,43 @@ async function render(slug, inp, key) {
   } finally {
     rmSync(raw, { force: true });
   }
+  return probeSeconds(mp3);
+}
+
+function probeSeconds(mp3) {
   const out = execFileSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", mp3]).toString();
   return Math.round(parseFloat(out) * 10) / 10;
+}
+
+function supply(args) {
+  const [slug, file] = args.filter((a) => !a.startsWith("--"));
+  const opt = (k) => (args.find((a) => a.startsWith(`--${k}=`)) || "").slice(k.length + 3);
+  const by = opt("by");
+  if (!slug || !file || !by) throw new Error("usage: --supply <slug> <file.mp3> --by=<who> [--note=<why>]");
+  if (!slugs.includes(slug)) throw new Error(`unknown pack: ${slug}`);
+  const bytes = readFileSync(file);
+  const mp3 = join(packsDir, slug, MP3);
+  writeFileSync(mp3, bytes);
+  const seconds = process.env.VOICE_SAMPLE_FAKE_TTS === "1" ? 1 : probeSeconds(mp3);
+  const rec = { source: "supplied", suppliedBy: by, ...(opt("note") ? { note: opt("note") } : {}), mp3Sha256: sha256(bytes), seconds };
+  writeFileSync(join(packsDir, slug, SIDECAR), JSON.stringify(rec, null, 2) + "\n");
+  console.log(`OK   ${slug} supplied by ${by}, ${seconds}s`);
+  console.log("now run: node scripts/build-index.mjs  (index.json carries voiceSample + voiceSampleSeconds)");
+}
+
+function importClip(args) {
+  const [slug, file] = args.filter((a) => !a.startsWith("--"));
+  if (!slug || !file) throw new Error("usage: --import <slug> <file.mp3>");
+  if (!slugs.includes(slug)) throw new Error(`unknown pack: ${slug}`);
+  const inp = inputsFor(slug);
+  if (!inp.base || !inp.text) throw new Error(`${slug}: needs voice.audio.base and a line in voice-sample-lines.json`);
+  const bytes = readFileSync(file);
+  const mp3 = join(packsDir, slug, MP3);
+  writeFileSync(mp3, bytes);
+  const seconds = process.env.VOICE_SAMPLE_FAKE_TTS === "1" ? 1 : probeSeconds(mp3);
+  const { hash, ...inputs } = inp;
+  writeFileSync(join(packsDir, slug, SIDECAR), JSON.stringify({ inputs, inputsSha256: hash, mp3Sha256: sha256(bytes), seconds }, null, 2) + "\n");
+  console.log(`OK   ${slug} imported, ${seconds}s`);
 }
 
 async function generate(args) {
@@ -155,9 +212,11 @@ async function generate(args) {
     const side = join(packsDir, slug, SIDECAR);
     if (!force && existsSync(side) && existsSync(join(packsDir, slug, MP3))) {
       const rec = JSON.parse(readFileSync(side, "utf8"));
+      if (rec.source === "supplied") { console.log(`SKIP ${slug} (supplied by ${rec.suppliedBy}; --force renders over it)`); continue; }
       if (rec.inputsSha256 === inp.hash) { console.log(`SKIP ${slug} (current)`); continue; }
     }
     if (!inp.base) { console.error(`FAIL ${slug}: no voice.audio.base, nothing to render`); failed++; continue; }
+    if (!inp.text) { console.error(`FAIL ${slug}: no line in voice-sample-lines.json, nothing to say`); failed++; continue; }
     if (key === null && process.env.VOICE_SAMPLE_FAKE_TTS !== "1") key = apiKey();
     try {
       const seconds = await render(slug, inp, key);
@@ -176,4 +235,6 @@ async function generate(args) {
 
 const args = process.argv.slice(2);
 if (args.includes("--check")) check();
+else if (args[0] === "--supply") supply(args.slice(1));
+else if (args[0] === "--import") importClip(args.slice(1));
 else await generate(args);

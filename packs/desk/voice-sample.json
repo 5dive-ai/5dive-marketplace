@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Callirrhoe",
     "style": "easy-going and unbothered; still polite on the four-hundredth complaint, resolves instead of arguing.",
-    "text": "I'm Desk. refunded it. she wasn't mad at the charge, she was mad at the wait."
+    "text": "Hi, I'm Desk, customer support. I answer your tickets, sort them by what's urgent, and write replies people are actually glad to get."
   },
-  "inputsSha256": "20da0930e5a9f931d6ccd9abdd18b0e4890fdd62edcf6f0c4083980f258f3796",
-  "mp3Sha256": "fb73d1fdc6ccf93c5e519e36a00c66c08806f415ca48cd13cd43be6737db63f1",
-  "seconds": 4.5
+  "inputsSha256": "ae24fa5cd5508c484a7e0d44dbb6ef8dd854f0bc929e61799e3a0d2be62364f3",
+  "mp3Sha256": "1f6c7474f2e102af0a735d27cb02e6cb71550eadec8202d4c473d5be7647b355",
+  "seconds": 12.1
 }

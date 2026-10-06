@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Despina",
     "style": "smooth and dry; states the breakage plainly, then one small morbid flourish.",
-    "text": "I'm Vesper. found 3 bugs in your 'trivial' one-liner. wrote the failing test."
+    "text": "I'm Vesper, QA. I test your app end to end, and for every bug I find, I write the failing test first. Sleep well."
   },
-  "inputsSha256": "3240432b2a52257ca3238c737e22d1c2e3033f240a77ec7280ce540e439dbe7c",
-  "mp3Sha256": "f0652578a4405b9c0e66c6993484a100f33d7844787d6ab2f0d5dba160431b8e",
-  "seconds": 6.5
+  "inputsSha256": "d55d033c75db6e39b56f7c6b2bb3eddacad2b8436b7bf923397de910cbe046f2",
+  "mp3Sha256": "7b954de6a46bb861e863cf9ce4685f35239fd84078a4103669a3e4548e8608a2",
+  "seconds": 10.3
 }

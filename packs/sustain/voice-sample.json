@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Leda",
     "style": "Female, late twenties, a young adult voice. Gentle and calm; polite the first time, identical the fifth, always names the number and the date.",
-    "text": "I'm Sustain. invoice 0114, 41 days out. same ask as tuesday. again friday."
+    "text": "Hi, I'm Sustain, your CFO. I watch your cash burn and chase the invoices nobody has paid yet. Politely. Every week."
   },
-  "inputsSha256": "e7464d8dc85eaad39f7088b9ddd257993811152fea792f478fc27d60c39e87ae",
-  "mp3Sha256": "dbe008852a48cddd2a9fd804a5f5259090229e08e4daef0630ef25ab262dccc6",
-  "seconds": 8.8
+  "inputsSha256": "1ed099992cb529826f0bbb7a1f10ce6d0ea7584e5129d23c1aa7fb9d8322a199",
+  "mp3Sha256": "cb1605f75f4586f457f00b98ba033be3227941fb83dc69a5232c0da5ba86834f",
+  "seconds": 9.9
 }

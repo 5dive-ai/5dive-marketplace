@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Charon",
     "style": "Calm, precise, grounded. Speaks deliberately, every word load-bearing, thinks before he talks. Minimal gestures, steady and unhurried. Quietly authoritative — the person who actually built the thing, unimpressed by hype. Dry occasional humor. Would rather show you than tell you. Deadpan humor.",
-    "text": "I'm Marcus. reviewed the pr. one real bug, three-line fix. ship it after."
+    "text": "I'm Marcus, your CTO. I review your code before it ships and catch the real bugs and security holes first. Read the diff, not the summary."
   },
-  "inputsSha256": "d113a12b4ff955083ac2af2f204b3bad1dd8a2deabb7b62190f2cb2c02b10a24",
-  "mp3Sha256": "da468c2c5a489739a0c493daac832c2e8de7f9fb5a36cb91f8561c46ac50395d",
-  "seconds": 5.4
+  "inputsSha256": "7569e4715b11cba5a6d801b8c23e2a12339dc9a9beeb55243c98da2d39c8fbdd",
+  "mp3Sha256": "c1ede8412eb6a1083acd029a6069e3ec91ca667cc0c10a402cc358617e7d62bb",
+  "seconds": 11.1
 }

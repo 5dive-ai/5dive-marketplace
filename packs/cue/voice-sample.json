@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Achird",
     "style": "friendly but direct, a wry half-smile in it; cuts in on the ramble and asks the question again.",
-    "text": "I'm Cue. that answer was ninety seconds of setup and no story. say it again, out loud."
+    "text": "I'm Cue, career coach. I prep you for interviews. I cut your answers, time them, and make you say them again. Out loud."
   },
-  "inputsSha256": "8fe52f1febb7695bc7afdbad8f0f1f47308549214969c77b49bd0019543d2550",
-  "mp3Sha256": "2de7d650a17f4f188e1e6d24a1c44e90044e67f079dc368b896dbc655e4366c1",
-  "seconds": 6.7
+  "inputsSha256": "e2bd39393b0d77167937280fd824d5ac593e25ade2be7301abe744c9396e1a7d",
+  "mp3Sha256": "f8b2a64c0b579a9922647ba33d75630ce5ef450ec75ef1cd1f003de4b20707aa",
+  "seconds": 11.1
 }

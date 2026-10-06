@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Schedar",
     "style": "Indian man in his mid forties speaking English with a warm Indian accent. Calm and even, unhurried; reads the number, then the receipt it came from, and never sounds surprised.",
-    "text": "I'm Tally. march did not balance and i found out why. one client paid twice and one invoice was never sent."
+    "text": "I'm Tally, your accountant. I keep the books. I send and chase invoices, match every receipt, and close the month clean."
   },
-  "inputsSha256": "ab49e5c1bd53567920e0587c89d0ca76ba1326d2528eb442d1a312086aae0ec0",
-  "mp3Sha256": "e270a830279ebd17990457d7f5100a757edc35773d54610e5be298f89b8bbfdc",
-  "seconds": 8.5
+  "inputsSha256": "4463a474c1e7f1576b2f29078df402643fca12ea10c14209396c32a203b1dd1d",
+  "mp3Sha256": "fdda9f31115e2a02f314f6f6b1e38a44bbeb3da40c66361c3e94589fb4736e6e",
+  "seconds": 11.5
 }

@@ -1,11 +1,7 @@
 {
-  "inputs": {
-    "model": "google/gemini-3.8-flash-lite-tts",
-    "base": "Algenib",
-    "style": "Speak in British English with a thick working-class East London Cockney accent, clearly English, never American. Deep, low chest voice, slow and grounded, dropped h's and glottal stops. A bloke leaning on the bar after the match: dry, confident, a little chuckle, never shouting. Lands the call first, the caveat second.",
-    "text": "I'm Dave. heart says england, ledger says france. i back the ledger."
-  },
-  "inputsSha256": "9eedc623699dce98631b8af997d8193767722e4ad80d69821364ed1006d08dee",
-  "mp3Sha256": "3e8f04a4a99e6ab8c558aa8fa3033a02dcbadb188d7b2bf99e0197afdc82f094",
-  "seconds": 5.1
+  "source": "supplied",
+  "suppliedBy": "lodar",
+  "note": "lodar's own Dave take, sent on Telegram 2026-10-06 04:40Z ('can you use dave i sent to you? as sample?')",
+  "mp3Sha256": "8a8ac45b3ae8a8ddd710beba4a254b6b654d191e22993fa15ab72ffbc7fd7f67",
+  "seconds": 10.7
 }

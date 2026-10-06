@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Algieba",
     "style": "deep baritone, slightly raspy, slow and deliberate; long pauses before the important line; warm but emotionally restrained; confident without excitement, never rushed; mid-Atlantic 1960s-executive register.",
-    "text": "I'm Don. Eleven features. Nobody remembers eleven. We keep one idea."
+    "text": "I'm Don. I plan your marketing. I find the angle that makes people care, and I turn one good idea into everything you post."
   },
-  "inputsSha256": "88ec22dab8695b377a3a3467639019a6e98e13778cafde4447afc9df38afa156",
-  "mp3Sha256": "19f4a38329b48abd3f705ccbccd2e353d76d602cba47f79bb47f686c04acd799",
-  "seconds": 7.2
+  "inputsSha256": "9e3d70d8f62eb5a72368a96f2d3c7db1b2b0745164d7f2fbe93aa28512c3de48",
+  "mp3Sha256": "ebdc1963f096ff112ebd49f7b512168e497ccb5ee63d2bbf9a3dfd09c1dceabb",
+  "seconds": 11.2
 }

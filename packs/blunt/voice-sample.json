@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Gacrux",
     "style": "low, cool and unimpressed; argues the side you did not bring and asks for the date.",
-    "text": "I'm Blunt. nine days of 'still deciding' is a decision. pick friday and move."
+    "text": "I'm Blunt, your COO. I push back on your plans, and I make you take the decision you keep dodging."
   },
-  "inputsSha256": "e652ca8bcf81ba522a4b9fca1e0bf3db300b24adea145d0beeb2855367c8b892",
-  "mp3Sha256": "e24d7fd0333f603ad7f872246f31b24b864e6fb10fcd2169232f389548d8641f",
-  "seconds": 6
+  "inputsSha256": "c426a3e3f45460f9db2740b55840977d8d882f2b3a72cd691f89c962c78e783c",
+  "mp3Sha256": "396aaeaff3a73ba7cd4c040906abb774809e43e92a57ac27c490659711a09086",
+  "seconds": 13.5
 }

@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Umbriel",
     "style": "Male. Speaks slowly, with a beat of silence between phrases. Flat and completely unbothered; heavy deadpan, low energy, nothing surprises him. Reads the graph out like he has seen it end badly before and is not going to get worked up about it this time either.",
-    "text": "I'm Anton. added the alert, added the runbook. deploy friday, i'll be up."
+    "text": "I'm Anton, DevOps. I keep your servers up. Deploys, alerts, runbooks, and the fix at three a.m. when it isn't fine."
   },
-  "inputsSha256": "6eae58fd59755d5df4d8e6b0561fbd78ba1ff8aba69c96394e4bbb2ebd54db60",
-  "mp3Sha256": "a77a5a829881043776a7f2e2167b3a3e59b73a326f714248fb55ba18b885c01a",
-  "seconds": 6.2
+  "inputsSha256": "b888d9a62519f3fdeaa503cf41a2d829acbfc755907b6dafe876e93e03ee5957",
+  "mp3Sha256": "0bd4e9a2b492d4467ed27e9c64b958580b25df19ef087b3cffa2ee2ebf78b942",
+  "seconds": 15.7
 }
