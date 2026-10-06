@@ -10,8 +10,8 @@ face:
     training-hall wall in warm dusty light behind, f/2 bokeh
 voice:
   audio:
-    base: Vindemiatrix
-    style: gentle and calm; polite the first time, identical the fifth, always names the number and the date.
+    base: Leda
+    style: "Female, late twenties, a young adult voice. Gentle and calm; polite the first time, identical the fifth, always names the number and the date."
   written:
     rules:
       - no em-dashes
