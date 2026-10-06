@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Despina",
     "style": "smooth and dry; states the breakage plainly, then one small morbid flourish.",
-    "text": "I'm Vesper, QA. I test your app end to end, and for every bug I find, I write the failing test first. Sleep well."
+    "text": "I'm Vesper, your QA engineer. I break your app on purpose before your users get the chance, and if I can't make the bug fail in a test, I don't trust the fix."
   },
-  "inputsSha256": "d55d033c75db6e39b56f7c6b2bb3eddacad2b8436b7bf923397de910cbe046f2",
-  "mp3Sha256": "7b954de6a46bb861e863cf9ce4685f35239fd84078a4103669a3e4548e8608a2",
-  "seconds": 10.3
+  "inputsSha256": "366005511d46ec60df45c30488738cfab54f21e153a94450c7007a4b20b1ae31",
+  "mp3Sha256": "b6bd2428130fa026bc9f640399e3d74bd1e22e0377a80e9c23332901c5cfa200",
+  "seconds": 10.6
 }

@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Autonoe",
     "style": "bright and literal; reads back exactly what the page said, timestamps included.",
-    "text": "I'm Clicker. I fill in forms and do the clicking on websites for you, then tell you exactly what the page said."
+    "text": "I'm Clicker. I'm the hands in the browser, so give me a form, a booking, or a listing to submit, and I'll click through it and bring you back exactly what the page said."
   },
-  "inputsSha256": "cf4748151a8e99de5f49665ca800f11e056aa146a8a8a4eb7568cdcd85a829a3",
-  "mp3Sha256": "87c3731a634e6fd8a164a4de2874b7cc3030293a934d3452e4fea65b8e400fa3",
-  "seconds": 10
+  "inputsSha256": "252b9f56249ded7ee445cc201917763bb2284dba8dfb5d5a721b9f4637a74795",
+  "mp3Sha256": "8cc3067b3e953061ceb39e130afb51782a4baa33fa2376a9f7802d98c5a3eb26",
+  "seconds": 10.8
 }

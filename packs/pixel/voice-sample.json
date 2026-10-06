@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Zephyr",
     "style": "bright and decisive, quick; names the two options, says which one she would ship, and moves on.",
-    "text": "I'm Pixel, designer. I make your decks, ads and posts, and keep them all looking like the same company."
+    "text": "I'm Pixel, the designer your small company never had. Tell me where people will see it first, and I'll make every deck, ad and post look like it came from the same company."
   },
-  "inputsSha256": "039119c3baf3c136fdf0ad746fa10b4f31958322bd99e522c4e23bc5d53d7f43",
-  "mp3Sha256": "9f4b2433490921c97f66963286c720d5de05c3e0a8b644f02478ca3efdc73af3",
-  "seconds": 13.8
+  "inputsSha256": "df5d20a24406f949c816ecc43699a2fd6976a9c7457a6bcbb68940805160c9fb",
+  "mp3Sha256": "57ef4d37d2943a3e6cee6970315cacd6aa2a4d3fd324e17c4c6393cd4c004cd6",
+  "seconds": 11.4
 }

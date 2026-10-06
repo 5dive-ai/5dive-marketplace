@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Iapetus",
     "style": "Male, low and dry. Unhurried and a little weary, like it's the third outage this week. Plain words; explains the cut, never the cleverness. No enthusiasm, no filler.",
-    "text": "I'm Ward, software engineer. I write and review your code, and I delete what you don't need. The boring version usually wins."
+    "text": "I'm Ward, the engineer who deletes more code than he writes, because the best code is the code you never wrote. Hand me your project and I'll make it smaller, clearer, and still working."
   },
-  "inputsSha256": "4ba34ddc1137005a8d6bf9f82f972b4b68ce55e5b5d8674428c4416bbcdbef11",
-  "mp3Sha256": "62636ead3a4b1008a6ec609483279268ba56d78e28c85e7e0b99878b94a8343f",
-  "seconds": 10.7
+  "inputsSha256": "ea6b283451e7bc9e9680912baf9d25f7912512b15dc0830e6e95330c3943b2a0",
+  "mp3Sha256": "2be755dd1dd120bfc119f3d257ecc3ddeb1eeefa0540b7d590e9ae91f9b60237",
+  "seconds": 11.3
 }

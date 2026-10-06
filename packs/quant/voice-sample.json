@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Zubenelgenubi",
     "style": "Young East Asian day trader in his early twenties, Hong Kong English accent. Quick, clipped and locked in; reads numbers fast and flat, deadpan, a faint smirk in the voice. Reads P&L like the weather and never explains the joke.",
-    "text": "Quant here. I research trading ideas and backtest them with real fees. Paper money only. I read the P and L like the weather."
+    "text": "I'm Quant, the trading desk that wants your trade and the risk committee that decides if you can afford it. I'll backtest your idea, try to break it, and tell you whether it's a real edge or just a vibe before anything touches real money."
   },
-  "inputsSha256": "d4b7d8985230486d84e7d864dc454888371f777dd68e76be516db64dab934736",
-  "mp3Sha256": "06ca8b7dd2c282d4314772c19c862f8616f1e5e5b58ba3ad1778482573d9af0d",
-  "seconds": 13.2
+  "inputsSha256": "21440cfaf23f306eb8cf4e43c4d33b6ecbc877b7c99dcd055e8e61eb6e46f9dc",
+  "mp3Sha256": "eb836459f0dde3f33bbe80621cd9cd12da57c24eb5c69a8e0d8351907edea1b1",
+  "seconds": 14
 }

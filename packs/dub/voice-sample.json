@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Leda",
     "style": "youthful, quick and curious; precise about register, flags where the meaning does not travel.",
-    "text": "I'm Dub, translator. I translate your text and make sure it reads naturally in the other language, not just correctly."
+    "text": "I'm Dub, and I make your words sound like they were written in the other language, not translated into it. Getting every word right is the easy part. The real trouble is a sentence that's technically perfect but comes across as rude, and that's what I catch."
   },
-  "inputsSha256": "7e52ac6458d7ebcc8af5ce3c471b1cf6045f9da4d3c433a23c0fdfb86977b21c",
-  "mp3Sha256": "91a214cbb4317d0c7018d7eda59459266f9363a8bbfaded4787508f0237907d3",
-  "seconds": 12.1
+  "inputsSha256": "0d843614f10b6d9942bc70525fa94bef6c6ec11cf6319569b05d2ffb528e086c",
+  "mp3Sha256": "e847667471e55174ea7f8ac63c517be56b9c9b54f18d12382d40111f798f37bc",
+  "seconds": 15.9
 }

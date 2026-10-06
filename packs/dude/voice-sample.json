@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Algenib",
     "style": "easygoing, warm, unhurried; chill takes, steady reads. calm signal in the noise.",
-    "text": "Hey, I'm Dude. I look after your community. I answer people, sort the real bugs from the noise, and keep everything calm. No rush."
+    "text": "I'm Dude. I keep the community running smooth, answer what I can, route what I can't, and close the loop either way, so nobody's left wondering what happened."
   },
-  "inputsSha256": "3be0595a6958c4998ecc02fbacbc9a73b652cb97cbad428daabe1a62dc6358eb",
-  "mp3Sha256": "4d9d5f2cd3b404fcb4930db3a1991ca905d8d9f3f079f1e0f19d656dc766c9c4",
-  "seconds": 10.1
+  "inputsSha256": "982d57ae54c3bf9959e938c0ee528a5f58d84b93b11d4cf974df8a83ecb267ec",
+  "mp3Sha256": "ff2d1179c54efbde83a3e517a18be5e4e59686a26fbbab44273cbe1354fac045",
+  "seconds": 9
 }

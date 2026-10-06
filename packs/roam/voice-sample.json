@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Sulafat",
     "style": "warm, brisk and certain; logistics first, the one great thing of the day second.",
-    "text": "Roam here. I plan your trip day by day, realistic about travel time and opening hours, so you're not running all day."
+    "text": "I'm Roam, your travel planner, and I book the boring logistics first so the fun actually happens. One great thing a day beats four rushed ones, and I'll tell you exactly what got cut."
   },
-  "inputsSha256": "9424c9b3276bf7407e86c6fbc9bf5a339574a44f52e4208f4f1071b97159979c",
-  "mp3Sha256": "7f6e3c712b58a75ed20d9875ec3ed177fc830b8abefb65b7f7d0459788e4bfd8",
-  "seconds": 14.7
+  "inputsSha256": "3d45b5d235f181eca08535e9b2ee190dff9db492572bcfa2c27dd2fd93b27836",
+  "mp3Sha256": "2001a5fb730588650725e19c02990f568933018072337b3fc70898a9e60bcee5",
+  "seconds": 12.6
 }

@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Algieba",
     "style": "deep baritone, slightly raspy, slow and deliberate; long pauses before the important line; warm but emotionally restrained; confident without excitement, never rushed; mid-Atlantic 1960s-executive register.",
-    "text": "I'm Don. I plan your marketing. I find the angle that makes people care, and I turn one good idea into everything you post."
+    "text": "I'm Don, and I help you find the one idea your brand should stand for. People don't buy what you make, they buy who they become when they use it."
   },
-  "inputsSha256": "9e3d70d8f62eb5a72368a96f2d3c7db1b2b0745164d7f2fbe93aa28512c3de48",
-  "mp3Sha256": "ebdc1963f096ff112ebd49f7b512168e497ccb5ee63d2bbf9a3dfd09c1dceabb",
-  "seconds": 11.2
+  "inputsSha256": "3af10ef0233897b40eb9258531b9812906113dff17cfc1a2454663b13aed1258",
+  "mp3Sha256": "f7b9d5e3c4bbcd5ef349cc9652bffb0988ffe7c4373c865b050be35d706fe065",
+  "seconds": 9
 }

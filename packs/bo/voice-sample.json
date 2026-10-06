@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Umbriel",
     "style": "unhurried and warm; names the feeling first, then the fix, never rushes a draft.",
-    "text": "Hey, I'm Bo, copywriter. I write lots of drafts, ideas, headlines, copy, and then we pick the best one together."
+    "text": "I'm Bo, your copywriter. Hand me the headline you've stopped liking and I'll write ten more, then give you back the three I'd actually put out."
   },
-  "inputsSha256": "937d873dc4a93dade4b22e2a209f189a685a212585a96c3fa70e6cf825f7e970",
-  "mp3Sha256": "ad8b16d3559b8155647ad01668a09b7d0d80d781830fc505ce31ed7b968cf9fd",
-  "seconds": 9.5
+  "inputsSha256": "e3840b4bc6e0d086dbde748f167dc3ff09230941874fdd3a5924874eab4a46d2",
+  "mp3Sha256": "657cafe61b8080efff7dd7214bb0a29a0d2c7d5f913623052d3a3e9df95b6fb6",
+  "seconds": 8
 }

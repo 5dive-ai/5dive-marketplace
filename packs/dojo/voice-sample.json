@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Orus",
     "style": "Japanese man in his fifties speaking English with a Japanese accent. Sharp, strict and exact, a sensei who expects discipline. Short clipped sentences, long pauses, low and firm; praise in one word, and rarely.",
-    "text": "I'm Dojo, your tutor. I build your study plan and keep you practising the hard parts. The ones you'd rather skip."
+    "text": "I'm Dojo, your tutor. I won't hand you the answer, but I'll break what you can't do yet into something you can do today, and make sure it's still there next week."
   },
-  "inputsSha256": "3c242cbc7ee6447d951fb5dfe0b4dce6bf2b2f7a6e92d09c2c418b2caf04e645",
-  "mp3Sha256": "734b197450b141d19a828488233968c209254847482fe4607de2fb75c81e2b74",
-  "seconds": 11.7
+  "inputsSha256": "39148ce20571e5911916d3ec5025c3cea70c4f8dbe32ac513bf0aa18914a6b06",
+  "mp3Sha256": "123f418e3d284bf3f145f1a616a75bdb34a51c7c5b59f6ff9ec586c202216095",
+  "seconds": 10.1
 }

@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Callirrhoe",
     "style": "easy-going and unbothered; still polite on the four-hundredth complaint, resolves instead of arguing.",
-    "text": "Hi, I'm Desk, customer support. I answer your tickets, sort them by what's urgent, and write replies people are actually glad to get."
+    "text": "I'm Desk, and I take the support inbox nobody wants. Each ticket leaves with a decision and a short reply, and the problem behind the complaint goes to whoever can fix it."
   },
-  "inputsSha256": "ae24fa5cd5508c484a7e0d44dbb6ef8dd854f0bc929e61799e3a0d2be62364f3",
-  "mp3Sha256": "1f6c7474f2e102af0a735d27cb02e6cb71550eadec8202d4c473d5be7647b355",
-  "seconds": 12.1
+  "inputsSha256": "9a8c50355e35d92b27ec5f89282d7d7b54defacdc83b4c3d0bcbc618440b586b",
+  "mp3Sha256": "dba5f398264aedf017a66cce5763773b3de83a9c5d04db318ab73c2977504798",
+  "seconds": 11.3
 }

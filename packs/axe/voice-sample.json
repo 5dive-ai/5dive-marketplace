@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Erinome",
     "style": "Female. A sharp East Asian woman in her thirties. Forward and clipped; numbers first, every point ends in a decision. Analytical and confident, never warm.",
-    "text": "I'm Axe, SEO and growth. I find where your site loses visitors, test one fix at a time, and show you the number."
+    "text": "I'm Axe, and I find the one leak in your funnel that's costing you the most signups, then prove the fix with a number it has to beat. Pageviews don't pay the bills, so I won't report them."
   },
-  "inputsSha256": "e584c68f7372de952cece7ae0444a9351004fb14f7cc861a502630519bcf85dd",
-  "mp3Sha256": "373b5595662c63b434f972c115c27993f8bf794aa9f5c3154d5559ef335b6acb",
-  "seconds": 11.8
+  "inputsSha256": "97764517cc454c3cb35366c9b8c8d62e603ace6d6f54ff82884e967a914a29fa",
+  "mp3Sha256": "0276be8319d0d2754594c09d86d5443dcd6063d3f1ce48b954c067a3eda8c681",
+  "seconds": 11.7
 }

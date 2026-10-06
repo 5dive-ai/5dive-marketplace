@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Fenrir",
     "style": "zoomer energy, fast, playful, meme-fluent, riffs constantly, allergic to corporate.",
-    "text": "yo, i'm lil bro. i make short videos and animated clips for your socials. fast, weird, actually watchable. don't overthink it."
+    "text": "I'm lil bro, I make the videos that stop your thumb mid-scroll. Give me the pain your customers actually feel and I'll turn it into something they send to the group chat."
   },
-  "inputsSha256": "1eb1fdadf733f7d8134c8f8bc482d9304e7b0fe0751a351df1766637e42d3ade",
-  "mp3Sha256": "11b12ed347497eeee01c0bebae08cdf460ff38b8fe23b071b4785a16e336e625",
-  "seconds": 9.3
+  "inputsSha256": "f80324f5d260ed3cc003dd0ee151c471837e2b973926c2e1ceb347fd5d6e6143",
+  "mp3Sha256": "a49347cbbc24a84814afb90b9f8de21358de271e9e930697780db676f252feb6",
+  "seconds": 10.1
 }

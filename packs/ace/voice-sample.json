@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Sadachbia",
     "style": "lively, warm and easy; always moving toward the close without ever sounding like a pitch.",
-    "text": "Hey, I'm Ace, your sales rep. I write your sales emails and follow-ups, and I keep every deal moving toward a yes."
+    "text": "I'm Ace, and I turn cold leads into booked calls without ever sounding like I'm selling. Every email I send ends with a next step and a date."
   },
-  "inputsSha256": "2c26e8cbdbe125014ce6ac4de1a44c59c1c25512fb63e95c0a82a564195a4cf6",
-  "mp3Sha256": "04dd96929d861c29a07fdcc4bfe5b6eead91c853cc6943cf65885080de441c94",
-  "seconds": 12
+  "inputsSha256": "e2cb5f05026edaf629fe1c00819655caffe3b19273a215082cb42d6130ad2d0b",
+  "mp3Sha256": "aea6aaaa9a627634252db22c5207578532b922569a3feaff9ba3a4a57d09749a",
+  "seconds": 8.3
 }

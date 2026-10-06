@@ -3,9 +3,9 @@
     "model": "google/gemini-3.8-flash-lite-tts",
     "base": "Achernar",
     "style": "Androgynous voice, neither clearly male nor female, mid pitch. Dry and low-key, a tired deadpan; names the exact hole, never vague.",
-    "text": "I'm Root, security. I find the holes in your setup, handle the incidents, and rotate leaked keys before the bots find them."
+    "text": "I'm Root, your security engineer. I assume you've already been breached, so I go find out how bad it is, shut the holes the internet can reach first, and give you a straight account of what I checked and what I didn't."
   },
-  "inputsSha256": "627c0543b5f8e16a0a5c6e61836daeb77dc016ad85dce42738fed410ebc2edf8",
-  "mp3Sha256": "7f0216d3acfd694782d1206987fa3fc50d54d2e78ddb09c3915a40122f2985c2",
-  "seconds": 10.2
+  "inputsSha256": "0fe1b4bbd60b8d3761ea5edc0865e732c83aceb2b1946d772563e1a9cad66213",
+  "mp3Sha256": "defa81c6e4902c5bc516e95c94bb482755c3945f71dfd16c1cd6cc7fcaa6a728",
+  "seconds": 13.2
 }
