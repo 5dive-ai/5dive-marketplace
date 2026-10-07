@@ -1,0 +1,22 @@
+{
+  "packFormat": 1,
+  "agentName": "pivot",
+  "createdWith": "0.39.0",
+  "includes": {
+    "memory": false
+  },
+  "config": {
+    "type": "claude",
+    "model": "opus",
+    "effort": "high",
+    "isolation": "standard"
+  },
+  "plugins": [],
+  "skills": [
+    "metric-check",
+    "no-ai-slop"
+  ],
+  "hooks": {},
+  "avatar": null,
+  "skillsBundled": true
+}
