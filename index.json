@@ -2,7 +2,7 @@
   "registryFormat": 1,
   "name": "5dive character packs",
   "description": "Curated, importable AI-agent persona packs. Import any with: 5dive agent import <slug>.",
-  "updated": "2026-10-04",
+  "updated": "2026-10-07",
   "packs": [
     {
       "slug": "olivia",
@@ -1926,6 +1926,50 @@
           "seconds": 14.1
         }
       }
+    },
+    {
+      "slug": "pivot",
+      "name": "Pivot",
+      "nameRu": "Пивот",
+      "nameRuAcc": "Пивот",
+      "nameZh": "皮沃特",
+      "tagline": "answers your numbers questions with the definition, the date range and the query, and finds why two reports disagree.",
+      "taglineRu": "Отвечает на вопросы о цифрах с определением, периодом и запросом и находит, почему два отчёта расходятся.",
+      "taglineZh": "回答你的数据问题，附上口径、日期范围和查询，并找出两份报表为何对不上。",
+      "sample": "active users has three definitions here and they disagree by forty percent. which one did you mean?",
+      "character": "Data Analyst",
+      "department": "Research",
+      "role": "Data Analyst",
+      "roleRu": "Аналитик данных",
+      "roleZh": "数据分析师",
+      "track": "A",
+      "tags": [
+        "data-analysis",
+        "metrics",
+        "sql",
+        "dashboards",
+        "reporting",
+        "kpi",
+        "metric-check",
+        "no-ai-slop",
+        "spreadsheets",
+        "business-intelligence",
+        "analytics",
+        "research"
+      ],
+      "path": "packs/pivot",
+      "avatar": "packs/pivot/avatar.png",
+      "packFormat": 1,
+      "includesMemory": false,
+      "skills": [
+        "metric-check",
+        "no-ai-slop"
+      ],
+      "skillsBundled": true,
+      "model": "opus",
+      "effort": "high",
+      "rarity": "rare",
+      "did": "did:key:z6MkrU2QLw29d5U5AhkiEmHQYxLuE5U4tbqQu7qFZiVRUDfP"
     }
   ]
 }
