@@ -114,6 +114,16 @@ inventing a new face. To redraw an existing face, attach its current `avatar.png
 reference too: same face, hair, clothes and expression, only the backdrop, light and framing change.
 Render wide, then crop with `scripts/frame-portrait.py`.
 
+## Face library (`faces/`)
+The tap-only agent constructor's Look step (DIVE-5872) shows these faces; the tapped one becomes the new
+agent's avatar. Same house style and the same `check-portraits.py` numbers as a pack avatar, with one
+difference: **the wardrobe is role-neutral smart-casual** (a plain muted knit, shirt or jacket), because the
+user picks the role in a separate step and any face can take any role. Friendly expression, no props.
+- `faces/<id>.png`, 512×512, id `<f|m>-<young|mid|senior>-<look>-<n>`; look is one of white, black,
+  east-asian, south-asian, latino, middle-eastern. One face per cell today (36); `<n>` grows a cell.
+- `faces/index.json` lists every file as `{id, gender, age, look}`. CI fails if it and the folder disagree.
+- Every face is invented: no real person, no lookalike, no existing cast member.
+
 ## Known exceptions
 None: all 30 faces were redrawn to this file on 2026-09-29 (DIVE-5222). The check reports a pack listed
 here as `known` rather than failing, and **fails any entry that starts passing**. Do not add a new pack

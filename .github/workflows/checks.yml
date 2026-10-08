@@ -137,6 +137,19 @@ jobs:
       # ratchet (a listed face that starts passing reds the job until it is removed).
       - name: check-portraits
         run: python scripts/check-portraits.py packs/*/avatar.png
+      # The constructor's face library (DIVE-5873): same framing rule, and index.json must
+      # list exactly the files on disk, since the API serves the ids it reads there.
+      - name: check-portraits (faces/)
+        run: python scripts/check-portraits.py faces/*.png
+      - name: faces/index.json matches faces/*.png
+        run: |
+          python - <<'PY'
+          import json, os, sys
+          ids = [f["id"] for f in json.load(open("faces/index.json"))["faces"]]
+          files = sorted(f[:-4] for f in os.listdir("faces") if f.endswith(".png"))
+          bad = sorted(set(ids) ^ set(files)) + [i for i in set(ids) if ids.count(i) > 1]
+          print(f"{len(ids)} indexed, {len(files)} files"); sys.exit(f"mismatch: {bad}" if bad else 0)
+          PY
       # The mutation arms: planted off-ratio, off-centre, non-square, tiny and
       # faceless avatars must each be refused, or the check above proves nothing.
       - name: check-portraits mutation arms
