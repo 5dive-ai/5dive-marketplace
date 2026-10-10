@@ -2027,7 +2027,19 @@
       "model": "opus",
       "effort": "high",
       "rarity": "legendary",
-      "did": "did:key:z6MkrDFBq5CVwBRu9pHGxpS8h2N3Gy83N88jT4gmYqMzydMV"
+      "did": "did:key:z6MkrDFBq5CVwBRu9pHGxpS8h2N3Gy83N88jT4gmYqMzydMV",
+      "voiceSample": "packs/clip/voice-sample.mp3",
+      "voiceSampleSeconds": 10.3,
+      "voiceSampleLang": {
+        "ru": {
+          "src": "packs/clip/voice-sample.ru.mp3",
+          "seconds": 8.3
+        },
+        "zh": {
+          "src": "packs/clip/voice-sample.zh.mp3",
+          "seconds": 7.5
+        }
+      }
     }
   ]
 }

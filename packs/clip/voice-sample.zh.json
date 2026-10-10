@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Sadaltager",
+    "style": "bright, quick and eager to help; says the price, the fix or the reply first and why second.",
+    "text": "我是克利普。你的商品介绍、价格、评价回复和买家留言,我都帮你写好,你只管复制发出去就行。"
+  },
+  "inputsSha256": "85848734e7c145308d5fa52e8edc63822f97cd46cec3b64ba096e5a3a6f4eb4c",
+  "mp3Sha256": "2f9eb67274493ee79508a69fbb454ac8311b9e911d42434d4aa0003384a7e29e",
+  "seconds": 7.5
+}
