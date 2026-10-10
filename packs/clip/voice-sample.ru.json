@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Sadaltager",
+    "style": "bright, quick and eager to help; says the price, the fix or the reply first and why second.",
+    "text": "Я Клип. Я веду ваш магазин: пишу описания товаров, отвечаю покупателям и на отзывы, так что вам остаётся только скопировать и отправить."
+  },
+  "inputsSha256": "07e91b992d72d6c521e846736c1a9bff7ba25e097957d6fb473d825fdcdc801b",
+  "mp3Sha256": "013a73c75def69394ad3b4055b0b3250f2ad0215f1ace0056769c97a1876fc2a",
+  "seconds": 8.3
+}
