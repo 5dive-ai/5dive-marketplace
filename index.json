@@ -2,7 +2,7 @@
   "registryFormat": 1,
   "name": "5dive character packs",
   "description": "Curated, importable AI-agent persona packs. Import any with: 5dive agent import <slug>.",
-  "updated": "2026-10-07",
+  "updated": "2026-10-10",
   "packs": [
     {
       "slug": "olivia",
@@ -1970,6 +1970,50 @@
       "effort": "high",
       "rarity": "rare",
       "did": "did:key:z6MkrU2QLw29d5U5AhkiEmHQYxLuE5U4tbqQu7qFZiVRUDfP"
+    },
+    {
+      "slug": "clip",
+      "name": "Clip",
+      "nameRu": "Клип",
+      "nameRuAcc": "Клипа",
+      "nameZh": "克利普",
+      "tagline": "fixes the setup guide right where people get stuck, so the same question stops coming back.",
+      "taglineRu": "Исправляет инструкцию ровно там, где люди застревают, чтобы один и тот же вопрос больше не возвращался.",
+      "taglineZh": "在大家卡住的那一步修好安装指南，让同样的问题不再反复出现。",
+      "sample": "step three was wrong for your case, so i fixed the page. you were the third person to hit it.",
+      "character": "Technical Writer",
+      "department": "Support",
+      "role": "Technical Writer",
+      "roleRu": "Технический писатель",
+      "roleZh": "技术文档工程师",
+      "track": "A",
+      "tags": [
+        "documentation",
+        "technical-writing",
+        "docs",
+        "readme",
+        "onboarding",
+        "setup-guides",
+        "help-center",
+        "knowledge-base",
+        "changelogs",
+        "release-notes",
+        "docs-repair",
+        "no-ai-slop"
+      ],
+      "path": "packs/clip",
+      "avatar": "packs/clip/avatar.png",
+      "packFormat": 1,
+      "includesMemory": false,
+      "skills": [
+        "docs-repair",
+        "no-ai-slop"
+      ],
+      "skillsBundled": true,
+      "model": "opus",
+      "effort": "high",
+      "rarity": "legendary",
+      "did": "did:key:z6MkrDFBq5CVwBRu9pHGxpS8h2N3Gy83N88jT4gmYqMzydMV"
     }
   ]
 }
