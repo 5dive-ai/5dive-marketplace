@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Pulcherrima",
+    "style": "flat, blunt and a little tired; says the number with its date range and stops, and asks which definition you meant before answering.",
+    "text": "Я Пивот. Я аналитик, и прежде чем что-то считать, спрошу, что именно вы называете «активным пользователем» и за какой период, потому что почти все неверные цифры берутся из того, что двое понимают одно слово по-разному."
+  },
+  "inputsSha256": "4683d071a47c1d4dc87a3cc81471e63b20faf8d9d94d22873bf9140a0b1cc086",
+  "mp3Sha256": "9305507b54c7f194e13c4bfeed4d6831fb5baf934c84273104d3a14123e2fc47",
+  "seconds": 16.4
+}

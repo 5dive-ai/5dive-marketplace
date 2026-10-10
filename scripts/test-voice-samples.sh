@@ -21,6 +21,7 @@ fresh() {
   rm -rf "$FIX/tree"; mkdir -p "$FIX/tree"
   cp "$REPO/index.json" "$FIX/tree/"
   cp "$REPO"/voice-sample-lines*.json "$FIX/tree/"
+  [[ -f "$REPO/voice-sample-exceptions.json" ]] && cp "$REPO/voice-sample-exceptions.json" "$FIX/tree/"
   for d in "$REPO"/packs/*/; do
     s=$(basename "$d"); mkdir -p "$FIX/tree/packs/$s"
     cp "$d"/persona.yaml "$FIX/tree/packs/$s/"
@@ -76,9 +77,24 @@ fresh; VOICE_SAMPLE_FAKE_TTS=1 MARKETPLACE_ROOT="$FIX/tree" node "$SCRIPT" --for
 out=$(MARKETPLACE_ROOT="$FIX/tree" node "$SCRIPT" --check 2>&1); rc=$?
 if [[ $rc -eq 1 && "$out" == *"$R: voice-sample.mp3 is a VOICE_SAMPLE_FAKE_TTS placeholder"* ]]; then ok "a fake-TTS placeholder is refused"; else bad "fake placeholder (rc=$rc: $out)"; fi
 
+# A pack with NO sample at all is refused (DIVE-5980), unless it is a named exception.
+# Negative control: delete one existing pack's sample and the check must go red.
 fresh; rm "$FIX/tree/packs/$R/voice-sample.mp3" "$FIX/tree/packs/$R/voice-sample.json"
+arm "a pack with no sample at all is refused" "$R: has no voice-sample.mp3, so its card plays nothing"
+setx() { node -e 'const f=process.argv[1],fs=require("fs"),j=fs.existsSync(f)?JSON.parse(fs.readFileSync(f)):{};if(process.argv[3]===undefined)delete j[process.argv[2]];else j[process.argv[2]]=process.argv[3];fs.writeFileSync(f,JSON.stringify(j))' "$FIX/tree/voice-sample-exceptions.json" "$@"; }
+setx $R "fixture: awaiting a decision"
 run --check
-if [[ $rc -eq 0 && "$out" == *"$R"* ]]; then ok "a pack with no sample at all is allowed (listed, not refused)"; else bad "no sample (rc=$rc: $out)"; fi
+if [[ $rc -eq 0 && "$out" == *"excepted, no sample: "*"$R (fixture: awaiting a decision)"* ]]; then ok "a named exception with no sample passes and is listed with its reason"; else bad "named exception (rc=$rc: $out)"; fi
+setx $R ""
+arm "an exception with no reason is refused" "$R: has no voice-sample.mp3, so its card plays nothing"
+fresh; setx $R "fixture: stale"
+arm "an exception for a pack that has a sample is refused" "$R: is in voice-sample-exceptions.json but has a voice-sample.mp3"
+fresh; setx no-such-pack "fixture: typo"
+arm "an exception for no pack is refused" "no-such-pack: is in voice-sample-exceptions.json but no such pack exists"
+# Only English is required: a pack with no ru/zh clip is still fine.
+fresh; rm -f "$FIX/tree/packs/$R"/voice-sample.{ru,zh}.{mp3,json}
+run --check
+if [[ $rc -eq 0 ]]; then ok "a pack with an English sample but no ru/zh clip passes"; else bad "no ru/zh (rc=$rc: $out)"; fi
 
 # IMPORT: a clip spoken on a box is recorded against the CURRENT inputs, so a later
 # line change still reds it.

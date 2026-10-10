@@ -1969,7 +1969,19 @@
       "model": "opus",
       "effort": "high",
       "rarity": "rare",
-      "did": "did:key:z6MkrU2QLw29d5U5AhkiEmHQYxLuE5U4tbqQu7qFZiVRUDfP"
+      "did": "did:key:z6MkrU2QLw29d5U5AhkiEmHQYxLuE5U4tbqQu7qFZiVRUDfP",
+      "voiceSample": "packs/pivot/voice-sample.mp3",
+      "voiceSampleSeconds": 17.3,
+      "voiceSampleLang": {
+        "ru": {
+          "src": "packs/pivot/voice-sample.ru.mp3",
+          "seconds": 16.4
+        },
+        "zh": {
+          "src": "packs/pivot/voice-sample.zh.mp3",
+          "seconds": 15.1
+        }
+      }
     },
     {
       "slug": "clip",

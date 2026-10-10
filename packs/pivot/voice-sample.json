@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Pulcherrima",
+    "style": "flat, blunt and a little tired; says the number with its date range and stops, and asks which definition you meant before answering.",
+    "text": "I'm Pivot. I'm a data analyst, and before I run anything I ask what you mean by \"active\" or \"last month\", because that's where most wrong numbers come from, and then I hand you the answer with the query so anyone can check it."
+  },
+  "inputsSha256": "2ea81b16a65cf4c88ff81c0f48cfe373d1004b3c099c0d32d0dd82c1f5369525",
+  "mp3Sha256": "033d317cb14d116ddd420cd0d39433b98c73057fe065a1188e9ed20b667a414d",
+  "seconds": 17.3
+}

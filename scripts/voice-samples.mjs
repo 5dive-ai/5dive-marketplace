@@ -33,8 +33,15 @@
 // hash of the inputs it was rendered from (model, base, style, text) and of the mp3
 // itself. --check recomputes the input hash from persona.yaml + index.json, so a PR
 // that changes a pack's voice, style or sample line without re-rendering goes red.
-// CI never calls TTS. A pack with no sample is allowed (its card shows no play
-// button); a sidecar without its mp3, or an mp3 without its sidecar, is not.
+// CI never calls TTS. A sidecar without its mp3, or an mp3 without its sidecar, is
+// refused.
+//
+// A pack with no English sample is refused too (DIVE-5980): its card shows no play
+// button, and pivot and clip both merged that way without anyone noticing until lodar
+// did ("the last two agents are without voice samples", 2026-10-10). The one way past
+// it is a named entry in voice-sample-exceptions.json, { "<slug>": "<why, and who
+// said so>" }; an entry for a pack that has a sample, or for no pack, is refused, so
+// the list cannot outlive its reason. ru/zh clips stay optional per pack.
 //
 // A SUPPLIED sample (sidecar "source": "supplied") is a real recording somebody
 // chose for the card, e.g. dave's clip from lodar. Nothing rendered it, so a style
@@ -82,6 +89,10 @@ const lines = Object.fromEntries(LANGS.map((lang) => {
   return [lang, existsSync(f) ? JSON.parse(readFileSync(f, "utf8")) : {}];
 }));
 
+// Packs allowed to ship with no English sample, each with the reason (DIVE-5980).
+const EXCEPTIONS_FILE = "voice-sample-exceptions.json";
+const exceptions = existsSync(join(ROOT, EXCEPTIONS_FILE)) ? JSON.parse(readFileSync(join(ROOT, EXCEPTIONS_FILE), "utf8")) : {};
+
 const sha256 = (buf) => createHash("sha256").update(buf).digest("hex");
 
 function inputsFor(slug, lang = "") {
@@ -112,7 +123,13 @@ function check() {
     const side = join(packsDir, slug, SIDECAR);
     const hasMp3 = existsSync(mp3);
     const hasSide = existsSync(side);
-    if (!hasMp3 && !hasSide) { if (!lang) missing.push(slug); continue; }
+    if (!hasMp3 && !hasSide) {
+      if (lang) continue;
+      if (typeof exceptions[slug] === "string" && exceptions[slug].trim()) missing.push(slug);
+      else errors.push(`${slug}: has no ${MP3}, so its card plays nothing; ask the agent for its own line, add it to ${at(lang).LINES} and run: node scripts/voice-samples.mjs ${slug} (or name it in ${EXCEPTIONS_FILE} with the reason).`);
+      continue;
+    }
+    if (!lang && slug in exceptions) errors.push(`${slug}: is in ${EXCEPTIONS_FILE} but has a ${MP3}; remove the exception.`);
     if (!hasSide) { errors.push(`${slug}: ${MP3} has no ${SIDECAR}; render it with scripts/voice-samples.mjs${flag}, do not drop an mp3 in by hand.`); continue; }
     if (!hasMp3) { errors.push(`${slug}: ${SIDECAR} names a sample but ${MP3} is missing.`); continue; }
     let rec;
@@ -138,6 +155,7 @@ function check() {
       errors.push(`${slug}: ${what} is STALE (${moved.join(", ") || "inputs"} changed since it was rendered); run: node scripts/voice-samples.mjs${flag} ${slug}`);
     }
   }
+  for (const slug of Object.keys(exceptions)) if (!slugs.includes(slug)) errors.push(`${slug}: is in ${EXCEPTIONS_FILE} but no such pack exists; remove the exception.`);
   if (errors.length) {
     for (const e of errors) console.error(`FAIL ${e}`);
     console.error(`voice-samples: ${errors.length} finding(s) across ${slugs.length} packs.`);
@@ -145,7 +163,7 @@ function check() {
   }
   const have = slugs.length - missing.length;
   const other = Object.entries(langs).map(([l, n]) => `${l} ${n}`).join(", ");
-  console.log(`voice-samples: ${have} of ${slugs.length} packs have a current sample (other languages: ${other})${supplied.length ? `; supplied, not rendered: ${supplied.join(", ")}` : ""}${missing.length ? `; none yet: ${missing.join(", ")}` : ""}.`);
+  console.log(`voice-samples: ${have} of ${slugs.length} packs have a current sample (other languages: ${other})${supplied.length ? `; supplied, not rendered: ${supplied.join(", ")}` : ""}${missing.length ? `; excepted, no sample: ${missing.map((s) => `${s} (${exceptions[s]})`).join(", ")}` : ""}.`);
 }
 
 // The box's dedicated key for this script comes first. The general connector key is

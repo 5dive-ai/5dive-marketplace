@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Pulcherrima",
+    "style": "flat, blunt and a little tired; says the number with its date range and stops, and asks which definition you meant before answering.",
+    "text": "我是皮沃特。你说的“活跃用户”到底算什么，我先问清楚再动手，每个数字都附上日期范围和查询语句，让别人也能查出一样的结果。"
+  },
+  "inputsSha256": "fc886d9a0deebea936a7c2b2967b1c782712880971b6daee0e5840383d6df190",
+  "mp3Sha256": "7995109a918908e59ef03961aaed6f01436ba7a4f5a255dbc60f8e8ca85a0ee8",
+  "seconds": 15.1
+}
