@@ -43,16 +43,21 @@ record is wrong. Work this list in order.
    you are human" pages can show up after a sign-in or submit button, not only
    on page load. Say what the page shows, attach a screenshot, ask for a
    person. Only a real browser render shows whether a form has one; a plain
-   fetch of the page cannot.
+   fetch of the page cannot. An invisible one shows only as an error after
+   you press submit ("captcha verification failed"): stop, never press twice.
+9. **Check the form before the final press.** Take a screenshot: every tick
+   box shows ticked, every dropdown shows its value, the submit button is
+   enabled. A click can miss once, and a cookie banner or dialog moves the
+   layout, so re-shoot before you click by coordinates.
 
 ## After submit
-9. **Read the saved record back.** Open the listing, profile or confirmation
+10. **Read the saved record back.** Open the listing, profile or confirmation
    the site saved and check every field landed where you meant, word for
    word. A URL in the name field still says "success". A form that only says
    "thanks" (Tally and the like) leaves no record to read: report
    "submitted, not live".
-10. **Leave the receipt.** What you submitted, the page's own confirmation
+11. **Leave the receipt.** What you submitted, the page's own confirmation
     words, the time, and a link to the saved record.
-11. **Log the miss.** If anything above went wrong, write it down as a lesson
+12. **Log the miss.** If anything above went wrong, write it down as a lesson
     with **compile-knowledge**: the date, the site, what happened, the lesson,
     and whether it applies to every site or just this one.
