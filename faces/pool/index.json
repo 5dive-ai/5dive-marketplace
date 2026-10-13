@@ -412,6 +412,48 @@
       "age": "mid",
       "look": "middle-eastern",
       "kind": "human"
+    },
+    {
+      "id": "m-mid-animal-2",
+      "gender": "male",
+      "age": "mid",
+      "look": "animal",
+      "kind": "animal"
+    },
+    {
+      "id": "f-young-animal-1",
+      "gender": "female",
+      "age": "young",
+      "look": "animal",
+      "kind": "animal"
+    },
+    {
+      "id": "m-young-robot-1",
+      "gender": "male",
+      "age": "young",
+      "look": "robot",
+      "kind": "robot"
+    },
+    {
+      "id": "f-senior-robot-1",
+      "gender": "female",
+      "age": "senior",
+      "look": "robot",
+      "kind": "robot"
+    },
+    {
+      "id": "m-mid-alien-2",
+      "gender": "male",
+      "age": "mid",
+      "look": "alien",
+      "kind": "alien"
+    },
+    {
+      "id": "f-mid-alien-1",
+      "gender": "female",
+      "age": "mid",
+      "look": "alien",
+      "kind": "alien"
     }
   ]
 }
