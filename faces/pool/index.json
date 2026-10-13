@@ -538,6 +538,160 @@
       "age": "senior",
       "look": "middle-eastern",
       "kind": "human"
+    },
+    {
+      "id": "m-young-white-3",
+      "gender": "male",
+      "age": "young",
+      "look": "white",
+      "kind": "human"
+    },
+    {
+      "id": "m-young-black-3",
+      "gender": "male",
+      "age": "young",
+      "look": "black",
+      "kind": "human"
+    },
+    {
+      "id": "m-young-east-asian-3",
+      "gender": "male",
+      "age": "young",
+      "look": "east-asian",
+      "kind": "human"
+    },
+    {
+      "id": "m-young-south-asian-3",
+      "gender": "male",
+      "age": "young",
+      "look": "south-asian",
+      "kind": "human"
+    },
+    {
+      "id": "m-young-latino-3",
+      "gender": "male",
+      "age": "young",
+      "look": "latino",
+      "kind": "human"
+    },
+    {
+      "id": "m-young-middle-eastern-3",
+      "gender": "male",
+      "age": "young",
+      "look": "middle-eastern",
+      "kind": "human"
+    },
+    {
+      "id": "m-mid-white-3",
+      "gender": "male",
+      "age": "mid",
+      "look": "white",
+      "kind": "human"
+    },
+    {
+      "id": "m-mid-black-3",
+      "gender": "male",
+      "age": "mid",
+      "look": "black",
+      "kind": "human"
+    },
+    {
+      "id": "m-mid-east-asian-3",
+      "gender": "male",
+      "age": "mid",
+      "look": "east-asian",
+      "kind": "human"
+    },
+    {
+      "id": "m-mid-south-asian-3",
+      "gender": "male",
+      "age": "mid",
+      "look": "south-asian",
+      "kind": "human"
+    },
+    {
+      "id": "m-mid-latino-3",
+      "gender": "male",
+      "age": "mid",
+      "look": "latino",
+      "kind": "human"
+    },
+    {
+      "id": "m-mid-middle-eastern-3",
+      "gender": "male",
+      "age": "mid",
+      "look": "middle-eastern",
+      "kind": "human"
+    },
+    {
+      "id": "m-senior-white-3",
+      "gender": "male",
+      "age": "senior",
+      "look": "white",
+      "kind": "human"
+    },
+    {
+      "id": "m-senior-black-3",
+      "gender": "male",
+      "age": "senior",
+      "look": "black",
+      "kind": "human"
+    },
+    {
+      "id": "m-senior-east-asian-3",
+      "gender": "male",
+      "age": "senior",
+      "look": "east-asian",
+      "kind": "human"
+    },
+    {
+      "id": "m-senior-south-asian-3",
+      "gender": "male",
+      "age": "senior",
+      "look": "south-asian",
+      "kind": "human"
+    },
+    {
+      "id": "m-senior-latino-3",
+      "gender": "male",
+      "age": "senior",
+      "look": "latino",
+      "kind": "human"
+    },
+    {
+      "id": "m-senior-middle-eastern-3",
+      "gender": "male",
+      "age": "senior",
+      "look": "middle-eastern",
+      "kind": "human"
+    },
+    {
+      "id": "m-young-alien-1",
+      "gender": "male",
+      "age": "young",
+      "look": "alien",
+      "kind": "alien"
+    },
+    {
+      "id": "f-senior-alien-1",
+      "gender": "female",
+      "age": "senior",
+      "look": "alien",
+      "kind": "alien"
+    },
+    {
+      "id": "m-mid-robot-2",
+      "gender": "male",
+      "age": "mid",
+      "look": "robot",
+      "kind": "robot"
+    },
+    {
+      "id": "f-mid-robot-1",
+      "gender": "female",
+      "age": "mid",
+      "look": "robot",
+      "kind": "robot"
     }
   ]
 }
