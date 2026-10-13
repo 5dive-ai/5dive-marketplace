@@ -14,7 +14,8 @@
   "plugins": [],
   "skills": [
     "diagnose",
-    "security-review"
+    "security-review",
+    "security-audit"
   ],
   "hooks": {},
   "avatar": null,
