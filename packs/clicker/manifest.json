@@ -19,6 +19,7 @@
   "avatar": null,
   "skillsBundled": true,
   "memoryFiles": [
-    "seed-memory.md"
+    "seed-memory.md",
+    "site-notes.md"
   ]
 }
