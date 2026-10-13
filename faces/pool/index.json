@@ -370,6 +370,48 @@
       "age": "young",
       "look": "middle-eastern",
       "kind": "human"
+    },
+    {
+      "id": "f-mid-white-3",
+      "gender": "female",
+      "age": "mid",
+      "look": "white",
+      "kind": "human"
+    },
+    {
+      "id": "f-mid-black-3",
+      "gender": "female",
+      "age": "mid",
+      "look": "black",
+      "kind": "human"
+    },
+    {
+      "id": "f-mid-east-asian-3",
+      "gender": "female",
+      "age": "mid",
+      "look": "east-asian",
+      "kind": "human"
+    },
+    {
+      "id": "f-mid-south-asian-3",
+      "gender": "female",
+      "age": "mid",
+      "look": "south-asian",
+      "kind": "human"
+    },
+    {
+      "id": "f-mid-latino-3",
+      "gender": "female",
+      "age": "mid",
+      "look": "latino",
+      "kind": "human"
+    },
+    {
+      "id": "f-mid-middle-eastern-3",
+      "gender": "female",
+      "age": "mid",
+      "look": "middle-eastern",
+      "kind": "human"
     }
   ]
 }
