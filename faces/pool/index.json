@@ -365,6 +365,13 @@
       "kind": "human"
     },
     {
+      "id": "f-young-latino-3",
+      "gender": "female",
+      "age": "young",
+      "look": "latino",
+      "kind": "human"
+    },
+    {
       "id": "f-young-middle-eastern-3",
       "gender": "female",
       "age": "young",
@@ -704,6 +711,20 @@
       "id": "f-senior-animal-2",
       "gender": "female",
       "age": "senior",
+      "look": "animal",
+      "kind": "animal"
+    },
+    {
+      "id": "m-young-animal-3",
+      "gender": "male",
+      "age": "young",
+      "look": "animal",
+      "kind": "animal"
+    },
+    {
+      "id": "f-young-animal-3",
+      "gender": "female",
+      "age": "young",
       "look": "animal",
       "kind": "animal"
     }
