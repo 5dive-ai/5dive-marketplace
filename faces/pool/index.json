@@ -692,6 +692,20 @@
       "age": "mid",
       "look": "robot",
       "kind": "robot"
+    },
+    {
+      "id": "m-senior-animal-2",
+      "gender": "male",
+      "age": "senior",
+      "look": "animal",
+      "kind": "animal"
+    },
+    {
+      "id": "f-senior-animal-2",
+      "gender": "female",
+      "age": "senior",
+      "look": "animal",
+      "kind": "animal"
     }
   ]
 }
