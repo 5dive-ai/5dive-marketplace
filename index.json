@@ -90,7 +90,8 @@
       "skills": [
         "code-review",
         "security-review",
-        "claude-api"
+        "claude-api",
+        "security-audit"
       ],
       "skillsBundled": true,
       "rarity": "legendary",
