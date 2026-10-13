@@ -729,7 +729,8 @@
       "includesMemory": true,
       "skills": [
         "diagnose",
-        "security-review"
+        "security-review",
+        "security-audit"
       ],
       "skillsBundled": true,
       "rarity": "common",
@@ -899,7 +900,8 @@
       "skills": [
         "runbook",
         "incident-response",
-        "self-host"
+        "self-host",
+        "security-audit"
       ],
       "skillsBundled": true,
       "rarity": "epic",

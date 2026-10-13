@@ -15,7 +15,8 @@
   "skills": [
     "runbook",
     "incident-response",
-    "self-host"
+    "self-host",
+    "security-audit"
   ],
   "hooks": {},
   "avatar": null,
