@@ -454,6 +454,48 @@
       "age": "mid",
       "look": "alien",
       "kind": "alien"
+    },
+    {
+      "id": "m-senior-fantasy-1",
+      "gender": "male",
+      "age": "senior",
+      "look": "fantasy",
+      "kind": "fantasy"
+    },
+    {
+      "id": "f-young-fantasy-1",
+      "gender": "female",
+      "age": "young",
+      "look": "fantasy",
+      "kind": "fantasy"
+    },
+    {
+      "id": "m-young-animal-2",
+      "gender": "male",
+      "age": "young",
+      "look": "animal",
+      "kind": "animal"
+    },
+    {
+      "id": "f-mid-animal-2",
+      "gender": "female",
+      "age": "mid",
+      "look": "animal",
+      "kind": "animal"
+    },
+    {
+      "id": "m-mid-animal-3",
+      "gender": "male",
+      "age": "mid",
+      "look": "animal",
+      "kind": "animal"
+    },
+    {
+      "id": "f-young-animal-2",
+      "gender": "female",
+      "age": "young",
+      "look": "animal",
+      "kind": "animal"
     }
   ]
 }
