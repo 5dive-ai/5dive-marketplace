@@ -496,6 +496,48 @@
       "age": "young",
       "look": "animal",
       "kind": "animal"
+    },
+    {
+      "id": "f-senior-white-3",
+      "gender": "female",
+      "age": "senior",
+      "look": "white",
+      "kind": "human"
+    },
+    {
+      "id": "f-senior-black-3",
+      "gender": "female",
+      "age": "senior",
+      "look": "black",
+      "kind": "human"
+    },
+    {
+      "id": "f-senior-east-asian-3",
+      "gender": "female",
+      "age": "senior",
+      "look": "east-asian",
+      "kind": "human"
+    },
+    {
+      "id": "f-senior-south-asian-3",
+      "gender": "female",
+      "age": "senior",
+      "look": "south-asian",
+      "kind": "human"
+    },
+    {
+      "id": "f-senior-latino-3",
+      "gender": "female",
+      "age": "senior",
+      "look": "latino",
+      "kind": "human"
+    },
+    {
+      "id": "f-senior-middle-eastern-3",
+      "gender": "female",
+      "age": "senior",
+      "look": "middle-eastern",
+      "kind": "human"
     }
   ]
 }
