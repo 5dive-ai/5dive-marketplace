@@ -150,6 +150,22 @@ jobs:
           bad = sorted(set(ids) ^ set(files)) + [i for i in set(ids) if ids.count(i) > 1]
           print(f"{len(ids)} indexed, {len(files)} files"); sys.exit(f"mismatch: {bad}" if bad else 0)
           PY
+      # The OpenAgent wizard's shuffle pool (DIVE-6139): the same two rules, but the face
+      # detector only runs on kind=human, since it cannot see a robot, a fox or an alien.
+      - name: faces/pool/index.json matches faces/pool/*.png, humans framed
+        run: |
+          python - <<'PY'
+          import json, os, subprocess, sys
+          faces = json.load(open("faces/pool/index.json"))["faces"]
+          ids = [f["id"] for f in faces]
+          files = sorted(f[:-4] for f in os.listdir("faces/pool") if f.endswith(".png"))
+          bad = sorted(set(ids) ^ set(files)) + [i for i in set(ids) if ids.count(i) > 1]
+          bad += [f["id"] for f in faces if f.get("kind") not in ("human", "robot", "animal", "alien", "fantasy")]
+          humans = [f"faces/pool/{f['id']}.png" for f in faces if f.get("kind") == "human"]
+          print(f"{len(ids)} indexed, {len(files)} files, {len(humans)} human")
+          if bad: sys.exit(f"mismatch: {bad}")
+          sys.exit(subprocess.call([sys.executable, "scripts/check-portraits.py", *humans]))
+          PY
       # The mutation arms: planted off-ratio, off-centre, non-square, tiny and
       # faceless avatars must each be refused, or the check above proves nothing.
       - name: check-portraits mutation arms
