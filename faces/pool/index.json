@@ -727,6 +727,34 @@
       "age": "young",
       "look": "animal",
       "kind": "animal"
+    },
+    {
+      "id": "m-mid-animal-4",
+      "gender": "male",
+      "age": "mid",
+      "look": "animal",
+      "kind": "animal"
+    },
+    {
+      "id": "f-mid-fantasy-2",
+      "gender": "female",
+      "age": "mid",
+      "look": "fantasy",
+      "kind": "fantasy"
+    },
+    {
+      "id": "m-mid-fantasy-1",
+      "gender": "male",
+      "age": "mid",
+      "look": "fantasy",
+      "kind": "fantasy"
+    },
+    {
+      "id": "m-young-robot-2",
+      "gender": "male",
+      "age": "young",
+      "look": "robot",
+      "kind": "robot"
     }
   ]
 }
