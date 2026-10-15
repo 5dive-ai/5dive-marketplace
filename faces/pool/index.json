@@ -755,6 +755,174 @@
       "age": "young",
       "look": "robot",
       "kind": "robot"
+    },
+    {
+      "id": "f-young-anime-1",
+      "gender": "female",
+      "age": "young",
+      "look": "anime",
+      "kind": "anime"
+    },
+    {
+      "id": "f-young-anime-2",
+      "gender": "female",
+      "age": "young",
+      "look": "anime",
+      "kind": "anime"
+    },
+    {
+      "id": "f-young-anime-3",
+      "gender": "female",
+      "age": "young",
+      "look": "anime",
+      "kind": "anime"
+    },
+    {
+      "id": "f-young-anime-4",
+      "gender": "female",
+      "age": "young",
+      "look": "anime",
+      "kind": "anime"
+    },
+    {
+      "id": "f-mid-anime-1",
+      "gender": "female",
+      "age": "mid",
+      "look": "anime",
+      "kind": "anime"
+    },
+    {
+      "id": "f-mid-anime-2",
+      "gender": "female",
+      "age": "mid",
+      "look": "anime",
+      "kind": "anime"
+    },
+    {
+      "id": "f-mid-anime-3",
+      "gender": "female",
+      "age": "mid",
+      "look": "anime",
+      "kind": "anime"
+    },
+    {
+      "id": "f-mid-anime-4",
+      "gender": "female",
+      "age": "mid",
+      "look": "anime",
+      "kind": "anime"
+    },
+    {
+      "id": "f-senior-anime-1",
+      "gender": "female",
+      "age": "senior",
+      "look": "anime",
+      "kind": "anime"
+    },
+    {
+      "id": "f-senior-anime-2",
+      "gender": "female",
+      "age": "senior",
+      "look": "anime",
+      "kind": "anime"
+    },
+    {
+      "id": "f-senior-anime-3",
+      "gender": "female",
+      "age": "senior",
+      "look": "anime",
+      "kind": "anime"
+    },
+    {
+      "id": "f-senior-anime-4",
+      "gender": "female",
+      "age": "senior",
+      "look": "anime",
+      "kind": "anime"
+    },
+    {
+      "id": "m-young-anime-1",
+      "gender": "male",
+      "age": "young",
+      "look": "anime",
+      "kind": "anime"
+    },
+    {
+      "id": "m-young-anime-2",
+      "gender": "male",
+      "age": "young",
+      "look": "anime",
+      "kind": "anime"
+    },
+    {
+      "id": "m-young-anime-3",
+      "gender": "male",
+      "age": "young",
+      "look": "anime",
+      "kind": "anime"
+    },
+    {
+      "id": "m-young-anime-4",
+      "gender": "male",
+      "age": "young",
+      "look": "anime",
+      "kind": "anime"
+    },
+    {
+      "id": "m-mid-anime-1",
+      "gender": "male",
+      "age": "mid",
+      "look": "anime",
+      "kind": "anime"
+    },
+    {
+      "id": "m-mid-anime-2",
+      "gender": "male",
+      "age": "mid",
+      "look": "anime",
+      "kind": "anime"
+    },
+    {
+      "id": "m-mid-anime-3",
+      "gender": "male",
+      "age": "mid",
+      "look": "anime",
+      "kind": "anime"
+    },
+    {
+      "id": "m-mid-anime-4",
+      "gender": "male",
+      "age": "mid",
+      "look": "anime",
+      "kind": "anime"
+    },
+    {
+      "id": "m-senior-anime-1",
+      "gender": "male",
+      "age": "senior",
+      "look": "anime",
+      "kind": "anime"
+    },
+    {
+      "id": "m-senior-anime-2",
+      "gender": "male",
+      "age": "senior",
+      "look": "anime",
+      "kind": "anime"
+    },
+    {
+      "id": "m-senior-anime-3",
+      "gender": "male",
+      "age": "senior",
+      "look": "anime",
+      "kind": "anime"
+    },
+    {
+      "id": "m-senior-anime-4",
+      "gender": "male",
+      "age": "senior",
+      "look": "anime",
+      "kind": "anime"
     }
   ]
 }
