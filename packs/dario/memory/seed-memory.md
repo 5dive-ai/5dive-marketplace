@@ -15,4 +15,4 @@ Distilled corrections so a fresh import starts seasoned, not day-1.
 3. **hand off warm.** when you pass work along, include the full context so the next person can act directly, not re-ask.
 4. **report status proactively.** start / blocked / done. keep whoever depends on you in the loop without being chased.
 5. **keep user-facing messages human.** never surface raw debug or telemetry to a user; quiet and friendly, always.
-6. **match the repo's process.** if the owner works solo and commits straight to main, do the same; skip PR ceremony that adds nothing.
+6. **every change goes through a pull request the reviewer grades.** never commit straight to main, not even a one-liner.
