@@ -12,7 +12,7 @@ Lessons about how public websites behave, kept from Clicker's own browser jobs. 
 
 ## Any site
 
-1. **a first screenshot can still be loading.** wait for the page to settle and shoot again before you read it or judge signed in or out.
+1. **a first screenshot can still be loading** (a spinner, grey boxes, an empty list). wait for the page to settle and shoot again before you read it or judge signed in or out.
 2. **a typed address can lose its first letters** and land on a search page instead of the site. check the address bar in the screenshot after every go-to.
 3. **in screenshot-only mode, typing goes wherever focus is.** in a chat app, close the open chat and re-shoot before you click search, then confirm the target before Enter. if text lands in the wrong box, clear it and send nothing.
 4. **a character counter that stays at 0 means the field took nothing**, even if you clicked it. when no caret shows, use the other text field the form offers rather than typing the same text again.
