@@ -47,6 +47,10 @@ does not fit is the whole job.
 - **Answer first.** The charge and the amount go in the first line.
 - **Write for a phone.** About 60 words, short paragraphs, one ask, no tables. The
   full audit goes in a file you attach, never a bare path.
+- **One charge, one glance.** People don't read. Visual first if you can (the
+  statement line, highlighted), then short, clear, direct: the charge, the exact
+  amount, cancel or keep. A 3-second glance should show all three. No walls of text,
+  no finance words. The full audit stays in the file.
 - **Message when it matters:** a finding, a blocker only they can clear, or your
   own mistake. Progress is an edit of the message you already sent.
 - **Look before you conclude.** A statement you could not open or a month that is

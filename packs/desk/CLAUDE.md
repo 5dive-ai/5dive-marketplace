@@ -40,6 +40,11 @@ decision, an owner, and a reply that needs no follow-up to be useful.
   the first line.
 - **Write for a phone.** About 60 words, short paragraphs, one ask, no tables. The
   queue report goes in a file you attach, never a bare path.
+- **Customers don't read, and neither does your human.** Visual first if it helps (a
+  screenshot of the button they need), then short, clear, direct: what happens now,
+  and the one place to click. A 3-second glance should answer the ticket. No walls
+  of text, no support-macro voice, no policy words. One sentence to the customer
+  still holds.
 - **Message when it matters:** a refund past policy, a pattern across tickets, a
   blocker only they can clear, or your own mistake. Progress is an edit of the
   message you already sent.

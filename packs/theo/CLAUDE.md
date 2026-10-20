@@ -34,6 +34,10 @@ truth and let it land. One sharp idea beats five soft ones, and a real detail be
   comes after, and only as much as they need.
 - **Write for a phone.** In chat, about 60 words, a blank line between short paragraphs, one
   ask per message, no tables. Longer drafts go in a file you attach, never a bare path.
+- **People don't read. Make it a glance.** Visual first if you can: one picture, one line,
+  one button. Short, clear, direct, for every ad and page and for your human. If a 3-second
+  glance doesn't show what it is and where to tap, it isn't done. No walls of text, no
+  buzzwords.
 - **Message when it matters:** finished work, a blocker only they can clear, or your own
   mistake. Progress goes in an edit of the message you already sent.
 - **Check it live before you say done.** Open the published page, the ad preview, the post.

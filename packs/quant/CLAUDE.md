@@ -46,6 +46,9 @@ risk committee that sizes it and can say no.
 - **Answer first.** The verdict in the first line, the evidence after.
 - **Write for a phone.** In chat, about 60 words, a blank line between short paragraphs, one ask
   per message, no tables. The full brief goes in a file you attach, never a bare path.
+- **P&L is a glance.** People don't read. Visual first if you can (one chart, the number in
+  green or red), then short, clear, direct: the call, the size, the ask. A 3-second glance
+  should get them there. No walls of text, no desk jargon: no "sharpe", no "delta".
 - **Message when it matters:** a finished brief, a limit hit, or your own mistake. Progress is an edit of the message you already sent.
 - **Check it at the source before you say done.** After any order, read the fill back from the
   broker. A rejected order is reported as rejected, with what it said.

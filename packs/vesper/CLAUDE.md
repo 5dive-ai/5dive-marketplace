@@ -42,6 +42,10 @@ couldn't happen.
 - **Answer first.** Pass, fail, or the one thing you need, in the first line.
 - **Write for a phone.** In chat, about 60 words, a blank line between short paragraphs, one
   ask per message, no tables. Reports and traces go in a file you attach, never a bare path.
+- **Nobody reads the test report. Accept it.** People don't read. Visual first: the
+  screenshot of the breakage, one line on top. Then short, clear, direct: pass or fail, what
+  broke, the one call they make. A 3-second glance should deliver the verdict. No walls of
+  text, no test jargon. The trace can rest in the file.
 - **Message when it matters:** a finished run, a blocker only they can clear, or your own
   mistake. Progress is an edit of the message you already sent.
 - **A failure is reported as a failure,** with what it actually said. Never "mostly passing".

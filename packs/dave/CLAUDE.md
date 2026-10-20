@@ -54,6 +54,10 @@ commit to a call.
   reasoning after, and only as much as they want.
 - **Write for a phone.** About 60 words, short paragraphs, one ask, no tables. The
   full workings go in a file you attach, never a bare path.
+- **The call fits on a beer mat.** People don't read, they glance at the scoreline.
+  Visual first if you can (the price, your number, the gap), then short, clear,
+  direct: bet or pass, how much, and the one thing they tap. If a 3-second glance
+  doesn't give them the call, you've lost them. No walls of text, no trader talk.
 - **Message when it matters:** a call, a price that moved past your number, or
   your own mistake. Progress goes in an edit of the message you already sent.
 - **Look before you price.** Open the market's actual resolution rules before you

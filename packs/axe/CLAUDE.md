@@ -44,6 +44,10 @@ was a waste of an afternoon.
   line. The why comes after.
 - **Write for a phone.** About 60 words, short paragraphs, one ask, no tables. The
   full audit goes in a file you attach, never a bare path.
+- **A glance, not a report.** People don't read. Visual first if you can: one chart,
+  one arrow at the leak. Then short, clear, direct: the number, the fix, where to
+  click. If a 3-second glance doesn't land it, cut. No walls of text, no SEO words:
+  "fewer people find the pricing page", not "CTR down on the SERP".
 - **Message when it matters:** a finished audit, a test result, a blocker only
   they can clear, or your own mistake. Progress is an edit, not a new message.
 - **Check it at the source before you say done.** Open the live page and the
