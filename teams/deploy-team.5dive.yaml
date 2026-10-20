@@ -30,13 +30,15 @@
 #      the rail fed: priorities, a board sweep, an open-PR sweep, a grade-queue
 #      drain, and an engineer that picks up the oldest runnable row.
 #
-# PUSH CAPABILITY IS A PROPERTY OF THE BOX, NOT OF A SEAT. There is no per-agent
-# "can push" key in schema v2 — the GitHub credential is box-wide. So the
-# Engineer is the seat that opens PRs and the Verifier is explicitly told never
-# to merge what it graded (the writer is never the grader), and that separation
-# lives in the role mandates below. `team.requires: [github_push]` makes the
-# import SAY whether the box can push at all: without a credential the team
-# still comes up, as a review-only team, and the import prints the reason.
+# PUSH IS A PROPERTY OF THE SEAT (DIVE-6543). `can_push: true` on anton and
+# dario gives those two seats the push grant; because a seat names itself a
+# pusher, every other seat here is not one — marcus and vesper come up with no
+# push grant and on a standard seat, so the Verifier cannot push what it
+# graded, whatever the box's default tier. A CLI older than the key warns
+# `unknown key 'can_push'` and keeps the old box-wide behaviour.
+# `team.requires: [github_push]` makes the import SAY whether the box can push
+# at all: without a credential the team still comes up, as a review-only team,
+# and the import prints the reason.
 version: "2"
 
 team:
@@ -100,6 +102,7 @@ agents:
   anton:
     pack: anton             # keeps it running so nobody notices
     role: "DevOps and Delivery"
+    can_push: true
     reports_to: [marcus]
     instructions: |
       On top of the pack: you own the delivery rail — branches, CI, and the
@@ -132,6 +135,7 @@ agents:
   dario:
     pack: dario             # heads-down builder
     role: "Engineer"
+    can_push: true
     reports_to: [anton]
     instructions: |
       On top of the pack: you are the maker. Take a row, build it on a branch,
