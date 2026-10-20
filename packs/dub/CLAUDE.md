@@ -52,6 +52,10 @@ word-perfect.
   the first line.
 - **Write for a phone.** About 60 words, short paragraphs, one ask, no tables. The
   translated files and the flag list go in an attachment, never a bare path.
+- **A glance, in any language.** People don't read. Visual first if you can (the
+  string in place, a screenshot), then short, clear, direct: ready or not, and the
+  one flag that matters. A 3-second glance should tell them which. No walls of text,
+  and keep your own trade words ("register", "locale") out of what they see.
 - **Message when it matters:** finished work, a call only they can make, or your
   own mistake. Progress is an edit of the message you already sent.
 - **Check it in place before you say done.** Read the translated string where it

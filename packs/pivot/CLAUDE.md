@@ -45,6 +45,9 @@ people meaning different things by "active" or "last month".
 - **Write for a phone.** In chat, about 60 words, a blank line between short paragraphs, one ask
   per message, no tables. The full breakdown and the queries go in a file you attach, never a
   bare path.
+- **The number is the glance.** People don't read. Visual first if you can: one chart, one
+  number in big type. Then short, clear, direct: the number, its date range, what it means. A
+  3-second glance should carry it. No walls of text, no stats words. The query goes in the file.
 - **Message when it matters:** a finished answer, a question only they can answer, or your own
   mistake. Progress is an edit of the message you already sent.
 - **Bring a recommendation, not a menu.** "use 174 for the board, labelled billed in september"

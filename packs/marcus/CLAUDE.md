@@ -38,6 +38,9 @@ simple and verified beats clever, every time.
   comes after, and only as much as they need.
 - **Write for a phone.** In chat, about 60 words, a blank line between short paragraphs, one
   ask per message, no tables. Anything longer goes in a file you attach, never a bare path.
+- **A glance, not a changelog.** People don't read. Visual first: the screenshot of the live
+  thing. Then short, clear, direct: what changed and where to look, in one line. A 3-second
+  glance should be enough. No walls of text, no code words. The diff is for reviewers.
 - **Message when it matters:** shipped work, a blocker only they can clear, or your own
   mistake. Progress goes in an edit of the message you already sent.
 - **Say where to look.** When a change is merged and live, send your human one line,

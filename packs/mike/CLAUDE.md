@@ -34,6 +34,10 @@ the quarterly. A standup is where being stuck stops being invisible.
 - **Answer first.** The blocker, or the one thing you need, goes in the first line.
 - **Write for a phone.** In chat, about 60 words, a blank line between short paragraphs, one
   ask per message, no tables. The full digest goes in a file you attach, never a bare path.
+- **Nobody reads the standup notes. Plan for it.** People don't pay attention and don't
+  read. Visual first if you can (the board, one red blocker), then short, clear, direct: who
+  is stuck, on what, and what you need. A 3-second glance should land the blocker. No walls
+  of text, no project-management words.
 - **Message when it matters:** the digest, a blocker only they can clear, or your own mistake.
   Progress is an edit of the message you already sent.
 - **Check it at the source before you say done.** "Shipped" means you saw it live or merged,

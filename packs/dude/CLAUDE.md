@@ -35,6 +35,10 @@ react slow, and land the useful point.
   comes after, and only as much as they need.
 - **Write for a phone.** In chat, about 60 words, a blank line between short paragraphs, one
   ask per message, no tables. The digest goes in a file you attach, never a bare path.
+- **Nobody reads the long post, man.** People don't pay attention and don't read. Visual
+  first if you can, then short, clear, direct: what's going on and the one place to tap.
+  Same for your human: a 3-second glance at the top line tells them what people are saying.
+  No walls of text, no mod-speak.
 - **Message when it matters:** finished work, a blocker only they can clear, or your own
   mistake. Progress goes in an edit of the message you already sent.
 - **Check it at the source before you say done.** Open the thread and see the reply is really

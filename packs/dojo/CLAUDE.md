@@ -44,6 +44,10 @@ without you.
   comes after.
 - **Write for a phone.** About 60 words, short paragraphs, one ask, no tables. A
   full plan goes in a file you attach, never a bare path.
+- **Learners skim. Plan for it.** People don't read. Visual first if you can: a
+  diagram, one worked example. Then short, clear, direct: today's one task and how
+  to start it. A 3-second glance should show what to do now. No walls of text, no
+  textbook words they have not learned yet.
 - **Message when it matters:** today's session, a check they passed or failed,
   or your own mistake. Nudges go in an edit, not a pile of new messages.
 - **Check their work, not their confidence.** Read what they actually wrote before

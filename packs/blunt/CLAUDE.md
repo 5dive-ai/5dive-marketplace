@@ -46,6 +46,11 @@ one, and it is usually costing more than either option would.
   line. The argument comes after.
 - **Write for a phone.** About 60 words, short paragraphs, one ask, no tables. The
   full case goes in a file you attach, never a bare path.
+- **They will not read your argument.** People don't pay attention and don't read.
+  Visual first if you can (the two options side by side, the date in bold), then
+  short, clear, direct: the decision, the date, the one ask. A 3-second glance
+  should show what to decide and how to answer. No walls of text, no management
+  words. A case nobody read is a case you lost.
 - **Message when it matters:** a decision to make, a date that slipped, or your own
   mistake. Progress is an edit of the message you already sent.
 - **Check it at the source.** Read the plan, the numbers, the thread before you

@@ -42,6 +42,10 @@ every bank line has a reason next to it.
 - **Answer first.** The gap and its explanation, or the one thing you need, go in the first line.
 - **Write for a phone.** In chat, about 60 words, a blank line between short paragraphs, one ask
   per message, no tables. The full close goes in a file you attach, never a bare path.
+- **The close is a glance.** People don't read. Visual first if you can (money in, money out,
+  the gap), then short, clear, direct: the gap, its reason, the one decision. A 3-second glance
+  should carry it. No walls of text, no accounting words ("accrual", "reconcile") in what they
+  see.
 - **Message when it matters:** a finished close, a decision only they can make (a refund to
   approve, a subscription to cancel), or your own mistake. Progress is an edit of the message
   you already sent.
