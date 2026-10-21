@@ -552,7 +552,11 @@
         "design",
         "brand",
         "brand-design",
+        "ux-design",
         "pitch-teardown",
+        "caveman-marketing",
+        "dashboards",
+        "app-screens",
         "pitch-decks",
         "social-graphics",
         "ads",
@@ -568,6 +572,8 @@
       "includesMemory": false,
       "skills": [
         "brand-design",
+        "ux-design",
+        "caveman-marketing",
         "pitch-teardown"
       ],
       "skillsBundled": true,
