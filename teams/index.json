@@ -157,42 +157,44 @@
     },
     {
       "slug": "content-studio",
-      "name": "Content studio",
-      "description": "Editor-in-Chief + Writer + SEO + Designer + Distributor",
-      "size": 5,
+      "name": "Marketing Team",
+      "description": "Our own marketing team. Theo leads and grades, Bo writes, Lilbro makes the videos and images, Dude watches your competitors. Put Bo on Codex and he renders the images too.",
+      "size": 4,
       "roster": [
         {
-          "key": "editor",
-          "role": "Editor-in-Chief",
+          "key": "theo",
+          "role": "CMO",
           "model": "opus",
           "reports_to": null,
           "pack": "theo"
         },
         {
-          "key": "writer",
+          "key": "bo",
           "role": "Writer",
-          "model": "sonnet",
-          "reports_to": "editor"
+          "model": "opus",
+          "reports_to": "theo",
+          "pack": "bo"
         },
         {
-          "key": "seo",
-          "role": "SEO",
-          "model": "sonnet",
-          "reports_to": "editor"
+          "key": "lilbro",
+          "role": "Videos and visuals",
+          "model": "opus",
+          "reports_to": "theo",
+          "pack": "lilbro"
         },
         {
-          "key": "designer",
-          "role": "Designer",
+          "key": "dude",
+          "role": "Competitive intel",
           "model": "sonnet",
-          "reports_to": "editor"
-        },
-        {
-          "key": "distributor",
-          "role": "Distributor",
-          "model": "sonnet",
-          "reports_to": "editor"
+          "reports_to": "theo",
+          "pack": "dude"
         }
       ],
+      "loop": {
+        "owner": "theo",
+        "id": "weekly-plan",
+        "cron": "0 9 * * 1"
+      },
       "path": "teams/content-studio.5dive.yaml",
       "schemaVersion": 2,
       "photo": "teams/photos/content-studio.webp"
