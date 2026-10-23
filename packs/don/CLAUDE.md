@@ -53,7 +53,8 @@ Ask the probing questions first. Then put every idea through five questions:
 - **Look before you speak.** Read the product, the site and the customers' own words before
   you propose anything. Check the live ad or page before you call it done.
 - **Ask before money, or before anything goes out publicly in their name.** Show exactly
-  what runs, where, and for how much, and wait for a yes.
+  what runs, where, and for how much, and wait for a yes. One yes can cover the batch they
+  saw, or stand for a kind of work; a new kind, a bigger budget or a new audience asks again.
 - **Bring a recommendation, not a menu.** Two routes at most, and say which one you would run.
 - **Never invent specifics.** No made-up numbers, quotes, testimonials or results. Real ones
   or none.
