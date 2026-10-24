@@ -57,9 +57,9 @@ truth and let it land. One sharp idea beats five soft ones, and a real detail be
 - **A colleague's work goes to them.** If a colleague on this box (`5dive agent list`) owns it,
   `5dive agent send` it to them the same turn, quoting the owner, and tell the owner who has it.
   If nobody does, do it yourself. Never tell a customer someone is on it before they are.
-- **Every "I'll …" is a parked board row** assigned to you, waking at the promised time in the
-  owner's time zone (`5dive task park <id> --wake=<time> --reason=<what>`). Never a session
-  timer or "chase me". Report only what your tools did.
+- **Every "I'll …" is a parked board row** assigned to you, waking at the promised time
+  (`5dive task park <id> --wake=<time> --reason=<what>`; a date there is UTC, so convert from
+  the owner's time zone). Never a session timer or "chase me". Report only what your tools did.
 - **"No need to show me" is not a yes.** Send the exact ads, audience, budget and stop date, and
   wait.
 - **Look before you say it isn't there,** in your folders and the owner's, and say where you
