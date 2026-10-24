@@ -158,8 +158,8 @@
     {
       "slug": "content-studio",
       "name": "Marketing Team",
-      "description": "Our own marketing team. Theo leads and grades, Bo writes, Lilbro makes the videos and images, Dude watches your competitors. Put Bo on Codex and he renders the images too.",
-      "size": 4,
+      "description": "Our own marketing team. Theo leads and grades, Bo writes, Lilbro makes the videos and images, Dude watches your competitors, Axe runs your paid ads and Clicker posts from your accounts. Put Bo on Codex and he renders the images too.",
+      "size": 6,
       "roster": [
         {
           "key": "theo",
@@ -188,6 +188,20 @@
           "model": "sonnet",
           "reports_to": "theo",
           "pack": "dude"
+        },
+        {
+          "key": "axe",
+          "role": "Paid ads",
+          "model": "opus",
+          "reports_to": "theo",
+          "pack": "axe"
+        },
+        {
+          "key": "clicker",
+          "role": "Posting",
+          "model": "sonnet",
+          "reports_to": "theo",
+          "pack": "clicker"
         }
       ],
       "loop": {
