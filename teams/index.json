@@ -157,6 +157,50 @@
       "path": "teams/deploy-team.5dive.yaml",
       "schemaVersion": 2,
       "photo": "teams/photos/deploy-team.webp"
+    },
+    {
+      "slug": "trading-desk",
+      "name": "Trading Desk",
+      "description": "Research and backtest trading ideas with real fees, on paper, every week. Olivia sets the limits, Quant backtests, Dave spots mispriced odds, Ada checks the news. Paper only: no exchange keys, no live orders.",
+      "size": 4,
+      "roster": [
+        {
+          "key": "olivia",
+          "role": "CEO",
+          "model": "opus",
+          "reports_to": null,
+          "pack": "olivia"
+        },
+        {
+          "key": "quant",
+          "role": "Trader (paper)",
+          "model": "opus",
+          "reports_to": "olivia",
+          "pack": "quant"
+        },
+        {
+          "key": "dave",
+          "role": "Prediction-market research",
+          "model": "sonnet",
+          "reports_to": "olivia",
+          "pack": "dave"
+        },
+        {
+          "key": "ada",
+          "role": "Research",
+          "model": "sonnet",
+          "reports_to": "olivia",
+          "pack": "ada"
+        }
+      ],
+      "path": "teams/trading-desk.5dive.yaml",
+      "schemaVersion": 2,
+      "photo": "teams/photos/trading-desk.webp",
+      "loop": {
+        "owner": "olivia",
+        "id": "weekly-idea",
+        "cron": "0 9 * * 1"
+      }
     }
   ]
 }
