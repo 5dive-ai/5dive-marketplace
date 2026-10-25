@@ -246,7 +246,7 @@
         {
           "key": "dude",
           "role": "Crowd research",
-          "model": "sonnet",
+          "model": "haiku",
           "reports_to": "quant",
           "pack": "dude"
         },
