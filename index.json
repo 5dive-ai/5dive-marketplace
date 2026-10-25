@@ -1588,7 +1588,7 @@
         "form-filling"
       ],
       "skillsBundled": true,
-      "model": "sonnet",
+      "model": "haiku",
       "effort": "high",
       "rarity": "rare",
       "did": "did:key:z6MktkEt2sq4bt9fXvSW2ZLaKZiPD5c7jmXjhuYByFD62fGg",

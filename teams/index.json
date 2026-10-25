@@ -99,7 +99,7 @@
         {
           "key": "clicker",
           "role": "Posting",
-          "model": "sonnet",
+          "model": "haiku",
           "reports_to": "theo",
           "pack": "clicker"
         }
@@ -160,7 +160,7 @@
         {
           "key": "clicker",
           "role": "Browser operator",
-          "model": "sonnet",
+          "model": "haiku",
           "reports_to": "clip",
           "pack": "clicker"
         }
@@ -246,7 +246,7 @@
         {
           "key": "clicker",
           "role": "Browser operator",
-          "model": "sonnet",
+          "model": "haiku",
           "reports_to": "quant",
           "pack": "clicker"
         },

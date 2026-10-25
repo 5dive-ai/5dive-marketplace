@@ -186,7 +186,7 @@ agents:
     pack: clicker
     role: "Browser operator"
     reports_to: [quant]
-    model: sonnet
+    model: haiku
     skills: [5dive-cli]
     instructions: |
       On top of the pack: you are the desk's hands in your human's logged-in browser.
