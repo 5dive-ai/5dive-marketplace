@@ -49,7 +49,7 @@ agents:
 | `effort` | enum | `low\|medium\|high` → settings.json effortLevel. |
 | `reports_to` | string \| [string] | `name`(s) of this role's manager(s). Builds org-chart edges AND a generated "Reporting" block appended to instructions (who you answer to, who reports to you, reach them via `5dive agent send <name>`). Root role omits it. |
 | `loops` | [map] | Optional. Recurring work this role OWNS — see `loops:` below. Without it an imported team is a roster with nothing running (DIVE-4022). |
-| `goals` | [string] | Optional. Seeded into the shared task queue (`5dive task add --assignee=<name> --from=<manager>`) on first `up`, so the role starts with a backlog. |
+| `goals` | [string] | Optional. Seeded into the shared task queue (`5dive task add --assignee=<name> --from=<manager>`) on first `up`, so the role starts with a backlog. Each goal becomes a task title: one line, at most 200 characters, or it is not filed (`check-teams.sh` T10). Put the detail in `instructions:`. |
 
 ### Reporting-line semantics
 `reports_to` is the single source of org truth. From it the importer derives, per agent:
