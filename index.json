@@ -1240,7 +1240,8 @@
       "packFormat": 1,
       "includesMemory": false,
       "skills": [
-        "conversion-audit"
+        "conversion-audit",
+        "paid-ads"
       ],
       "skillsBundled": true,
       "rarity": "common",
