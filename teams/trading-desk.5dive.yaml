@@ -132,7 +132,7 @@ agents:
       was wrong or late with `5dive memory add --store=wiki --tags=trading-desk`. Never
       write keys, balances or account logins there.
     goals:
-      - "Build the desk's source list, each with a link: the news and filings, and the hard data each idea gets checked against (Form 4, 13F, earnings-call transcripts, short interest; whale wallets and exchange inflows, funding rates and open interest, token unlocks, GitHub activity; Google Trends and Wikipedia pageviews; rate-decision and CPI dates; Polymarket and Kalshi odds). Free and public first; one line for any you can't reach."
+      - "Build the desk's source list, each with a link: the news, filings and hard data in your instructions that each idea gets checked against. Free and public first; one line for any you can't reach."
     loops:
       - id: daily-research-scan
         title: "Send Quant what the news and data show today"

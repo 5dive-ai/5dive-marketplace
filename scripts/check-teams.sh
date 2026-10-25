@@ -108,5 +108,27 @@ alias_clash=$(jq -r '[.companies[] | .slug] as $s
   | unique | join(" ")' teams/index.json)
 t "T9 no alias is a live slug or claimed by two teams" "" "$alias_clash"
 
+# DIVE-6929: `team import` files each `goals:` entry as a task TITLE, and
+# `task add` refuses a title over 200 characters. The import only warns and
+# still ends errors=0, so the goal is simply never filed (Clip's money question
+# and Ada's source list were lost that way). A goal with a newline is lost the
+# same way: the CLI reads goals one per line, so it files as several rows.
+# Parsed with PyYAML, the parser the CLI itself uses, and measured in UTF-8
+# bytes: a box running bash under the C locale counts bytes, not characters.
+GOAL_MAX=200
+bad_goal=$(python3 - "$GOAL_MAX" teams/*.5dive.yaml <<'PY' 2>&1
+import sys, yaml
+limit = int(sys.argv[1])
+for path in sys.argv[2:]:
+    agents = (yaml.safe_load(open(path)) or {}).get("agents") or {}
+    for name, a in agents.items():
+        for i, g in enumerate((a or {}).get("goals") or []):
+            n = len(str(g).encode())
+            if n > limit or "\n" in str(g):
+                print(f"{path.split('/')[-1]}:{name}[{i}]({n}B{',newline' if chr(10) in str(g) else ''})", end=" ")
+PY
+) || bad_goal="parse-failed: $(tail -n1 <<<"$bad_goal")"
+t "T10 every goal is one line of at most ${GOAL_MAX} bytes, so team import can file it" "" "${bad_goal% }"
+
 printf '\n%d passed, %d failed\n' "$PASS" "$FAIL"
 [[ $FAIL -eq 0 ]]

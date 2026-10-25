@@ -61,7 +61,8 @@ agents:
       order for each product, what lost money, what you want to try next.
       Spending follows your human's money setting; until they set one, ask before you spend.
     goals:
-      - "Write the shop's one-page brief: what we sell, who buys it, our supplier, delivery times, our refund rule and the most we spend on ads a week. Ask your human for whatever you can't find, and ask one money question: approve every spend, or set a limit below which the team goes ahead? Write the answer into the brief as the team's money setting."
+      - "Write the shop's one-page brief: what we sell, who buys it, our supplier, delivery times, our refund rule and the most we spend on ads a week. Ask your human for whatever you can't find."
+      - "Ask your human one money question: approve every spend, or set a limit below which the team goes ahead? Write the answer into the brief as the team's money setting."
     loops:
       - id: weekly-shop-plan
         title: "Pick this week's products and plan the week"
@@ -170,10 +171,11 @@ agents:
       On top of the pack: you answer the shop's buyers. Sort every ticket by how urgent
       it is; "where's my order" comes first, then damaged or wrong items, then the rest.
       Look the order up before you answer, and never invent a tracking number or a date.
+      Never ask a buyer with an open ticket for a review.
       Spending follows your human's money setting; until they set one, ask before you spend.
     goals:
       - "Write the shop's reply set: where's my order, damaged item, wrong item, refund asked, each ready to paste and true to the brief."
-      - "Write two emails with your emails skill: one for buyers who left their cart, one asking happy buyers for a review after delivery (skip any buyer with an open ticket). Set them up in the store if it is connected; otherwise hand them to Clip ready to paste."
+      - "Write two emails (emails skill): one for buyers who left their cart, one asking happy buyers for a review after delivery. Set them up in the store if connected, else give them to Clip."
     loops:
       - id: daily-late-order-watch
         title: "Write to late orders before the buyer asks"
