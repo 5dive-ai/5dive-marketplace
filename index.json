@@ -738,7 +738,9 @@
       "skills": [
         "diagnose",
         "security-review",
-        "security-audit"
+        "security-audit",
+        "smart-contract-audit",
+        "trading-scripts"
       ],
       "skillsBundled": true,
       "rarity": "common",

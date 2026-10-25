@@ -219,8 +219,8 @@
     {
       "slug": "trading-desk",
       "name": "Trading Desk",
-      "description": "Find and backtest trading ideas with real fees, every week. Quant leads, Dave spots mispriced odds, Ada checks the news, Dude reads the crowd, Clicker works the browser.",
-      "size": 5,
+      "description": "Find and backtest trading ideas with real fees, every week. Quant leads, Dave spots mispriced odds, Ada checks the news, Dude reads the crowd, Clicker works the browser, Root the desk hacker audits contracts and writes scripts.",
+      "size": 6,
       "roster": [
         {
           "key": "quant",
@@ -256,6 +256,13 @@
           "model": "sonnet",
           "reports_to": "quant",
           "pack": "clicker"
+        },
+        {
+          "key": "root",
+          "role": "Desk hacker",
+          "model": "opus",
+          "reports_to": "quant",
+          "pack": "root"
         }
       ],
       "path": "teams/trading-desk.5dive.yaml",
