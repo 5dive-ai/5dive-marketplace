@@ -2,7 +2,7 @@
 #
 #   5dive team import deploy-team
 #
-# Like `5dive-team`, this template does NOT pin an account: the seats come up
+# Like the Marketing Team, this template does NOT pin an account: the seats come up
 # with `defer_auth: true` and you sign each in afterwards. That is what keeps a
 # one-tap import from the dashboard possible, where there is no shell to export
 # a profile in — an `auth_profile: "${TEAM_AUTH_PROFILE}"` default would make
@@ -10,8 +10,8 @@
 # nothing to bind here and SAYS so rather than passing silently.
 #
 # This is our own engineering subtree (`5dive org tree`), not an invented roster:
-# CTO -> Ops -> Engineer + Verifier, the same four packs the `5dive-team`
-# template already carries. What is new here is the LOOPS. A roster with no
+# CTO -> Ops -> Engineer + Verifier, the same four packs our own
+# org runs. What is new here is the LOOPS. A roster with no
 # recurring work sits idle until someone hand-creates it (DIVE-4022), and this
 # team's whole value is that it ships without being asked twice.
 #

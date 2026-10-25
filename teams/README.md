@@ -30,7 +30,10 @@ box on its next `5dive team ls`, with no release. That is the whole point.
 | `SCHEMA-v2.md` | the schema those templates are written against |
 | `photos/<slug>.webp` | the team's group photo, the card the Mini App and the dashboard show |
 
-Each `index.json` entry carries `path` and `schemaVersion`. `schemaVersion` must
+Each `index.json` entry carries `path` and `schemaVersion`. An entry may also
+carry `aliases`: old slugs of a renamed team (`marketing` keeps `content-studio`,
+DIVE-6898), so the apps still recognise a team a box imported under its old
+name. `team import` resolves only `slug`; an alias does not import. `schemaVersion` must
 equal the template's own `version:` line — the CLI **refuses** a template
 declaring a schema newer than it can read, naming the version, rather than
 half-parsing it into a roster missing whatever the new keys wired. That refusal
