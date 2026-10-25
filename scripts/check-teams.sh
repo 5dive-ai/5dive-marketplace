@@ -98,5 +98,15 @@ done < <(jq -r '.companies[]
 no_photo=$(jq -r '.companies[] | select((.photo // "") == "") | .slug' teams/index.json | sort | tr '\n' ' ')
 t "T8 every team in the index has a single lead who is a catalogue character, and a group photo" "" "$(echo ${no_lead}${no_photo})"
 
+# DIVE-6898: a renamed team keeps its old slug as an alias, so the apps still
+# recognise a team a box imported under that name. An alias that is also a
+# live slug, or that two entries both claim, would make one project key mean
+# two teams — the apps would draw the wrong card.
+alias_clash=$(jq -r '[.companies[] | .slug] as $s
+  | [.companies[] | (.aliases // [])[]] as $a
+  | ([$a[] | select(. as $x | $s | index($x))] + ($a | group_by(.) | map(select(length > 1) | .[0])))
+  | unique | join(" ")' teams/index.json)
+t "T9 no alias is a live slug or claimed by two teams" "" "$alias_clash"
+
 printf '\n%d passed, %d failed\n' "$PASS" "$FAIL"
 [[ $FAIL -eq 0 ]]

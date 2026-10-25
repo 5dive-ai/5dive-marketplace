@@ -14,8 +14,8 @@ wrapper that resolves a bundled template and runs `up`.
 version: "2"
 
 team:                      # NEW — template metadata (display + marketplace)
-  name: "Lean SaaS startup"
-  description: "5-role founding team: CEO + CMO + DevOps + Researcher + Creative"
+  name: "Startup Team"
+  description: "Founding team: CEO + CMO + CTO + Researcher + Creative"
   slug: startup            # used by `5dive team import startup`
   requires: [github_push]  # optional — capabilities this team needs from the BOX
 
@@ -212,12 +212,12 @@ brought up via `5dive agent import <slug>`, inheriting the pack's persona, skill
 and model/effort from the `5dive-ai/character-packs` registry. `reports_to`,
 `role`, `goals`, and an explicit `model`/`effort` override still apply on top.
 `channels`, `telegram_token`, `auth_profile`, `workdir`, `defer_auth` pass through.
-See the `5dive-team` template for a full company built this way.
+See the `startup` template for a full company built this way.
 
 ## Permission tiers are the importer's, not the template's (DIVE-4119)
 
-A template may carry a policy block its roles read — `distribution.channels` in
-the Distribution team is the shipped example. Everything in such a block is a
+A template may carry a policy block its roles read — a `distribution.channels`
+block was the example, in the Distribution team retired by DIVE-6898. Everything in such a block is a
 **default the importer edits**, at import time or later, and the roles read
 whatever the file says at the time they run. 5dive does not decide which
 surfaces a customer's team may act on, or which of them need a person.

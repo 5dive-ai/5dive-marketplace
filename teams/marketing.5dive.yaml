@@ -1,10 +1,12 @@
 # Marketing Team — our own marketing seats, the way deploy-team is our own
 # engineering seats (DIVE-6702; was "Content studio", DIVE-97/98).
 #
-#   5dive team import content-studio
+#   5dive team import marketing
 #
-# The slug stays `content-studio` so every existing link, import and fixture
-# keeps resolving; only the name and the roster changed. Theo leads, Bo writes,
+# The slug was `content-studio` until DIVE-6898 (lodar 10-25: "Content studio?
+# not marketing team?"). The index entry keeps `aliases: [content-studio]` so a
+# box that already imported it still shows its team in the app; `team import`
+# itself resolves only `slug`, so the old name no longer imports. Theo leads, Bo writes,
 # Lilbro makes everything visual, Dude watches the competition. DIVE-6851
 # (lodar 10-24): Axe runs the paid ads and Clicker posts from the accounts the
 # buyer logged into by hand, so the team reaches "posted" without a human
@@ -30,7 +32,7 @@ version: "2"
 team:
   name: "Marketing Team"
   description: "Our own marketing team. Theo leads and grades, Bo writes, Lilbro makes the videos and images, Dude watches your competitors, Axe runs your paid ads and Clicker posts from your accounts. Put Bo on Codex and he renders the images too."
-  slug: content-studio
+  slug: marketing
   capabilities:
     browser: optional     # Clicker posts through it; without it, Clicker hands the post back
 
