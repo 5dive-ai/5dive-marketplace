@@ -117,6 +117,64 @@
       ]
     },
     {
+      "slug": "dropshipping",
+      "name": "Dropshipping Team",
+      "description": "Finds products that sell, lists them, makes the ads and answers your buyers, every week. Clip runs the shop, Dude finds what sells, Pixel makes the pictures, Axe runs the ads, Desk answers buyers and Clicker places orders and posts. You approve anything that costs money.",
+      "size": 6,
+      "roster": [
+        {
+          "key": "clip",
+          "role": "Shop manager",
+          "model": "opus",
+          "reports_to": null,
+          "pack": "clip"
+        },
+        {
+          "key": "dude",
+          "role": "Product and competitor research",
+          "model": "sonnet",
+          "reports_to": "clip",
+          "pack": "dude"
+        },
+        {
+          "key": "pixel",
+          "role": "Designer",
+          "model": "sonnet",
+          "reports_to": "clip",
+          "pack": "pixel"
+        },
+        {
+          "key": "axe",
+          "role": "Ads and growth",
+          "model": "opus",
+          "reports_to": "clip",
+          "pack": "axe"
+        },
+        {
+          "key": "desk",
+          "role": "Customer support",
+          "model": "sonnet",
+          "reports_to": "clip",
+          "pack": "desk"
+        },
+        {
+          "key": "clicker",
+          "role": "Browser operator",
+          "model": "sonnet",
+          "reports_to": "clip",
+          "pack": "clicker"
+        }
+      ],
+      "path": "teams/dropshipping.5dive.yaml",
+      "schemaVersion": 2,
+      "photo": "teams/photos/dropshipping.webp",
+      "loop": {
+        "owner": "clip",
+        "id": "weekly-shop-plan",
+        "cron": "0 9 * * 1"
+      }
+    },
+    {
       "slug": "deploy-team",
       "name": "Deploy Team",
       "description": "Ships code on GitHub end to end: CTO, Ops, Engineer and Verifier, wired to the delivery rail — the maker opens the PR, the verifier grades it, ops merges.",
