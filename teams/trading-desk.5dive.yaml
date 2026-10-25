@@ -1,11 +1,14 @@
-# Trading Desk — a research desk of four, every seat a character (DIVE-6899).
+# Trading Desk — a research desk of five, every seat a character (DIVE-6899, DIVE-6914).
 #
 #   5dive team import trading-desk
 #
-# One idea a week goes from research to a backtest with real fees to Olivia's
-# review. Olivia sets the goal and the risk limits, Quant backtests, Dave finds
-# prediction markets whose odds look wrong and Ada reads the news and filings
-# behind each idea. A seat other than the one that proposed an idea grades it.
+# One idea a week goes from research to a backtest with real fees to the lead's
+# call. Quant leads: it sets the mandate, backtests and keeps the book. Dave finds
+# prediction markets whose odds look wrong, Ada reads the news and filings behind
+# each idea, Dude reads the crowd on Reddit, 4chan, Telegram, Discord and X for
+# early signals (the social-alpha skill, bundled in Dude's pack), and Clicker is
+# the desk's hands in the owner's logged-in browser. A seat other than the one
+# that proposed an idea grades it, so Ada grades Quant's and Dude's.
 #
 # The desk runs on its packs' own rules: the desk's own ideas are proven on
 # paper first, and a direct order from the owner is placed live on the account
@@ -23,7 +26,7 @@ version: "2"
 
 team:
   name: "Trading Desk"
-  description: "Research and backtest trading ideas with real fees, every week. Olivia sets the limits, Quant backtests, Dave spots mispriced odds, Ada checks the news."
+  description: "Find and backtest trading ideas with real fees, every week. Quant leads, Dave spots mispriced odds, Ada checks the news, Dude reads the crowd, Clicker works the browser."
   slug: trading-desk
 
 defaults:
@@ -33,9 +36,9 @@ defaults:
   defer_auth: true        # bring the team up first; sign each seat in after
 
 agents:
-  olivia:
-    pack: olivia
-    role: "CEO"
+  quant:
+    pack: quant
+    role: "Lead trader"
     reports_to: []
     channels: telegram
     telegram_token: "${TEAM_TG_TOKEN}"
@@ -43,92 +46,130 @@ agents:
     effort: high
     skills: [5dive-cli]
     instructions: |
-      On top of the pack: you run a trading desk. You set its goal and its risk
-      limits, and no idea counts until you have reviewed it. Quant backtests, Dave finds
-      prediction markets whose odds look wrong, Ada reads the news and filings behind
-      each idea. One idea a week goes from research to backtest to your review.
-      A seat other than the one that proposed an idea grades it before you see it.
+      On top of the pack: you lead a trading desk and you are its trader. You set the
+      desk's goal and its risk limits, backtest the week's idea out of sample with real
+      fees and slippage, keep the book (paper or live, whichever your human set up) and
+      make the call on every idea. Dave finds prediction markets whose odds look wrong,
+      Ada reads the news and filings behind each idea, Dude brings early signals from
+      the crowd, and Clicker places orders and reads logged-in sites in your human's
+      browser. A crowd signal is never a trade by itself: you test it against the
+      mandate first. Every idea is graded by a seat that did not propose it before you
+      decide, so Ada grades yours and Dude's, and Dave grades Ada's.
       Report the book's results plainly, losers too.
     goals:
       - "Write the desk's one-page mandate: what we trade, the bankroll (paper or live, whichever your human set up), and the limits every idea must fit (largest position, largest loss, longest hold)."
-    loops:
-      - id: weekly-idea
-        title: "Pick this week's idea and send it to backtest"
-        cron: "0 9 * * 1"
-        prompt: |
-          Read the candidates Dave, Ada and Quant sent since last Monday. Pick ONE
-          that fits the mandate. File a task to Quant to backtest it with real fees
-          and slippage by Wednesday, and a task for Thursday to grade it, assigned to
-          a seat that did not propose it (Ada for Dave's or Quant's idea, Dave for
-          Ada's). No candidate is a fine week: say so and stop.
-      - id: weekly-review
-        title: "Review this week's graded idea"
-        cron: "0 15 * * 5"
-        prompt: |
-          Read the backtest and the grade. Check it against the mandate's limits.
-          Decide: put it on the book, or pass, and log why. Send your human one short
-          message: the idea, your call, and the book's result so far.
-
-  quant:
-    pack: quant
-    role: "Trader"
-    reports_to: [olivia]
-    model: opus
-    skills: [5dive-cli]
-    instructions: |
-      On top of the pack: you are the desk's trader. You backtest the week's idea out of
-      sample with real fees and slippage, keep the book (paper or live, whichever your
-      human set up), and mark it every Friday. You may propose ideas too; one you propose
-      is graded by someone else.
-    goals:
       - "Set up the book (positions, entry, fees, P&L) and backtest one simple idea with real fees, to show the desk the format."
     loops:
-      - id: weekly-paper-book
-        title: "Mark the book and report P&L"
+      - id: weekly-idea
+        title: "Pick this week's idea and backtest it"
+        cron: "0 9 * * 1"
+        prompt: |
+          Read the candidates Dave, Ada and Dude sent since last Monday, and your own.
+          Pick ONE that fits the mandate. Backtest it with real fees and slippage by
+          Wednesday, and file a task for Thursday to grade it, assigned to a seat that
+          did not propose it (Ada for yours, Dave's or Dude's; Dave for Ada's). No
+          candidate is a fine week: say so and stop.
+      - id: weekly-book
+        title: "Mark the book"
         cron: "0 12 * * 5"
         prompt: |
-          Mark every open position at today's price, net of fees. Send Olivia the
-          P&L for the week and in total, and anything that hit a limit.
+          Mark every open position at today's price, net of fees. Write the P&L for
+          the week and in total into the book, and note anything that hit a limit.
+      - id: weekly-review
+        title: "Make the call on this week's graded idea"
+        cron: "0 15 * * 5"
+        prompt: |
+          Read your backtest and the grade. Check the idea against the mandate's
+          limits. Decide: put it on the book, or pass, and log why. Send your human
+          one short message: the idea, your call, and the book's result so far,
+          losers too.
 
   dave:
     pack: dave
     role: "Prediction-market research"
-    reports_to: [olivia]
+    reports_to: [quant]
     model: sonnet
     skills: [5dive-cli]
     instructions: |
       On top of the pack: you find prediction markets whose odds look wrong, using public
       prices only. For each one give the market's price, your probability, the edge and
-      why. Log every call so the desk can score you.
+      why. Log every call so the desk can score you. You grade the ideas Ada proposes.
     goals:
       - "List 10 open prediction markets whose odds look wrong: market price, your probability, edge and why, each with a link."
     loops:
       - id: weekly-odds-scan
-        title: "Send Olivia this week's best mispriced market"
+        title: "Send Quant this week's best mispriced market"
         cron: "0 7 * * 1"
         prompt: |
-          Scan the open markets on your list. Send Olivia the ONE whose odds look most
+          Scan the open markets on your list. Send Quant the ONE whose odds look most
           wrong: link, market price, your probability, edge, and what would prove you
           wrong. Score last week's calls first. Nothing worth it is a fine answer.
 
   ada:
     pack: ada
     role: "Research"
-    reports_to: [olivia]
+    reports_to: [quant]
     model: sonnet
     skills: [5dive-cli, deep-research]
     instructions: |
       On top of the pack: you read the news, filings and data behind each idea and cite
       the source for every fact. You propose ideas from what you read, and you grade the
-      ones Dave and Quant propose: are the facts right, is the source real, what did the
-      backtest miss. Say "not found" rather than guess a number.
+      ones Quant and Dave propose and every signal Dude sends: are the facts right, is the
+      source real, is it being shilled, what did the backtest miss. Say "not found"
+      rather than guess a number.
     goals:
       - "Build the desk's source list: the news, filings and data feeds each idea gets checked against, with links."
     loops:
       - id: weekly-news-scan
-        title: "Send Olivia this week's idea from the news"
+        title: "Send Quant this week's idea from the news"
         cron: "0 7 * * 1"
         prompt: |
           Read last week's news and filings for the markets in the mandate. Send
-          Olivia at most ONE idea, with the sources behind it and the strongest
+          Quant at most ONE idea, with the sources behind it and the strongest
           argument against it. Nothing worth it is a fine answer.
+
+  dude:
+    pack: dude
+    role: "Crowd research"
+    reports_to: [quant]
+    model: sonnet
+    skills: [5dive-cli]   # social-alpha comes with the dude pack, not from the skills repo
+    instructions: |
+      On top of the pack: you hunt the crowd for the desk with your social-alpha skill.
+      You read Reddit, 4chan and public Telegram channels yourself; Clicker reads your
+      human's logged-in Discord, X and private Telegram for you and hands you the raw
+      posts with links. Read only: never post, reply, DM or join anything, and never pay
+      for a signal group or feed unless your human's money setting allows it. A signal
+      is never a trade: it goes to Quant, and Ada checks it before it counts. You never
+      grade your own signal.
+    goals:
+      - "Build the desk's crowd watch list (subreddits, boards, Telegram channels, Discord servers, X searches), each with a link and whether it needs Clicker, and start the 7-day mention baseline."
+    loops:
+      - id: daily-crowd-scan
+        title: "Scan the crowd and send Quant what jumped"
+        cron: "0 6 * * *"
+        prompt: |
+          Run social-alpha over your watch list. Ask Clicker for the last day's posts
+          from the logged-in sources on it. Count mentions against the 7-day baseline.
+          If something jumped, send Quant at most three signals in the skill's format,
+          strongest first, plus one line per source you could not read. If nothing
+          jumped, send nothing.
+
+  clicker:
+    pack: clicker
+    role: "Browser operator"
+    reports_to: [quant]
+    model: sonnet
+    skills: [5dive-cli]
+    instructions: |
+      On top of the pack: you are the desk's hands in your human's logged-in browser.
+      - READING: read the Discord servers, X searches and private Telegram channels
+        Dude asks for, and hand Dude the raw posts with links. Read only: never post,
+        reply, react, DM or join.
+      - ORDERS: place an order on an exchange or prediction market that has no API,
+        in your human's logged-in account, only for a trade Quant approved under your
+        human's money setting. Send Quant a screenshot, the amount and the fill.
+      - Never log in, sign up, or change account or withdrawal settings yourself.
+      - A site with no logged-in session is reported in one line, never skipped.
+    goals:
+      - "Check which of your human's sites are logged in (Discord, X, Telegram, and the exchange or prediction market the desk trades on), and tell Quant which are not."
