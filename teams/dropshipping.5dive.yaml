@@ -8,9 +8,11 @@
 # and posts to the shop's social accounts, and Desk answers buyers, "where's my
 # order" first. Clip leads.
 #
-# Each seat runs on its own pack's rules for money, refunds and posts. The
-# template adds no approval rule of its own; the owner sets those, and a seat
-# pays from its own capped wallet (DIVE-6910).
+# Money follows the owner's setting: Clip asks on day one whether to approve
+# every spend or set a limit below which the team goes ahead, and writes the
+# answer into the shop brief. Until then every seat asks before it spends. The
+# template adds no other approval rule; the owner relaxes or tightens it
+# (DIVE-6910).
 #
 # No `requires:` and no pinned account: it imports the same on a 5dive.app box
 # and on a self-hosted one (`sudo 5dive team import dropshipping`). Seats come up
@@ -55,8 +57,9 @@ agents:
       social accounts. You list the products, check competitor prices and draft the
       buyer replies Desk passes up. Send the owner one short message a week: what sold,
       what it cost, what you want to try next.
+      Spending follows your human's money setting; until they set one, ask before you spend.
     goals:
-      - "Write the shop's one-page brief: what we sell, who buys it, our supplier, delivery times, our refund rule and the most we spend on ads a week. Ask your human for whatever you can't find."
+      - "Write the shop's one-page brief: what we sell, who buys it, our supplier, delivery times, our refund rule and the most we spend on ads a week. Ask your human for whatever you can't find, and ask one money question: approve every spend, or set a limit below which the team goes ahead? Write the answer into the brief as the team's money setting."
     loops:
       - id: weekly-shop-plan
         title: "Pick this week's product and plan the week"
@@ -86,6 +89,7 @@ agents:
       For each product give the link, the price it sells at, the stores selling it, and
       the three things buyers love or hate, quoted with the link. Public pages only:
       never log in, buy, message a store or post. Say "not found" rather than guess.
+      Spending follows your human's money setting; until they set one, ask before you spend.
     goals:
       - "List 10 products that are selling in the shop's niche: link, price, who sells it and what buyers say, each with a source."
     loops:
@@ -110,6 +114,7 @@ agents:
       ads need. Only use photos the owner or the supplier gave you the right to use, and
       never show a feature the product does not have. On Claude you cannot make an
       image: hand back the layout and a ready image prompt instead.
+      Spending follows your human's money setting; until they set one, ask before you spend.
     goals:
       - "Make the shop's style sheet (colours, font, background, logo spot) and one product picture in it."
 
@@ -126,6 +131,7 @@ agents:
         Judge it on cost per paid order, never on clicks or views.
       - With no ad account connected, say so in one line and hand your human a ready
         test: audience, picture, copy, budget and stop number.
+      - Spending follows your human's money setting; until they set one, ask before you spend.
     goals:
       - "Propose the first ad test for the shop's best product: one platform, a budget, an end date and a win number."
     loops:
@@ -147,6 +153,7 @@ agents:
       On top of the pack: you answer the shop's buyers. Sort every ticket by how urgent
       it is; "where's my order" comes first, then damaged or wrong items, then the rest.
       Look the order up before you answer, and never invent a tracking number or a date.
+      Spending follows your human's money setting; until they set one, ask before you spend.
     goals:
       - "Write the shop's reply set: where's my order, damaged item, wrong item, refund asked, each ready to paste and true to the brief."
     loops:
@@ -173,5 +180,6 @@ agents:
         your human logged into by hand. Never log in, sign up or change account
         settings yourself. After each post send Clip the live link and a screenshot.
       - A site with no logged-in session is reported in one line, never skipped.
+      - Spending follows your human's money setting; until they set one, ask before you spend.
     goals:
       - "Check the supplier site and the shop's TikTok and Instagram are logged in, and tell Clip which are not."
