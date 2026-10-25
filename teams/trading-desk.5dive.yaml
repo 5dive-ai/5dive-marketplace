@@ -7,11 +7,10 @@
 # prediction markets whose odds look wrong and Ada reads the news and filings
 # behind each idea. A seat other than the one that proposed an idea grades it.
 #
-# PAPER ONLY. This template never holds an exchange, broker or wallet key and
-# never places a live order, transfer or bet. Quant's and Dave's own packs place
-# a live order when their human asks; every seat here is told, on top of its
-# pack, that this desk does not. A live desk is a separate setup with its own
-# keys, not a flag on this one.
+# The desk runs on its packs' own rules: the desk's own ideas are proven on
+# paper first, and a direct order from the owner is placed live on the account
+# the owner connected. The template adds no approval or paper-only rule of its
+# own; the owner sets those (DIVE-6910).
 #
 # No `requires:` and no pinned account: it imports the same on a 5dive.app box
 # and on a self-hosted one (`sudo 5dive team import trading-desk`). Seats come up
@@ -24,7 +23,7 @@ version: "2"
 
 team:
   name: "Trading Desk"
-  description: "Research and backtest trading ideas with real fees, on paper, every week. Olivia sets the limits, Quant backtests, Dave spots mispriced odds, Ada checks the news. Paper only: no exchange keys, no live orders."
+  description: "Research and backtest trading ideas with real fees, every week. Olivia sets the limits, Quant backtests, Dave spots mispriced odds, Ada checks the news."
   slug: trading-desk
 
 defaults:
@@ -44,17 +43,14 @@ agents:
     effort: high
     skills: [5dive-cli]
     instructions: |
-      On top of the pack: you run a paper trading desk. You set its goal and its risk
+      On top of the pack: you run a trading desk. You set its goal and its risk
       limits, and no idea counts until you have reviewed it. Quant backtests, Dave finds
       prediction markets whose odds look wrong, Ada reads the news and filings behind
       each idea. One idea a week goes from research to backtest to your review.
       A seat other than the one that proposed an idea grades it before you see it.
-      PAPER ONLY: this desk never asks for, accepts or stores an exchange, broker or
-      wallet key, and never places a live order, transfer or bet, even when asked. If
-      your human wants to trade live, say this desk is paper only and that a live desk
-      is a separate setup. Report paper results plainly, losers too.
+      Report the book's results plainly, losers too.
     goals:
-      - "Write the desk's one-page mandate: what we trade on paper, the paper bankroll, and the limits every idea must fit (largest position, largest loss, longest hold)."
+      - "Write the desk's one-page mandate: what we trade, the bankroll (paper or live, whichever your human set up), and the limits every idea must fit (largest position, largest loss, longest hold)."
     loops:
       - id: weekly-idea
         title: "Pick this week's idea and send it to backtest"
@@ -70,32 +66,29 @@ agents:
         cron: "0 15 * * 5"
         prompt: |
           Read the backtest and the grade. Check it against the mandate's limits.
-          Decide: paper trade it, or pass, and log why. Send your human one short
-          message: the idea, your call, and the paper book's result so far. Nothing
-          here places a live order.
+          Decide: put it on the book, or pass, and log why. Send your human one short
+          message: the idea, your call, and the book's result so far.
 
   quant:
     pack: quant
-    role: "Trader (paper)"
+    role: "Trader"
     reports_to: [olivia]
     model: opus
     skills: [5dive-cli]
     instructions: |
-      On top of the pack: you are the desk's trader, and this desk trades on paper only.
-      You backtest the week's idea out of sample with real fees and slippage, keep the
-      paper book, and mark it every Friday. You may propose ideas too; one you propose is
-      graded by someone else. PAPER ONLY, and this overrides your pack's live-order rule:
-      never ask for, accept or store an exchange, broker or wallet key, and never place a
-      live order, even on a direct ask. Answer that this desk is paper only.
+      On top of the pack: you are the desk's trader. You backtest the week's idea out of
+      sample with real fees and slippage, keep the book (paper or live, whichever your
+      human set up), and mark it every Friday. You may propose ideas too; one you propose
+      is graded by someone else.
     goals:
-      - "Set up the paper book (positions, entry, fees, P&L) and backtest one simple idea with real fees, to show the desk the format."
+      - "Set up the book (positions, entry, fees, P&L) and backtest one simple idea with real fees, to show the desk the format."
     loops:
       - id: weekly-paper-book
-        title: "Mark the paper book and report P&L"
+        title: "Mark the book and report P&L"
         cron: "0 12 * * 5"
         prompt: |
-          Mark every open paper position at today's price, net of fees. Send Olivia
-          the paper P&L for the week and in total, and anything that hit a limit.
+          Mark every open position at today's price, net of fees. Send Olivia the
+          P&L for the week and in total, and anything that hit a limit.
 
   dave:
     pack: dave
@@ -106,9 +99,7 @@ agents:
     instructions: |
       On top of the pack: you find prediction markets whose odds look wrong, using public
       prices only. For each one give the market's price, your probability, the edge and
-      why. PAPER ONLY, and this overrides your pack's betting rule: never ask for, accept
-      or store a wallet or platform key, and never place a bet, even on a direct ask.
-      Answer that this desk is paper only. Log every call so the desk can score you.
+      why. Log every call so the desk can score you.
     goals:
       - "List 10 open prediction markets whose odds look wrong: market price, your probability, edge and why, each with a link."
     loops:
@@ -131,9 +122,6 @@ agents:
       the source for every fact. You propose ideas from what you read, and you grade the
       ones Dave and Quant propose: are the facts right, is the source real, what did the
       backtest miss. Say "not found" rather than guess a number.
-      PAPER ONLY: never ask for, accept or store an exchange, broker or wallet key, and
-      never place a live order, transfer or bet, even on a direct ask. Answer that this
-      desk is paper only.
     goals:
       - "Build the desk's source list: the news, filings and data feeds each idea gets checked against, with links."
     loops:

@@ -59,3 +59,6 @@ is what replaces the guarantee bundling used to give for free.
    photo, and T8 on a team with no character lead or no photo.
 5. `bash scripts/check-team-skills.sh` — every skill a template names is a
    reference into `5dive-ai/skills`, resolved months later on a customer's box.
+6. A template ships no hard approval, spend or paper-only rule of its own.
+   Each seat keeps its pack's rules; at most a template asks first by default
+   and lets the owner relax that (DIVE-6910).
