@@ -119,7 +119,7 @@
     {
       "slug": "dropshipping",
       "name": "Dropshipping Team",
-      "description": "Finds products that sell, lists them, makes the ads and answers your buyers, every week. Clip runs the shop, Dude finds what sells, Pixel makes the pictures, Axe runs the ads, Desk answers buyers and Clicker places orders and posts. You approve anything that costs money.",
+      "description": "Finds products that sell, lists them, makes the ads and answers your buyers, every week. Clip runs the shop, Dude finds what sells, Pixel makes the pictures, Axe runs the ads, Desk answers buyers and Clicker places orders and posts.",
       "size": 6,
       "roster": [
         {
@@ -219,7 +219,7 @@
     {
       "slug": "trading-desk",
       "name": "Trading Desk",
-      "description": "Research and backtest trading ideas with real fees, on paper, every week. Olivia sets the limits, Quant backtests, Dave spots mispriced odds, Ada checks the news. Paper only: no exchange keys, no live orders.",
+      "description": "Research and backtest trading ideas with real fees, every week. Olivia sets the limits, Quant backtests, Dave spots mispriced odds, Ada checks the news.",
       "size": 4,
       "roster": [
         {
@@ -231,7 +231,7 @@
         },
         {
           "key": "quant",
-          "role": "Trader (paper)",
+          "role": "Trader",
           "model": "opus",
           "reports_to": "olivia",
           "pack": "quant"
