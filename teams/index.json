@@ -219,8 +219,8 @@
     {
       "slug": "trading-desk",
       "name": "Trading Desk",
-      "description": "Find and backtest trading ideas with real fees, every week. Quant leads, Dave spots mispriced odds, Ada checks the news, Dude reads the crowd, Clicker works the browser, Root the desk hacker audits contracts and writes scripts.",
-      "size": 6,
+      "description": "Find and backtest trading ideas with real fees, every week. Quant leads, Ada checks the news, data and prediction-market odds, Dude reads the crowd, Clicker works the browser, Root the desk hacker audits contracts and writes scripts.",
+      "size": 5,
       "roster": [
         {
           "key": "quant",
@@ -228,13 +228,6 @@
           "model": "opus",
           "reports_to": null,
           "pack": "quant"
-        },
-        {
-          "key": "dave",
-          "role": "Prediction-market research",
-          "model": "sonnet",
-          "reports_to": "quant",
-          "pack": "dave"
         },
         {
           "key": "ada",
