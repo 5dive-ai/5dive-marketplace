@@ -3,10 +3,12 @@
 #   5dive team import dropshipping
 #
 # Every week: Dude finds products that are selling and what buyers say about
-# them, Clip lists the best one and checks competitor prices, Pixel makes the
-# product and ad pictures, Axe runs the ad test, Clicker places supplier orders
-# and posts to the shop's social accounts, and Desk answers buyers, "where's my
-# order" first. Clip leads.
+# them, Clip lists up to three and checks competitor prices, Pixel makes the
+# product and ad pictures, Axe plans an ad test for each and Clicker launches it
+# in the owner's ad account, Clicker also places supplier orders and posts to the
+# shop's social accounts, and Desk answers buyers, "where's my order" first, and
+# writes to late orders before they ask. Clip leads and reports profit per order
+# (DIVE-6911).
 #
 # Money follows the owner's setting: Clip asks on day one whether to approve
 # every spend or set a limit below which the team goes ahead, and writes the
@@ -53,29 +55,34 @@ agents:
     instructions: |
       On top of the pack: you run a small dropshipping shop and lead its team. Dude
       finds products and what buyers say about them, Pixel makes the pictures, Axe runs
-      the ads, Desk answers buyers and Clicker works the supplier site and the shop's
-      social accounts. You list the products, check competitor prices and draft the
-      buyer replies Desk passes up. Send the owner one short message a week: what sold,
-      what it cost, what you want to try next.
+      the ad tests, Desk answers buyers and Clicker works the supplier site, the ad
+      accounts and the shop's social accounts. You list the products, check competitor prices and draft the
+      buyer replies Desk passes up. Send the owner one short message a week: profit per
+      order for each product, what lost money, what you want to try next.
       Spending follows your human's money setting; until they set one, ask before you spend.
     goals:
       - "Write the shop's one-page brief: what we sell, who buys it, our supplier, delivery times, our refund rule and the most we spend on ads a week. Ask your human for whatever you can't find, and ask one money question: approve every spend, or set a limit below which the team goes ahead? Write the answer into the brief as the team's money setting."
     loops:
       - id: weekly-shop-plan
-        title: "Pick this week's product and plan the week"
+        title: "Pick this week's products and plan the week"
         cron: "0 9 * * 1"
         prompt: |
           Read Dude's product brief and last week's sales, ad results and tickets.
-          Pick at most ONE product to add or fix this week. Draft its listing and
-          price against five competitor listings (price the buyer actually pays,
-          with shipping). File Pixel the pictures and Axe the ad test.
+          Drop every product whose ad test reached its end date without hitting its
+          win number. Pick up to three new products to test this week. For each,
+          draft the listing and price it against five competitor listings (price the
+          buyer actually pays, with shipping). File Pixel the pictures and Axe one
+          small ad test per product: its own budget, end date and win number.
       - id: weekly-shop-report
         title: "Tell the owner how the week went"
         cron: "0 16 * * 5"
         prompt: |
-          Collect what sold, ad spend and its result, refunds asked for and open
-          tickets. Send your human one short message: the week in numbers, the one
-          thing that went wrong, and what you want to try next week.
+          Lead with profit per order, for each product: the price buyers paid, minus
+          supplier cost, shipping, ad spend, refunds and store and payment fees.
+          Name every product that loses money. Then refunds asked for and open
+          tickets. Send your human one short message: profit per order by product,
+          the one thing that went wrong, and what you want to try next week. Mark
+          any cost you could not find as unknown; never fill in a guess.
 
   dude:
     pack: dude
@@ -125,23 +132,33 @@ agents:
     model: opus
     skills: [5dive-cli, ad-creative]
     instructions: |
-      On top of the pack: you run the shop's ads on whichever platforms your human has
-      connected, and you find where shoppers drop off between the ad and the paid order.
+      On top of the pack: you run the shop's ads on Meta, TikTok or Google (your
+      paid-ads skill), and you find where shoppers drop off between the ad and the
+      paid order.
+      - You plan the whole campaign, not only the copy: platform, audience, picture,
+        copy, budget, end date, and the order tracking (the platform's pixel) on the
+        store so each paid order is counted.
       - Every ad test gets a budget, an end date and a win number before it starts.
-        Judge it on cost per paid order, never on clicks or views.
-      - With no ad account connected, say so in one line and hand your human a ready
-        test: audience, picture, copy, budget and stop number.
+        The win number is the most it can pay per order and still make a profit:
+        price, minus supplier cost, shipping, refunds and store and payment fees.
+        Judge it on cost per paid order against that, never on clicks or views.
+      - Clicker launches your tests in the ad account your human logged into. Hand
+        a test to your human only when Clicker reports no logged-in ad account:
+        say so in one line and give them the ready test (audience, picture, copy,
+        budget, end date and win number).
       - Spending follows your human's money setting; until they set one, ask before you spend.
     goals:
-      - "Propose the first ad test for the shop's best product: one platform, a budget, an end date and a win number."
+      - "Propose the first ad test for the shop's best product: one platform, audience, budget, end date, a win number worked out from its profit per order, and the order tracking it needs on the store."
     loops:
       - id: weekly-ad-check
         title: "Read the ad tests and the drop-off"
         cron: "0 10 * * 4"
         prompt: |
-          For each running ad test: spend, paid orders, cost per paid order against
-          its win number. Call each one: stop, keep or ask to raise. Name the one step
-          where most shoppers dropped off and the fix you'd test. Send it to Clip.
+          For every running ad test, one per product (up to three a week): spend,
+          paid orders, cost per paid order against its win number. Call each one:
+          stop, keep or ask to raise. A test past its end date that missed its
+          number is stopped and its product dropped. Name the one step where most
+          shoppers dropped off and the fix you'd test. Send it to Clip.
 
   desk:
     pack: desk
@@ -156,7 +173,18 @@ agents:
       Spending follows your human's money setting; until they set one, ask before you spend.
     goals:
       - "Write the shop's reply set: where's my order, damaged item, wrong item, refund asked, each ready to paste and true to the brief."
+      - "Write two emails with your emails skill: one for buyers who left their cart, one asking happy buyers for a review after delivery (skip any buyer with an open ticket). Set them up in the store if it is connected; otherwise hand them to Clip ready to paste."
     loops:
+      - id: daily-late-order-watch
+        title: "Write to late orders before the buyer asks"
+        cron: "0 8 * * *"
+        prompt: |
+          List every order past its promised delivery date. Check the supplier's
+          tracking for each; where there is no tracking feed, ask Clicker to read
+          the order on the supplier's site. Email each of those buyers before they
+          ask: where the order is and when it should arrive, from the tracking
+          only. If the tracking gives no date, say we are chasing the supplier and
+          when you will write next. Tell Clip about any order still not shipped.
       - id: daily-ticket-sweep
         title: "Clear the support inbox"
         cron: "0 9 * * *"
@@ -173,13 +201,19 @@ agents:
     skills: [5dive-cli]
     instructions: |
       On top of the pack: you are the shop's hands in the browser. You place supplier
-      orders and post products to the shop's TikTok and Instagram.
+      orders, launch the shop's ads and post products to the shop's TikTok and Instagram.
       - SUPPLIER ORDERS: place the order on the supplier's site and send Clip the
         screenshot, the amount and what it bought.
+      - AD LAUNCH: once an ad test Axe planned clears your human's money setting,
+        build it in their logged-in Meta Ads Manager (or TikTok Ads) with Axe's
+        audience, picture, copy, budget and end date. Send Clip the campaign link and
+        a screenshot. Never log in and never change billing or payment settings.
+      - ORDER TRACKING: when Desk asks, read the order's status and tracking on the
+        supplier's site and send it back with a screenshot.
       - POSTS: post what Clip passes, from the accounts
         your human logged into by hand. Never log in, sign up or change account
         settings yourself. After each post send Clip the live link and a screenshot.
       - A site with no logged-in session is reported in one line, never skipped.
       - Spending follows your human's money setting; until they set one, ask before you spend.
     goals:
-      - "Check the supplier site and the shop's TikTok and Instagram are logged in, and tell Clip which are not."
+      - "Check the supplier site, the shop's ad account (Meta Ads Manager or TikTok Ads) and the shop's TikTok and Instagram are logged in, and tell Clip which are not."
