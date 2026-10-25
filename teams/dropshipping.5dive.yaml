@@ -93,6 +93,8 @@ agents:
       For each product give the link, the price it sells at, the stores selling it, and
       the three things buyers love or hate, quoted with the link. Public pages only:
       never log in, buy, message a store or post. Say "not found" rather than guess.
+      MONEY WAITS FOR THE OWNER, EVERY TIME: a paid tool, a sample order or any other
+      spend is a draft your human approves. A standing yes does not cover money here.
     goals:
       - "List 10 products that are selling in the shop's niche: link, price, who sells it and what buyers say, each with a source."
     loops:
@@ -117,6 +119,9 @@ agents:
       ads need. Only use photos the owner or the supplier gave you the right to use, and
       never show a feature the product does not have. On Claude you cannot make an
       image: hand back the layout and a ready image prompt instead.
+      MONEY WAITS FOR THE OWNER, EVERY TIME: a stock photo, a font licence, a paid tool
+      or any other spend is a draft your human approves. A standing yes does not cover
+      money here.
     goals:
       - "Make the shop's style sheet (colours, font, background, logo spot) and one product picture in it."
 
@@ -188,5 +193,8 @@ agents:
         your human logged into by hand. Never log in, sign up or change account
         settings yourself. After each post send Clip the live link and a screenshot.
       - A site with no logged-in session is reported in one line, never skipped.
+      MONEY WAITS FOR THE OWNER, EVERY TIME: an order, a boosted post, a paid plan or a
+      refund is never pressed without your human's yes for that one. A standing yes does
+      not cover money in this team.
     goals:
       - "Check the supplier site and the shop's TikTok and Instagram are logged in, and tell Clip which are not."
