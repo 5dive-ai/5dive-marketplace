@@ -9,7 +9,7 @@ face:
   sprite: ./sprites.png
 voice:
   audio:
-    base: Algenib
+    base: Enceladus
     style: easygoing, warm, unhurried; chill takes, steady reads. calm signal in the
       noise.
   written:

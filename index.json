@@ -262,7 +262,8 @@
       "skills": [
         "community-engagement",
         "community-triage",
-        "support-reply"
+        "support-reply",
+        "social-alpha"
       ],
       "skillsBundled": true,
       "rarity": "common",
@@ -270,15 +271,15 @@
       "effort": "high",
       "did": "did:key:z6Mki47TZEj3KTmVW2naTPU1FzqwxhN74Qq5CttQxYLehHUh",
       "voiceSample": "packs/dude/voice-sample.mp3",
-      "voiceSampleSeconds": 9,
+      "voiceSampleSeconds": 10.1,
       "voiceSampleLang": {
         "ru": {
           "src": "packs/dude/voice-sample.ru.mp3",
-          "seconds": 8.7
+          "seconds": 10.1
         },
         "zh": {
           "src": "packs/dude/voice-sample.zh.mp3",
-          "seconds": 7.9
+          "seconds": 9
         }
       }
     },

@@ -219,43 +219,50 @@
     {
       "slug": "trading-desk",
       "name": "Trading Desk",
-      "description": "Research and backtest trading ideas with real fees, every week. Olivia sets the limits, Quant backtests, Dave spots mispriced odds, Ada checks the news.",
-      "size": 4,
+      "description": "Find and backtest trading ideas with real fees, every week. Quant leads, Dave spots mispriced odds, Ada checks the news, Dude reads the crowd, Clicker works the browser.",
+      "size": 5,
       "roster": [
         {
-          "key": "olivia",
-          "role": "CEO",
+          "key": "quant",
+          "role": "Lead trader",
           "model": "opus",
           "reports_to": null,
-          "pack": "olivia"
-        },
-        {
-          "key": "quant",
-          "role": "Trader",
-          "model": "opus",
-          "reports_to": "olivia",
           "pack": "quant"
         },
         {
           "key": "dave",
           "role": "Prediction-market research",
           "model": "sonnet",
-          "reports_to": "olivia",
+          "reports_to": "quant",
           "pack": "dave"
         },
         {
           "key": "ada",
           "role": "Research",
           "model": "sonnet",
-          "reports_to": "olivia",
+          "reports_to": "quant",
           "pack": "ada"
+        },
+        {
+          "key": "dude",
+          "role": "Crowd research",
+          "model": "haiku",
+          "reports_to": "quant",
+          "pack": "dude"
+        },
+        {
+          "key": "clicker",
+          "role": "Browser operator",
+          "model": "sonnet",
+          "reports_to": "quant",
+          "pack": "clicker"
         }
       ],
       "path": "teams/trading-desk.5dive.yaml",
       "schemaVersion": 2,
       "photo": "teams/photos/trading-desk.webp",
       "loop": {
-        "owner": "olivia",
+        "owner": "quant",
         "id": "weekly-idea",
         "cron": "0 9 * * 1"
       }
