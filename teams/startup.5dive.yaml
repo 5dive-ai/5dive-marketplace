@@ -15,8 +15,9 @@
 # Marcus builds on the box and keeps what he built running; a buyer who wants
 # the PR-and-merge rail hires the Deploy Team.
 #
-# One shared account by default (auth_profile in defaults); split across accounts later
-# to avoid the shared-account burst rate-limit (see reference_false_rotation_shared_account_burst).
+# No pinned account, like the Marketing and Deploy teams: the seats come up with
+# `defer_auth: true` and you sign each in afterwards. A `${TEAM_AUTH_PROFILE}`
+# default made the flagless import (and `team ps startup`) a hard error.
 # ONE optional channel for the whole company (DIVE-3994). The LEAD role carries
 # the customer-facing Telegram bot; everyone else is created channel-less and is
 # reached from the dashboard or over `5dive agent send`. `${TEAM_TG_TOKEN}` is
@@ -33,7 +34,7 @@ defaults:
   type: claude
   channels: none
   isolation: standard
-  auth_profile: "${TEAM_AUTH_PROFILE}"
+  defer_auth: true        # bring the team up first; sign each seat in after
 
 agents:
   olivia:
