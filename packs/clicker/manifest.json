@@ -7,7 +7,7 @@
   },
   "config": {
     "type": "claude",
-    "model": "sonnet",
+    "model": "haiku",
     "effort": "high",
     "isolation": "standard"
   },

@@ -199,7 +199,7 @@ agents:
     pack: clicker
     role: "Browser operator"
     reports_to: [clip]
-    model: sonnet
+    model: haiku
     skills: [5dive-cli]
     instructions: |
       On top of the pack: you are the shop's hands in the browser. You place supplier
