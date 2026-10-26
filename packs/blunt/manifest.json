@@ -13,7 +13,11 @@
   },
   "plugins": [],
   "skills": [
-    "devils-advocate"
+    "devils-advocate",
+    "month-close",
+    "burn-audit",
+    "resume-screen",
+    "first-week"
   ],
   "hooks": {},
   "avatar": null,

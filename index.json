@@ -852,7 +852,8 @@
       "packFormat": 1,
       "includesMemory": false,
       "skills": [
-        "emails"
+        "emails",
+        "follow-up-ladder"
       ],
       "skillsBundled": true,
       "rarity": "common",
@@ -1301,7 +1302,8 @@
       "includesMemory": false,
       "skills": [
         "inbox-triage",
-        "occasion-calendar"
+        "occasion-calendar",
+        "charge-audit"
       ],
       "skillsBundled": true,
       "rarity": "epic",
@@ -1318,120 +1320,6 @@
         "zh": {
           "src": "packs/maw/voice-sample.zh.mp3",
           "seconds": 10.5
-        }
-      }
-    },
-    {
-      "slug": "perk",
-      "name": "Perk",
-      "nameRu": "Перк",
-      "nameRuAcc": "Перк",
-      "nameZh": "珀克",
-      "tagline": "screens resumes and sets up each new hire's first week.",
-      "taglineRu": "Отбирает резюме и готовит первую неделю каждого новичка.",
-      "taglineZh": "筛选简历，安排每位新员工的第一周。",
-      "sample": "sam starts thursday. laptop ordered, payroll in, coffee spot sent.",
-      "character": "HR manager",
-      "department": "Ops",
-      "role": "HR Manager",
-      "roleRu": "HR-менеджер",
-      "roleZh": "人力资源经理",
-      "track": "A",
-      "tags": [
-        "onboarding",
-        "first-weeks",
-        "people-ops",
-        "new-hire",
-        "team-rituals",
-        "hr",
-        "onboarding-buddy",
-        "employee-experience",
-        "handbook",
-        "30-60-90",
-        "hr-manager",
-        "recruiting",
-        "hiring"
-      ],
-      "path": "packs/perk",
-      "avatar": "packs/perk/avatar.png",
-      "packFormat": 1,
-      "includesMemory": false,
-      "skills": [
-        "first-week",
-        "resume-screen"
-      ],
-      "skillsBundled": true,
-      "rarity": "common",
-      "model": "opus",
-      "effort": "high",
-      "did": "did:key:z6MksrUvqdMryUuZkCStNcv3w3XkHeChiSxiVb5j2ydojGby",
-      "voiceSample": "packs/perk/voice-sample.mp3",
-      "voiceSampleSeconds": 12.1,
-      "voiceSampleLang": {
-        "ru": {
-          "src": "packs/perk/voice-sample.ru.mp3",
-          "seconds": 10.6
-        },
-        "zh": {
-          "src": "packs/perk/voice-sample.zh.mp3",
-          "seconds": 12.5
-        }
-      }
-    },
-    {
-      "slug": "crumb",
-      "name": "Crumb",
-      "nameRu": "Крам",
-      "nameRuAcc": "Крама",
-      "nameZh": "克拉姆",
-      "tagline": "audits your subscriptions and charges, and finds what you pay twice.",
-      "taglineRu": "Проверяет подписки и списания и находит, за что вы платите дважды.",
-      "taglineZh": "核查你的订阅和扣费，找出重复付款。",
-      "sample": "you're paying for that tool twice. different card, same vendor.",
-      "character": "personal finance assistant",
-      "department": "Personal",
-      "role": "Personal Finance Assistant",
-      "roleRu": "Ассистент по личным финансам",
-      "roleZh": "个人理财助理",
-      "track": "A",
-      "tags": [
-        "subscription-creep",
-        "duplicate-charges",
-        "expense-audits",
-        "vendor-billing",
-        "forgotten-spend",
-        "auditor",
-        "accountant",
-        "finance-ops",
-        "cost-control",
-        "invoices",
-        "expenses",
-        "personal-finance",
-        "subscriptions",
-        "bills"
-      ],
-      "path": "packs/crumb",
-      "avatar": "packs/crumb/avatar.png",
-      "packFormat": 1,
-      "includesMemory": false,
-      "skills": [
-        "charge-audit"
-      ],
-      "skillsBundled": true,
-      "rarity": "rare",
-      "model": "opus",
-      "effort": "high",
-      "did": "did:key:z6MkrNZornfds2EsaWJYh4Uuq4Ue8juQUT1MHAA7hpQCpb3f",
-      "voiceSample": "packs/crumb/voice-sample.mp3",
-      "voiceSampleSeconds": 16.1,
-      "voiceSampleLang": {
-        "ru": {
-          "src": "packs/crumb/voice-sample.ru.mp3",
-          "seconds": 8.7
-        },
-        "zh": {
-          "src": "packs/crumb/voice-sample.zh.mp3",
-          "seconds": 7.8
         }
       }
     },
@@ -1529,7 +1417,11 @@
       "packFormat": 1,
       "includesMemory": false,
       "skills": [
-        "devils-advocate"
+        "devils-advocate",
+        "month-close",
+        "burn-audit",
+        "resume-screen",
+        "first-week"
       ],
       "skillsBundled": true,
       "rarity": "common",
@@ -1602,65 +1494,6 @@
         "zh": {
           "src": "packs/clicker/voice-sample.zh.mp3",
           "seconds": 12.1
-        }
-      }
-    },
-    {
-      "slug": "sustain",
-      "name": "Sustain",
-      "nameRu": "Састейн",
-      "nameRuAcc": "Састейн",
-      "nameZh": "萨斯坦",
-      "tagline": "watches your cash burn and chases unpaid invoices.",
-      "taglineRu": "Следит за расходом денег и добивается оплаты счетов.",
-      "taglineZh": "盯紧你的现金消耗，催收未付发票。",
-      "sample": "invoice 0114, 41 days out. same ask as tuesday. again friday.",
-      "character": "CFO",
-      "department": "Finance",
-      "role": "Chief Financial Officer",
-      "roleRu": "Финансовый директор",
-      "roleZh": "首席财务官",
-      "track": "A",
-      "tags": [
-        "follow-up",
-        "collections",
-        "invoices",
-        "accounts-receivable",
-        "dunning",
-        "follow-up-ladder",
-        "emails",
-        "freelance",
-        "persistence",
-        "finance",
-        "cfo",
-        "cash-flow",
-        "invoicing",
-        "runway"
-      ],
-      "path": "packs/sustain",
-      "avatar": "packs/sustain/avatar.png",
-      "packFormat": 1,
-      "includesMemory": false,
-      "skills": [
-        "follow-up-ladder",
-        "burn-audit",
-        "emails"
-      ],
-      "skillsBundled": true,
-      "rarity": "legendary",
-      "model": "opus",
-      "effort": "high",
-      "did": "did:key:z6MkgEvFu3ZZGfDDVC5zUhuS3poGqWyTt6N3Nr9Ar612W9LX",
-      "voiceSample": "packs/sustain/voice-sample.mp3",
-      "voiceSampleSeconds": 13.2,
-      "voiceSampleLang": {
-        "ru": {
-          "src": "packs/sustain/voice-sample.ru.mp3",
-          "seconds": 11.4
-        },
-        "zh": {
-          "src": "packs/sustain/voice-sample.zh.mp3",
-          "seconds": 10.9
         }
       }
     },
@@ -1827,62 +1660,6 @@
         "zh": {
           "src": "packs/cue/voice-sample.zh.mp3",
           "seconds": 10.1
-        }
-      }
-    },
-    {
-      "slug": "tally",
-      "name": "Tally",
-      "nameRu": "Тэлли",
-      "nameRuAcc": "Тэлли",
-      "nameZh": "塔利",
-      "tagline": "keeps the books: sends and chases invoices, matches every receipt, closes the month and audits the spend.",
-      "taglineRu": "Ведёт учёт: выставляет счета и добивается оплаты, сверяет каждый чек, закрывает месяц и проверяет расходы.",
-      "taglineZh": "记账：开具并催收发票，核对每张收据，月末结账并审计支出。",
-      "sample": "march did not balance and i found out why. one client paid twice and one invoice was never sent.",
-      "character": "Accountant",
-      "department": "Finance",
-      "role": "Accountant",
-      "roleRu": "Бухгалтер",
-      "roleZh": "会计",
-      "track": "A",
-      "tags": [
-        "accounting",
-        "bookkeeping",
-        "invoicing",
-        "month-end-close",
-        "month-close",
-        "charge-audit",
-        "receipts",
-        "reconciliation",
-        "spend-audit",
-        "expenses",
-        "small-business",
-        "finance"
-      ],
-      "path": "packs/tally",
-      "avatar": "packs/tally/avatar.png",
-      "packFormat": 1,
-      "includesMemory": false,
-      "skills": [
-        "month-close",
-        "charge-audit"
-      ],
-      "skillsBundled": true,
-      "model": "opus",
-      "effort": "high",
-      "rarity": "rare",
-      "did": "did:key:z6MkjCxc5VYSW8mMuQEXGVjVz6p34hGfoM1bh2k1cZ5xbNH8",
-      "voiceSample": "packs/tally/voice-sample.mp3",
-      "voiceSampleSeconds": 11.9,
-      "voiceSampleLang": {
-        "ru": {
-          "src": "packs/tally/voice-sample.ru.mp3",
-          "seconds": 9.7
-        },
-        "zh": {
-          "src": "packs/tally/voice-sample.zh.mp3",
-          "seconds": 8.9
         }
       }
     },

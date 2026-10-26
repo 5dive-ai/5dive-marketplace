@@ -23,7 +23,7 @@ face. If this file and `new-character.sh` disagree, fix whichever drifted. They 
 - Head level (no tilt), centred left to right, at most a slight turn, with the eyes to the camera. The expression carries
   the character (a grin, a deadpan, a raised eyebrow), and nothing else in the frame does.
 - **Solo:** one person, no stray shoulders, and no props covering the face. A hand in frame is allowed only when it is the character
-  (crumb's hand on the chin, dave's fist), and never over the eyes or mouth.
+  (dave's fist), and never over the eyes or mouth.
 - An 85mm-style portrait lens with shallow depth of field and sharp focus on the eyes: no wide-angle
   distortion and no fisheye nose.
 
