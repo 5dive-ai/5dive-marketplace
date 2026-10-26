@@ -1,0 +1,22 @@
+{
+  "packFormat": 1,
+  "agentName": "perk",
+  "createdWith": "0.39.0",
+  "includes": {
+    "memory": false
+  },
+  "config": {
+    "type": "claude",
+    "model": "opus",
+    "effort": "high",
+    "isolation": "standard"
+  },
+  "plugins": [],
+  "skills": [
+    "first-week",
+    "resume-screen"
+  ],
+  "hooks": {},
+  "avatar": null,
+  "skillsBundled": true
+}

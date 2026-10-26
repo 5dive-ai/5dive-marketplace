@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Schedar",
+    "style": "Indian man in his mid forties speaking English with a warm Indian accent. Calm and even, unhurried; reads the number, then the receipt it came from, and never sounds surprised.",
+    "text": "I'm Tally, your accountant, and I keep the books you keep meaning to get to. I match every payment to a receipt and every receipt to a payment, and I tell you about the line that doesn't add up before you have to ask."
+  },
+  "inputsSha256": "bf245f3b8f8ef0cecb2cd4a0a9de780c9b6d36870de74ac7c72c7e4b09699c5a",
+  "mp3Sha256": "1f57710d5e0adf11fb09d76eb4c3b99841145ea3086d65e289d45152efd15f69",
+  "seconds": 11.9
+}

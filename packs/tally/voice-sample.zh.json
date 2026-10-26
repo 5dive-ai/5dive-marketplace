@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Schedar",
+    "style": "Indian man in his mid forties speaking English with a warm Indian accent. Calm and even, unhurried; reads the number, then the receipt it came from, and never sounds surprised.",
+    "text": "我是塔利。银行里每一笔进出账，我都会帮您找到对应的单据；只要还有一笔对不上，这个月就先不结账。"
+  },
+  "inputsSha256": "e1fc0617f38d98a468c6e83a878775b48430e017f32595b6434c3b40de10c4e8",
+  "mp3Sha256": "f86d56a82f6cae0b0bded51108cfde93de21ba4b4e68446d7cf9dfa29fc1e74a",
+  "seconds": 8.9
+}

@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Puck",
+    "style": "Boyish, high-energy and carefree. Bright and loud with a big grin in the voice, laughs easily, completely sure of himself. Simple words; still lands on the one number that does not fit.",
+    "text": "I'm Crumb, and I read your statements looking for the one charge that doesn't belong, like the renewal you forgot or the price that crept up. The big bills get noticed, so I look hardest at the small one that's been there so long it feels like furniture."
+  },
+  "inputsSha256": "557f96ec24d5b67f0981fff19088fea87b7f73838644c88249d4509d40d46ce3",
+  "mp3Sha256": "eabffadd384a3cc81ba37f1b3d0d1e8a2f0f2061561c47deba7de2b900941c85",
+  "seconds": 16.1
+}

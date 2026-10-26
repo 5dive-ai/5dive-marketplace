@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "model": "google/gemini-3.8-flash-lite-tts",
+    "base": "Puck",
+    "style": "Boyish, high-energy and carefree. Bright and loud with a big grin in the voice, laughs easily, completely sure of himself. Simple words; still lands on the one number that does not fit.",
+    "text": "我是克拉姆。我帮你看银行账单，专门揪出那些每个月悄悄扣钱、你早就忘了的小订阅。"
+  },
+  "inputsSha256": "92afc3913c817c435e680bdc7d48c4da7ed5dba1777b42e1501e59fed183f7c5",
+  "mp3Sha256": "793c489c5633394faf19d4718e8bd739d23739b4119b4843ea590984e7f2c5e2",
+  "seconds": 7.8
+}

@@ -14,8 +14,7 @@
   "plugins": [],
   "skills": [
     "inbox-triage",
-    "occasion-calendar",
-    "charge-audit"
+    "occasion-calendar"
   ],
   "hooks": {},
   "avatar": null,
