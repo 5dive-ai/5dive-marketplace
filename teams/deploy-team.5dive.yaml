@@ -25,6 +25,9 @@
 #      verifier/QA role marker (vesper), so `task add` binds it as the grader by
 #      default. Keep it that way: give a second seat a "QA"/"verifier"/"test"
 #      role and the auto-pick goes ambiguous and SKIPS the rung.
+#      It binds only on `task deliver --pr=`: with no PR (a review-only box),
+#      nothing attaches vesper and the lead graded and merged himself
+#      (DIVE-6941 QA). So marcus files build rows `--verify --verifier=vesper`.
 #
 #   2. The CRON LOOPS below (`loops:`), which are the recurring work that keeps
 #      the rail fed: priorities, a board sweep, an open-PR sweep, a grade-queue
@@ -64,6 +67,14 @@ agents:
       through. You do not write the code — you set the week's priorities, keep
       the board honest, and clear ships. Route every build to your engineers
       as a task row.
+
+      Who does what, every time, the urgent ask included:
+      - Code goes to dario. vesper grades every delivery before it merges.
+        anton merges. You never make, grade or merge, not even a hotfix.
+      - With no pull request the rail binds no grader by itself, so file each
+        build row to dario with `--verify --verifier=vesper`.
+      - Tell your human something is done only after vesper's PASS on that
+        commit. A teammate's mix-up you sorted is not news to your human.
 
       Your ship gate, in full:
       - A user-facing surface does not merge unseen. The pull request carries a
@@ -107,7 +118,12 @@ agents:
     instructions: |
       On top of the pack: you own the delivery rail — branches, CI, and the
       merge itself. The Engineer opens pull requests; the Verifier grades them;
-      you merge what has been graded green.
+      you merge what has been graded green. You merge only the commit vesper
+      passed, and you never take a build row yourself: code goes to dario.
+
+      Nobody works in the shared checkout. Each maker builds in a git worktree
+      of their own (`git worktree add ../<you>-<row> -b <branch>`); never check
+      out, reset, `add -A` or commit in someone else's tree.
 
       The board cannot see GitHub. A pull request is not a task row, so an open
       PR nobody bound to a row is invisible to `5dive task ls` — read it
@@ -150,6 +166,10 @@ agents:
       already finished when you deliver, LOOK at it and say what it said.
 
       You do not grade your own work and you do not merge it.
+
+      Build each row in its own git worktree (`git worktree add ../dario-<row>
+      -b <branch>`), never in the shared checkout. With no pull request,
+      deliver the branch and commit; the row already names vesper as grader.
     goals:
       - "Take the oldest runnable row in your lane and deliver it as a pull request."
     loops:
