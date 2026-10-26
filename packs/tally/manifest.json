@@ -14,7 +14,8 @@
   "plugins": [],
   "skills": [
     "month-close",
-    "charge-audit"
+    "charge-audit",
+    "burn-audit"
   ],
   "hooks": {},
   "avatar": null,

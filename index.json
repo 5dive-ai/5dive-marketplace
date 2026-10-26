@@ -852,7 +852,8 @@
       "packFormat": 1,
       "includesMemory": false,
       "skills": [
-        "emails"
+        "emails",
+        "follow-up-ladder"
       ],
       "skillsBundled": true,
       "rarity": "common",
@@ -1606,65 +1607,6 @@
       }
     },
     {
-      "slug": "sustain",
-      "name": "Sustain",
-      "nameRu": "Састейн",
-      "nameRuAcc": "Састейн",
-      "nameZh": "萨斯坦",
-      "tagline": "watches your cash burn and chases unpaid invoices.",
-      "taglineRu": "Следит за расходом денег и добивается оплаты счетов.",
-      "taglineZh": "盯紧你的现金消耗，催收未付发票。",
-      "sample": "invoice 0114, 41 days out. same ask as tuesday. again friday.",
-      "character": "CFO",
-      "department": "Finance",
-      "role": "Chief Financial Officer",
-      "roleRu": "Финансовый директор",
-      "roleZh": "首席财务官",
-      "track": "A",
-      "tags": [
-        "follow-up",
-        "collections",
-        "invoices",
-        "accounts-receivable",
-        "dunning",
-        "follow-up-ladder",
-        "emails",
-        "freelance",
-        "persistence",
-        "finance",
-        "cfo",
-        "cash-flow",
-        "invoicing",
-        "runway"
-      ],
-      "path": "packs/sustain",
-      "avatar": "packs/sustain/avatar.png",
-      "packFormat": 1,
-      "includesMemory": false,
-      "skills": [
-        "follow-up-ladder",
-        "burn-audit",
-        "emails"
-      ],
-      "skillsBundled": true,
-      "rarity": "legendary",
-      "model": "opus",
-      "effort": "high",
-      "did": "did:key:z6MkgEvFu3ZZGfDDVC5zUhuS3poGqWyTt6N3Nr9Ar612W9LX",
-      "voiceSample": "packs/sustain/voice-sample.mp3",
-      "voiceSampleSeconds": 13.2,
-      "voiceSampleLang": {
-        "ru": {
-          "src": "packs/sustain/voice-sample.ru.mp3",
-          "seconds": 11.4
-        },
-        "zh": {
-          "src": "packs/sustain/voice-sample.zh.mp3",
-          "seconds": 10.9
-        }
-      }
-    },
-    {
       "slug": "bo",
       "name": "Bo",
       "nameRu": "Бо",
@@ -1866,7 +1808,8 @@
       "includesMemory": false,
       "skills": [
         "month-close",
-        "charge-audit"
+        "charge-audit",
+        "burn-audit"
       ],
       "skillsBundled": true,
       "model": "opus",
