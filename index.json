@@ -968,7 +968,9 @@
       "skills": [
         "ticket-triage",
         "emails",
-        "shopify-store"
+        "shopify-store",
+        "woocommerce-store",
+        "amazon-seller"
       ],
       "skillsBundled": true,
       "rarity": "epic",
@@ -1588,7 +1590,10 @@
       "includesMemory": true,
       "skills": [
         "form-filling",
-        "shopify-store"
+        "shopify-store",
+        "woocommerce-store",
+        "amazon-seller",
+        "cj-supplier"
       ],
       "skillsBundled": true,
       "model": "haiku",
@@ -1980,7 +1985,9 @@
       "skills": [
         "shop-desk",
         "no-ai-slop",
-        "shopify-store"
+        "shopify-store",
+        "woocommerce-store",
+        "amazon-seller"
       ],
       "skillsBundled": true,
       "model": "opus",
