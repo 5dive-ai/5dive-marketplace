@@ -36,9 +36,11 @@ have no API.
 4. **Money follows the shop's money setting.** Changing a price is not spending. Anything that
    costs the shop money (an app, a paid plan, a refund, an order paid to a supplier) waits
    for the owner's yes unless the shop brief's money setting says the team may go ahead.
-5. **Never paste the access token anywhere.** The CLI keeps it in your own home folder
-   (`~/.config/shopify-cli-store-nodejs/`). Do not print it, copy it to a teammate or put it
-   in a file, a task or a message.
+5. **Keep the access token private.** The CLI saves it in
+   `~/.config/shopify-cli-store-nodejs/`. On a shared machine every other teammate can read that
+   folder unless you lock it, so connect with `umask 077` and `chmod 700` it after (steps 3
+   and 5). Never print the token, copy it to a teammate, or put it in a file, a task or a
+   message.
 
 ## Connect the shop (once per teammate)
 
@@ -49,37 +51,69 @@ You need the shop's address, `<shop>.myshopify.com`. It is in the admin's addres
    `npm i -g --prefix ~/.local @shopify/cli@latest`, then `~/.local/bin/shopify version` (4.9 or
    newer). If `shopify` is not found below, call it as `~/.local/bin/shopify`.
 2. **Ask the owner once:** "Connect the shop so the team can list products and read orders
-   without the browser? You approve it on one Shopify page." One yes covers every teammate
-   who needs it.
-3. **Start the connection in the background.** It waits up to 5 minutes for the approval to
-   come back to this machine:
+   without the browser? You approve it on one Shopify page." One yes covers every teammate.
+   Only the first teammate sees that page. Once the owner has approved it, every later
+   teammate runs steps 1, 3 and 5 and connects with no page.
+3. **Start the connection in the background.** From this moment the CLI waits **exactly 5
+   minutes** for the approval. It does not wait longer, so have step 4 ready first:
 
    ```sh
+   umask 077
    SCOPES=read_products,write_products,read_orders,write_orders,read_merchant_managed_fulfillment_orders,write_merchant_managed_fulfillment_orders
-   printf '#!/bin/sh\necho "$1" > "$HOME/.shopify-auth-url"\n' > "$HOME/.shopify-open" && chmod +x "$HOME/.shopify-open"
+   printf '#!/bin/sh\necho "$1" > "$HOME/.shopify-auth-url"\n' > "$HOME/.shopify-open" && chmod 700 "$HOME/.shopify-open"
    BROWSER="$HOME/.shopify-open" shopify store auth --store <shop>.myshopify.com --scopes "$SCOPES" > "$HOME/.shopify-auth.log" 2>&1 &
+   sleep 5; cat "$HOME/.shopify-auth.log"
    ```
 
-   On a machine with no screen the CLI does not print the approval link. The `BROWSER`
-   line above catches it in `~/.shopify-auth-url` instead.
-4. **Open that link in the browser on this machine**, in the profile where the owner is
-   signed in to their Shopify admin. Opening it on the owner's phone does not work: the
-   approval comes back to `127.0.0.1` on this machine. Approve the access on the page.
-   If the browser is not signed in to Shopify, ask the owner to sign in there first.
-5. **Check it worked:** `cat ~/.shopify-auth.log` shows "Logged in", then:
+   If the log already says "Authenticated", the shop was approved before: skip to step 5.
+   Otherwise the approval link is in `~/.shopify-auth-url` (on a machine with no screen the
+   CLI does not print it; the `BROWSER` line catches it).
+4. **Open the approval page in the browser on this machine**, where the owner is signed in
+   to Shopify. Not on the owner's phone: the approval comes back to `127.0.0.1` on this
+   machine.
+   - **Plain-Chrome mode first.** Shopify's admin runs a bot check ("Just a moment",
+     "Waiting for admin.shopify.com to respond") that never clears in the automated browser
+     and clears by itself in plain Chrome. Run `5dive browser config`. If it does not say
+     `drive=input`, run `sudo 5dive browser config drive=input` and note the old value. If
+     you have no admin rights for that, ask your lead to run it.
+   - **Open it on admin.shopify.com.** The captured link is on `<shop>.myshopify.com`, which
+     the browser refuses for the owner's Shopify login. Use the same query on the admin
+     address:
+
+     ```sh
+     URL="https://admin.shopify.com/store/<shop>/oauth/authorize?$(cut -d'?' -f2- "$HOME/.shopify-auth-url")"
+     5dive browser act shopify.com --steps="$(printf '[{"op":"goto","url":"%s"}]' "$URL")"
+     5dive browser shot shopify.com
+     ```
+
+   - **Tap Install** on the page the shot shows (`5dive browser act shopify.com
+     --steps='[{"op":"click","x":<x>,"y":<y>}]'`); the owner's yes in step 2 covers it. If
+     the page asks for a sign-in instead, hand the window to the owner with
+     `5dive browser handoff shopify.com --reason="Sign in to Shopify to connect the shop"`.
+   - **Late tap:** if Install lands after the 5 minutes, the browser shows "connection
+     refused" on `127.0.0.1`, but Shopify still saved the approval. Run step 3 again: it
+     says "Authenticated" with no page.
+   - **Put the mode back** with `sudo 5dive browser config drive=<the old value>`.
+5. **Lock the folder and check it worked.** `cat ~/.shopify-auth.log` shows "Authenticated",
+   then:
 
    ```sh
+   chmod 700 ~/.config/shopify-cli-store-nodejs
    shopify store execute --store <shop>.myshopify.com --query 'query { shop { name myshopifyDomain currencyCode } }'
+   node -e 'const c=require(process.env.HOME+"/.config/shopify-cli-store-nodejs/config.json");for(const v of Object.values(c))for(const s of Object.values(v.sessionsByUserId||{}))console.log(s.store,"expires",s.expiresAt)'
    ```
 
-6. **Delete the two helper files** (`~/.shopify-open`, `~/.shopify-auth-url`) and write the
-   shop address into the shop brief.
+   The last line prints only the shop and when the login expires, never the token. Run the
+   `chmod` again after every new connection: the CLI rewrites the file, not the folder.
+6. **Delete the helper files** (`~/.shopify-open`, `~/.shopify-auth-url`,
+   `~/.shopify-auth.log`) and write the shop address into the shop brief.
 
 If the approval page refuses the two fulfillment scopes, connect again without them. Every
 product and order read still works; mark orders shipped in the admin until it is fixed.
 
-`shopify store list` shows the shops you are connected to. If a command says the stored
-login is missing or expired, run steps 3 to 5 again. The CLI renews it by itself until then.
+The login lasts 24 hours and the CLI renews it by itself. If a command says the stored
+login is missing or expired, run steps 3 and 5 again; with the shop already approved there
+is no page.
 
 ## Jobs
 
