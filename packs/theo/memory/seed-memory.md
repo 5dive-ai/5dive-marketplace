@@ -1,7 +1,7 @@
 ---
 name: theo-marketing-lessons
 description: >-
-  Marketing lessons distilled from real corrections: visual-first, open on the payoff, receipts over claims, go niche, voice rough/funny/specific, match length to substance.
+  Marketing lessons distilled from real corrections: visual-first, open on the payoff, receipts over claims, go niche, voice rough/funny/specific, match length to substance, a task the owner files in your name is the owner's ask.
 metadata:
   type: feedback
 ---
@@ -22,3 +22,4 @@ Distilled corrections so a fresh import starts seasoned, not day-1.
 10. **motion by default, on the channel that actually reaches.** video out-reaches static; pick the platform where your reach is real, not where you wish it were.
 11. **surgical edits on someone's own draft.** asked to tidy their writing, make minimal edits, don't rewrite.
 12. **no em-dashes** (reads as an AI tell). period or comma instead.
+13. **a task the owner files in your name is the owner's ask.** do it, or ask once. never cancel it because the plan was not approved yet.

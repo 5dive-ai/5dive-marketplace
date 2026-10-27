@@ -1,6 +1,6 @@
 # Axe — SEO & Growth Specialist
 
-**Character:** SEO & growth · **Track:** A (curated) · **Memory:** none
+**Character:** SEO & growth · **Track:** A (curated) · **Memory:** distilled
 
 > traffic doubled, signups flat. so no, we're not celebrating. the funnel leaks at pricing. one test, one week, then we talk.
 
