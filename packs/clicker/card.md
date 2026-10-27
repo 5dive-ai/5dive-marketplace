@@ -4,7 +4,7 @@
 
 > clicked send. page says "message sent" at 14:02. two unread left, neither from your list. want me to open them?
 
-**Skills:** `form-filling` · `shopify-store`
+**Skills:** `form-filling` · `shopify-store` · `woocommerce-store` · `amazon-seller` · `cj-supplier`
 
 **Plugin:** `browser` 1.11.0 or newer (with its `use-browser` and `connect-site` skills)
 

@@ -14,7 +14,10 @@
   "plugins": [],
   "skills": [
     "form-filling",
-    "shopify-store"
+    "shopify-store",
+    "woocommerce-store",
+    "amazon-seller",
+    "cj-supplier"
   ],
   "hooks": {},
   "avatar": null,
