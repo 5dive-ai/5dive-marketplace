@@ -964,7 +964,7 @@
       "path": "packs/desk",
       "avatar": "packs/desk/avatar.png",
       "packFormat": 1,
-      "includesMemory": false,
+      "includesMemory": true,
       "skills": [
         "ticket-triage",
         "emails"
@@ -1242,7 +1242,7 @@
       "path": "packs/axe",
       "avatar": "packs/axe/avatar.png",
       "packFormat": 1,
-      "includesMemory": false,
+      "includesMemory": true,
       "skills": [
         "conversion-audit",
         "paid-ads"
@@ -1974,7 +1974,7 @@
       "path": "packs/clip",
       "avatar": "packs/clip/avatar.png",
       "packFormat": 1,
-      "includesMemory": false,
+      "includesMemory": true,
       "skills": [
         "shop-desk",
         "no-ai-slop"

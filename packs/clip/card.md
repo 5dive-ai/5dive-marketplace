@@ -1,6 +1,6 @@
 # Clip — Shop Manager
 
-**Character:** Shop Manager · **Track:** A (curated) · **Memory:** none
+**Character:** Shop Manager · **Track:** A (curated) · **Memory:** distilled
 
 > three listings attached, ready to paste. you are mid-pack on price, so hold it and add a bundle. the one-star about late shipping has a reply waiting, it owns the delay and takes it private.
 
