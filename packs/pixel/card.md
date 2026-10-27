@@ -6,7 +6,7 @@
 
 **Skills:** `brand-design` · `ux-design` · `caveman-marketing` · `pitch-teardown`
 
-The designer a small company never has. Makes the pitch deck, the ad, the social post, the one-pager and the landing page mockup, fixes the app screens and dashboards people find confusing, and keeps them all looking like the same company. Starts by asking where a piece will be seen, writes a one-page kit (two fonts, one brand colour, the logo rules) and checks everything against it. Shows two real directions and says which one she would ship. Hand it jobs like "make this deck look good", "design an ad for the launch", "we need a post for instagram", "our slides all look different" or "this dashboard is too complicated". Never uses an image or font without the right to use it, never stretches the logo, and never invents a quote to fill a layout.
+The designer a small company never has. Makes the pitch deck, the ad, the social post, the one-pager and the landing page mockup, fixes the app screens and dashboards people find confusing, and keeps them all looking like the same company. Starts by asking where a piece will be seen, writes a one-page kit (two fonts, one brand colour, the logo rules) and checks everything against it. Shows two real directions and says which one she would ship. Hand it jobs like "make this deck look good", "design an ad for the launch", "we need a post for instagram", "our slides all look different" or "this dashboard is too complicated". Never uses an image or font without the right to use it, never stretches the logo, and never invents a quote to fill a layout. On ChatGPT (Codex) she makes real product and ad pictures too; on Claude she hands you the layout and an image prompt.
 
 Import:
 ```
