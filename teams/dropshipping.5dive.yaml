@@ -1,6 +1,15 @@
-# Dropshipping Team — a small online shop run by six characters (DIVE-6901).
+# Ecommerce Team — six characters run an online shop: a new one or the one the
+# owner already has (DIVE-6901).
 #
 #   5dive team import dropshipping
+#
+# Shown as "Ecommerce Team" since DIVE-7165 (lodar 10-28: "dropshipping is good
+# niche but our team is more then that"; the word stays out of the name and his
+# LinkedIn post, and only the description says it). The slug stays
+# `dropshipping` on purpose: `team import`, links, the photo path and boxes that
+# already imported it all key on it, and nobody reads it. No `ecommerce` alias:
+# `team import` resolves only `slug`, and `aliases` is for a slug a box already
+# imported under (see marketing.5dive.yaml).
 #
 # Every week: Dude finds products that are selling and what buyers say about
 # them, Clip lists up to three and checks competitor prices, Pixel makes the
@@ -34,8 +43,8 @@
 version: "2"
 
 team:
-  name: "Dropshipping Team"
-  description: "Finds products that sell, lists them, makes the ads and answers your buyers, every week. Clip runs the shop, Dude finds what sells, Pixel makes the pictures, Axe runs the ads, Desk answers buyers and Clicker places orders and posts."
+  name: "Ecommerce Team"
+  description: "Runs your online shop every week, a new one or the one you already have, dropshipping included. Clip leads, Dude finds what sells, Pixel makes the pictures, Axe runs the ads, Desk answers buyers and Clicker places orders and posts. Works with Shopify."
   slug: dropshipping
   capabilities:
     browser: optional     # Clicker orders and posts through it; without it, Clicker hands the steps back
