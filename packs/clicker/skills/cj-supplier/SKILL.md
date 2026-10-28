@@ -140,7 +140,7 @@ shopify-store or woocommerce-store skill does that step).
 
 - **`success: false`:** read `message`. It usually names the field (an address part, the
   `logisticName`, a `vid` that is out of stock). Fix it and send again.
-- **Token rejected:** get a new one (Connect, step 3). If that fails too, the key was removed;
-  ask make a new one on CJ's API page (Connect, step 2) and store it again.
+- **Token rejected:** get a new one (Connect, step 4). If that fails too, the key was removed;
+  make a new one on CJ's API page (Connect, step 2) and store it again.
 - **Anything this skill does not cover:** CJ's docs are at
   developers.cjdropshipping.com (API 2.0). Do not guess a field name.
