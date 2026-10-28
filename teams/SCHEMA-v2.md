@@ -186,6 +186,12 @@ seats already exist.
 | `github_push` | `gh auth token` — offline, resolves `GH_TOKEN`/`GITHUB_TOKEN` and the hosts config, makes no network call | **review-only**: reads, grades, files and rejects; nothing it approves is pushed or merged |
 | `browser` | `5dive browser --help` exits 0 | **API-only**: steps needing an authenticated browser session do not run |
 
+No shipped team declares `github_push` any more (DIVE-7170, 2026-10-28): a key
+under `requires:` is read by the dashboard and Mini App as a condition of the
+HIRE, and GitHub must not be one. The Deploy Team asks for GitHub once, at its
+first push, from inside the team (see its header). The key and its probe stay
+for a template that genuinely cannot work without one.
+
 ### Posture
 Same as `loops:` — **a missing capability does NOT fail the import** and does not
 count toward `errors`. A review-only team is worth having; a box with no

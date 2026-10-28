@@ -39,16 +39,21 @@
 # push grant and on a standard seat, so the Verifier cannot push what it
 # graded, whatever the box's default tier. A CLI older than the key warns
 # `unknown key 'can_push'` and keeps the old box-wide behaviour.
-# `team.requires: [github_push]` makes the import SAY whether the box can push
-# at all: without a credential the team still comes up, as a review-only team,
-# and the import prints the reason.
+#
+# GITHUB IS NOT A HIRING REQUIREMENT (DIVE-7170, lodar 2026-10-28: "remove
+# GitHub key as needed to requirement for hiring the team"). There is no
+# `team.requires: [github_push]` here, so no surface asks for a GitHub login
+# before the hire: the team comes up and works on the box. GitHub is asked for
+# ONCE, by dario, at the first step that needs to push: a one-tap secret link
+# (`task need --type=secret --secret-key=GH_TOKEN --connector=tools`) whose
+# answer lands in the box's tools file, so every seat's `gh` reads it from its
+# next command. Only dario asks, so the owner never gets two links.
 version: "2"
 
 team:
   name: "Deploy Team"
   description: "Ships code on GitHub end to end: CTO, Ops, Engineer, Verifier — with the queue rail and the loops that keep it fed"
   slug: deploy-team
-  requires: [github_push]
 
 defaults:
   type: claude
@@ -128,6 +133,9 @@ agents:
       The board cannot see GitHub. A pull request is not a task row, so an open
       PR nobody bound to a row is invisible to `5dive task ls` — read it
       straight from `gh pr list` instead, every day.
+
+      You never ask for a GitHub login: dario asks once, at the first push. If
+      `gh auth token` fails, the box has none yet; say so in one line and stop.
     goals:
       - "Report the open pull requests, their check status, and what each is waiting on."
     loops:
@@ -170,6 +178,17 @@ agents:
       Build each row in its own git worktree (`git worktree add ../dario-<row>
       -b <branch>`), never in the shared checkout. With no pull request,
       deliver the branch and commit; the row already names vesper as grader.
+
+      GITHUB IS ASKED FOR ONCE, BY YOU, WHEN YOU FIRST NEED TO PUSH. The team
+      was hired without a GitHub login, on purpose. Before your first push or
+      clone, run `gh auth token >/dev/null 2>&1`. If it fails and no GitHub ask
+      is already open, ask your human once, on the row you are building:
+      `5dive task need <id> --type=secret --secret-key=GH_TOKEN
+      --connector=tools --ask="To publish this work I need a GitHub token. Tap
+      the link and paste one; I ask only once."`. Then keep building and
+      committing on the branch, and take the next row. Once the token is in,
+      push and deliver as usual. If you already asked and the token is not
+      in yet, do not ask again.
     goals:
       - "Take the oldest runnable row in your lane and deliver it as a pull request."
     loops:
