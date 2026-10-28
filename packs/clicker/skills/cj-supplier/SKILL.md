@@ -7,11 +7,12 @@ description: >-
   read the tracking number. Use this whenever the shop's supplier is CJdropshipping ("CJ",
   cjdropshipping.com) and the job is "order this for the buyer", "what does shipping cost",
   "how long to the US", "has it shipped", or "get the tracking number". Use the browser
-  only for what this cannot do: sign-up, topping up the balance and disputes.
-compatibility: "Needs curl and jq. One owner step to make a CJ API key; after that no browser. Not tried live yet: no CJ account was available when this was written."
+  only for what this cannot do: the sign-up and the key (you make both), topping up the
+  balance and disputes.
+compatibility: "Needs curl and jq, and the 5dive browser for the one-time sign-up and key. The owner only signs in with their own Google, or taps a captcha. Not tried live yet: no CJ account was available when this was written."
 metadata:
   author: 5dive
-  version: "0.9"
+  version: "0.10"
   license: company-agnostic
   tried-live: "no"
 ---
@@ -41,11 +42,19 @@ lead what came back.
 
 ## Connect the account (once)
 
-1. **Ask the owner once:** "Make a CJ key so the team can order from CJ without the browser?
-   On cjdropshipping.com: Apps > Install App > API, then the API tab, Add API, type API Key.
-   Copy the key into the secure link I send."
-2. **Send the secure link** for `CJ_API_KEY`. It lands in every teammate's shell.
-3. **Get a token.** It lasts 180 days. Asking again inside a day returns the same one.
+You make the account and the key yourself, in the browser. The owner is never asked to make
+an account or copy a key.
+
+1. **Sign up** on cjdropshipping.com with "Continue with Google". The sign-in is the owner's
+   own: run the **browser:connect-site** handover for Google and wait. A captcha is the only
+   other thing you hand them, as the viewer link, one tap. Never type a password.
+2. **Make the key:** Apps > Install App > API, then the API tab, Add API, type API Key.
+3. **Store it without showing it.** Read it off the page and pipe it straight in:
+   `sudo 5dive secret write CJ_API_KEY --connector=tools` (value on stdin). It then lands in
+   every teammate's shell. That verb needs an admin seat. If yours is refused, tell your lead in
+   one line: "CJ key made, on CJ's API page; please store it", and the lead reads it from the
+   same page into the same command. Never put it in chat, a file, a task or a message.
+4. **Get a token.** It lasts 180 days. Asking again inside a day returns the same one.
 
    ```sh
    CJ=https://developers.cjdropshipping.com/api2.0/v1
@@ -131,7 +140,7 @@ shopify-store or woocommerce-store skill does that step).
 
 - **`success: false`:** read `message`. It usually names the field (an address part, the
   `logisticName`, a `vid` that is out of stock). Fix it and send again.
-- **Token rejected:** get a new one (Connect, step 3). If that fails too, the key was removed;
-  ask the owner for a new one through a secure link.
+- **Token rejected:** get a new one (Connect, step 4). If that fails too, the key was removed;
+  make a new one on CJ's API page (Connect, step 2) and store it again.
 - **Anything this skill does not cover:** CJ's docs are at
   developers.cjdropshipping.com (API 2.0). Do not guess a field name.
