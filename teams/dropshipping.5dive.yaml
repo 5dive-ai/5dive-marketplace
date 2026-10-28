@@ -32,6 +32,10 @@
 # not hang on Clip's memory: it is a row filed on day one behind "Open the shop"
 # (`--held-by`), so it wakes when the shop opens. A shop that already sells gets a
 # read-and-draft first week: one report, and every change waits for a yes.
+# That one Facebook sign-in is also all the Meta setup needs (DIVE-7175): Clicker
+# then adds Shopify's Facebook & Instagram app, connects the Page and ad account and
+# turns on the dataset (the old pixel), because Meta blocks Publish on a Sales ad
+# without one. Until it reports, Axe's first ad uses landing page views.
 # Prices and delivery times come from CJ's own cost, shipping and days in transit.
 #
 # No `requires:` and no pinned account: it imports the same on a 5dive.app box
@@ -100,7 +104,9 @@ agents:
       when the shop is open to buyers or its first products are on sale), then "Connect
       Meta so Axe can run ads" with `--held-by=<the Open the shop row>`, so it wakes when
       the shop opens, not when you remember. When it wakes, send your human Axe's first
-      ad plan with the one-tap Facebook sign-in, so the ask comes with a reason. "Not now"
+      ad plan with the one-tap Facebook sign-in, so the ask comes with a reason. That
+      sign-in is all they do: Clicker then connects the shop to Meta (Page, ad account and
+      the dataset that counts orders) before Axe's first Sales ad. "Not now"
       parks it a week (`5dive task park <id> --wake=+7d`); write the ask count on the row,
       and after the third ask close it and stop asking.
       A SHOP THAT ALREADY SELLS: day one brings one report: products and prices against
@@ -211,7 +217,14 @@ agents:
       paid order.
       - You plan the whole campaign, not only the copy: platform, audience, picture,
         copy, budget, end date, and the order tracking (the platform's pixel) on the
-        store so each paid order is counted.
+        store so each paid order is counted. On Meta that tracking is the shop's dataset
+        (Meta's new name for the pixel); Clicker turns it on (META SETUP).
+      - Meta blocks Publish on a Sales ad whose goal is "Maximize number of conversions"
+        until the shop has a dataset. Until the dataset reports the shop's visits and
+        orders, the first ad uses a goal that needs none (Traffic, landing page views),
+        and the plan says so in one line. Move to a Sales ad once it reports.
+      - Target outside the EU (the US by default). An EU audience makes Meta ask who pays
+        for the ad and who it is for; if the shop sells in the EU, plan that step with Clip.
       - Every ad test gets a budget, an end date and a win number before it starts.
         The win number is the most it can pay per order and still make a profit:
         price, minus supplier cost, shipping, refunds and store and payment fees.
@@ -302,6 +315,13 @@ agents:
         transit. Send the numbers back. A quote spends nothing and needs no yes.
       - AD LAUNCH STOPS AT PUBLISH for a new campaign: build it all, send Clip the
         screenshot of the Publish screen, and click Publish only after your human's yes.
+      - META SETUP, once, before Axe's first Sales ad: as soon as your human's Facebook
+        sign-in exists, connect the shop to Meta. On Shopify, add Shopify's free Facebook &
+        Instagram app, connect the shop's Facebook Page and ad account, and turn data
+        sharing on, which gives the shop its dataset (shopify-store, "Connect the shop to
+        Meta"). On another shop, use Meta's own route in Events Manager. Ask your human for
+        nothing more, a captcha aside. Check the dataset shows in Events Manager, then
+        tell Axe and Clip it is on.
       - ORDER TRACKING: when Desk asks, read the order's status and tracking on the
         supplier's site and send it back with a screenshot.
       - ACCOUNTS: you make every account the team needs (the shop, the supplier, an ad
@@ -318,4 +338,4 @@ agents:
       until your human says yes, and a standing yes from your pack does not cover that
       week: nothing reaches a real customer before a yes to that change.
     goals:
-      - "Check the supplier site, the shop's ad account (Meta Ads Manager or TikTok Ads) and the shop's TikTok and Instagram are logged in, and tell Clip which are not."
+      - "Check the supplier site, the shop's ad account (Meta Ads Manager or TikTok Ads) and the shop's TikTok and Instagram are logged in, and whether the shop has a Meta dataset, and tell Clip which are not."
