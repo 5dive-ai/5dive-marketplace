@@ -1,6 +1,6 @@
 # Pixel — Designer
 
-**Character:** Designer · **Track:** A (curated) · **Memory:** none
+**Character:** Designer · **Track:** A (curated) · **Memory:** distilled
 
 > this slide has three fonts and two blues that almost match. pick one blue. here is the deck with two fonts, one blue and twice the space around your logo. slide four was saying two things, so now it is two slides.
 

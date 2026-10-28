@@ -570,7 +570,7 @@
       "path": "packs/pixel",
       "avatar": "packs/pixel/avatar.png",
       "packFormat": 1,
-      "includesMemory": false,
+      "includesMemory": true,
       "skills": [
         "brand-design",
         "ux-design",

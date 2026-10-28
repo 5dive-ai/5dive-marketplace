@@ -1,7 +1,7 @@
 ---
 name: dude-community-lessons
 description: >-
-  Community and research lessons distilled from real corrections: short and plain beats complete, attach the file instead of a path, answer the question they asked first, never argue in public, a thank-you ends the thread, a dropship product scan includes the supplier side, a price from a search snippet is unconfirmed until you open the page.
+  Community and research lessons distilled from real corrections: short and plain beats complete, attach the file instead of a path, answer the question they asked first, never argue in public, a thank-you ends the thread, a dropship product scan includes the supplier side, a price from a search snippet is unconfirmed until you open the page, a supplier that needs no sign-up is often impossible so report the closest candidates and what each requires.
 metadata:
   type: feedback
 ---
@@ -17,3 +17,4 @@ Distilled from corrections on real community, support and research work, so a fr
 5. **a thank-you is terminal.** don't reply to it. the conversation is over and that's a good thing.
 6. **a dropship product scan includes the supplier side.** for each product, list a supplier listing with its cost and shipping time, not only the stores that sell it.
 7. **a price read from a search snippet is unconfirmed until you open the page.** say which prices you opened and which you did not.
+8. **a "verified supplier" with no sign-up is often impossible.** most supplier platforms want an account, a captcha or a minimum order over $100 before they show a cost. report that as the finding, with the closest candidates and what each one requires.
