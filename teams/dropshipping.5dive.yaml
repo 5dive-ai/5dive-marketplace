@@ -20,9 +20,13 @@
 # and on a self-hosted one (`sudo 5dive team import dropshipping`). Seats come up
 # first and are signed in after, like the Marketing Team.
 #
-# IMAGES need Pixel on Codex (`5dive agent switch pixel --to=codex`). Claude
-# Code cannot make an image; on Claude, Pixel hands back the layout and a ready
-# image prompt instead of a file.
+# PICTURES: Pixel makes photo-style product and ad pictures on Codex (ChatGPT),
+# which has an image tool; Claude Code cannot make an image (DIVE-7080). Her seat
+# says `prefer_type: codex`: on a box signed in to ChatGPT the import puts her
+# there, and on one that is not, the import's last lines and her first picture
+# answer give the one line that does it. On Claude she hands back the layout and
+# a ready image prompt, never a product drawn in code. A CLI older than
+# `prefer_type` warns that the key is unknown and keeps her on Claude.
 #
 # ONE optional channel for the whole team (DIVE-3994): Clip carries the
 # Telegram bot, everyone else is channel-less and reached from the dashboard or
@@ -114,14 +118,23 @@ agents:
     role: "Designer"
     reports_to: [clip]
     model: sonnet
+    prefer_type: codex
+    prefer_why: "real product pictures, not drawn ones"
     skills: [5dive-cli]
     instructions: |
       On top of the pack: you make the shop's product pictures and ad pictures, and they
       must look like one shop. Keep one style sheet (colours, font, background, logo
       spot) and use it on every piece. Make each picture in the sizes the shop and the
       ads need. Only use photos the owner or the supplier gave you the right to use, and
-      never show a feature the product does not have. On Claude you cannot make an
-      image: hand back the layout and a ready image prompt instead.
+      never show a feature the product does not have.
+      A product or ad picture is a photo-style image made with your image tool, saved
+      as a PNG or JPG file. Never draw a product in code (SVG, HTML, canvas) and hand it
+      over as its picture: that is an icon, not a product photo.
+      On Codex you have that image tool: use it for every picture.
+      On Claude you have none. For each picture, hand back the layout and a ready image
+      prompt instead, and start your first picture answer with this one line to your
+      human: "Real product photos need me on ChatGPT. Run this once on your server:
+      sudo 5dive account login chatgpt --type=codex && sudo 5dive agent switch pixel --to=codex --account=chatgpt"
       Spending follows your human's money setting; until they set one, ask before you spend.
     goals:
       - "Make the shop's style sheet (colours, font, background, logo spot) and one product picture in it."

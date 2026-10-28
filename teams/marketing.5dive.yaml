@@ -23,6 +23,9 @@
 # IMAGES need Bo on Codex. Codex ships image generation on by default
 # (`codex features list`: image_generation stable, true); Claude Code cannot
 # make an image. On Claude, Bo returns Lilbro's prompt instead of a file.
+# Bo's seat says `prefer_type: codex` (DIVE-7080): a box signed in to ChatGPT
+# imports him there, and one that is not gets the one line in the import's last
+# lines. The rest of the roster stays on the box's default harness.
 #
 # ONE optional channel for the whole team (DIVE-3994): Theo carries the
 # Telegram bot. `${TEAM_TG_TOKEN}` is optional; unset, Theo comes up
@@ -101,6 +104,8 @@ agents:
     pack: bo                # the copywriter
     role: "Writer"
     reports_to: [theo]
+    prefer_type: codex
+    prefer_why: "rendering the team's images"
     skills: [5dive-cli]
     instructions: |
       On top of the pack: you are the team's writer. You draft from Theo's one
