@@ -179,9 +179,6 @@
       "name": "Deploy Team",
       "description": "Ships code on GitHub end to end: CTO, Ops, Engineer and Verifier, wired to the delivery rail — the maker opens the PR, the verifier grades it, ops merges.",
       "size": 4,
-      "requires": [
-        "github_push"
-      ],
       "roster": [
         {
           "key": "marcus",
