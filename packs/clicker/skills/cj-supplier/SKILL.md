@@ -12,7 +12,7 @@ description: >-
 compatibility: "Needs curl and jq, and the 5dive browser for the one-time sign-up and key. The owner only signs in with their own Google, or taps a captcha. Not tried live yet: no CJ account was available when this was written."
 metadata:
   author: 5dive
-  version: "0.10"
+  version: "0.11"
   license: company-agnostic
   tried-live: "no"
 ---
@@ -49,11 +49,13 @@ an account or copy a key.
    own: run the **browser:connect-site** handover for Google and wait. A captcha is the only
    other thing you hand them, as the viewer link, one tap. Never type a password.
 2. **Make the key:** Apps > Install App > API, then the API tab, Add API, type API Key.
-3. **Store it without showing it.** Read it off the page and pipe it straight in:
-   `sudo 5dive secret write CJ_API_KEY --connector=tools` (value on stdin). It then lands in
-   every teammate's shell. That verb needs an admin seat. If yours is refused, tell your lead in
-   one line: "CJ key made, on CJ's API page; please store it", and the lead reads it from the
-   same page into the same command. Never put it in chat, a file, a task or a message.
+3. **Store it without showing it.** CJ shows the key masked, with a Copy button. Click Copy,
+   take a `shot` to see it took, then run
+   `5dive browser clipboard cjdropshipping.com --to-secret=CJ_API_KEY`. It saves the key in
+   the box's secret store and clears the clipboard; it lands in every teammate's shell. Never
+   read the key off the screen. If the store refuses (an older box), tell your lead in one line:
+   "CJ key made, please store it from CJ's API page". Never put it in chat, a file, a task or
+   a message.
 4. **Get a token.** It lasts 180 days. Asking again inside a day returns the same one.
 
    ```sh
