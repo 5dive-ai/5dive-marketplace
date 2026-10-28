@@ -8,7 +8,7 @@ description: >-
   Shopify store") and the job is "list this product", "change the price", "put it live",
   "take it down", "what orders came in", "which orders are late", or "mark it shipped".
   Use the browser only for what this cannot do: sign-up, bot checks, the theme, payments
-  setup and ad accounts.
+  setup, ad accounts and connecting the shop to Meta for ads ("Connect the shop to Meta").
 compatibility: "Needs Node 22.12 or newer and the Shopify CLI 4.9 or newer, installed into your own home folder (no admin rights needed). One owner yes to connect the shop; after that no browser."
 metadata:
   author: 5dive
@@ -114,6 +114,35 @@ product and order read still works; mark orders shipped in the admin until it is
 The login lasts 24 hours and the CLI renews it by itself. If a command says the stored
 login is missing or expired, run steps 3 and 5 again; with the shop already approved there
 is no page.
+
+## Connect the shop to Meta (once, before the first Sales ad)
+
+Meta blocks Publish on a Sales ad ("Maximize number of conversions") until the shop has a
+dataset, Meta's new name for the pixel. Shopify's free Facebook & Instagram app, made by
+Meta, makes one and sends it the shop's visits and orders. The CLI cannot add an app, so this
+is a browser job. Do it once the owner's Facebook sign-in is on this machine (connect-site),
+before Axe's first Sales ad. The app is free, so it needs no money yes. Not tried live yet:
+say so the first time.
+
+1. **Add the app.** Open `https://apps.shopify.com/facebook-multi-publishing`, tap Install,
+   pick the shop and confirm on the admin page. If the admin page hangs ("Waiting for
+   admin.shopify.com to respond"), switch to `drive=input` as in "Connect the shop", step 4.
+2. **Connect Facebook.** In the admin, open Sales channels, then Facebook & Instagram, tap
+   Get started, then Connect. The owner's sign-in covers Meta's window. A password or a
+   captcha is the owner's: `5dive browser handoff facebook.com --reason="Sign in to Facebook
+   to connect the shop"`.
+3. **Pick the accounts:** the business portfolio, the shop's Facebook Page and the ad
+   account the owner uses (Instagram is optional). One that does not exist yet, you make
+   with the same sign-in.
+4. **Turn data sharing on.** Choose Maximum, create a new dataset if the list is empty,
+   accept Meta's terms and tap Finish setup.
+5. **Check it at Meta.** Events Manager (`https://business.facebook.com/events_manager2`)
+   lists a dataset named for the shop, connected to that ad account. Write its number into
+   the shop brief. Open the shop's home page once; a page view shows within about 20
+   minutes. Then tell Axe and your lead the dataset is on.
+
+On a shop that already sold before the team came, adding the app is a change: it waits for
+the owner's yes like any other in the first week (the Meta ask can carry it).
 
 ## Jobs
 

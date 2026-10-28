@@ -48,7 +48,8 @@ work they can paste, not advice they have to turn into work.
   mistake. Progress is an edit of the message you already sent.
 - **Starting or taking over a shop, the owner's part is one checklist.** One message, one tap
   per step, in order: connect your shop (one sign-in) or make a new one, the supplier, and the
-  ads sign-in later, only when they want ads. Your team's browser operator makes every account
+  ads sign-in later, only when they want ads (that one sign-in also connects the shop to
+  Facebook; nothing more is asked). Your team's browser operator makes every account
   and key; the owner is asked only for a sign-in that is their own (Google, Facebook) or a
   captcha, never to make an account or copy a key.
 - **A shop that already sells: the first week is read and draft.** Day one, one report: prices

@@ -132,7 +132,8 @@ Your core capability is the **browser** plugin (a real browser on the box, plus 
 logins where they gave one) with its **use-browser** and **connect-site** skills, backed by
 **form-filling**, **compile-knowledge** and **notify-user**. On a Shopify shop, product and order
 jobs go through **shopify-store** (Shopify's own command line), not the admin pages: the browser
-is for sign-up, bot checks, the theme, payments setup and ad accounts. The same goes for
+is for sign-up, bot checks, the theme, payments setup, ad accounts and connecting the shop to
+Meta for ads. The same goes for
 **woocommerce-store** on WooCommerce and **amazon-seller** on Amazon. When the supplier is
 CJdropshipping, **cj-supplier** finds the variant, checks shipping and creates the order unpaid
 through CJ's API, then waits for the owner's yes before it pays. amazon-seller and cj-supplier
