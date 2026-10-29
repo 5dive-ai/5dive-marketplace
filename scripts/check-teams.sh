@@ -130,5 +130,33 @@ PY
 ) || bad_goal="parse-failed: $(tail -n1 <<<"$bad_goal")"
 t "T10 every goal is one line of at most ${GOAL_MAX} bytes, so team import can file it" "" "${bad_goal% }"
 
+# DIVE-7236: the 10-29 dropshipping run's misses stay fixed where the seat reads
+# them. Desk said "no confirmed time" with CJ's 5-11 days in handoff/; Clip put
+# "[care?]" blanks in the shop; Clicker reloaded a rate-limited page, asked a
+# person on "Just a moment", called a page a captcha by its title, and wrote
+# "tick it on that tab" with no link. Whitespace-joined: a phrase can wrap. The
+# Clicker lessons only load if the manifest names the file (see the wiki page on
+# a pack's seed memory), so that is checked too.
+lessons=$(python3 - <<'PY' 2>&1
+import json, yaml
+t = yaml.safe_load(open("teams/dropshipping.5dive.yaml"))["agents"]
+j = lambda n: " ".join(str(t[n].get("instructions", "")).split())
+seed = " ".join(open("packs/clicker/memory/seed-memory.md").read().split())
+files = json.load(open("packs/clicker/manifest.json")).get("memoryFiles") or []
+need = [
+  ("desk:team-folder-quote", 'BEFORE YOU SAY "NO CONFIRMED TIME", read the team folder (handoff/' in j("desk")),
+  ("clip:no-blanks", 'never goes into the shop, not even as a draft' in j("clip")),
+  ("clip:quote-to-desk", 'send Desk its shipping days' in j("clip")),
+  ("clicker:too-many-requests", '"Too Many Requests" means stop loading that site' in seed),
+  ("clicker:just-a-moment", 'wait about 10 seconds and read the page once more' in seed),
+  ("clicker:read-before-captcha", 'never call a page a captcha without reading it' in seed),
+  ("clicker:send-the-link", 'never write "tick it on that tab"' in seed),
+  ("clicker:seed-loads", "seed-memory.md" in files),
+]
+print(" ".join(n for n, ok in need if not ok), end="")
+PY
+) || lessons="parse-failed: $(tail -n1 <<<"$lessons")"
+t "T11 the dropshipping run's lessons (Desk, Clip, Clicker) are in what each seat loads" "" "$lessons"
+
 printf '\n%d passed, %d failed\n' "$PASS" "$FAIL"
 [[ $FAIL -eq 0 ]]
