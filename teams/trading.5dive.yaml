@@ -1,6 +1,13 @@
-# Trading Desk — a research desk of five, every seat a character (DIVE-6899, DIVE-6914, DIVE-6920, DIVE-6923).
+# Trading Team — five characters who research, test and place trades, every seat a
+# character (DIVE-6899, DIVE-6914, DIVE-6920, DIVE-6923).
 #
-#   5dive team import trading-desk
+#   5dive team import trading
+#
+# Was "Trading Desk", slug `trading-desk`, until DIVE-7317 (lodar 10-30: "position
+# like you can actually trade using the team, not just research"). `trading-desk`
+# is its alias in index.json, so an old command, link or box that imported it
+# under that name still finds this team. The photo file and the wiki tag keep the
+# old name: a box that already has lessons tagged trading-desk keeps finding them.
 #
 # One idea a week goes from research to a backtest with real fees to the lead's
 # call. Quant leads: it sets the mandate, backtests and keeps the book. Ada reads
@@ -22,7 +29,7 @@
 # own; the owner sets those (DIVE-6910).
 #
 # No `requires:` and no pinned account: it imports the same on a 5dive.app box
-# and on a self-hosted one (`sudo 5dive team import trading-desk`). Seats come up
+# and on a self-hosted one (`sudo 5dive team import trading`). Seats come up
 # first and are signed in after, like the Marketing Team.
 #
 # ONE optional channel for the whole desk (DIVE-3994): the lead carries the
@@ -31,9 +38,9 @@
 version: "2"
 
 team:
-  name: "Trading Desk"
-  description: "Find and backtest trading ideas with real fees, every week. Quant leads, Ada checks the news, data and prediction-market odds, Dude reads the crowd, Clicker works the browser, Root the desk hacker audits contracts and writes scripts."
-  slug: trading-desk
+  name: "Trading Team"
+  description: "Finds trading ideas, backtests them with real fees, and places trades on your account when you say go. Its own ideas go to paper first. Quant leads, Ada checks news and odds, Dude reads the crowd, Clicker works your browser, Root audits contracts."
+  slug: trading
 
 defaults:
   type: claude
