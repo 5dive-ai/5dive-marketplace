@@ -217,9 +217,9 @@
       "photo": "teams/photos/deploy-team.webp"
     },
     {
-      "slug": "trading-desk",
-      "name": "Trading Desk",
-      "description": "Find and backtest trading ideas with real fees, every week. Quant leads, Ada checks the news, data and prediction-market odds, Dude reads the crowd, Clicker works the browser, Root the desk hacker audits contracts and writes scripts.",
+      "slug": "trading",
+      "name": "Trading Team",
+      "description": "Finds trading ideas, backtests them with real fees, and places your trades.",
       "size": 5,
       "roster": [
         {
@@ -258,14 +258,17 @@
           "pack": "root"
         }
       ],
-      "path": "teams/trading-desk.5dive.yaml",
+      "path": "teams/trading.5dive.yaml",
       "schemaVersion": 2,
       "photo": "teams/photos/trading-desk.webp",
       "loop": {
         "owner": "quant",
         "id": "weekly-idea",
         "cron": "0 9 * * 1"
-      }
+      },
+      "aliases": [
+        "trading-desk"
+      ]
     }
   ]
 }
