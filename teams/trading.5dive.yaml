@@ -39,7 +39,7 @@ version: "2"
 
 team:
   name: "Trading Team"
-  description: "Finds trading ideas, backtests them with real fees, and places trades on your account when you say go. Its own ideas go to paper first. Quant leads, Ada checks news and odds, Dude reads the crowd, Clicker works your browser, Root audits contracts."
+  description: "Finds trading ideas, backtests them with real fees, and places your trades."
   slug: trading
 
 defaults:
