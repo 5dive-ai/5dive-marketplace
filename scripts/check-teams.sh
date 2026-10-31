@@ -139,7 +139,7 @@ t "T10 every goal is one line of at most ${GOAL_MAX} bytes, so team import can f
 # a pack's seed memory), so that is checked too.
 lessons=$(python3 - <<'PY' 2>&1
 import json, yaml
-t = yaml.safe_load(open("teams/dropshipping.5dive.yaml"))["agents"]
+t = yaml.safe_load(open("teams/ecommerce.5dive.yaml"))["agents"]
 j = lambda n: " ".join(str(t[n].get("instructions", "")).split())
 seed = " ".join(open("packs/clicker/memory/seed-memory.md").read().split())
 files = json.load(open("packs/clicker/manifest.json")).get("memoryFiles") or []
