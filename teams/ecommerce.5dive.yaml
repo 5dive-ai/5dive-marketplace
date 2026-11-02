@@ -70,7 +70,7 @@ defaults:
 agents:
   clip:
     pack: clip
-    role: "Shop manager"
+    role: "Manager"
     reports_to: []
     channels: telegram
     telegram_token: "${TEAM_TG_TOKEN}"
@@ -149,7 +149,7 @@ agents:
 
   dude:
     pack: dude
-    role: "Product and competitor research"
+    role: "Research"
     reports_to: [clip]
     model: sonnet
     skills: [5dive-cli, deep-research]
@@ -210,7 +210,7 @@ agents:
 
   axe:
     pack: axe
-    role: "Ads and growth"
+    role: "Ads"
     reports_to: [clip]
     model: opus
     skills: [5dive-cli, ad-creative]
@@ -259,7 +259,7 @@ agents:
 
   desk:
     pack: desk
-    role: "Customer support"
+    role: "Support"
     reports_to: [clip]
     model: sonnet
     skills: [5dive-cli]
@@ -304,7 +304,7 @@ agents:
 
   clicker:
     pack: clicker
-    role: "Browser operator"
+    role: "Operator"
     reports_to: [clip]
     model: haiku
     skills: [5dive-cli]

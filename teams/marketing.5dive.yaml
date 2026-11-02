@@ -124,7 +124,7 @@ agents:
 
   lilbro:
     pack: lilbro            # zoomer, meme-fluent, stops the scroll
-    role: "Videos and visuals"
+    role: "Video"
     reports_to: [theo]
     skills: [5dive-cli]
     instructions: |
@@ -143,7 +143,7 @@ agents:
 
   dude:
     pack: dude              # calm signal-spotter
-    role: "Competitive intel"
+    role: "Research"
     reports_to: [theo]
     skills: [5dive-cli, deep-research]
     instructions: |
@@ -167,7 +167,7 @@ agents:
 
   axe:
     pack: axe               # numbers first; every test ships with a number to beat
-    role: "Paid ads"
+    role: "Ads"
     reports_to: [theo]
     skills: [5dive-cli, ad-creative]
     instructions: |

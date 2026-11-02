@@ -33,7 +33,7 @@
         },
         {
           "key": "dude",
-          "role": "Competitor research",
+          "role": "Research",
           "model": "sonnet",
           "reports_to": "theo",
           "pack": "dude"
@@ -77,21 +77,21 @@
         },
         {
           "key": "lilbro",
-          "role": "Videos and visuals",
+          "role": "Video",
           "model": "opus",
           "reports_to": "theo",
           "pack": "lilbro"
         },
         {
           "key": "dude",
-          "role": "Competitive intel",
+          "role": "Research",
           "model": "sonnet",
           "reports_to": "theo",
           "pack": "dude"
         },
         {
           "key": "axe",
-          "role": "Paid ads",
+          "role": "Ads",
           "model": "opus",
           "reports_to": "theo",
           "pack": "axe"
@@ -124,14 +124,14 @@
       "roster": [
         {
           "key": "clip",
-          "role": "Shop manager",
+          "role": "Manager",
           "model": "opus",
           "reports_to": null,
           "pack": "clip"
         },
         {
           "key": "dude",
-          "role": "Product and competitor research",
+          "role": "Research",
           "model": "sonnet",
           "reports_to": "clip",
           "pack": "dude"
@@ -145,21 +145,21 @@
         },
         {
           "key": "axe",
-          "role": "Ads and growth",
+          "role": "Ads",
           "model": "opus",
           "reports_to": "clip",
           "pack": "axe"
         },
         {
           "key": "desk",
-          "role": "Customer support",
+          "role": "Support",
           "model": "sonnet",
           "reports_to": "clip",
           "pack": "desk"
         },
         {
           "key": "clicker",
-          "role": "Browser operator",
+          "role": "Operator",
           "model": "haiku",
           "reports_to": "clip",
           "pack": "clicker"
@@ -192,7 +192,7 @@
         },
         {
           "key": "anton",
-          "role": "DevOps and Delivery",
+          "role": "DevOps",
           "model": "opus",
           "reports_to": "marcus",
           "pack": "anton"
@@ -206,7 +206,7 @@
         },
         {
           "key": "vesper",
-          "role": "Verifier / QA",
+          "role": "QA",
           "model": "opus",
           "reports_to": "anton",
           "pack": "vesper"
@@ -224,7 +224,7 @@
       "roster": [
         {
           "key": "quant",
-          "role": "Lead trader",
+          "role": "Trader",
           "model": "opus",
           "reports_to": null,
           "pack": "quant"
@@ -238,21 +238,21 @@
         },
         {
           "key": "dude",
-          "role": "Crowd research",
+          "role": "Sentiment",
           "model": "haiku",
           "reports_to": "quant",
           "pack": "dude"
         },
         {
           "key": "clicker",
-          "role": "Browser operator",
+          "role": "Operator",
           "model": "haiku",
           "reports_to": "quant",
           "pack": "clicker"
         },
         {
           "key": "root",
-          "role": "Desk hacker",
+          "role": "Hacker",
           "model": "opus",
           "reports_to": "quant",
           "pack": "root"
