@@ -99,7 +99,7 @@ agents:
 
   dude:
     pack: dude                     # calm signal-spotter
-    role: "Competitor research"
+    role: "Research"
     reports_to: [theo]
     skills: [5dive-cli, deep-research]
     instructions: |

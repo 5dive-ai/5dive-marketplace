@@ -117,7 +117,7 @@ agents:
 
   anton:
     pack: anton             # keeps it running so nobody notices
-    role: "DevOps and Delivery"
+    role: "DevOps"
     can_push: true
     reports_to: [marcus]
     instructions: |
@@ -205,7 +205,7 @@ agents:
 
   vesper:
     pack: vesper            # breaks it on purpose so the users do not
-    role: "Verifier / QA"
+    role: "QA"
     reports_to: [anton]
     instructions: |
       On top of the pack: you grade delivered work at the commit that was

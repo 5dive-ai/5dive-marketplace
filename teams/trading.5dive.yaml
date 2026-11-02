@@ -51,7 +51,7 @@ defaults:
 agents:
   quant:
     pack: quant
-    role: "Lead trader"
+    role: "Trader"
     reports_to: []
     channels: telegram
     telegram_token: "${TEAM_TG_TOKEN}"
@@ -167,7 +167,7 @@ agents:
 
   dude:
     pack: dude
-    role: "Crowd research"
+    role: "Sentiment"
     reports_to: [quant]
     model: haiku
     skills: [5dive-cli]   # social-alpha comes with the dude pack, not from the skills repo
@@ -208,7 +208,7 @@ agents:
 
   clicker:
     pack: clicker
-    role: "Browser operator"
+    role: "Operator"
     reports_to: [quant]
     model: haiku
     skills: [5dive-cli]
@@ -230,7 +230,7 @@ agents:
 
   root:
     pack: root
-    role: "Desk hacker"
+    role: "Hacker"
     reports_to: [quant]
     model: opus
     effort: high          # a missed contract trap costs real money
