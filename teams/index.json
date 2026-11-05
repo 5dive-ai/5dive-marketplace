@@ -224,7 +224,7 @@
       "roster": [
         {
           "key": "quant",
-          "role": "Desk lead",
+          "role": "Head trader",
           "model": "opus",
           "reports_to": null,
           "pack": "quant"
