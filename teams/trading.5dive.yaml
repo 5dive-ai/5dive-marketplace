@@ -51,7 +51,7 @@ defaults:
 agents:
   quant:
     pack: quant
-    role: "Trader"
+    role: "Desk lead"
     reports_to: []
     channels: telegram
     telegram_token: "${TEAM_TG_TOKEN}"
