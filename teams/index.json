@@ -220,7 +220,7 @@
       "slug": "trading",
       "name": "Trading Team",
       "description": "Finds trading ideas, backtests them with real fees, and places your trades.",
-      "size": 5,
+      "size": 6,
       "roster": [
         {
           "key": "quant",
@@ -245,17 +245,24 @@
         },
         {
           "key": "clicker",
-          "role": "Operator",
+          "role": "Execution",
           "model": "haiku",
           "reports_to": "quant",
           "pack": "clicker"
         },
         {
           "key": "root",
-          "role": "Hacker",
+          "role": "Quant dev",
           "model": "opus",
           "reports_to": "quant",
           "pack": "root"
+        },
+        {
+          "key": "vesper",
+          "role": "Risk",
+          "model": "opus",
+          "reports_to": "quant",
+          "pack": "vesper"
         }
       ],
       "path": "teams/trading.5dive.yaml",
