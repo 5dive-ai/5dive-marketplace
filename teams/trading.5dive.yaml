@@ -43,7 +43,7 @@ version: "2"
 
 team:
   name: "Trading Team"
-  description: "Finds trading ideas, backtests them with real fees, and places your trades."
+  description: "Places trades on your account. Finds ideas, backtests them with real fees."
   slug: trading
 
 defaults:
