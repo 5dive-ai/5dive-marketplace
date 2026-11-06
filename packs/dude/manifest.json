@@ -23,5 +23,10 @@
   "skillsBundled": true,
   "memoryFiles": [
     "seed-memory.md"
+  ],
+  "jobs": [
+    "Write community rules",
+    "Draft a welcome post",
+    "Plan a community event"
   ]
 }

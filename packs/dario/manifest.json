@@ -26,5 +26,10 @@
   "skillsBundled": true,
   "memoryFiles": [
     "seed-memory.md"
+  ],
+  "jobs": [
+    "Build a landing page",
+    "Plan my app's screens",
+    "Pick a UI kit"
   ]
 }

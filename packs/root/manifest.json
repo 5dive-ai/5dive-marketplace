@@ -24,5 +24,10 @@
   "skillsBundled": true,
   "memoryFiles": [
     "seed-memory.md"
+  ],
+  "jobs": [
+    "Check my site's security",
+    "Write a security checklist",
+    "Draft an incident plan"
   ]
 }

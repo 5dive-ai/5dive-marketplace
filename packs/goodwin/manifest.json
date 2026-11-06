@@ -18,5 +18,10 @@
   ],
   "hooks": {},
   "avatar": null,
-  "skillsBundled": true
+  "skillsBundled": true,
+  "jobs": [
+    "Draft an NDA",
+    "Write a privacy policy",
+    "Make a contract checklist"
+  ]
 }

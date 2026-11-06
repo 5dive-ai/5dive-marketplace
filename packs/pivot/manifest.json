@@ -18,5 +18,10 @@
   ],
   "hooks": {},
   "avatar": null,
-  "skillsBundled": true
+  "skillsBundled": true,
+  "jobs": [
+    "Pick 5 key metrics",
+    "Plan a KPI dashboard",
+    "Size my market"
+  ]
 }

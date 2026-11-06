@@ -18,5 +18,10 @@
   ],
   "hooks": {},
   "avatar": null,
-  "skillsBundled": true
+  "skillsBundled": true,
+  "jobs": [
+    "Make a workout plan",
+    "Build a daily habit",
+    "Plan a morning routine"
+  ]
 }

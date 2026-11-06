@@ -18,5 +18,10 @@
   ],
   "hooks": {},
   "avatar": null,
-  "skillsBundled": true
+  "skillsBundled": true,
+  "jobs": [
+    "Plan my week",
+    "Draft a polite reply",
+    "Make a reminder list"
+  ]
 }

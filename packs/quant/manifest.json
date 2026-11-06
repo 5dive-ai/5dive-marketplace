@@ -18,5 +18,10 @@
   ],
   "hooks": {},
   "avatar": null,
-  "skillsBundled": true
+  "skillsBundled": true,
+  "jobs": [
+    "Sum up today's markets",
+    "Analyze a ticker",
+    "Backtest a strategy"
+  ]
 }

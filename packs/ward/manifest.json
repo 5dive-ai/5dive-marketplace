@@ -22,5 +22,10 @@
   "skillsBundled": true,
   "memoryFiles": [
     "seed-memory.md"
+  ],
+  "jobs": [
+    "Build a tiny tool",
+    "Write a style guide",
+    "Draft a README"
   ]
 }

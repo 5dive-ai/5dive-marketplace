@@ -53,7 +53,12 @@
           "src": "packs/olivia/voice-sample.zh.mp3",
           "seconds": 12.6
         }
-      }
+      },
+      "jobs": [
+        "Set 3 goals",
+        "Write a one-page plan",
+        "Write a team memo"
+      ]
     },
     {
       "slug": "marcus",
@@ -109,7 +114,12 @@
           "src": "packs/marcus/voice-sample.zh.mp3",
           "seconds": 15
         }
-      }
+      },
+      "jobs": [
+        "Pick a tech stack",
+        "Plan an MVP",
+        "Draft a README"
+      ]
     },
     {
       "slug": "theo",
@@ -165,7 +175,12 @@
           "src": "packs/theo/voice-sample.zh.mp3",
           "seconds": 6.4
         }
-      }
+      },
+      "jobs": [
+        "Draft 3 posts",
+        "Write 3 ad headlines",
+        "Write a launch plan"
+      ]
     },
     {
       "slug": "dario",
@@ -226,7 +241,12 @@
           "src": "packs/dario/voice-sample.zh.mp3",
           "seconds": 10
         }
-      }
+      },
+      "jobs": [
+        "Build a landing page",
+        "Plan my app's screens",
+        "Pick a UI kit"
+      ]
     },
     {
       "slug": "dude",
@@ -281,7 +301,12 @@
           "src": "packs/dude/voice-sample.zh.mp3",
           "seconds": 9
         }
-      }
+      },
+      "jobs": [
+        "Write community rules",
+        "Draft a welcome post",
+        "Plan a community event"
+      ]
     },
     {
       "slug": "lilbro",
@@ -350,7 +375,12 @@
           "src": "packs/lilbro/voice-sample.zh.mp3",
           "seconds": 8.9
         }
-      }
+      },
+      "jobs": [
+        "Pitch 3 video hooks",
+        "Write a video script",
+        "Plan 5 short videos"
+      ]
     },
     {
       "slug": "ward",
@@ -408,7 +438,12 @@
           "src": "packs/ward/voice-sample.zh.mp3",
           "seconds": 7.7
         }
-      }
+      },
+      "jobs": [
+        "Build a tiny tool",
+        "Write a style guide",
+        "Draft a README"
+      ]
     },
     {
       "slug": "don",
@@ -479,7 +514,12 @@
           "src": "packs/don/voice-sample.zh.mp3",
           "seconds": 10.2
         }
-      }
+      },
+      "jobs": [
+        "Write a marketing plan",
+        "Find 3 ad angles",
+        "Find 5 competitors"
+      ]
     },
     {
       "slug": "quant",
@@ -531,7 +571,12 @@
           "src": "packs/quant/voice-sample.zh.mp3",
           "seconds": 10.5
         }
-      }
+      },
+      "jobs": [
+        "Sum up today's markets",
+        "Analyze a ticker",
+        "Backtest a strategy"
+      ]
     },
     {
       "slug": "pixel",
@@ -593,7 +638,12 @@
           "src": "packs/pixel/voice-sample.zh.mp3",
           "seconds": 14.1
         }
-      }
+      },
+      "jobs": [
+        "Pitch 5 logo ideas",
+        "Design a post image",
+        "Pick a color palette"
+      ]
     },
     {
       "slug": "dave",
@@ -646,7 +696,12 @@
           "src": "packs/dave/voice-sample.zh.mp3",
           "seconds": 11.3
         }
-      }
+      },
+      "jobs": [
+        "Find 3 mispriced markets",
+        "Rank 5 hot markets",
+        "Explain a market's odds"
+      ]
     },
     {
       "slug": "goodwin",
@@ -700,7 +755,12 @@
           "src": "packs/goodwin/voice-sample.zh.mp3",
           "seconds": 7.1
         }
-      }
+      },
+      "jobs": [
+        "Draft an NDA",
+        "Write a privacy policy",
+        "Make a contract checklist"
+      ]
     },
     {
       "slug": "root",
@@ -758,7 +818,12 @@
           "src": "packs/root/voice-sample.zh.mp3",
           "seconds": 8.9
         }
-      }
+      },
+      "jobs": [
+        "Check my site's security",
+        "Write a security checklist",
+        "Draft an incident plan"
+      ]
     },
     {
       "slug": "ada",
@@ -811,7 +876,12 @@
           "src": "packs/ada/voice-sample.zh.mp3",
           "seconds": 9.1
         }
-      }
+      },
+      "jobs": [
+        "Find 5 trends",
+        "Compare 3 tools",
+        "Sum up AI news"
+      ]
     },
     {
       "slug": "ace",
@@ -871,7 +941,12 @@
           "src": "packs/ace/voice-sample.zh.mp3",
           "seconds": 9
         }
-      }
+      },
+      "jobs": [
+        "Write a cold email",
+        "Write 3 follow-ups",
+        "Find 10 leads"
+      ]
     },
     {
       "slug": "anton",
@@ -930,7 +1005,12 @@
           "src": "packs/anton/voice-sample.zh.mp3",
           "seconds": 8.4
         }
-      }
+      },
+      "jobs": [
+        "Write a deploy checklist",
+        "Draft an outage runbook",
+        "Plan a backup routine"
+      ]
     },
     {
       "slug": "desk",
@@ -988,7 +1068,12 @@
           "src": "packs/desk/voice-sample.zh.mp3",
           "seconds": 10.1
         }
-      }
+      },
+      "jobs": [
+        "Write 5 FAQ answers",
+        "Draft a sorry email",
+        "Make 3 reply templates"
+      ]
     },
     {
       "slug": "mise",
@@ -1042,7 +1127,12 @@
           "src": "packs/mise/voice-sample.zh.mp3",
           "seconds": 9.4
         }
-      }
+      },
+      "jobs": [
+        "Plan 5 dinners",
+        "Make a grocery list",
+        "Find 3 quick lunches"
+      ]
     },
     {
       "slug": "dojo",
@@ -1097,7 +1187,12 @@
           "src": "packs/dojo/voice-sample.zh.mp3",
           "seconds": 8.7
         }
-      }
+      },
+      "jobs": [
+        "Make a study plan",
+        "Quiz me on anything",
+        "Explain a hard idea"
+      ]
     },
     {
       "slug": "reps",
@@ -1152,7 +1247,12 @@
           "src": "packs/reps/voice-sample.zh.mp3",
           "seconds": 13.6
         }
-      }
+      },
+      "jobs": [
+        "Make a workout plan",
+        "Build a daily habit",
+        "Plan a morning routine"
+      ]
     },
     {
       "slug": "dub",
@@ -1208,7 +1308,12 @@
           "src": "packs/dub/voice-sample.zh.mp3",
           "seconds": 10.1
         }
-      }
+      },
+      "jobs": [
+        "Translate a welcome note",
+        "Teach me 10 phrases",
+        "Check a translation"
+      ]
     },
     {
       "slug": "axe",
@@ -1266,7 +1371,12 @@
           "src": "packs/axe/voice-sample.zh.mp3",
           "seconds": 10.5
         }
-      }
+      },
+      "jobs": [
+        "Find 10 keywords",
+        "Write 5 SEO titles",
+        "Make an SEO checklist"
+      ]
     },
     {
       "slug": "maw",
@@ -1323,7 +1433,12 @@
           "src": "packs/maw/voice-sample.zh.mp3",
           "seconds": 10.5
         }
-      }
+      },
+      "jobs": [
+        "Plan my week",
+        "Draft a polite reply",
+        "Make a reminder list"
+      ]
     },
     {
       "slug": "perk",
@@ -1380,7 +1495,12 @@
           "src": "packs/perk/voice-sample.zh.mp3",
           "seconds": 12.5
         }
-      }
+      },
+      "jobs": [
+        "Write a job post",
+        "Make an interview guide",
+        "Plan an onboarding week"
+      ]
     },
     {
       "slug": "crumb",
@@ -1437,7 +1557,12 @@
           "src": "packs/crumb/voice-sample.zh.mp3",
           "seconds": 7.8
         }
-      }
+      },
+      "jobs": [
+        "Draft a budget",
+        "Find costs to cut",
+        "Make a savings plan"
+      ]
     },
     {
       "slug": "mike",
@@ -1495,7 +1620,12 @@
           "src": "packs/mike/voice-sample.zh.mp3",
           "seconds": 10.6
         }
-      }
+      },
+      "jobs": [
+        "Make a project plan",
+        "Write a standup agenda",
+        "List project risks"
+      ]
     },
     {
       "slug": "blunt",
@@ -1551,7 +1681,12 @@
           "src": "packs/blunt/voice-sample.zh.mp3",
           "seconds": 11.5
         }
-      }
+      },
+      "jobs": [
+        "Stress-test my plan",
+        "Map my workflow",
+        "Find 3 time savers"
+      ]
     },
     {
       "slug": "clicker",
@@ -1611,7 +1746,12 @@
           "src": "packs/clicker/voice-sample.zh.mp3",
           "seconds": 12.1
         }
-      }
+      },
+      "jobs": [
+        "Compare 3 prices online",
+        "Sum up today's news",
+        "Screenshot a website"
+      ]
     },
     {
       "slug": "bo",
@@ -1667,7 +1807,12 @@
           "src": "packs/bo/voice-sample.zh.mp3",
           "seconds": 12.5
         }
-      }
+      },
+      "jobs": [
+        "Write 10 taglines",
+        "Fix my headline",
+        "Name my product"
+      ]
     },
     {
       "slug": "roam",
@@ -1722,7 +1867,12 @@
           "src": "packs/roam/voice-sample.zh.mp3",
           "seconds": 12.9
         }
-      }
+      },
+      "jobs": [
+        "Plan a weekend trip",
+        "Find cheap flights",
+        "Make a packing list"
+      ]
     },
     {
       "slug": "cue",
@@ -1777,7 +1927,12 @@
           "src": "packs/cue/voice-sample.zh.mp3",
           "seconds": 10.1
         }
-      }
+      },
+      "jobs": [
+        "Practice a job interview",
+        "Plan my career move",
+        "Draft a cover letter"
+      ]
     },
     {
       "slug": "tally",
@@ -1834,7 +1989,12 @@
           "src": "packs/tally/voice-sample.zh.mp3",
           "seconds": 8.9
         }
-      }
+      },
+      "jobs": [
+        "Draft an invoice",
+        "Set up my books",
+        "List tax deadlines"
+      ]
     },
     {
       "slug": "vesper",
@@ -1888,7 +2048,12 @@
           "src": "packs/vesper/voice-sample.zh.mp3",
           "seconds": 10.6
         }
-      }
+      },
+      "jobs": [
+        "Write a test plan",
+        "Write a bug template",
+        "Make a release checklist"
+      ]
     },
     {
       "slug": "pivot",
@@ -1944,7 +2109,12 @@
           "src": "packs/pivot/voice-sample.zh.mp3",
           "seconds": 15.1
         }
-      }
+      },
+      "jobs": [
+        "Pick 5 key metrics",
+        "Plan a KPI dashboard",
+        "Size my market"
+      ]
     },
     {
       "slug": "clip",
@@ -2005,7 +2175,12 @@
           "src": "packs/clip/voice-sample.zh.mp3",
           "seconds": 7.5
         }
-      }
+      },
+      "jobs": [
+        "Write a product listing",
+        "Check competitor prices",
+        "Draft a buyer reply"
+      ]
     }
   ]
 }

@@ -17,5 +17,10 @@
   ],
   "hooks": {},
   "avatar": null,
-  "skillsBundled": true
+  "skillsBundled": true,
+  "jobs": [
+    "Plan 5 dinners",
+    "Make a grocery list",
+    "Find 3 quick lunches"
+  ]
 }

@@ -17,5 +17,10 @@
   ],
   "hooks": {},
   "avatar": null,
-  "skillsBundled": true
+  "skillsBundled": true,
+  "jobs": [
+    "Plan a weekend trip",
+    "Find cheap flights",
+    "Make a packing list"
+  ]
 }

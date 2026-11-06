@@ -21,5 +21,10 @@
   "skillsBundled": true,
   "memoryFiles": [
     "seed-memory.md"
+  ],
+  "jobs": [
+    "Find 10 keywords",
+    "Write 5 SEO titles",
+    "Make an SEO checklist"
   ]
 }

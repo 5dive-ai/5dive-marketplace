@@ -23,5 +23,10 @@
   "skillsBundled": true,
   "memoryFiles": [
     "seed-memory.md"
+  ],
+  "jobs": [
+    "Pitch 5 logo ideas",
+    "Design a post image",
+    "Pick a color palette"
   ]
 }

@@ -21,5 +21,10 @@
   "skillsBundled": true,
   "memoryFiles": [
     "seed-memory.md"
+  ],
+  "jobs": [
+    "Set 3 goals",
+    "Write a one-page plan",
+    "Write a team memo"
   ]
 }

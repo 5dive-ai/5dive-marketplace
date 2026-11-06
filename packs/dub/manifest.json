@@ -18,5 +18,10 @@
   ],
   "hooks": {},
   "avatar": null,
-  "skillsBundled": true
+  "skillsBundled": true,
+  "jobs": [
+    "Translate a welcome note",
+    "Teach me 10 phrases",
+    "Check a translation"
+  ]
 }

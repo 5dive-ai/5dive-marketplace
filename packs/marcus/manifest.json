@@ -23,5 +23,10 @@
   "skillsBundled": true,
   "memoryFiles": [
     "seed-memory.md"
+  ],
+  "jobs": [
+    "Pick a tech stack",
+    "Plan an MVP",
+    "Draft a README"
   ]
 }

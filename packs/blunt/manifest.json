@@ -17,5 +17,10 @@
   ],
   "hooks": {},
   "avatar": null,
-  "skillsBundled": true
+  "skillsBundled": true,
+  "jobs": [
+    "Stress-test my plan",
+    "Map my workflow",
+    "Find 3 time savers"
+  ]
 }

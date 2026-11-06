@@ -21,5 +21,10 @@
   "skillsBundled": true,
   "memoryFiles": [
     "seed-memory.md"
+  ],
+  "jobs": [
+    "Write 10 taglines",
+    "Fix my headline",
+    "Name my product"
   ]
 }

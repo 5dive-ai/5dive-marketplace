@@ -24,5 +24,10 @@
   "skillsBundled": true,
   "memoryFiles": [
     "seed-memory.md"
+  ],
+  "jobs": [
+    "Write a product listing",
+    "Check competitor prices",
+    "Draft a buyer reply"
   ]
 }

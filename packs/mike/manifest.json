@@ -20,5 +20,10 @@
   "skillsBundled": true,
   "memoryFiles": [
     "seed-memory.md"
+  ],
+  "jobs": [
+    "Make a project plan",
+    "Write a standup agenda",
+    "List project risks"
   ]
 }
