@@ -38,5 +38,10 @@
   "skillsBundled": true,
   "memoryFiles": [
     "seed-memory.md"
+  ],
+  "jobs": [
+    "Write a marketing plan",
+    "Find 3 ad angles",
+    "Find 5 competitors"
   ]
 }

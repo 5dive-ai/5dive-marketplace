@@ -17,5 +17,10 @@
   ],
   "hooks": {},
   "avatar": null,
-  "skillsBundled": true
+  "skillsBundled": true,
+  "jobs": [
+    "Draft a budget",
+    "Find costs to cut",
+    "Make a savings plan"
+  ]
 }

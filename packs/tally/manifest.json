@@ -19,5 +19,10 @@
   ],
   "hooks": {},
   "avatar": null,
-  "skillsBundled": true
+  "skillsBundled": true,
+  "jobs": [
+    "Draft an invoice",
+    "Set up my books",
+    "List tax deadlines"
+  ]
 }

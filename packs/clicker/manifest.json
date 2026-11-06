@@ -25,5 +25,10 @@
   "memoryFiles": [
     "seed-memory.md",
     "site-notes.md"
+  ],
+  "jobs": [
+    "Compare 3 prices online",
+    "Sum up today's news",
+    "Screenshot a website"
   ]
 }

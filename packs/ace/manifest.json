@@ -18,5 +18,10 @@
   ],
   "hooks": {},
   "avatar": null,
-  "skillsBundled": true
+  "skillsBundled": true,
+  "jobs": [
+    "Write a cold email",
+    "Write 3 follow-ups",
+    "Find 10 leads"
+  ]
 }

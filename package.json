@@ -11,6 +11,8 @@
     "lint:promote-queue": "node scripts/check-skills.mjs --promote-queue",
     "test:skills": "bash scripts/test-check-skills.sh",
     "check:teams": "bash scripts/check-teams.sh",
+    "check:jobs": "node scripts/check-jobs.mjs",
+    "test:jobs": "bash scripts/test-check-jobs.sh",
     "check:voices": "node scripts/check-voices.mjs",
     "check:voice-samples": "node scripts/voice-samples.mjs --check",
     "voice-samples": "node scripts/voice-samples.mjs",

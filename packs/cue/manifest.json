@@ -17,5 +17,10 @@
   ],
   "hooks": {},
   "avatar": null,
-  "skillsBundled": true
+  "skillsBundled": true,
+  "jobs": [
+    "Practice a job interview",
+    "Plan my career move",
+    "Draft a cover letter"
+  ]
 }

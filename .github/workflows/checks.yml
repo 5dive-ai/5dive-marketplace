@@ -99,6 +99,22 @@ jobs:
       - name: check-skills unit tests
         run: bash scripts/test-check-skills.sh
 
+  jobs:
+    name: every pack has its own three first jobs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      # Dependency-free (node:fs/path/url only), like the skills job, so no install.
+      # DIVE-7794: a pack with no jobs fell back to its department's, which offered
+      # Pixel the designer marketing jobs. index.json is what the Mini App reads.
+      - name: check-jobs (3 jobs per pack, at most 4 words, manifest = index)
+        run: npm run check:jobs
+      - name: check-jobs mutation arms
+        run: npm run test:jobs
+
   teams:
     name: team templates match their index, and their skills exist
     runs-on: ubuntu-latest

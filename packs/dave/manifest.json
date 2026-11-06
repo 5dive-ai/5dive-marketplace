@@ -18,5 +18,10 @@
   ],
   "hooks": {},
   "avatar": null,
-  "skillsBundled": true
+  "skillsBundled": true,
+  "jobs": [
+    "Find 3 mispriced markets",
+    "Rank 5 hot markets",
+    "Explain a market's odds"
+  ]
 }

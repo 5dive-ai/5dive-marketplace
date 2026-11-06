@@ -60,6 +60,7 @@ so the catalog and the spec's deterministic ladder can never drift:
 npm install                          # pulls @5dive/openagent
 npm run build:index                  # recompute every pack's rarity from persona.yaml
 npm run check:index                  # CI guard: fails if index.json rarity is stale
+npm run check:jobs                   # CI guard: every pack has 3 first jobs, at most 4 words each
 ```
 
 The file-derived tier tops out at **Legendary**. **Mythical** is *conferred* at runtime by the
@@ -109,6 +110,10 @@ Publishing is a **pull request with a mandatory human review gate** — never au
 1. Produce a pack with `5dive agent export <name>` (config-only by default; `--with-memory`
    runs the deny-by-default redaction + review gate before any memory is included).
 2. Add `packs/<slug>/` (manifest.json, CLAUDE.md, optional card.md, avatar.png) and a new entry in `index.json`.
+   The manifest's `jobs` are the three first jobs the Mini App offers right after Hire: at most 4
+   words each, doable with no context, and about THIS role (Pixel: "Pick a color palette", not a
+   marketing plan). `build:index` copies them into index.json; add any new one to the app's
+   `ROLE_JOBS` (5dive-frontend `src/lib/first-job.ts`) so it is translated and has an icon.
    The portrait follows [`PORTRAITS.md`](PORTRAITS.md): style, framing numbers, prompt template, and
    `scripts/frame-portrait.py` / `scripts/check-portraits.py` (CI runs the check on every avatar).
    `persona.yaml` needs a `voice.audio.base`: a Gemini prebuilt voice that matches the character's

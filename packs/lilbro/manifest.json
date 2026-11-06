@@ -34,5 +34,10 @@
   "skillsBundled": true,
   "memoryFiles": [
     "seed-memory.md"
+  ],
+  "jobs": [
+    "Pitch 3 video hooks",
+    "Write a video script",
+    "Plan 5 short videos"
   ]
 }

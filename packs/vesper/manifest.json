@@ -21,5 +21,10 @@
   "skillsBundled": true,
   "memoryFiles": [
     "seed-memory.md"
+  ],
+  "jobs": [
+    "Write a test plan",
+    "Write a bug template",
+    "Make a release checklist"
   ]
 }

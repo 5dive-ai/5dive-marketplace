@@ -112,14 +112,23 @@ function rarityFor(slug) {
     } catch (_) { /* leave null; voice-samples --check reds the bad sidecar */ }
     voiceSampleLang = { ...voiceSampleLang, [lang]: { src: `packs/${slug}/voice-sample.${lang}.mp3`, seconds } };
   }
-  return { rarity: t.tier.toLowerCase(), completeness: t.completeness, level: t.level, did, skills, voiceSample, voiceSampleSeconds, voiceSampleLang };
+  // First jobs (DIVE-7794): the three the Mini App offers right after Hire. The
+  // manifest is the source, like skills; scripts/check-jobs.mjs holds the rules.
+  let jobs = null;
+  if (existsSync(manifestPath)) {
+    try {
+      const m = JSON.parse(readFileSync(manifestPath, "utf8"));
+      if (Array.isArray(m.jobs)) jobs = m.jobs;
+    } catch (_) { /* leave null; check-jobs reds it */ }
+  }
+  return { rarity: t.tier.toLowerCase(), completeness: t.completeness, level: t.level, did, skills, jobs, voiceSample, voiceSampleSeconds, voiceSampleLang };
 }
 
 const index = JSON.parse(readFileSync(INDEX_PATH, "utf8"));
 const rows = [];
 let changed = false;
 for (const pack of index.packs) {
-  const { rarity, completeness, level, did, skills, voiceSample, voiceSampleSeconds, voiceSampleLang } = rarityFor(pack.slug);
+  const { rarity, completeness, level, did, skills, jobs, voiceSample, voiceSampleSeconds, voiceSampleLang } = rarityFor(pack.slug);
   rows.push({ slug: pack.slug, was: pack.rarity, now: rarity, completeness, level });
   if (pack.rarity !== rarity) changed = true;
   if (pack.did !== did) changed = true;
@@ -127,7 +136,7 @@ for (const pack of index.packs) {
   pack.rarity = rarity;
   pack.did = did;
   pack.skills = skills;
-  for (const [k, v] of [["voiceSample", voiceSample], ["voiceSampleSeconds", voiceSampleSeconds], ["voiceSampleLang", voiceSampleLang]]) {
+  for (const [k, v] of [["jobs", jobs], ["voiceSample", voiceSample], ["voiceSampleSeconds", voiceSampleSeconds], ["voiceSampleLang", voiceSampleLang]]) {
     if (JSON.stringify(pack[k] ?? null) !== JSON.stringify(v)) changed = true;
     if (v === null) delete pack[k];
     else pack[k] = v;

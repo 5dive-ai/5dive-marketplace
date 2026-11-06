@@ -17,5 +17,10 @@
   ],
   "hooks": {},
   "avatar": null,
-  "skillsBundled": true
+  "skillsBundled": true,
+  "jobs": [
+    "Make a study plan",
+    "Quiz me on anything",
+    "Explain a hard idea"
+  ]
 }

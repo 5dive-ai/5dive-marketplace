@@ -23,5 +23,10 @@
   "skillsBundled": true,
   "memoryFiles": [
     "seed-memory.md"
+  ],
+  "jobs": [
+    "Write a deploy checklist",
+    "Draft an outage runbook",
+    "Plan a backup routine"
   ]
 }

@@ -24,5 +24,10 @@
   "skillsBundled": true,
   "memoryFiles": [
     "seed-memory.md"
+  ],
+  "jobs": [
+    "Write 5 FAQ answers",
+    "Draft a sorry email",
+    "Make 3 reply templates"
   ]
 }

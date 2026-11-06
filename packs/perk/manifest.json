@@ -18,5 +18,10 @@
   ],
   "hooks": {},
   "avatar": null,
-  "skillsBundled": true
+  "skillsBundled": true,
+  "jobs": [
+    "Write a job post",
+    "Make an interview guide",
+    "Plan an onboarding week"
+  ]
 }
