@@ -159,13 +159,20 @@ if (noDepartment.length) {
   );
 }
 
-// Russian/Chinese storefront copy is hand-maintained too. Every pack must carry
-// all seven fields as non-empty strings, and none may be the English tagline
+// The storefront copy in other languages is hand-maintained too. Every pack must carry
+// every field below as a non-empty string, and none may be the English tagline
 // pasted verbatim (an untranslated copy-paste). Both FAIL --check and the build.
 // nameRuAcc is the Russian name in the accusative, for "Нанять Маркуса" (DIVE-5667):
 // a masculine name takes -а/-я, a feminine -а/-я ending becomes -у/-ю, and a name
 // ending in another vowel or a woman's name ending in a consonant stays as it is.
-const I18N_FIELDS = ["nameRu", "nameRuAcc", "nameZh", "roleRu", "roleZh", "taglineRu", "taglineZh"];
+// DIVE-8131: every other language the app offers (5dive-frontend src/lib/tg-languages.ts) carries the role and the
+// tagline too; the app reads <field><Code> for the language it shows (taglineDe, rolePt) and English for a missing one,
+// which is how a German phone met English bios. The name stays the English one there (no case forms, no other script).
+const MORE_LANGS = ["Tr", "Es", "Ar", "Pt", "De", "Fr", "Ja", "Ko"];
+const I18N_FIELDS = [
+  "nameRu", "nameRuAcc", "nameZh", "roleRu", "roleZh", "taglineRu", "taglineZh",
+  ...MORE_LANGS.flatMap((l) => [`role${l}`, `tagline${l}`]),
+];
 const badI18n = [];
 for (const p of index.packs) {
   const en = typeof p.tagline === "string" ? p.tagline.trim() : "";
@@ -202,7 +209,7 @@ if (badDepartments.length) {
 }
 
 if (badI18n.length) {
-  console.error(`index.json has missing or untranslated Russian/Chinese fields:\n  ${badI18n.join("\n  ")}`);
+  console.error(`index.json has missing or untranslated storefront fields (role, tagline per language):\n  ${badI18n.join("\n  ")}`);
   process.exit(1);
 }
 
