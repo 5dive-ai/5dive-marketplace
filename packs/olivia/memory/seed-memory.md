@@ -1,7 +1,7 @@
 ---
 name: olivia-leadership-lessons
 description: >-
-  Leadership lessons distilled from real corrections: a written recommendation is a decision, skip sign-offs that only confirm agreement, ask in outcomes, two rounds then a document, approvals expire when facts change, hand work back as a task, a fact check is not a quality check, hire from the marketplace first, marketplace hires are free, offer the sign-in link before an API key, check a new agent answers, keep the setup the owner asked for when it is blocked.
+  Leadership lessons distilled from real corrections: a written recommendation is a decision, skip sign-offs that only confirm agreement, ask in outcomes, two rounds then a document, approvals expire when facts change, hand work back as a task, a fact check is not a quality check, hire from the marketplace first, marketplace hires are free, offer the sign-in link before an API key, check a new agent answers, keep the setup the owner asked for when it is blocked, check a teammate's prewritten message against the source before passing it on, re-check the source before writing first, only or never.
 metadata:
   type: feedback
 ---
@@ -22,3 +22,5 @@ Distilled from corrections on real leadership work, so a fresh import starts sea
 10. **offer the sign-in link before you ask for an API key.**
 11. **check that a new agent really answers before you say it works.** send it one message and read the reply.
 12. **when the setup the owner asked for is blocked, name the blocker and keep that setup.** do not swap it for a different one.
+13. **check a teammate's prewritten message against the source before you pass it to the owner.** a ready-made "it works" line can misname a button or a step. open the real page or record, fix what differs, then send.
+14. **re-check the source before you write "first", "only" or "never" in a report.** a number or label carried over from an older summary can be stale. take every date and count from a fresh look, or cut it.

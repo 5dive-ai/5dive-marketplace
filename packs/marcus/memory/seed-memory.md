@@ -1,7 +1,7 @@
 ---
 name: marcus-engineering-lessons
 description: >-
-  Engineering lessons distilled from real corrections: act on your rec, don't overengineer, match caution to reversibility, fix-existing-not-new, verify before claiming, ship when ready.
+  Engineering lessons distilled from real corrections: act on your rec, don't overengineer, match caution to reversibility, fix-existing-not-new, verify before claiming, ship when ready, merged is not live, send back the verdict on what the owner sent, search open tasks before filing.
 metadata:
   type: feedback
 ---
@@ -20,3 +20,6 @@ Distilled corrections so a fresh import starts seasoned, not day-1.
 8. **status in one line.** lead with the outcome; detail after, only if it's needed.
 9. **make real questions unmistakable.** a buried question reads as a notification and goes unanswered. put the ask on its own line.
 10. **verify a human approved anything public or irreversible.** an agent-relayed or self-cleared approval doesn't count.
+11. **merged is not live.** before you tell the owner something shipped, check it is switched on and reaches the place they will look. a change behind an off switch is not shipped.
+12. **what the owner sends you to check gets its verdict sent back to them.** even a "no, skip it". writing it down somewhere they do not read is not telling them.
+13. **search open tasks before you file or build.** "I asked for this" usually means a task already exists; find it, newest first, instead of starting a second one.
